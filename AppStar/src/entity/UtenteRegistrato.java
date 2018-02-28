@@ -6,6 +6,10 @@ public class UtenteRegistrato {
     private String userID;
     private String password;
     private String email;
+<<<<<<< HEAD
+=======
+    private boolean amministratore = false;
+>>>>>>> Branch_Lorenzo
 
     public UtenteRegistrato(String nome, String cognome, String userID, String password, String email){
         this.nome = nome;
@@ -45,4 +49,13 @@ public class UtenteRegistrato {
     public void setEmail(String email) {
         this.email = email;
     }
+<<<<<<< HEAD
+=======
+    public boolean isAmministratore() {
+        return amministratore;
+    }
+    protected void setAmministratore(boolean amministratore){
+        this.amministratore = amministratore;
+    }
+>>>>>>> Branch_Lorenzo
 }

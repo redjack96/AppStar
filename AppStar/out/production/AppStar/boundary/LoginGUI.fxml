@@ -13,7 +13,11 @@
    <children>
       <ImageView fitHeight="450.0" fitWidth="800.0">
          <image>
+<<<<<<< HEAD
             <Image url="@../pics/loginPic.jpg" />
+=======
+            <Image url="@../pics/cosmo.jpg" />
+>>>>>>> Branch_Lorenzo
          </image>
       </ImageView>
       <Label layoutX="213.0" layoutY="14.0" text="AppStar" textFill="#b0650c" underline="true">

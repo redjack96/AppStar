@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 package boundary;  //Boundary --> interfaccia grafica
 
 import javafx.application.Application;
+=======
+package boundary;
+
+import control.LoginController;
+>>>>>>> Branch_Lorenzo
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -11,14 +17,22 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+<<<<<<< HEAD
 import javafx.stage.Stage;      //Stage e' un pannello
+=======
+import javafx.stage.Stage;
+>>>>>>> Branch_Lorenzo
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginGUI implements Initializable {
 
+<<<<<<< HEAD
     @FXML  //Mettili sempre
+=======
+    @FXML
+>>>>>>> Branch_Lorenzo
     private ResourceBundle resources;
     @FXML
     private URL location;
@@ -30,20 +44,33 @@ public class LoginGUI implements Initializable {
     private Button loginButton;
     @FXML
     private Button chiudiButton;
+<<<<<<< HEAD
     //Stage e' un pannello
+=======
+
+>>>>>>> Branch_Lorenzo
     public void istanziaLoginGUI(Stage Stage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("/boundary/LoginGUI.fxml"));
         Stage.setTitle("AppStar - Login");
         Stage.setScene(new Scene(root, 800, 450));
         Stage.show();
     }
+<<<<<<< HEAD
     //Scrivi sempre!!!
+=======
+
+>>>>>>> Branch_Lorenzo
     public void initialize(URL location, ResourceBundle resources){
 
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+<<<<<<< HEAD
 
+=======
+                LoginController loginController = new LoginController();
+                loginController.controlloLogin(userIDTextField.getText(), passwordPasswordField.getText());
+>>>>>>> Branch_Lorenzo
             }
         });
 
