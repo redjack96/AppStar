@@ -13,18 +13,22 @@ public class UtenteConnesso {
 
     private UtenteConnesso(){} // costruttore
 
+    public static void disconnettiUtente(){
+        utente = null;
+    }
+
     public static UtenteRegistrato getInstance(String userID, String password){
         if (utente == null){
             synchronized (UtenteConnesso.class){
                 if ((utente == null)){
                     try{
                         ArrayList<String> infoUtente = UtenteDao.controlloAccount(userID, password);
-                        if (infoUtente.get(6).equals("amministratore")){
-                            utente = new UtenteAmministratore(infoUtente.get(1), infoUtente.get(2), infoUtente.get(3),
-                                    infoUtente.get(4), infoUtente.get(5));
-                        }else if (infoUtente.get(6).equals("notAmministratore")) {
-                            utente = new UtenteAmministratore(infoUtente.get(1), infoUtente.get(2), infoUtente.get(3),
-                                    infoUtente.get(4), infoUtente.get(5));
+                        if (infoUtente.get(5).equals("amministratore")){
+                            utente = new UtenteAmministratore(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
+                                    infoUtente.get(3), infoUtente.get(4));
+                        }else if (infoUtente.get(5).equals("notAmministratore")) {
+                            utente = new UtenteAmministratore(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
+                                    infoUtente.get(3), infoUtente.get(4));
                         }
                     }catch (SQLException e){
                         System.out.println(e.getMessage());
