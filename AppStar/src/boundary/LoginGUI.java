@@ -5,13 +5,16 @@ import javafx.application.Application;
 =======
 package boundary;
 
+import control.HomeController;
 import control.LoginController;
 >>>>>>> Branch_Lorenzo
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -48,16 +51,32 @@ public class LoginGUI implements Initializable {
     //Stage e' un pannello
 =======
 
+<<<<<<< HEAD
 >>>>>>> Branch_Lorenzo
     public void istanziaLoginGUI(Stage Stage) throws Exception{
+=======
+    public void istanziaLoginGUIFXML(Stage Stage) throws Exception{
+>>>>>>> Branch_Lorenzo
         Parent root = FXMLLoader.load(getClass().getResource("/boundary/LoginGUI.fxml"));
-        Stage.setTitle("AppStar - Login");
+        Stage.setTitle("AppStar");
         Stage.setScene(new Scene(root, 800, 450));
         Stage.show();
     }
 <<<<<<< HEAD
     //Scrivi sempre!!!
 =======
+
+<<<<<<< HEAD
+>>>>>>> Branch_Lorenzo
+=======
+    public void istanziaLoginGUIFXML(Event e){
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("/boundary/LoginGUI.fxml"));
+            ((Node) (e.getSource())).getScene().setRoot(root);
+        }catch (Exception er){
+            System.err.println(er.getMessage());
+        }
+    }
 
 >>>>>>> Branch_Lorenzo
     public void initialize(URL location, ResourceBundle resources){
@@ -75,6 +94,11 @@ public class LoginGUI implements Initializable {
 =======
 >>>>>>> Branch_Lorenzo
                 loginController.controlloLogin(userIDTextField.getText(), passwordPasswordField.getText());
+<<<<<<< HEAD
+>>>>>>> Branch_Lorenzo
+=======
+                HomeController homeController = new HomeController();
+                homeController.istanziaHomeGUI(event);
 >>>>>>> Branch_Lorenzo
             }
         });
@@ -82,7 +106,6 @@ public class LoginGUI implements Initializable {
         chiudiButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                loginController.disconnessione();
                 System.exit(0);
             }
         });
