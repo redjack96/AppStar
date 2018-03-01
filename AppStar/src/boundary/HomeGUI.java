@@ -49,9 +49,12 @@ public class HomeGUI implements Initializable {
     private Button avantiButton;
 
     public void istanziaHomeGUIFXML(Event e){
+        //Lancia l'interfaccia grafica HomeGUI.fxml.
+
         try{
             Parent root = FXMLLoader.load(getClass().getResource("/boundary/HomeGUI.fxml"));
             ((Node) (e.getSource())).getScene().setRoot(root);
+            //Imposta il root relativo alla schermata di Home.
         }catch (Exception er){
             System.err.println(er.getMessage());
         }
@@ -59,10 +62,14 @@ public class HomeGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources){
 
+        infoFilamento.setSelected(true);
+        //RadioButton selezionato di default.
         HomeController homeController = new HomeController();
 
         boolean isAmministratore = homeController.verificaAmministratore();
+        //Controlla se l'attuale utente connesso (istanza del Singleton) sia un amministratore o meno...
         if (!isAmministratore){
+            //...se non lo e' disabilita i RadioButton relativi ai comandi dell'amministratore.
             importaFileSatellite.setDisable(true);
             registraUtente.setDisable(true);
             nuoviDatiSatellite.setDisable(true);
@@ -72,7 +79,7 @@ public class HomeGUI implements Initializable {
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                homeController.disconnettiUtente();
+                homeController.disconnettiUtente(); //Vedi control.HomeController.disconnettiUtente().
                 LoginController loginController = new LoginController();
                 loginController.istanziaLoginGUI(event);
             }

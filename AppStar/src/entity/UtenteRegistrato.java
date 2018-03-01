@@ -6,9 +6,10 @@ public class UtenteRegistrato {
     private String userID;
     private String password;
     private String email;
-    private boolean amministratore = false;
+    private boolean amministratore = false; //'false': l'utente non e' un amministratore.
 
     public UtenteRegistrato(String nome, String cognome, String userID, String password, String email){
+        //Costruttore di UtenteRegistrato.
         this.nome = nome;
         this.cognome = cognome;
         this.userID = userID;

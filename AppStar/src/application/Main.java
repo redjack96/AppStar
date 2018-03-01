@@ -6,6 +6,6 @@ import javafx.application.Application;
 public class Main {
 
     public static void main(String[] args){
-        Application.launch(LoginController.class, args);
+        Application.launch(LoginController.class, args);    //lancia il metodo start da LoginController
     }
 }

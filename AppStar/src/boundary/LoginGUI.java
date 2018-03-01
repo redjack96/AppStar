@@ -35,16 +35,22 @@ public class LoginGUI implements Initializable {
     private Button chiudiButton;
 
     public void istanziaLoginGUIFXML(Stage Stage) throws Exception{
+        //Lancia l'interfaccia grafica LoginGUI.fxml.
+
         Parent root = FXMLLoader.load(getClass().getResource("/boundary/LoginGUI.fxml"));
         Stage.setTitle("AppStar");
         Stage.setScene(new Scene(root, 800, 450));
+        //Imposta il root relativo alla schermata di Login.
         Stage.show();
     }
 
     public void istanziaLoginGUIFXML(Event e){
+        //Lancia l'interfaccia grafica LoginGUI.fxml.
+
         try{
             Parent root = FXMLLoader.load(getClass().getResource("/boundary/LoginGUI.fxml"));
             ((Node) (e.getSource())).getScene().setRoot(root);
+            //Imposta il root relativo alla schermata di Login.
         }catch (Exception er){
             System.err.println(er.getMessage());
         }
