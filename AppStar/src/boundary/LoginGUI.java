@@ -20,7 +20,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class LoginGUI implements Initializable {
-
     @FXML
     private ResourceBundle resources;
     @FXML

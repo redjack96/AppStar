@@ -16,7 +16,7 @@ public class UtenteConnesso {
     private UtenteConnesso(){} // costruttore
 
     /**
-     * Assegna il valore 'null' alla variabile statica utente.
+     * Assegna il valore
      */
     public static void disconnettiUtente(){
         utente = null;
@@ -47,8 +47,9 @@ public class UtenteConnesso {
                         if (infoUtente.get(5).equals("amministratore")){
                             //Se l'utente e' un amministratore l'istanza del Singleton sara' un utente amministratore...
 
-                            utente = new UtenteAmministratore(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
-                                    infoUtente.get(3), infoUtente.get(4));
+                            utente = new UtenteAmministratore(infoUtente.get(0), infoUtente.get(1),
+                                    infoUtente.get(2), infoUtente.get(3), infoUtente.get(4));
+
                         }else if (infoUtente.get(5).equals("notAmministratore")) {
                             //... altrimenti sara' un utente registrato.
 

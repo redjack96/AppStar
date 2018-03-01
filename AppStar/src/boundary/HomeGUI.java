@@ -2,6 +2,7 @@ package boundary;
 
 import control.HomeController;
 import control.LoginController;
+import control.RegistraUtenteController;
 import entity.UtenteRegistrato;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -22,7 +23,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class HomeGUI implements Initializable {
-
     @FXML
     private ResourceBundle resources;
     @FXML
@@ -75,6 +75,30 @@ public class HomeGUI implements Initializable {
             nuoviDatiSatellite.setDisable(true);
             nuoviDatiStrumenti.setDisable(true);
         }
+
+        avantiButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                if (importaFileSatellite.isSelected()){
+
+                }else if(registraUtente.isSelected()){
+                    RegistraUtenteController registraUtenteController = new RegistraUtenteController();
+                    registraUtenteController.istanziaRegistraUtenteGUI(event);
+                }else if(nuoviDatiSatellite.isSelected()){
+
+                }else if(nuoviDatiStrumenti.isSelected()){
+
+                }else if(infoFilamento.isSelected()){
+
+                }else if(ricercaFilamento.isSelected()){
+
+                }else if(ricercaStelle.isSelected()){
+
+                }else if(calcolaDistanze.isSelected()){
+
+                }
+            }
+        });
 
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override

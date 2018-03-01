@@ -61,4 +61,27 @@ public class UtenteDao {
         System.out.println("Credenziali e informazioni dell'utente connesso :" + infoUtente);
         return infoUtente;
     }
+
+    public static void inserisciAccount(String nome, String cognome, String userID, String password, String email,
+                                        boolean admin) throws SQLException{
+
+        Connessione.connettiti();
+        try{
+            //String NOME = "NOME"; String COGNOME = "COGNOME"; String USER_ID = "USER_ID"; String PASSWORD = "PASSWORD";
+            //String EMAIL = "EMAIL"; String AMMINISTRATORE = "AMMINISTRATORE";
+            String utenteInsert = "INSERT INTO utenti VALUES(?, ?, ?, ?, ?, ?)";
+            PreparedStatement ps = Connessione.CONN.prepareStatement(utenteInsert);
+            ps.setString(1, nome);
+            ps.setString(2, cognome);
+            ps.setString(3, userID);
+            ps.setString(4, password);
+            ps.setString(5, email);
+            ps.setBoolean(6, admin);
+            ps.executeUpdate();
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }finally{
+            Connessione.CONN.close();
+        }
+    }
 }
