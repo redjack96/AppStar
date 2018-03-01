@@ -40,10 +40,11 @@ public class LoginGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources){
 
+        LoginController loginController = new LoginController();
+
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                LoginController loginController = new LoginController();
                 loginController.controlloLogin(userIDTextField.getText(), passwordPasswordField.getText());
             }
         });
@@ -51,6 +52,7 @@ public class LoginGUI implements Initializable {
         chiudiButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                loginController.disconnessione();
                 System.exit(0);
             }
         });
