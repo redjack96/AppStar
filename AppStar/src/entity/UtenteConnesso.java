@@ -27,7 +27,7 @@ public class UtenteConnesso {
                             utente = new UtenteAmministratore(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
                                     infoUtente.get(3), infoUtente.get(4));
                         }else if (infoUtente.get(5).equals("notAmministratore")) {
-                            utente = new UtenteAmministratore(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
+                            utente = new UtenteRegistrato(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
                                     infoUtente.get(3), infoUtente.get(4));
                         }
                     }catch (SQLException e){
