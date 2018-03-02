@@ -13,10 +13,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -47,6 +44,14 @@ public class HomeGUI implements Initializable {
     private Button logoutButton;
     @FXML
     private Button avantiButton;
+    @FXML
+    private Label nomeCognomeLabel;
+    @FXML
+    private Label userIDLabel;
+    @FXML
+    private Label emailLabel;
+    @FXML
+    private Label adminLabel;
 
     public void istanziaHomeGUIFXML(Event e){
         //Lancia l'interfaccia grafica HomeGUI.fxml.
@@ -66,6 +71,10 @@ public class HomeGUI implements Initializable {
         //RadioButton selezionato di default.
         HomeController homeController = new HomeController();
 
+        nomeCognomeLabel.setText(homeController.getUtente().getNome() + " " + homeController.getUtente().getCognome());
+        userIDLabel.setText(homeController.getUtente().getUserID());
+        emailLabel.setText(homeController.getUtente().getEmail());
+
         boolean isAmministratore = homeController.verificaAmministratore();
         //Controlla se l'attuale utente connesso (istanza del Singleton) sia un amministratore o meno...
         if (!isAmministratore){
@@ -74,6 +83,7 @@ public class HomeGUI implements Initializable {
             registraUtente.setDisable(true);
             nuoviDatiSatellite.setDisable(true);
             nuoviDatiStrumenti.setDisable(true);
+            adminLabel.setVisible(false);
         }
 
         avantiButton.setOnAction(new EventHandler<ActionEvent>() {

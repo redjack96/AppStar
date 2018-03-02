@@ -13,8 +13,14 @@ public class HomeController {
         //istanzia il controller grafico HomeGUI dell'interfaccia grafica HomeGUI.fxml.
     }
 
+    public UtenteRegistrato getUtente(){
+        //Ritorna utente che contiene l'istanza dell'utente connesso attualmente.
+        UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
+        return utente;
+    }
+
     public boolean verificaAmministratore(){
-        //Salva in utente l'istanza generata dalla UtenteConnesso (Singleton).
+        //Salva in utente l'istanza generata dalla UtenteConnesso (Singleton) e restituisce un booleano (isAdmin).
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
         return utente.isAmministratore();
     }
