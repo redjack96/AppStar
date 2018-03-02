@@ -56,6 +56,7 @@ public class UtenteConnesso {
                             utente = new UtenteRegistrato(infoUtente.get(0), infoUtente.get(1), infoUtente.get(2),
                                     infoUtente.get(3), infoUtente.get(4));
                         }
+                        //TODO else{mostrare una finestra di dialogo se utente o password non sono corretti}
                     }catch (SQLException e){
                         System.out.println(e.getMessage());
                     }

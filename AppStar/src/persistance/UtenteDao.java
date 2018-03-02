@@ -36,6 +36,7 @@ public class UtenteDao {
             ps.setString(1, userID);
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
+            //TODO se rs e' vuoto, non fare nulla.
             while (rs.next()){
                 infoUtente.add(rs.getString("NOME"));       //infoUtente = (Nome, _, _, _, _, _).
                 infoUtente.add(rs.getString("COGNOME"));    //infoUtente = (-, Cognome, _, _, _, _).
@@ -56,7 +57,7 @@ public class UtenteDao {
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }finally{
-            Connessione.CONN.close();
+            Connessione.CONN.close();  //TODO (forse) la connessione non dovrebbe chiudersi quando viene chiusa la GUI?
         }
         System.out.println("Credenziali e informazioni dell'utente connesso :" + infoUtente);
         return infoUtente;

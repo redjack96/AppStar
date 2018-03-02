@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class LoginController extends Application{
 
     public void start(Stage primaryStage) throws Exception{
-        //metodo della classe astratta Application.
+        //metodo della classe astratta Application. Lanciato dalla main()
 
         LoginGUI loginGUI = new LoginGUI();
         loginGUI.istanziaLoginGUIFXML(primaryStage);
