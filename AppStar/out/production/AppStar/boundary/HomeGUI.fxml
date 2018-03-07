@@ -60,12 +60,12 @@
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <Button fx:id="avantiButton" layoutX="592.0" layoutY="367.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="125.0" text="Avanti">
+      <Button fx:id="avantiButton" layoutX="592.0" layoutY="367.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Avanti">
          <font>
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="logoutButton" layoutX="77.0" layoutY="367.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="156.0" text="Disconnettiti">
+      <Button fx:id="logoutButton" layoutX="77.0" layoutY="367.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Disconnettiti">
          <font>
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>

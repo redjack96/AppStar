@@ -1,6 +1,7 @@
 package boundary;
 
 import control.HomeController;
+import control.ImportaFileSatelliteController;
 import control.LoginController;
 import control.RegistraUtenteController;
 import entity.UtenteRegistrato;
@@ -90,7 +91,8 @@ public class HomeGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 if (importaFileSatellite.isSelected()){
-
+                    ImportaFileSatelliteController importaFileSatelliteController = new ImportaFileSatelliteController();
+                    importaFileSatelliteController.istanziaImportaFileSatelliteGUI(event);
                 }else if(registraUtente.isSelected()){
                     RegistraUtenteController registraUtenteController = new RegistraUtenteController();
                     registraUtenteController.istanziaRegistraUtenteGUI(event);
