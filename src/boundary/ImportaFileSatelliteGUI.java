@@ -11,7 +11,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
-import javafx.scene.input.InputMethodEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -57,6 +56,10 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
+        String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
+                " IDFIL,GLON_CONT,GLAT_CONT";
+        csvInfo.setText(infoContorni);
+
         errorLabel.setVisible(false);
         //importaButton.setDisable(true);
 
@@ -79,8 +82,6 @@ public class ImportaFileSatelliteGUI implements Initializable {
         contorni.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDFIL,GLON_CONT,GLAT_CONT";
                 csvInfo.setText(infoContorni);
             }
         });
@@ -118,7 +119,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 FileChooser fileChooser = new FileChooser();
                 File file = null;
                 Stage stage = new Stage();
-                int RB = -1;
+                int RB = 1;
 
                 if (contorni.isSelected()){
                     stage.setTitle("Importa catalogo strutture estese...");
@@ -137,7 +138,8 @@ public class ImportaFileSatelliteGUI implements Initializable {
                     file = fileChooser.showOpenDialog(stage);
                     RB = 4;
                 }
-                importaFileSatelliteController.importaFile(file, RB); //TODO.
+                System.out.print(RB+file.getPath());
+                importaFileSatelliteController.importaFile(file, RB);
             }
         });
 

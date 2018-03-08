@@ -1,17 +1,32 @@
 package persistance;
 
+import java.io.File;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-/*public class FileDao {
+public class FileDao {
 
-    public static void importaFile(){
+    private static String canc = "DELETE FROM ";
 
-        try{
-            String importCode = "COPY ";
+    public static void importaFileContorni(File file) throws SQLException {
 
-        }catch (SQLException e){
+        Connessione.connettiti();
+        String importazione = "COPY contorni FROM \'" + file.getPath() + "\' DELIMITER \',\' csv HEADER";
+        file.setReadable(true);
+        file.setWritable(true);
+
+        try {
+
+            PreparedStatement ps1 = Connessione.CONN.prepareStatement(canc + "contorni");
+            ps1.executeUpdate();
+
+
+            PreparedStatement ps2 = Connessione.CONN.prepareStatement(importazione);
+            ps2.execute();
+        } catch (SQLException e) {
             System.out.print(e.getMessage());
+        } finally {
+            Connessione.CONN.close();
         }
     }
 }
-*/
