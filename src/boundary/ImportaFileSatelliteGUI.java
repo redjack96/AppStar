@@ -10,8 +10,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.RadioButton;
+import javafx.scene.control.*;
+import javafx.scene.input.InputMethodEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
@@ -29,13 +29,19 @@ public class ImportaFileSatelliteGUI implements Initializable {
     @FXML
     private Button importaButton;
     @FXML
-    private RadioButton importaStruttureEstese;
+    private RadioButton contorni;
     @FXML
-    private RadioButton importaPosizioniContorni;
+    private RadioButton filamenti;
     @FXML
-    private RadioButton importaPosizioniScheletro;
+    private RadioButton scheletri;
     @FXML
-    private RadioButton importaPosizioniStelle;
+    private RadioButton stelle;
+    @FXML
+    private TextField nomeSatellite;
+    @FXML
+    private TextArea csvInfo;
+    @FXML
+    private Label errorLabel;
 
     public void istanziaImportaFileSatelliteGUIFXML(Event e){
         //Lancia l'interfaccia grafica ImportaFileSatelliteGUI.fxml.
@@ -51,7 +57,60 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
+        errorLabel.setVisible(false);
+        //importaButton.setDisable(true);
+
+        /*nomeSatellite.setOnInputMethodTextChanged(new EventHandler<InputMethodEvent>() {
+            @Override
+            public void handle(InputMethodEvent event) {
+                if (nomeSatellite.getText().length() < 3){
+                    errorLabel.setVisible(true);
+                }else {
+                    importaButton.setDisable(false);
+                }
+
+            }
+        });*/
+
+        csvInfo.setEditable(false);
+
         ImportaFileSatelliteController importaFileSatelliteController = new ImportaFileSatelliteController();
+
+        contorni.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
+                        " IDFIL,GLON_CONT,GLAT_CONT";
+                csvInfo.setText(infoContorni);
+            }
+        });
+
+        filamenti.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String infoFilamenti = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
+                        " IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT";
+                csvInfo.setText(infoFilamenti);
+            }
+        });
+
+        scheletri.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String infoScheletri = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
+                        " IDFIL,IDBRANCH,TYPE,GLON_BR,GLAT_BR,N,FLUX";
+                csvInfo.setText(infoScheletri);
+            }
+        });
+
+        stelle.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                String infoStelle = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
+                        " IDSTAR,NAMESTAR,GLON_ST,GLAT_ST,FLUX_ST,TYPE_ST";
+                csvInfo.setText(infoStelle);
+            }
+        });
 
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -61,19 +120,19 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 Stage stage = new Stage();
                 int RB = -1;
 
-                if (importaStruttureEstese.isSelected()){
+                if (contorni.isSelected()){
                     stage.setTitle("Importa catalogo strutture estese...");
                     file = fileChooser.showOpenDialog(stage);
                     RB = 1;
-                }else if (importaPosizioniContorni.isSelected()){
+                }else if (filamenti.isSelected()){
                     stage.setTitle("Importa file posizioni contorni...");
                     file = fileChooser.showOpenDialog(stage);
                     RB = 2;
-                }else if (importaPosizioniScheletro.isSelected()){
+                }else if (scheletri.isSelected()){
                     stage.setTitle("Importa file posizioni scheletro...");
                     file = fileChooser.showOpenDialog(stage);
                     RB = 3;
-                }else if (importaPosizioniStelle.isSelected()){
+                }else if (stelle.isSelected()){
                     stage.setTitle("Importa file posizioni stelle...");
                     file = fileChooser.showOpenDialog(stage);
                     RB = 4;
