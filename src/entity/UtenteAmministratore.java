@@ -31,13 +31,13 @@ public class UtenteAmministratore extends UtenteRegistrato {
 
         try{
             if (RB == 1){
-                FileDao.importaFileContorni(file);
+                FileDao.importaFile(file, "contorni");
             }else if(RB == 2){
-                //TODO FileDao.importaFileFilamenti(file);
+                FileDao.importaFile(file, "filamenti");
             }else if(RB == 3){
-                //TODO FileDao.importaFileScheletri(file);
+                FileDao.importaFile(file, "scheletri");
             }else if(RB == 4){
-                //TODO FileDao.importaFileStelle(file);
+                FileDao.importaFile(file, "stelle");
             }
         }catch (SQLException e){
             System.out.println(e.getMessage());

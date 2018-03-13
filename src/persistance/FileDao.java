@@ -6,18 +6,17 @@ import java.sql.SQLException;
 
 public class FileDao {
 
-    private static String canc = "DELETE FROM ";
-
-    public static void importaFileContorni(File file) throws SQLException {
+    public static void importaFile(File file, String relazione) throws SQLException {
 
         Connessione.connettiti();
-        String importazione = "COPY contorni FROM \'" + file.getPath() + "\' DELIMITER \',\' csv HEADER";
-        file.setReadable(true);
-        file.setWritable(true);
+        String importazione = "COPY " + relazione +" FROM \'" + file.getPath() + "\' DELIMITER \',\' csv HEADER";
+        //Si e notato che il path del file da importare non deve contenere \Desktop\.
+
+        /*file.setReadable(true);
+        file.setWritable(true);*/
 
         try {
-
-            PreparedStatement ps1 = Connessione.CONN.prepareStatement(canc + "contorni");
+            PreparedStatement ps1 = Connessione.CONN.prepareStatement("DELETE FROM " + relazione);
             ps1.executeUpdate();
 
 
