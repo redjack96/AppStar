@@ -1,18 +1,12 @@
 package control;
 
-import boundary.HomeGUI;
 import boundary.LoginGUI;
 import boundary.errorPopUp.LoginPopUp;
-import entity.UtenteAmministratore;
 import entity.UtenteConnesso;
 import entity.UtenteRegistrato;
 import javafx.application.Application;
 import javafx.event.Event;
 import javafx.stage.Stage;
-import persistance.UtenteDao;
-
-import java.sql.SQLException;
-import java.util.ArrayList;
 
 public class LoginController extends Application{
 
@@ -37,7 +31,7 @@ public class LoginController extends Application{
         if (utente == null){
             LoginPopUp loginPopUp = new LoginPopUp();
             loginPopUp.istanziaLoginPopUpFXML();
-            System.out.println("Utente non riconosciuto");
+            System.out.println("Utente non riconosciuto!");
         }else {
             System.out.println("Benvenuto " + utente.getNome() + " " + utente.getCognome());
         }

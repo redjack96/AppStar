@@ -4,7 +4,7 @@ package entity;
 //Implementazione del pattern SINGLETON--------------------
 //---------------------------------------------------------
 
-import persistance.UtenteDao;
+import persistence.UtenteDao;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ public class UtenteConnesso {
 
                     try{
                         ArrayList<String> infoUtente = UtenteDao.controlloAccount(userID, password);
-                        //Vedi persistance.UtenteDao.controlloAccount(String userID, String password).
+                        //Vedi persistence.UtenteDao.controlloAccount(String userID, String password).
                         //infoUtente e' un ArrayList contenente le informazioni relative all'utente connesso.
 
                         if (!infoUtente.isEmpty()){

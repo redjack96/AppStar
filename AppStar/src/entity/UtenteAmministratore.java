@@ -1,7 +1,7 @@
 package entity;
 
-import persistance.FileDao;
-import persistance.UtenteDao;
+import persistence.FileDao;
+import persistence.UtenteDao;
 
 import java.io.File;
 import java.sql.SQLException;
