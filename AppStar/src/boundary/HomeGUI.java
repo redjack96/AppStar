@@ -1,9 +1,6 @@
 package boundary;
 
-import control.HomeController;
-import control.ImportaFileSatelliteController;
-import control.LoginController;
-import control.RegistraUtenteController;
+import control.*;
 import entity.UtenteRegistrato;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -97,9 +94,13 @@ public class HomeGUI implements Initializable {
                     RegistraUtenteController registraUtenteController = new RegistraUtenteController();
                     registraUtenteController.istanziaRegistraUtenteGUI(event);
                 }else if(nuoviDatiSatellite.isSelected()){
-
+                    InserisciFileDatiSatelliteController inserisciFileDatiSatelliteController =
+                            new InserisciFileDatiSatelliteController();
+                    inserisciFileDatiSatelliteController.istanziaInserisciFileDatiSatelliteGUI(event);
                 }else if(nuoviDatiStrumenti.isSelected()){
-
+                    InserisciDatiStrumentiController inserisciDatiStrumentiController =
+                            new InserisciDatiStrumentiController();
+                    inserisciDatiStrumentiController.istanziaInserisciFileDatiSatelliteGUI(event);
                 }else if(infoFilamento.isSelected()){
 
                 }else if(ricercaFilamento.isSelected()){

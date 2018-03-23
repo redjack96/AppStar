@@ -2,9 +2,10 @@ package entity;
 
 import persistence.FileDao;
 import persistence.UtenteDao;
-
 import java.io.File;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class UtenteAmministratore extends UtenteRegistrato {
     //Specializzazione di UtenteRegistrato.
@@ -39,6 +40,24 @@ public class UtenteAmministratore extends UtenteRegistrato {
             }else if(RB == 4){
                 FileDao.importaFile(file, "stelle_imp");
             }
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void inserisciNuoviDatiSatellite(String nomeAgenzia, String nomeSatellite, LocalDate dataInizio,
+                                            Period durata){
+        try{
+            FileDao.inserisciFileDatiSatellite(nomeAgenzia, nomeSatellite, dataInizio, durata);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void inserisciNuoviDatiStrumento(float banda, String strumento){
+
+        try{
+            FileDao.inserisciDatiStrumento(banda, strumento);
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }

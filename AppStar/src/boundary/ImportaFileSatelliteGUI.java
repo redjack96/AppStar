@@ -49,7 +49,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
         try{
             Parent root = FXMLLoader.load(getClass().getResource("/boundary/ImportaFileSatelliteGUI.fxml"));
             ((Node) (e.getSource())).getScene().setRoot(root);
-            //Imposta il root relativo alla schermata di Home.
+            //Imposta il root relativo alla schermata di ImportaFileSatellite.
         }catch (Exception er){
             System.err.println(er.getMessage());
         }
