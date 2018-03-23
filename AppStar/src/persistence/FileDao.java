@@ -77,18 +77,28 @@ public class FileDao {
         }
     }
 
-    //TODO: Cosa succede dopo gli import da parte dell'utente amministratore.
+    //TODO: Come devono essere distribuiti i dati all'interno del nostro DataBase ?
     public void distribuisciDati(){
         //Distrubuisce i dati contenuti negli imp nel DB di AppStar.
+
+        /*Prerequisiti:
+        * 1) aver fatto gli import dei csv;
+        * 2) aver inserito dati satelliti.*/
 
         Connessione.connettiti();
 
         riempiFilamenti();
         riempiSegmenti();
-
+        //riempiStelle(); NO!!! E identica a stelle_imp sul DB di rossi.
+        riempiVisibilita();
+        //riempiMisurazione();
+        //riempiSegmenti();
+        //riempiPuntiContorni();
+        //riempiPuntiSegmenti();
+        //riempiContorni();
     }
 
-    public void riempiFilamenti(){
+    private void riempiFilamenti(){
         //Riempe la tabella "filamenti".
 
         String fillQuery = "INSERT INTO filamenti VALUES(SELECT \"IDFIL\", \"NAME\" " +
@@ -110,7 +120,7 @@ public class FileDao {
         }
     }
 
-    public void riempiSegmenti(){
+    private void riempiSegmenti(){
         //Riempe la tabella "segmenti".
 
         String fillQuery = "INSERT INTO segmenti (  SELECT \"IDBRANCH\", \"TYPE\", \"IDFIL\"" +
@@ -132,30 +142,23 @@ public class FileDao {
         }
     }
 
-    public void riempiSatelliti(){
-        //Riempe la tabella "satelliti".
+    private void riempiVisibilita(){
+        //Riempie la tabella "visibilita".
 
-        String fillQuery =  "SELECT DISTINCT \"NAME_SAT\"" +
-                            "FROM filamenti_imp;";
+        String fillQuery =  "INSERT INTO visibilita VALUES (    SELECT \"IDSTAR\"" +
+                                                                "FROM stelle_imp)";
+
+        String updateQuery1 =  "UPDATE visibilita" +
+                                "SET \"STRUMENTO\" = (  SELECT \"STRUMENTO\"" +
+                                                        "FROM strumenti)";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
             ps1.executeUpdate();
+            PreparedStatement ps2 = CONN.prepareStatement(updateQuery1);
+            ps2.executeUpdate();
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
-    }
-
-    public void riempiAgenzie(){
-        //Riempe la tabella "agenzie".
-
-        String fillQuery; //TODO: non ho la minima idea di come si possa riempire.
-
-        /*try{
-            PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
-            ps1.executeUpdate();
-        }catch (SQLException e){
-            System.out.println(e.getMessage());
-        }*/
     }
 }
