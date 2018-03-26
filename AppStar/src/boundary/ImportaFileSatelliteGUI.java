@@ -124,23 +124,25 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
                 if (contorni.isSelected()){
                     stage.setTitle("Importa catalogo strutture estese...");
-                    file = fileChooser.showOpenDialog(stage);
                     RB = 1;
                 }else if (filamenti.isSelected()){
                     stage.setTitle("Importa file posizioni contorni...");
-                    file = fileChooser.showOpenDialog(stage);
                     RB = 2;
                 }else if (scheletri.isSelected()){
                     stage.setTitle("Importa file posizioni scheletro...");
-                    file = fileChooser.showOpenDialog(stage);
                     RB = 3;
                 }else if (stelle.isSelected()){
                     stage.setTitle("Importa file posizioni stelle...");
-                    file = fileChooser.showOpenDialog(stage);
                     RB = 4;
                 }
-                System.out.print(RB+file.getPath());
-                importaFileSatelliteController.importaFile(file, RB);
+
+                try{
+                    file = fileChooser.showOpenDialog(stage);
+                    System.out.println(RB+file.getPath());
+                    importaFileSatelliteController.importaFile(file, RB);
+                }catch (NullPointerException nPE){
+                    System.out.println(nPE.getCause());
+                }
             }
         });
 
