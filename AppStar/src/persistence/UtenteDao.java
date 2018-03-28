@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class UtenteDao {
 
     /**
-     * Il metodo sottoscritto e' una verifica dell'esistenza di un eventuale account con le credenziali inserite
+     * Il metodo seguente e' una verifica dell'esistenza di un eventuale account con le credenziali inserite
      * dall'utente (attraverso una QuerySQL) nella table 'utenti' contenuta nel database 'CONTORNI_E_FILAMENTI'.
      * QuerySQL:
      *      SELECT *

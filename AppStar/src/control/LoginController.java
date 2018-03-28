@@ -24,7 +24,7 @@ public class LoginController extends Application{
         //istanzia il controller grafico LoginGUI dell'interfaccia grafica LoginGUI.fxml.
     }
 
-    public void controlloLogin(String userID, String password){
+    public boolean controlloLogin(String userID, String password){
         //Verifica l'esistenza dell'utente avente userID e password come credenziali.
 
         UtenteRegistrato utente = UtenteConnesso.getInstance(userID, password);
@@ -32,9 +32,12 @@ public class LoginController extends Application{
             LoginPopUp loginPopUp = new LoginPopUp();
             loginPopUp.istanziaLoginPopUpFXML();
             System.out.println("Utente non riconosciuto!");
+            return false;
         }else {
             System.out.println("Benvenuto " + utente.getNome() + " " + utente.getCognome());
+            return true;
         }
+
 
     }
 }

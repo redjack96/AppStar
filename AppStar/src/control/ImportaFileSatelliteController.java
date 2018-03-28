@@ -14,7 +14,7 @@ public class ImportaFileSatelliteController {
         ImportaFileSatelliteGUI importaFileSatelliteGUI = new ImportaFileSatelliteGUI();
         importaFileSatelliteGUI.istanziaImportaFileSatelliteGUIFXML(e);
     }
-
+    //chiamato alla pressione del pulsante IMPORTA! in boundary.ImportaFileSatelliteGUI
     public void importaFile(File csv, int RB){
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
         if (utente.isAmministratore()){

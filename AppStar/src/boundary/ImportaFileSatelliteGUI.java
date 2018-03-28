@@ -113,12 +113,15 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 csvInfo.setText(infoStelle);
             }
         });
-
+        //TODO: AttenderePopUp: Mostra un popUp mentre l'applicazione importa un file e lo distribuisce nel DB
+        //TODO: (opzionale): su AttenderePopUp mostrare percentuale di completamento importazione (righe copiate/righe da copiare*100%)
+        //TODO: ImportatoPopUp: Mostra una schermata popUp(cambia testo AttenderePopUp) se l'importazione avviene correttamente
+        //TODO: NonImportatoPopUp: Mostra una schermata popUp se l'importazione fallisce (Possibilmente con l'errore della query)
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 FileChooser fileChooser = new FileChooser();
-                File file = null;
+                File file;
                 Stage stage = new Stage();
                 int RB = 1;
 

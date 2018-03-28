@@ -61,11 +61,11 @@ public class RegistraUtenteGUI implements Initializable {
         campiLabel.setVisible(false);
 
         RegistraUtenteController registraUtenteController = new RegistraUtenteController();
-
+        //TODO: NuovoUtenteRegistratoPopUP: Mostrare un pop up se il nuovo utente e' registrato correttamente.
         registraButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                if (nome.getLength()==0 || cognome.getLength()==0 || userID.getLength()>=6 || password.getLength()>=6 ||
+                if (nome.getLength()==0 || cognome.getLength()==0 || userID.getLength()<=6 || password.getLength()<=6 ||
                         email.getLength()==0){
                     campiLabel.setVisible(true);
                 }else {

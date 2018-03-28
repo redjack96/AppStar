@@ -9,7 +9,8 @@ import java.time.Period;
 import static persistence.Connessione.CONN;
 
 public class FileDao {
-
+    // Chiamato da entity.UtenteAmministratore per importare uno dei file csv
+    // TODO Cambiare il nome: importaFile e' gia' stato usato in ImportaFileSatelliteController
     public static void importaFile(File file, String relazione) throws SQLException {
 
         Connessione.connettiti();
@@ -78,6 +79,7 @@ public class FileDao {
     }
 
     //TODO: Come devono essere distribuiti i dati all'interno del nostro DataBase ?
+    //TODO: satellite viene dal campo testo 'nomeSatellite' di ImportaFileSatelliteGUI
     public void distribuisciDati(String satellite, String relazione){
         //Distrubuisce i dati contenuti negli imp nel DB di AppStar (la prima volta).
 
@@ -137,9 +139,9 @@ public class FileDao {
         //Riempie la tabella "stelle".
 
         String fillQuery =  "INSERT INTO stelle  (    SELECT \"IDSTAR\", \"NAME_STAR\", \"GLON_ST\", \"GLAT_ST\", \"FLUX\", \"TYPE\"" +
-                                                            "FROM stelle_imp " +
-                                                            "WHERE \"IDSTAR\" NOT IN (  SELECT \"IDSTAR\"" +
-                                                                                        "FROM stelle))";
+                                                      "FROM stelle_imp " +
+                                                      "WHERE \"IDSTAR\" NOT IN (  SELECT \"IDSTAR\"" +
+                                                                                  "FROM stelle))";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);

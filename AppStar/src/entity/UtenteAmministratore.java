@@ -27,7 +27,7 @@ public class UtenteAmministratore extends UtenteRegistrato {
             System.out.print(e.getMessage());
         }
     }
-
+    //chiamato da control.FileSatelliteController in importaFile()
     public void importaFileCSV(File file, int RB){
 
         try{
