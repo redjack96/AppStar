@@ -29,6 +29,7 @@ public class FileDao {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
+            System.out.println("Importazione del file csv nella tabella "+ relazione + " completato!");
             CONN.close();
         }
     }
@@ -60,7 +61,7 @@ public class FileDao {
             CONN.close();
         }
     }
-
+    //TODO: Prima inserire il nome dello strumento in 'strumenti' poi le bande in 'bande'.
     public static void inserisciDatiStrumento(float banda, String strumento) throws SQLException{
 
         Connessione.connettiti();

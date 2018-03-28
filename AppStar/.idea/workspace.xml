@@ -146,56 +146,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="81" column="86" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="86" />
+            <state relative-caret-position="425">
+              <caret line="31" column="101" lean-forward="false" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
               <folding>
-                <marker date="1522239298381" expanded="true" signature="556:636" ph="COPY missing... " />
-                <marker date="1522239298381" expanded="true" signature="931:943" ph="DELETE FROM missingValue... " />
-                <marker date="1522239298381" expanded="true" signature="1602:1757" ph="INSERT INTO satelliti... " />
-                <marker date="1522239298381" expanded="true" signature="1810:1967" ph="INSERT INTO satelliti... " />
-                <marker date="1522239298381" expanded="true" signature="2018:2167" ph="INSERT INTO agenzie... " />
-                <marker date="1522239298381" expanded="true" signature="2699:2843" ph="INSERT INTO bande... " />
-                <marker date="1522239298381" expanded="true" signature="4397:4770" ph="INSERT INTO filamenti... " />
-                <marker date="1522239298381" expanded="true" signature="4420:4769" ph="SELECT \&quot;IDF... filamenti_imp" />
-                <marker date="1522239298381" expanded="true" signature="4627:4768" ph="SELECT \&quot;IDF... filamenti" />
-                <marker date="1522239298381" expanded="true" signature="4805:5149" ph="UPDATE filamenti... " />
-                <marker date="1522239298381" expanded="true" signature="4843:5148" ph="SELECT COUNT... scheletri_imp" />
-                <marker date="1522239298381" expanded="true" signature="5575:5956" ph="INSERT INTO stelle... " />
-                <marker date="1522239298381" expanded="true" signature="5600:5955" ph="SELECT \&quot;IDS... stelle_imp" />
-                <marker date="1522239298381" expanded="true" signature="5839:5954" ph="SELECT \&quot;IDS... stelle" />
-                <marker date="1522239298381" expanded="true" signature="6300:6678" ph="INSERT INTO visibilita... " />
-                <marker date="1522239298381" expanded="true" signature="6329:6678" ph="SELECT \&quot;IDS... stelle_imp" />
-                <marker date="1522239298381" expanded="true" signature="6548:6677" ph="SELECT \&quot;STE... visibilita" />
-                <marker date="1522239298381" expanded="true" signature="7008:7519" ph="INSERT INTO misurazione... " />
-                <marker date="1522239298381" expanded="true" signature="7037:7518" ph="SELECT \&quot;STR... filamenti_imp" />
-                <marker date="1522239298381" expanded="true" signature="7352:7517" ph="SELECT \&quot;STR... misurazione" />
-                <marker date="1522239298381" expanded="true" signature="7843:8298" ph="INSERT INTO segmenti... " />
-                <marker date="1522239298381" expanded="true" signature="7866:8297" ph="SELECT si.\&quot;... scheletri_imp" />
-                <marker date="1522239298381" expanded="true" signature="8154:8295" ph="SELECT \&quot;IDB... segmenti" />
-                <marker date="1522239298381" expanded="true" signature="9267:9725" ph="INSERT INTO punti_contorni... " />
-                <marker date="1522239298381" expanded="true" signature="9300:9724" ph="SELECT \&quot;GLO... contorni_imp" />
-                <marker date="1522239298381" expanded="true" signature="9548:9723" ph="SELECT \&quot;GLO... punti_contorni" />
-                <marker date="1522239298381" expanded="true" signature="10067:10719" ph="INSERT INTO punti_segmenti... " />
-                <marker date="1522239298381" expanded="true" signature="10097:10718" ph="SELECT \&quot;IDB... scheletri_imp" />
-                <marker date="1522239298381" expanded="true" signature="10334:10468" ph="SELECT \&quot;IDB... segmenti" />
-                <marker date="1522239298381" expanded="true" signature="10574:10717" ph="SELECT \&quot;SEG... punti_segmenti" />
-                <marker date="1522239298381" expanded="true" signature="11045:11585" ph="INSERT INTO contorni... " />
-                <marker date="1522239298381" expanded="true" signature="11070:11584" ph="SELECT fi.\&quot;... filamenti_imp" />
-                <marker date="1522239298381" expanded="true" signature="11392:11583" ph="SELECT \&quot;NAM... contorni" />
+                <marker date="1522247735355" expanded="true" signature="556:636" ph="COPY missing... " />
+                <marker date="1522247735355" expanded="true" signature="931:943" ph="DELETE FROM missingValue... " />
+                <marker date="1522247735355" expanded="true" signature="1706:1861" ph="INSERT INTO satelliti... " />
+                <marker date="1522247735355" expanded="true" signature="1914:2071" ph="INSERT INTO satelliti... " />
+                <marker date="1522247735355" expanded="true" signature="2122:2271" ph="INSERT INTO agenzie... " />
+                <marker date="1522247735355" expanded="true" signature="2893:3037" ph="INSERT INTO bande... " />
+                <marker date="1522247735355" expanded="true" signature="4591:4964" ph="INSERT INTO filamenti... " />
+                <marker date="1522247735355" expanded="true" signature="4614:4963" ph="SELECT \&quot;IDF... filamenti_imp" />
+                <marker date="1522247735355" expanded="true" signature="4821:4962" ph="SELECT \&quot;IDF... filamenti" />
+                <marker date="1522247735355" expanded="true" signature="4999:5343" ph="UPDATE filamenti... " />
+                <marker date="1522247735355" expanded="true" signature="5037:5342" ph="SELECT COUNT... scheletri_imp" />
+                <marker date="1522247735355" expanded="true" signature="5769:6150" ph="INSERT INTO stelle... " />
+                <marker date="1522247735355" expanded="true" signature="5794:6149" ph="SELECT \&quot;IDS... stelle_imp" />
+                <marker date="1522247735355" expanded="true" signature="6033:6148" ph="SELECT \&quot;IDS... stelle" />
+                <marker date="1522247735355" expanded="true" signature="6494:6872" ph="INSERT INTO visibilita... " />
+                <marker date="1522247735355" expanded="true" signature="6523:6872" ph="SELECT \&quot;IDS... stelle_imp" />
+                <marker date="1522247735355" expanded="true" signature="6742:6871" ph="SELECT \&quot;STE... visibilita" />
+                <marker date="1522247735355" expanded="true" signature="7202:7713" ph="INSERT INTO misurazione... " />
+                <marker date="1522247735355" expanded="true" signature="7231:7712" ph="SELECT \&quot;STR... filamenti_imp" />
+                <marker date="1522247735355" expanded="true" signature="7546:7711" ph="SELECT \&quot;STR... misurazione" />
+                <marker date="1522247735355" expanded="true" signature="8037:8492" ph="INSERT INTO segmenti... " />
+                <marker date="1522247735355" expanded="true" signature="8060:8491" ph="SELECT si.\&quot;... scheletri_imp" />
+                <marker date="1522247735355" expanded="true" signature="8348:8489" ph="SELECT \&quot;IDB... segmenti" />
+                <marker date="1522247735355" expanded="true" signature="9461:9919" ph="INSERT INTO punti_contorni... " />
+                <marker date="1522247735355" expanded="true" signature="9494:9918" ph="SELECT \&quot;GLO... contorni_imp" />
+                <marker date="1522247735355" expanded="true" signature="9742:9917" ph="SELECT \&quot;GLO... punti_contorni" />
+                <marker date="1522247735355" expanded="true" signature="10261:10913" ph="INSERT INTO punti_segmenti... " />
+                <marker date="1522247735355" expanded="true" signature="10291:10912" ph="SELECT \&quot;IDB... scheletri_imp" />
+                <marker date="1522247735355" expanded="true" signature="10528:10662" ph="SELECT \&quot;IDB... segmenti" />
+                <marker date="1522247735355" expanded="true" signature="10768:10911" ph="SELECT \&quot;SEG... punti_segmenti" />
+                <marker date="1522247735355" expanded="true" signature="11239:11779" ph="INSERT INTO contorni... " />
+                <marker date="1522247735355" expanded="true" signature="11264:11778" ph="SELECT fi.\&quot;... filamenti_imp" />
+                <marker date="1522247735355" expanded="true" signature="11586:11777" ph="SELECT \&quot;NAM... contorni" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistraUtenteController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/RegistraUtenteController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -203,53 +193,8 @@
       <file leaf-file-name="UtenteAmministratore.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtenteDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/persistence/UtenteDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-              <folding>
-                <marker date="1522241357045" expanded="true" signature="1162:1396" ph="SELECT * FRO... utenti" />
-                <marker date="1522241357045" expanded="true" signature="3556:3599" ph="INSERT INTO utenti... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegistraUtenteGUI.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="63" column="110" lean-forward="true" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportaFileSatelliteController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportaFileSatelliteGUI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="118" column="129" lean-forward="true" selection-start-line="115" selection-start-column="8" selection-end-line="118" selection-end-column="129" />
+            <state relative-caret-position="7">
+              <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -305,16 +250,16 @@
         <option value="$PROJECT_DIR$/src/boundary/HomeGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.java" />
         <option value="$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java" />
-        <option value="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml" />
         <option value="$PROJECT_DIR$/src/boundary/LoginGUI.java" />
         <option value="$PROJECT_DIR$/src/control/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
         <option value="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
-        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
         <option value="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
         <option value="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java" />
+        <option value="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
+        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
       </list>
     </option>
   </component>
@@ -324,7 +269,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="y" value="384" />
     <option name="width" value="697" />
@@ -988,12 +933,6 @@
               <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppStar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="boundary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1187,7 +1126,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166599000" />
+    <option name="totallyTimeSpent" value="171518000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1199,11 +1138,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1211,7 +1150,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29491526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29491526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1506,23 +1445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="40" column="101" lean-forward="false" selection-start-line="40" selection-start-column="101" selection-end-line="40" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/fc0a3505/889d0e45-0be2-4a55-9e69-25d1a6576a76/CONTORNI_E_FILAMENTI.public.misurazione" />
     <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml">
       <provider editor-type-id="text-editor">
@@ -1578,17 +1500,9 @@
         <state relative-caret-position="201">
           <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
           <folding>
-            <element signature="e#2376#2377#0" expanded="true" />
-            <element signature="e#2422#2423#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="false" />
+            <element signature="e#2422#2423#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1597,16 +1511,6 @@
         <state relative-caret-position="331">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1621,48 +1525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="81" column="86" lean-forward="true" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="86" />
-          <folding>
-            <marker date="1522239298381" expanded="true" signature="556:636" ph="COPY missing... " />
-            <marker date="1522239298381" expanded="true" signature="931:943" ph="DELETE FROM missingValue... " />
-            <marker date="1522239298381" expanded="true" signature="1602:1757" ph="INSERT INTO satelliti... " />
-            <marker date="1522239298381" expanded="true" signature="1810:1967" ph="INSERT INTO satelliti... " />
-            <marker date="1522239298381" expanded="true" signature="2018:2167" ph="INSERT INTO agenzie... " />
-            <marker date="1522239298381" expanded="true" signature="2699:2843" ph="INSERT INTO bande... " />
-            <marker date="1522239298381" expanded="true" signature="4397:4770" ph="INSERT INTO filamenti... " />
-            <marker date="1522239298381" expanded="true" signature="4420:4769" ph="SELECT \&quot;IDF... filamenti_imp" />
-            <marker date="1522239298381" expanded="true" signature="4627:4768" ph="SELECT \&quot;IDF... filamenti" />
-            <marker date="1522239298381" expanded="true" signature="4805:5149" ph="UPDATE filamenti... " />
-            <marker date="1522239298381" expanded="true" signature="4843:5148" ph="SELECT COUNT... scheletri_imp" />
-            <marker date="1522239298381" expanded="true" signature="5575:5956" ph="INSERT INTO stelle... " />
-            <marker date="1522239298381" expanded="true" signature="5600:5955" ph="SELECT \&quot;IDS... stelle_imp" />
-            <marker date="1522239298381" expanded="true" signature="5839:5954" ph="SELECT \&quot;IDS... stelle" />
-            <marker date="1522239298381" expanded="true" signature="6300:6678" ph="INSERT INTO visibilita... " />
-            <marker date="1522239298381" expanded="true" signature="6329:6678" ph="SELECT \&quot;IDS... stelle_imp" />
-            <marker date="1522239298381" expanded="true" signature="6548:6677" ph="SELECT \&quot;STE... visibilita" />
-            <marker date="1522239298381" expanded="true" signature="7008:7519" ph="INSERT INTO misurazione... " />
-            <marker date="1522239298381" expanded="true" signature="7037:7518" ph="SELECT \&quot;STR... filamenti_imp" />
-            <marker date="1522239298381" expanded="true" signature="7352:7517" ph="SELECT \&quot;STR... misurazione" />
-            <marker date="1522239298381" expanded="true" signature="7843:8298" ph="INSERT INTO segmenti... " />
-            <marker date="1522239298381" expanded="true" signature="7866:8297" ph="SELECT si.\&quot;... scheletri_imp" />
-            <marker date="1522239298381" expanded="true" signature="8154:8295" ph="SELECT \&quot;IDB... segmenti" />
-            <marker date="1522239298381" expanded="true" signature="9267:9725" ph="INSERT INTO punti_contorni... " />
-            <marker date="1522239298381" expanded="true" signature="9300:9724" ph="SELECT \&quot;GLO... contorni_imp" />
-            <marker date="1522239298381" expanded="true" signature="9548:9723" ph="SELECT \&quot;GLO... punti_contorni" />
-            <marker date="1522239298381" expanded="true" signature="10067:10719" ph="INSERT INTO punti_segmenti... " />
-            <marker date="1522239298381" expanded="true" signature="10097:10718" ph="SELECT \&quot;IDB... scheletri_imp" />
-            <marker date="1522239298381" expanded="true" signature="10334:10468" ph="SELECT \&quot;IDB... segmenti" />
-            <marker date="1522239298381" expanded="true" signature="10574:10717" ph="SELECT \&quot;SEG... punti_segmenti" />
-            <marker date="1522239298381" expanded="true" signature="11045:11585" ph="INSERT INTO contorni... " />
-            <marker date="1522239298381" expanded="true" signature="11070:11584" ph="SELECT fi.\&quot;... filamenti_imp" />
-            <marker date="1522239298381" expanded="true" signature="11392:11583" ph="SELECT \&quot;NAM... contorni" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -1673,10 +1535,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="118" column="129" lean-forward="true" selection-start-line="115" selection-start-column="8" selection-end-line="118" selection-end-column="129" />
+        <state relative-caret-position="-92">
+          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="20" column="47" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="67" column="11" lean-forward="true" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="34" column="30" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="101" lean-forward="false" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
+          <folding>
+            <marker date="1522247735355" expanded="true" signature="556:636" ph="COPY missing... " />
+            <marker date="1522247735355" expanded="true" signature="931:943" ph="DELETE FROM missingValue... " />
+            <marker date="1522247735355" expanded="true" signature="1706:1861" ph="INSERT INTO satelliti... " />
+            <marker date="1522247735355" expanded="true" signature="1914:2071" ph="INSERT INTO satelliti... " />
+            <marker date="1522247735355" expanded="true" signature="2122:2271" ph="INSERT INTO agenzie... " />
+            <marker date="1522247735355" expanded="true" signature="2893:3037" ph="INSERT INTO bande... " />
+            <marker date="1522247735355" expanded="true" signature="4591:4964" ph="INSERT INTO filamenti... " />
+            <marker date="1522247735355" expanded="true" signature="4614:4963" ph="SELECT \&quot;IDF... filamenti_imp" />
+            <marker date="1522247735355" expanded="true" signature="4821:4962" ph="SELECT \&quot;IDF... filamenti" />
+            <marker date="1522247735355" expanded="true" signature="4999:5343" ph="UPDATE filamenti... " />
+            <marker date="1522247735355" expanded="true" signature="5037:5342" ph="SELECT COUNT... scheletri_imp" />
+            <marker date="1522247735355" expanded="true" signature="5769:6150" ph="INSERT INTO stelle... " />
+            <marker date="1522247735355" expanded="true" signature="5794:6149" ph="SELECT \&quot;IDS... stelle_imp" />
+            <marker date="1522247735355" expanded="true" signature="6033:6148" ph="SELECT \&quot;IDS... stelle" />
+            <marker date="1522247735355" expanded="true" signature="6494:6872" ph="INSERT INTO visibilita... " />
+            <marker date="1522247735355" expanded="true" signature="6523:6872" ph="SELECT \&quot;IDS... stelle_imp" />
+            <marker date="1522247735355" expanded="true" signature="6742:6871" ph="SELECT \&quot;STE... visibilita" />
+            <marker date="1522247735355" expanded="true" signature="7202:7713" ph="INSERT INTO misurazione... " />
+            <marker date="1522247735355" expanded="true" signature="7231:7712" ph="SELECT \&quot;STR... filamenti_imp" />
+            <marker date="1522247735355" expanded="true" signature="7546:7711" ph="SELECT \&quot;STR... misurazione" />
+            <marker date="1522247735355" expanded="true" signature="8037:8492" ph="INSERT INTO segmenti... " />
+            <marker date="1522247735355" expanded="true" signature="8060:8491" ph="SELECT si.\&quot;... scheletri_imp" />
+            <marker date="1522247735355" expanded="true" signature="8348:8489" ph="SELECT \&quot;IDB... segmenti" />
+            <marker date="1522247735355" expanded="true" signature="9461:9919" ph="INSERT INTO punti_contorni... " />
+            <marker date="1522247735355" expanded="true" signature="9494:9918" ph="SELECT \&quot;GLO... contorni_imp" />
+            <marker date="1522247735355" expanded="true" signature="9742:9917" ph="SELECT \&quot;GLO... punti_contorni" />
+            <marker date="1522247735355" expanded="true" signature="10261:10913" ph="INSERT INTO punti_segmenti... " />
+            <marker date="1522247735355" expanded="true" signature="10291:10912" ph="SELECT \&quot;IDB... scheletri_imp" />
+            <marker date="1522247735355" expanded="true" signature="10528:10662" ph="SELECT \&quot;IDB... segmenti" />
+            <marker date="1522247735355" expanded="true" signature="10768:10911" ph="SELECT \&quot;SEG... punti_segmenti" />
+            <marker date="1522247735355" expanded="true" signature="11239:11779" ph="INSERT INTO contorni... " />
+            <marker date="1522247735355" expanded="true" signature="11264:11778" ph="SELECT fi.\&quot;... filamenti_imp" />
+            <marker date="1522247735355" expanded="true" signature="11586:11777" ph="SELECT \&quot;NAM... contorni" />
           </folding>
         </state>
       </provider>

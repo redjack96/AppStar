@@ -51,7 +51,8 @@ public class InserisciDatiStrumentiGUI implements Initializable {
         campiLabel.setVisible(false);
 
         InserisciDatiStrumentiController inserisciDatiStrumentiController = new InserisciDatiStrumentiController();
-
+        //TODO: manca la scelta del Satellite a cui lo strumento appartiene (usa choiceBox su scene builder)
+        //TODO: non inserisce nel database (deve riempire le tabelle 'strumenti' e 'bande')
         inserisciButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
