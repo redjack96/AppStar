@@ -67,7 +67,7 @@ public class InserisciFileDatiSatelliteGUI implements Initializable {
                     campiLabel.setVisible(false);
                     System.out.println(dataInizio.getValue());
                     if (dataFine.getValue() != null){
-                        Period durata = dataInizio.getValue().until(dataFine.getValue());
+                        Period durata = dataInizio.getValue().until(dataFine.getValue()); //durata != null
                         System.out.println(durata);
                         inserisciFileDatiSatelliteController.nuoviDatiSatellite(nomeAgenzia.getText(),
                                 nomeSatellite.getText(), dataInizio.getValue(), durata);

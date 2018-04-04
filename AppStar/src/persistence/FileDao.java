@@ -20,10 +20,10 @@ public class FileDao {
         //disco locale C.
 
         try {
+            //Tronca la tabella imp temporanea
             PreparedStatement ps1 = CONN.prepareStatement("DELETE FROM " + relazione);
             ps1.executeUpdate();
 
-            //CONN.setReadOnly(true);
             PreparedStatement ps2 = CONN.prepareStatement(importazione);
             ps2.execute();
         } catch (SQLException e) {
@@ -91,31 +91,35 @@ public class FileDao {
         Connessione.connettiti();
 
         /*if (relazione.equals("CONTORNI")){
-            riempiPuntiContorni(); //TODO: cambiare la fk.
-            riempiContorni();
+            aggiornaPuntiContorni();
         }else if (relazione.equals("FILAMENTI")){
             riempiFilamenti();
-            riempiMisurazione();
+            riempiMisurazione(); //RICHIEDE STRUMENTI
             riempiSegmenti();
-            riempiContorni();
+            riempiContorni(); //RICHIEDE PUNTI_CONTORNI
         }else if (relazione.equals("SCHELETRI")){
-            riempiFilamenti();
+            riempiFilamenti_NUM_SEG(); //RICHIEDE FILAMENTI
             riempiSegmenti();
             riempiPuntiSegmenti();
+        }else if (relazione.equals("STELLE"){
+            riempiStelle();
+            riempiVisibilita(satellite); //RICHIEDE SATELLITI e che il satellite sia specificato nel campo testo
+            //TODO: sostituire il campo testo NomeSatellite con una choiceBox che contiene i satelliti gia' inseriti
         }*/
-
-        riempiFilamenti();
+        //riempi Utenti, satelliti, agenzie, strumenti e bande tramite questa applicazione, poi...
         riempiStelle();
         riempiVisibilita(satellite);
+        riempiFilamenti(); // NUM_SEG = null
         riempiMisurazione();
         riempiSegmenti();
-        riempiPuntiContorni();
+        //TODO: riempiFilamenti_NUM_SEG()
         riempiPuntiSegmenti();
+        riempiPuntiContorni();
         riempiContorni();
     }
 
     private void riempiFilamenti(){
-        //Riempe la tabella "filamenti".
+        // OK riusabile. Riempe la tabella "filamenti".
 
         String fillQuery = "INSERT INTO filamenti (SELECT \"IDFIL\", \"NAME\" " +
                                                         "FROM filamenti_imp " +
@@ -137,9 +141,9 @@ public class FileDao {
     }
 
     private void riempiStelle(){
-        //Riempie la tabella "stelle".
+        //OK riusabile. Riempie la tabella "stelle".
 
-        String fillQuery =  "INSERT INTO stelle  (    SELECT \"IDSTAR\", \"NAME_STAR\", \"GLON_ST\", \"GLAT_ST\", \"FLUX\", \"TYPE\"" +
+        String fillQuery =  "INSERT INTO stelle  (    SELECT *" +
                                                       "FROM stelle_imp " +
                                                       "WHERE \"IDSTAR\" NOT IN (  SELECT \"IDSTAR\"" +
                                                                                   "FROM stelle))";
@@ -153,7 +157,7 @@ public class FileDao {
     }
 
     private void riempiVisibilita(String satellite){
-        //Riempie la tabella "visibilita".
+        //OK riusabile. Riempie la tabella "visibilita". Il satellite e' scelto nell'applicazione
 
         String fillQuery =  "INSERT INTO visibilita  (    SELECT \"IDSTAR\", '" + satellite + "'" +
                                                                 "FROM stelle_imp " +
@@ -169,12 +173,11 @@ public class FileDao {
     }
 
     private void riempiMisurazione(){
-        //Riempie la tabella "misurazione".
+        //OK riusabile. Riempie la tabella "misurazione".
 
-        String fillQuery =  "INSERT INTO misurazione  (   SELECT \"STRUMENTO\", \"FILAMENTO\", \"MEAN_DENS\", \"MEAN_TEMP\", \"ELLIPTICITY\", \"CONTRAST\", \"TOTAL_FLUX\" " +
-                                                                "FROM filamenti_imp " +
-                                                                "WHERE (\"INSTRUMENT\", \"NAME\") NOT IN (    SELECT \"STRUMENTO\", \"FILAMENTO\" " +
-                                                                                                            "FROM misurazione))";
+        String fillQuery =  "INSERT INTO misurazione (SELECT \"INSTRUMENT\", \"NAME\", \"MEAN_DENS\", \"MEAN_TEMP\", \"ELLIPTICITY\", \"CONTRAST\", \"TOTAL_FLUX\" \n" +
+                                                    " FROM filamenti_imp WHERE (\"INSTRUMENT\", \"NAME\") NOT IN (SELECT \"STRUMENTO\", \"FILAMENTO\" \n" +
+                                                                                                                " FROM misurazione))";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
@@ -185,23 +188,12 @@ public class FileDao {
     }
 
     private void riempiSegmenti(){
-        //Riempie la tabella "segmenti".
+        //OK riusabile. Riempie la tabella "segmenti".
 
-        String fillQuery =  "INSERT INTO segmenti ( SELECT si.\"IDBRANCH\", si.\"TYPE\", fi.\"IDFIL\"" +
+        String fillQuery =  "INSERT INTO segmenti ( SELECT si.\"IDBRANCH\", si.\"TYPE\", fi.\"NAME\"" +
                                                     "FROM scheletri_imp si JOIN filamenti_imp fi ON si.\"IDFIL\" = fi.\"IDFIL\"" +
-                                                    "WHERE (si.\"N\" = 1) AND (si.\"IDBRANCH\" NOT IN ( SELECT \"IDBRANCH\"" +
+                                                    "WHERE si.\"N\" = 1 AND (si.\"IDBRANCH\" NOT IN ( SELECT \"IDBRANCH\"" +
                                                                                                         "FROM segmenti)))";
-
-        /*String fillQuery = "INSERT INTO segmenti (  SELECT \"IDBRANCH\", \"TYPE\"" +
-                "FROM scheletri_imp" +
-                "WHERE \"N\" = 1 AND \"IDBRANCH\" NOT IN (  SELECT \"IDBRANCH\"" +
-                "FROM segmenti)";*/
-
-        /*String updateQuery1 =   "UPDATE segmenti s" +
-                "SET s.\"NAME_FIL\" = (   SELECT fi.\"NAME\"" +
-                "FROM scheletri_imp si JOIN filamenti_imp fi ON si.\"IDFIL\" = fi.\"IDFIL\"" +
-                "WHERE s.\"IDBRANCH\" = si.\"IDFIL\")";*/
-
         try {
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
             ps1.executeUpdate();
@@ -213,12 +205,12 @@ public class FileDao {
     }
 
     private void riempiPuntiContorni(){
-        //Riempie la relazione 'punti_contorni'.
+        //OK riusabile. Riempie la relazione 'punti_contorni'.
 
-        String fillQuery =  "INSERT INTO punti_contorni  (    SELECT \"GLON_CONT\", \"GLAT_CONT\"" +
-                                                                    "FROM contorni_imp " +
-                                                                    "WHERE (\"GLON_CONT\", \"GLAT_CONT\") NOT IN (    SELECT \"GLON_CONT\", \"GLAT_CONT\"" +
-                                                                                                                    "FROM punti_contorni))";
+        String fillQuery =  "INSERT INTO punti_contorni (SELECT \"GLON_CONT\", \"GLAT_CONT\" \n" +
+                                                       " FROM contorni_imp \n" +
+                                                       " WHERE (\"GLON_CONT\", \"GLAT_CONT\") NOT IN (SELECT \"GLON_CONT\", \"GLAT_CONT\"\n" +
+                                                                                                    " FROM punti_contorni))";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
@@ -229,15 +221,12 @@ public class FileDao {
     }
 
     private void riempiPuntiSegmenti() {
-        //Riempie la relazione 'punti_segmenti'.
+        //MOLTO LENTA ma riusabile. Riempie la relazione 'punti_segmenti'.
 
-        String fillQuery =      "INSERT INTO punti_segmenti  ( SELECT \"IDBRANCH\", \"GLON_BR\", \"GLAT_BR\"" +
-                                                                    "FROM scheletri_imp " +
-                                                                    "WHERE \"IDBRANCH\" IN (    SELECT  \"IDBRANCH\"" +
-                                                                                                "FROM segmenti )" +
-                                                                        "AND \"IDBRANCH\" NOT IN (  SELECT \"SEGMENTO\"" +
-                                                                                                    "FROM punti_segmenti))";
-
+        String fillQuery = "INSERT INTO punti_segmenti(\"SEGMENTO\", \"GLON_BR\", \"GLAT_BR\", \"N\", \"FLUX\", \"NAME_FIL\" ) \n" +
+                "                          ( SELECT a.\"IDBRANCH\", a.\"GLON_BR\", a.\"GLAT_BR\", a.\"N\", a.\"FLUX\", b.\"NAME\" \n" +
+                "                            FROM scheletri_imp a JOIN filamenti_imp b ON a.\"IDFIL\" = b.\"IDFIL\" \n" +
+                "                            WHERE b.\"NAME\" NOT IN (SELECT  \"NAME_FIL\" FROM punti_segmenti ))";
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
             ps1.executeUpdate();
@@ -247,7 +236,7 @@ public class FileDao {
     }
 
     private void riempiContorni(){
-        //Rimepie la relazione 'contorni'.
+        //MOLTO LENTA. Riempie la relazione 'contorni'.
 
         String fillQuery =  "INSERT INTO contorni  (  SELECT fi.\"NAME\", ci.\"GLON_CONT\", ci.\"GLAT_CONT\"" +
                                                             "FROM filamenti_imp fi JOIN contorni_imp ci ON fi.\"IDFIL\" = ci.\"IDFIL\"" +
