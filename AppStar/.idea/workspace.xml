@@ -6,29 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$3.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$4.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$5.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$6.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$6.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/ImportaFileSatelliteController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/ImportaFileSatelliteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/LoginController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/RegistraUtenteController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/RegistraUtenteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteAmministratore.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteAmministratore.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteConnesso.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteConnesso.class" />
-    </list>
+    <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -155,8 +133,8 @@
       <file leaf-file-name="RegistraUtenteGUI.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="67" column="114" lean-forward="false" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+            <state relative-caret-position="206">
+              <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -325,8 +303,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="542" />
-    <option name="y" value="-21" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
@@ -1018,7 +995,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GitHub/AppStar" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
@@ -1185,7 +1162,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197895000" />
+    <option name="totallyTimeSpent" value="198894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1216,7 +1193,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15733737" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23827533" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1666,8 +1643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="67" column="114" lean-forward="false" selection-start-line="67" selection-start-column="114" selection-end-line="67" selection-end-column="114" />
+        <state relative-caret-position="206">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
