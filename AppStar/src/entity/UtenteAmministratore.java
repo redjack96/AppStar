@@ -28,17 +28,17 @@ public class UtenteAmministratore extends UtenteRegistrato {
         }
     }
     //chiamato da control.FileSatelliteController in importaFile()
-    public void importaFileCSV(File file, int RB){
+    public void importaFileCSV(File file, int RB, String satellite){
 
         try{
             if (RB == 1){
-                FileDao.importaFile(file, "contorni_imp");
+                FileDao.importaFile(file, "contorni_imp", satellite);
             }else if(RB == 2){
-                FileDao.importaFile(file, "filamenti_imp");
+                FileDao.importaFile(file, "filamenti_imp", satellite);
             }else if(RB == 3){
-                FileDao.importaFile(file, "scheletri_imp");
+                FileDao.importaFile(file, "scheletri_imp", satellite);
             }else if(RB == 4){
-                FileDao.importaFile(file, "stelle_imp");
+                FileDao.importaFile(file, "stelle_imp", satellite);
             }
         }catch (SQLException e){
             System.out.println(e.getMessage());

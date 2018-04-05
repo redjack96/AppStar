@@ -15,12 +15,12 @@ public class ImportaFileSatelliteController {
         importaFileSatelliteGUI.istanziaImportaFileSatelliteGUIFXML(e);
     }
     //chiamato alla pressione del pulsante IMPORTA! in boundary.ImportaFileSatelliteGUI
-    public void importaFile(File csv, int RB){
+    public void importaFile(File csv, int RB, String satellite){
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
         if (utente.isAmministratore()){
             UtenteAmministratore amministratore = new UtenteAmministratore(utente.getNome(), utente.getCognome(),
                     utente.getUserID(), utente.getPassword(), utente.getEmail());
-            amministratore.importaFileCSV(csv, RB);
+            amministratore.importaFileCSV(csv, RB, satellite);
         }
     }
 }

@@ -2,6 +2,7 @@ package persistence;
 
 import java.io.File;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.Period;
@@ -9,9 +10,9 @@ import java.time.Period;
 import static persistence.Connessione.CONN;
 
 public class FileDao {
+
     // Chiamato da entity.UtenteAmministratore per importare uno dei file csv
-    // TODO Cambiare il nome: importaFile e' gia' stato usato in ImportaFileSatelliteController
-    public static void importaFile(File file, String relazione) throws SQLException {
+    public static void importaFile(File file, String relazione, String satellite) throws SQLException {
 
         Connessione.connettiti();
         String importazione = "COPY " + relazione +" FROM \'" + file.getPath() + "\' DELIMITER \',\' csv HEADER";
@@ -24,12 +25,31 @@ public class FileDao {
             PreparedStatement ps1 = CONN.prepareStatement("DELETE FROM " + relazione);
             ps1.executeUpdate();
 
-            PreparedStatement ps2 = CONN.prepareStatement(importazione);
-            ps2.execute();
+            if (relazione.equals("contorni_imp")){
+
+                importazione = "COPY " + relazione + "(\"IDFIL\", \"GLON_CONT\", \"GLAT_CONT\") FROM '" + file.getPath() +
+                            "' DELIMITER ',' csv HEADER";
+
+                int ID;
+
+                /*PreparedStatement ps2 = CONN.prepareStatement("SELECT COUNT(*) as id FROM punti_contorni");
+                ResultSet rs = ps2.executeQuery();
+                while (rs.next()){
+                    ID = rs.getInt("id");
+                }*/
+                //TODO controllare se va bene restart with 1
+                PreparedStatement ps3 = CONN.prepareStatement("ALTER SEQUENCE \"contorni_imp_N_seq\" " +
+                                                                    "RESTART WITH 1");
+                ps3.executeUpdate();
+            }
+
+            PreparedStatement ps4 = CONN.prepareStatement(importazione);
+            ps4.execute();
+
+            System.out.println("Importazione del file csv nella tabella "+ relazione + " completato!");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         } finally {
-            System.out.println("Importazione del file csv nella tabella "+ relazione + " completato!");
             CONN.close();
         }
     }
@@ -251,3 +271,19 @@ public class FileDao {
         }
     }
 }
+
+/*
+* Satelliti
+* Agenzie
+* Strumenti
+* Bande
+* Stelle
+* Visibilita
+* Filamenti
+* Segmenti
+* Filamenti (NumSeg)
+* PuntiSegmenti
+* Misurazione
+* PuntiContorni
+* Contorni
+* */

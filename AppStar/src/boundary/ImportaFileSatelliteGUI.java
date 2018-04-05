@@ -2,6 +2,8 @@ package boundary;
 
 import control.HomeController;
 import control.ImportaFileSatelliteController;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -37,11 +39,12 @@ public class ImportaFileSatelliteGUI implements Initializable {
     @FXML
     private RadioButton stelle;
     @FXML
-    private TextField nomeSatellite;
-    @FXML
     private TextArea csvInfo;
+    ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
     @FXML
-    private Label errorLabel;
+    private ChoiceBox<String> choiceBox;
+
+
 
     public void istanziaImportaFileSatelliteGUIFXML(Event e){
         //Lancia l'interfaccia grafica ImportaFileSatelliteGUI.fxml.
@@ -57,24 +60,12 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
+        choiceBox.setItems(choiceBoxList);
+        choiceBox.setValue("Herschel");
+
         String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
                 " IDFIL,GLON_CONT,GLAT_CONT";
         csvInfo.setText(infoContorni);
-
-        errorLabel.setVisible(false);
-        //importaButton.setDisable(true);
-
-        /*nomeSatellite.setOnInputMethodTextChanged(new EventHandler<InputMethodEvent>() {
-            @Override
-            public void handle(InputMethodEvent event) {
-                if (nomeSatellite.getText().length() < 3){
-                    errorLabel.setVisible(true);
-                }else {
-                    importaButton.setDisable(false);
-                }
-
-            }
-        });*/
 
         csvInfo.setEditable(false);
 
@@ -120,6 +111,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                String satellite = choiceBox.getValue();
                 FileChooser fileChooser = new FileChooser();
                 File file;
                 Stage stage = new Stage();
@@ -142,7 +134,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 try{
                     file = fileChooser.showOpenDialog(stage);
                     System.out.println(RB+file.getPath());
-                    importaFileSatelliteController.importaFile(file, RB);
+                    importaFileSatelliteController.importaFile(file, RB, satellite);
                 }catch (NullPointerException nPE){
                     System.out.println(nPE.getCause());
                 }
