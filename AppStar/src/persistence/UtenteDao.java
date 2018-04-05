@@ -1,4 +1,4 @@
-package persistance;
+package persistence;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class UtenteDao {
 
     /**
-     * Il metodo sottoscritto e' una verifica dell'esistenza di un eventuale account con le credenziali inserite
+     * Il metodo seguente e' una verifica dell'esistenza di un eventuale account con le credenziali inserite
      * dall'utente (attraverso una QuerySQL) nella table 'utenti' contenuta nel database 'CONTORNI_E_FILAMENTI'.
      * QuerySQL:
      *      SELECT *
@@ -36,7 +36,11 @@ public class UtenteDao {
             ps.setString(1, userID);
             ps.setString(2, password);
             ResultSet rs = ps.executeQuery();
+<<<<<<< HEAD:AppStar/src/persistance/UtenteDao.java
             //TODO se rs e' vuoto, non fare nulla.
+=======
+
+>>>>>>> Branch_Lorenzo:AppStar/src/persistence/UtenteDao.java
             while (rs.next()){
                 infoUtente.add(rs.getString("NOME"));       //infoUtente = (Nome, _, _, _, _, _).
                 infoUtente.add(rs.getString("COGNOME"));    //infoUtente = (-, Cognome, _, _, _, _).

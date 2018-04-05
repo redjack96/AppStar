@@ -62,10 +62,10 @@ public class LoginGUI implements Initializable {
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                loginController.controlloLogin(userIDTextField.getText(), passwordPasswordField.getText());
+                if (loginController.controlloLogin(userIDTextField.getText(), passwordPasswordField.getText())){
                 HomeController homeController = new HomeController();
                 homeController.istanziaHomeGUI(event);
-            }
+            }}
         });
 
         chiudiButton.setOnAction(new EventHandler<ActionEvent>() {

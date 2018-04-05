@@ -7,4 +7,13 @@ Funzioni disponibili:
 	
 - Menu Home: scelta dell'operazione da effettuare. Funzioni amministratore (ADMIN) nascoste per gli utenti semplici. Tasto Avanti e Logout
 
+<<<<<<< HEAD
 	- (ADMIN) Registrazione di un nuovo utente: aggiunge l'utente al database
+=======
+	- (ADMIN) Registrazione di un nuovo utente: Permette di aggiungere l'utente al database
+	- (ADMIN) Importazione di file csv: per ora sovrascrive solo la tabella "contorni" sul database
+	- TODO: (ADMIN) Inserire dati satelliti
+	- TODO: (ADMIN) Inserire dati strumenti
+	- TODO: Ricerca filamenti
+	- TODO. Ricerca stelle
+>>>>>>> Branch_Lorenzo

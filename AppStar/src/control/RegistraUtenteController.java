@@ -1,14 +1,10 @@
 package control;
 
-import boundary.HomeGUI;
 import boundary.RegistraUtenteGUI;
 import entity.UtenteAmministratore;
 import entity.UtenteConnesso;
 import entity.UtenteRegistrato;
 import javafx.event.Event;
-import persistance.UtenteDao;
-
-import java.sql.SQLException;
 
 public class RegistraUtenteController {
 

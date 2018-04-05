@@ -11,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
@@ -22,6 +23,8 @@ public class RegistraUtenteGUI implements Initializable {
     private ResourceBundle resources;
     @FXML
     private URL location;
+    @FXML
+    private Label campiLabel;
     @FXML
     private TextField nome;
     @FXML
@@ -55,17 +58,26 @@ public class RegistraUtenteGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources){
 
-        RegistraUtenteController registraUtenteController = new RegistraUtenteController();
+        campiLabel.setVisible(false);
 
+        RegistraUtenteController registraUtenteController = new RegistraUtenteController();
+        //TODO: NuovoUtenteRegistratoPopUP: Mostrare un pop up se il nuovo utente e' registrato correttamente.
         registraButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                if (notAdmin.isSelected()){
-                    registraUtenteController.registraUtente(nome.getText(), cognome.getText(), userID.getText(),
-                            password.getText(), email.getText(), false);
-                }else if (admin.isSelected()){
-                    registraUtenteController.registraUtente(nome.getText(), cognome.getText(), userID.getText(),
-                            password.getText(), email.getText(), true);
+                if (nome.getLength()==0 || cognome.getLength()==0 || userID.getLength()<6 || password.getLength()<6 ||
+                        email.getLength()==0){
+                    campiLabel.setVisible(true);
+                }else {
+                    if (notAdmin.isSelected()){
+                        registraUtenteController.registraUtente(nome.getText(), cognome.getText(), userID.getText(),
+                                password.getText(), email.getText(), false);
+                        campiLabel.setVisible(false);
+                    }else if (admin.isSelected()){
+                        registraUtenteController.registraUtente(nome.getText(), cognome.getText(), userID.getText(),
+                                password.getText(), email.getText(), true);
+                        campiLabel.setVisible(false);
+                    }
                 }
             }
         });
