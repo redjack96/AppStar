@@ -1,6 +1,6 @@
 package persistence;
 
-import java.io.File;
+import java.io.*;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,7 +22,7 @@ public class FileDao {
 
         try {
             //Tronca la tabella imp temporanea
-            PreparedStatement ps1 = CONN.prepareStatement("DELETE FROM " + relazione);
+            PreparedStatement ps1 = CONN.prepareStatement("TRUNCATE " + relazione);
             ps1.executeUpdate();
 
             if (relazione.equals("contorni_imp")){
@@ -47,8 +47,13 @@ public class FileDao {
             ps4.execute();
 
             System.out.println("Importazione del file csv nella tabella "+ relazione + " completato!");
+
+            riempiPuntiContorni(satellite, file);
+            System.out.println("Importazione del file csv nella tabella "+ relazione + " completato!");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
+        } catch (IOException io){
+            System.out.println(io.getMessage());
         } finally {
             CONN.close();
         }
@@ -101,7 +106,7 @@ public class FileDao {
 
     //TODO: Come devono essere distribuiti i dati all'interno del nostro DataBase ?
     //TODO: satellite viene dal campo testo 'nomeSatellite' di ImportaFileSatelliteGUI
-    public void distribuisciDati(String satellite, String relazione){
+    public static void distribuisciDati(String satellite, String relazione, File file) throws FileNotFoundException, IOException{
         //Distrubuisce i dati contenuti negli imp nel DB di AppStar (la prima volta).
 
         /*Prerequisiti:
@@ -134,11 +139,11 @@ public class FileDao {
         riempiSegmenti();
         //TODO: riempiFilamenti_NUM_SEG()
         riempiPuntiSegmenti();
-        riempiPuntiContorni();
+        riempiPuntiContorni(satellite, file);
         riempiContorni();
     }
 
-    private void riempiFilamenti(){
+    private static void riempiFilamenti(){
         // OK riusabile. Riempe la tabella "filamenti".
 
         String fillQuery = "INSERT INTO filamenti (SELECT \"IDFIL\", \"NAME\" " +
@@ -160,7 +165,7 @@ public class FileDao {
         }
     }
 
-    private void riempiStelle(){
+    private static void riempiStelle(){
         //OK riusabile. Riempie la tabella "stelle".
 
         String fillQuery =  "INSERT INTO stelle  (    SELECT *" +
@@ -176,7 +181,7 @@ public class FileDao {
         }
     }
 
-    private void riempiVisibilita(String satellite){
+    private static void riempiVisibilita(String satellite){
         //OK riusabile. Riempie la tabella "visibilita". Il satellite e' scelto nell'applicazione
 
         String fillQuery =  "INSERT INTO visibilita  (    SELECT \"IDSTAR\", '" + satellite + "'" +
@@ -192,7 +197,7 @@ public class FileDao {
         }
     }
 
-    private void riempiMisurazione(){
+    private static void riempiMisurazione(){
         //OK riusabile. Riempie la tabella "misurazione".
 
         String fillQuery =  "INSERT INTO misurazione (SELECT \"INSTRUMENT\", \"NAME\", \"MEAN_DENS\", \"MEAN_TEMP\", \"ELLIPTICITY\", \"CONTRAST\", \"TOTAL_FLUX\" \n" +
@@ -207,7 +212,7 @@ public class FileDao {
         }
     }
 
-    private void riempiSegmenti(){
+    private static void riempiSegmenti(){
         //OK riusabile. Riempie la tabella "segmenti".
 
         String fillQuery =  "INSERT INTO segmenti ( SELECT si.\"IDBRANCH\", si.\"TYPE\", fi.\"NAME\"" +
@@ -224,10 +229,35 @@ public class FileDao {
         }
     }
 
-    private void riempiPuntiContorni(){
+    private static void riempiPuntiContorni(String satellite, File file) throws FileNotFoundException, IOException{
         //OK riusabile. Riempie la relazione 'punti_contorni'.
 
-        String fillQuery =  "INSERT INTO punti_contorni (SELECT \"GLON_CONT\", \"GLAT_CONT\" \n" +
+        BufferedReader br;
+        String line;
+        String csvSplitter = ",";
+        br = new BufferedReader(new FileReader(file.getPath()));
+int i = 0;
+        while((line = br.readLine()) != null) {
+            //Array di Stringhe di elementi di una tupla.
+            String[] tupla = line.split(csvSplitter);
+            //Inserisce gli elementi nel database.
+            String query = "INSERT INTO punti_contorni (\"GLON_CONT\", \"GLAT_CONT\", \"N\", \"SATELLITE\") VALUES (\n" +
+                    "'" + tupla[1] + "', '" + tupla[2] + "', '" + i + "', '" + satellite + "') " +
+                    " ON CONFLICT (\"GLON_CONT\", \"GLAT_CONT\", \"N\", \"SATELLITE\") DO UPDATE" +
+                    " SET (\"GLON_CONT\", \"GLAT_CONT\") = ('" + tupla[1] + "', '" + tupla[2] +"') WHERE (\"N\",\"SATELLITE\") " +
+                    "= ('" + i + "', '" + satellite + "')";
+            i++;
+
+            try {
+                PreparedStatement ps1 = CONN.prepareStatement(query);
+                ps1.executeUpdate();
+            } catch (SQLException e){
+                System.out.println(e.getMessage());
+            }
+        }
+
+
+        /*String fillQuery =  "INSERT INTO punti_contorni (SELECT \"GLON_CONT\", \"GLAT_CONT\" \n" +
                                                        " FROM contorni_imp \n" +
                                                        " WHERE (\"GLON_CONT\", \"GLAT_CONT\") NOT IN (SELECT \"GLON_CONT\", \"GLAT_CONT\"\n" +
                                                                                                     " FROM punti_contorni))";
@@ -237,10 +267,10 @@ public class FileDao {
             ps1.executeUpdate();
         }catch (SQLException e){
             System.out.println(e.getMessage());
-        }
+        }*/
     }
 
-    private void riempiPuntiSegmenti() {
+    private static void riempiPuntiSegmenti() {
         //MOLTO LENTA ma riusabile. Riempie la relazione 'punti_segmenti'.
 
         String fillQuery = "INSERT INTO punti_segmenti(\"SEGMENTO\", \"GLON_BR\", \"GLAT_BR\", \"N\", \"FLUX\", \"NAME_FIL\" ) \n" +
@@ -255,7 +285,7 @@ public class FileDao {
         }
     }
 
-    private void riempiContorni(){
+    private static void riempiContorni(){
         //MOLTO LENTA. Riempie la relazione 'contorni'.
 
         String fillQuery =  "INSERT INTO contorni  (  SELECT fi.\"NAME\", ci.\"GLON_CONT\", ci.\"GLAT_CONT\"" +

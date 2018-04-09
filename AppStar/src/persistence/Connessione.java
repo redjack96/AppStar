@@ -3,7 +3,7 @@ package persistence;
 import java.sql.*;
 
 public class Connessione {
-    private static String URL = "jdbc:postgresql://localhost:5432/CONTORNI_E_FILAMENTI";
+    private static String URL = "jdbc:postgresql://localhost:5433/CONTORNI_E_FILAMENTI";
     private static final String USER = "postgres";
     private static final String PASSWORD = "password";
     public static Connection CONN;
