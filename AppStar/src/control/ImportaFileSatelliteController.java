@@ -23,4 +23,15 @@ public class ImportaFileSatelliteController {
             amministratore.importaFileCSV(csv, RB, satellite);
         }
     }
+
+    //TODO: metodo troncaTabelleImp()
+    /* public void troncaTabelleImp(){
+    *   //TRUNCATE contorni_imp
+    *   //TRUNCATE filamenti_imp
+    *   //TRUNCATE scheletri_imp
+    *   //TRUNCATE stelle_imp
+    *
+    *   //execute tutti e 4
+    * }
+    * */
 }

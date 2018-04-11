@@ -61,7 +61,7 @@
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Label>
-      <TextArea fx:id="csvInfo" layoutX="298.0" layoutY="131.0" prefHeight="54.0" prefWidth="463.0" />
+      <TextArea fx:id="csvInfo" layoutX="298.0" layoutY="131.0" prefHeight="84.0" prefWidth="463.0" />
       <ChoiceBox fx:id="choiceBox" layoutX="74.0" layoutY="101.0" prefWidth="150.0" />
    </children>
 </AnchorPane>

@@ -40,7 +40,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
     private RadioButton stelle;
     @FXML
     private TextArea csvInfo;
-    ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
     @FXML
     private ChoiceBox<String> choiceBox;
 
@@ -60,11 +60,16 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
+        //TODO: importante -  troncare le tabelle imp_
+
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
+
+
         String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                " IDFIL,GLON_CONT,GLAT_CONT";
+                " IDFIL,GLON_CONT,GLAT_CONT\n" +
+                " Inoltre il nome del file deve contenere " + choiceBox.getValue();
         csvInfo.setText(infoContorni);
 
         csvInfo.setEditable(false);
@@ -82,7 +87,8 @@ public class ImportaFileSatelliteGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 String infoFilamenti = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT";
+                        " IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT\n" +
+                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoFilamenti);
             }
         });
@@ -91,7 +97,8 @@ public class ImportaFileSatelliteGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 String infoScheletri = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDFIL,IDBRANCH,TYPE,GLON_BR,GLAT_BR,N,FLUX";
+                        " IDFIL,IDBRANCH,TYPE,GLON_BR,GLAT_BR,N,FLUX\n" +
+                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoScheletri);
             }
         });
@@ -100,7 +107,8 @@ public class ImportaFileSatelliteGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 String infoStelle = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDSTAR,NAMESTAR,GLON_ST,GLAT_ST,FLUX_ST,TYPE_ST";
+                        " IDSTAR,NAMESTAR,GLON_ST,GLAT_ST,FLUX_ST,TYPE_ST\n" +
+                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoStelle);
             }
         });
@@ -118,10 +126,10 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 int RB = 1;
 
                 if (contorni.isSelected()){
-                    stage.setTitle("Importa catalogo strutture estese...");
+                    stage.setTitle("Importa file posizioni contorni...");
                     RB = 1;
                 }else if (filamenti.isSelected()){
-                    stage.setTitle("Importa file posizioni contorni...");
+                    stage.setTitle("Importa file dati filamenti ...");
                     RB = 2;
                 }else if (scheletri.isSelected()){
                     stage.setTitle("Importa file posizioni scheletro...");
@@ -136,7 +144,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                     System.out.println(RB+file.getPath());
                     importaFileSatelliteController.importaFile(file, RB, satellite);
                 }catch (NullPointerException nPE){
-                    System.out.println(nPE.getCause());
+                    System.out.println(nPE.getCause().getMessage()); // prima senza .getMessage()
                 }
             }
         });
