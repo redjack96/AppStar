@@ -28,8 +28,8 @@
     </role>
     <schema id="6" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2018-04-11.14:50:44.278</IntrospectionTimestamp>
-      <IntrospectionStateNumber>1616404</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2018-04-12.00:14:49.943</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1616453</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -89,7 +89,7 @@
     </table>
     <table id="19" parent="6" name="contorni_imp">
       <ObjectId>16403</ObjectId>
-      <StateNumber>1616404</StateNumber>
+      <StateNumber>1616453</StateNumber>
     </table>
     <table id="20" parent="6" name="filamenti">
       <ObjectId>16408</ObjectId>
@@ -100,7 +100,7 @@
       <Comment>Serve per importare da JAVA un file csv con il seguente header
 IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT
 </Comment>
-      <StateNumber>553</StateNumber>
+      <StateNumber>1616432</StateNumber>
     </table>
     <table id="22" parent="6" name="misurazione">
       <ObjectId>16420</ObjectId>
@@ -108,7 +108,7 @@ IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUM
     </table>
     <table id="23" parent="6" name="punti_contorni">
       <ObjectId>16423</ObjectId>
-      <StateNumber>1616377</StateNumber>
+      <StateNumber>1616423</StateNumber>
     </table>
     <table id="24" parent="6" name="punti_segmenti">
       <ObjectId>16428</ObjectId>
@@ -120,7 +120,7 @@ IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUM
     </table>
     <table id="26" parent="6" name="scheletri_imp">
       <ObjectId>16436</ObjectId>
-      <StateNumber>565</StateNumber>
+      <StateNumber>1616446</StateNumber>
     </table>
     <table id="27" parent="6" name="segmenti">
       <ObjectId>16439</ObjectId>
@@ -132,7 +132,7 @@ IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUM
     </table>
     <table id="29" parent="6" name="stelle_imp">
       <ObjectId>16446</ObjectId>
-      <StateNumber>569</StateNumber>
+      <StateNumber>1616439</StateNumber>
     </table>
     <table id="30" parent="6" name="strumenti">
       <ObjectId>16449</ObjectId>

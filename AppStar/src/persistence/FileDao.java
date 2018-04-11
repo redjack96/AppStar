@@ -127,6 +127,8 @@ public class FileDao {
             PreparedStatement ps1 = CONN.prepareStatement(insertSatelliti);
             PreparedStatement ps2 = CONN.prepareStatement(insertAgenzie);
             ps1.executeUpdate(); ps2.executeUpdate();
+
+            System.out.println("Dati aggiunti alle tabelle satelliti e agenzie con successo!");
         }catch (SQLException e){
             System.out.println(e.getMessage());
         } finally {
@@ -137,7 +139,7 @@ public class FileDao {
     public static void inserisciDatiStrumento(float banda, String strumento) throws SQLException{
 
         Connessione.connettiti();
-
+        String insertStrumenti = " INSERT INTO strumenti";
         String insertBanda =    "INSERT INTO bande(\"WAVE_LENGTH\", \"STRUMENTO\") VALUES " +
                                             "('" + banda + "', '" + strumento + "')";
 
@@ -150,9 +152,6 @@ public class FileDao {
             CONN.close();
         }
     }
-
-    //TODO: Come devono essere distribuiti i dati all'interno del nostro DataBase ?
-    //TODO: satellite viene dal campo testo 'nomeSatellite' di ImportaFileSatelliteGUI
 
     //TODO: eliminare distribuisciDati
     public static void distribuisciDati(String satellite, String relazione, File file) throws FileNotFoundException, IOException{
