@@ -28,8 +28,13 @@ public class UtenteAmministratore extends UtenteRegistrato {
         }
     }
     //chiamato da control.FileSatelliteController in importaFile()
-    public void importaFileCSV(File file, int RB, String satellite){
-
+    public int importaFileCSV(File file, int RB, String satellite){
+        int r;
+        //fa in modo che se il nome del satellite non e' compreso nel file, non si procede all'importazione.
+        if (!(file.getName().toLowerCase().contains(satellite.toLowerCase()))){
+            System.out.println("Il nome del file non contiene il satellite " + satellite);
+            return -1;
+        }
         try{
             if (RB == 1){
                 FileDao.importaFile(file, "contorni_imp", satellite);
@@ -40,9 +45,12 @@ public class UtenteAmministratore extends UtenteRegistrato {
             }else if(RB == 4){
                 FileDao.importaFile(file, "stelle_imp", satellite);
             }
+            r = 1;
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            r = -1;
         }
+        return r;
     }
 
     public void inserisciNuoviDatiSatellite(String nomeAgenzia, String nomeSatellite, LocalDate dataInizio,
@@ -58,6 +66,15 @@ public class UtenteAmministratore extends UtenteRegistrato {
 
         try{
             FileDao.inserisciDatiStrumento(banda, strumento);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void troncaDatiSatellite(){
+
+        try{
+            FileDao.troncaImp();
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }

@@ -60,8 +60,6 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
-        //TODO: importante -  troncare le tabelle imp_
-
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
@@ -79,6 +77,9 @@ public class ImportaFileSatelliteGUI implements Initializable {
         contorni.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
+                        " IDFIL,GLON_CONT,GLAT_CONT\n" +
+                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoContorni);
             }
         });
@@ -118,7 +119,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
         //TODO: NonImportatoPopUp: Mostra una schermata popUp se l'importazione fallisce (Possibilmente con l'errore della query)
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
-            public void handle(ActionEvent event) {
+            public void handle(ActionEvent event) throws NullPointerException{
                 String satellite = choiceBox.getValue();
                 FileChooser fileChooser = new FileChooser();
                 File file;
@@ -144,7 +145,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                     System.out.println(RB+file.getPath());
                     importaFileSatelliteController.importaFile(file, RB, satellite);
                 }catch (NullPointerException nPE){
-                    System.out.println(nPE.getCause().getMessage()); // prima senza .getMessage()
+                    System.out.println(nPE.getMessage()); // prima senza .getMessage()
                 }
             }
         });

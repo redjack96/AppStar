@@ -88,6 +88,7 @@ public class HomeGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 if (importaFileSatellite.isSelected()){
+                    homeController.troncaDati();
                     ImportaFileSatelliteController importaFileSatelliteController = new ImportaFileSatelliteController();
                     importaFileSatelliteController.istanziaImportaFileSatelliteGUI(event);
                 }else if(registraUtente.isSelected()){

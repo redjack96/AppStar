@@ -6,86 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI$2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI$2.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp$1.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/control/InserisciDatiStrumentiController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/control/InserisciFileDatiSatelliteController.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/persistence/Connessione.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/persistence/FileDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/persistence/UtenteDao.class" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/pics/sfondoPopUp.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.fxml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/control/InserisciFileDatiSatelliteController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/Connessione.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/FileDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/pics/sfondoPopUp.jpg" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AppStar_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/AppStar_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76/storage_v2/_src_/database/CONTORNI_E_FILAMENTI.CrC6oQ.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76/storage_v2/_src_/database/CONTORNI_E_FILAMENTI.CrC6oQ/schema/public.abK9xQ.meta" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_9_4_1212.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/AppStar.iml" afterPath="$PROJECT_DIR$/AppStar.iml" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/META-INF/MANIFEST.MF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$3.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$4.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$4.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$5.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$5.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$6.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$6.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$7.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.fxml" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.fxml" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/ImportaFileSatelliteController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/ImportaFileSatelliteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/LoginController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/RegistraUtenteController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/RegistraUtenteController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteAmministratore.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteAmministratore.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteConnesso.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteConnesso.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/persistance/Connessione.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/AppStar/persistance/UtenteDao.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/boundary/HomeGUI.java" afterPath="$PROJECT_DIR$/src/boundary/HomeGUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml" afterPath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" afterPath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/boundary/LoginGUI.java" afterPath="$PROJECT_DIR$/src/boundary/LoginGUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml" afterPath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java" afterPath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java" />
-      <change beforePath="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" afterPath="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
-      <change beforePath="$PROJECT_DIR$/src/control/LoginController.java" afterPath="$PROJECT_DIR$/src/control/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/control/RegistraUtenteController.java" afterPath="$PROJECT_DIR$/src/control/RegistraUtenteController.java" />
-      <change beforePath="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" afterPath="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
-      <change beforePath="$PROJECT_DIR$/src/entity/UtenteConnesso.java" afterPath="$PROJECT_DIR$/src/entity/UtenteConnesso.java" />
-      <change beforePath="$PROJECT_DIR$/src/persistance/Connessione.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/persistance/FileDao.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/persistance/UtenteDao.java" afterPath="" />
-    </list>
+    <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -138,110 +59,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
-              <folding>
-                <marker date="1523485246290" expanded="true" signature="843:923" ph="COPY missing... " />
-                <marker date="1523485246290" expanded="true" signature="1381:1390" ph="TRUNCATE mis... " />
-                <marker date="1523485246290" expanded="true" signature="1738:1879" ph="COPY contorn... " />
-                <marker date="1523485246290" expanded="true" signature="2228:2313" ph="ALTER SEQUEN... contorni_imp_N_seq" />
-                <marker date="1523485246290" expanded="true" signature="5323:5478" ph="INSERT INTO satelliti... " />
-                <marker date="1523485246290" expanded="true" signature="5531:5688" ph="INSERT INTO satelliti... " />
-                <marker date="1523485246290" expanded="true" signature="5739:5888" ph="INSERT INTO agenzie... " />
-                <marker date="1523485246290" expanded="true" signature="6665:6809" ph="INSERT INTO bande... " />
-                <marker date="1523485246290" expanded="true" signature="8706:9079" ph="INSERT INTO filamenti... " />
-                <marker date="1523485246290" expanded="true" signature="8729:9078" ph="SELECT \&quot;IDF... filamenti_imp" />
-                <marker date="1523485246290" expanded="true" signature="8936:9077" ph="SELECT \&quot;IDF... filamenti" />
-                <marker date="1523485246290" expanded="true" signature="9114:9458" ph="UPDATE filamenti... " />
-                <marker date="1523485246290" expanded="true" signature="9152:9457" ph="SELECT COUNT... scheletri_imp" />
-                <marker date="1523485246290" expanded="true" signature="9905:10216" ph="INSERT INTO stelle... " />
-                <marker date="1523485246290" expanded="true" signature="9930:10215" ph="SELECT *FROM... stelle_imp" />
-                <marker date="1523485246290" expanded="true" signature="10099:10214" ph="SELECT \&quot;IDS... stelle" />
-                <marker date="1523485246290" expanded="true" signature="10622:11000" ph="INSERT INTO visibilita... " />
-                <marker date="1523485246290" expanded="true" signature="10651:11000" ph="SELECT \&quot;IDS... stelle_imp" />
-                <marker date="1523485246290" expanded="true" signature="10870:10999" ph="SELECT \&quot;STE... visibilita" />
-                <marker date="1523485246290" expanded="true" signature="11351:11779" ph="INSERT INTO misurazione... " />
-                <marker date="1523485246290" expanded="true" signature="11376:11778" ph="SELECT \&quot;INS... filamenti_imp" />
-                <marker date="1523485246290" expanded="true" signature="11605:11777" ph="SELECT \&quot;STR... misurazione" />
-                <marker date="1523485246290" expanded="true" signature="12124:12576" ph="INSERT INTO segmenti... " />
-                <marker date="1523485246290" expanded="true" signature="12147:12575" ph="SELECT si.\&quot;... scheletri_imp" />
-                <marker date="1523485246290" expanded="true" signature="12432:12573" ph="SELECT \&quot;IDB... segmenti" />
-                <marker date="1523485246290" expanded="true" signature="13684:13772" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="13684:13941" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="13684:14005" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="13684:14006" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="14474:14545" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="14474:14934" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="14474:14936" ph="INSERT INTO punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="14502:14538" ph="SELECT \&quot;GLO... contorni_imp" />
-                <marker date="1523485246290" expanded="true" signature="14502:14545" ph="SELECT \&quot;GLO... " />
-                <marker date="1523485246290" expanded="true" signature="14744:14932" ph="SELECT \&quot;N\&quot;... punti_contorni" />
-                <marker date="1523485246290" expanded="true" signature="15007:15294" ph="UPDATE punti_contorni... " />
-                <marker date="1523485246290" expanded="true" signature="15095:15226" ph="SELECT \&quot;GLO... contorni_imp" />
-                <marker date="1523485246290" expanded="true" signature="16017:16493" ph="INSERT INTO punti_segmenti... " />
-                <marker date="1523485246290" expanded="true" signature="16167:16492" ph="SELECT a.\&quot;I... scheletri_imp" />
-                <marker date="1523485246290" expanded="true" signature="16450:16490" ph="SELECT \&quot;NAM... punti_segmenti" />
-                <marker date="1523485246290" expanded="true" signature="16854:17286" ph="INSERT INTO contorni... " />
-                <marker date="1523485246290" expanded="true" signature="16900:16931" ph="SELECT fi.\&quot;... " />
-                <marker date="1523485246290" expanded="true" signature="16900:17127" ph="SELECT fi.\&quot;... filamenti_imp" />
-                <marker date="1523485246290" expanded="true" signature="16900:17285" ph="SELECT fi.\&quot;... filamenti_imp" />
-                <marker date="1523485246290" expanded="true" signature="16900:17286" ph="SELECT fi.\&quot;... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportaFileSatelliteGUI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtenteDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/persistence/UtenteDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding>
-                <marker date="1523484886966" expanded="true" signature="906:1016" ph="SELECT * FRO... utenti" />
-                <marker date="1523484886966" expanded="true" signature="906:1025" ph="SELECT * FRO... utenti" />
-                <marker date="1523484886966" expanded="true" signature="906:1034" ph="SELECT * FRO... utenti" />
-                <marker date="1523484886966" expanded="true" signature="906:1098" ph="SELECT * FRO... utenti" />
-                <marker date="1523484886966" expanded="true" signature="3258:3301" ph="INSERT INTO utenti... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InserisciDatiStrumentiController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" column="54" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtenteAmministratore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -262,15 +80,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pics.java" />
-        <option value="$PROJECT_DIR$/src/persistance/Connection.java" />
-        <option value="$PROJECT_DIR$/src/boundary/LoginGUI.fxml" />
-        <option value="$PROJECT_DIR$/src/persistance/OperazioniSelect.java" />
         <option value="$PROJECT_DIR$/src/application/Main.java" />
         <option value="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
         <option value="$PROJECT_DIR$/src/persistance/Connessione.java" />
         <option value="$PROJECT_DIR$/src/control/RegistraUtenteController.java" />
-        <option value="$PROJECT_DIR$/src/control/HomeController.java" />
         <option value="$PROJECT_DIR$/src/pics/package-info.java" />
         <option value="$PROJECT_DIR$/src/boundary/HomeGUI.fxml" />
         <option value="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.fxml" />
@@ -283,7 +96,6 @@
         <option value="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.fxml" />
         <option value="$PROJECT_DIR$/src/control/InserisciFileDatiSatelliteController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/889d0e45-0be2-4a55-9e69-25d1a6576a76/console_1.sql" />
-        <option value="$PROJECT_DIR$/src/boundary/HomeGUI.java" />
         <option value="$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java" />
         <option value="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml" />
         <option value="$PROJECT_DIR$/src/boundary/LoginGUI.java" />
@@ -293,7 +105,6 @@
         <option value="/PostgreSQL Fragment (FileDao.java:10175).sql" />
         <option value="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.fxml" />
         <option value="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml" />
-        <option value="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
         <option value="/PostgreSQL Fragment (FileDao.java:1072).sql" />
         <option value="/PostgreSQL Fragment (FileDao.java:10688).sql" />
         <option value="/PostgreSQL Fragment (FileDao.java:11210).sql" />
@@ -303,14 +114,23 @@
         <option value="/PostgreSQL Fragment (FileDao.java:12228).sql" />
         <option value="/PostgreSQL Fragment (FileDao.java:14722).sql" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-        <option value="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
-        <option value="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.java" />
         <option value="$PROJECT_DIR$/src/control/LoginController.java" />
         <option value="$PROJECT_DIR$/src/persistence/Connessione.java" />
         <option value="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
+        <option value="$PROJECT_DIR$/src/control/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/HomeGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.fxml" />
+        <option value="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
+        <option value="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/FileSatImportPopUp.fxml" />
+        <option value="$PROJECT_DIR$/out/production/AppStar/boundary/successPopUp/FileSatImportPopUp.fxml" />
         <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
+        <option value="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
+        <option value="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.java" />
+        <option value="$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.java" />
+        <option value="$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.fxml" />
       </list>
     </option>
   </component>
@@ -321,10 +141,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="443" />
-    <option name="y" value="226" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
-    <option name="height" value="391" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -936,9 +755,6 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -954,8 +770,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -968,33 +782,10 @@
               <item name="AppStar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1002,35 +793,13 @@
               <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
               <item name="AppStar" type="616d4139:PackageViewModuleNode" />
             </path>
-            <path>
-              <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
-              <item name="AppStar" type="616d4139:PackageViewModuleNode" />
-              <item name="application" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
-              <item name="AppStar" type="616d4139:PackageViewModuleNode" />
-              <item name="boundary" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
-              <item name="AppStar" type="616d4139:PackageViewModuleNode" />
-              <item name="control" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
-              <item name="AppStar" type="616d4139:PackageViewModuleNode" />
-              <item name="entity" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
-              <item name="AppStar" type="616d4139:PackageViewModuleNode" />
-              <item name="persistence" type="1f31426a:PackageElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1044,13 +813,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\pics" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\boundary\errorPopUp" />
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\boundary\successPopUp" />
       <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\boundary" />
       <recent name="C:\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\boundary\errorPopUp" />
       <recent name="C:\Users\loren\Desktop\Uniroma2\Basi di Dati\Pseudo-progetto e info\Codice\AppStar\src\boundary" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="boundary.errorPopUp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\pics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1211,7 +985,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247099000" />
+    <option name="totallyTimeSpent" value="254249000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1223,23 +997,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35339507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20726173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1249,11 +1022,31 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.4969743" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21331316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1306,43 +1099,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/io/File.java" />
-    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pics/sfondoPopUp.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="das://table:/b39b2508/889d0e45-0be2-4a55-9e69-25d1a6576a76/CONTORNI_E_FILAMENTI.public.utenti" />
-    <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="8" column="89" lean-forward="false" selection-start-line="8" selection-start-column="89" selection-end-line="8" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Throwable.java" />
-    <entry file="file://$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/fc0a3505/889d0e45-0be2-4a55-9e69-25d1a6576a76/CONTORNI_E_FILAMENTI.public.satelliti" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/889d0e45-0be2-4a55-9e69-25d1a6576a76/console_1.sql" />
     <entry file="file://$PROJECT_DIR$/src/boundary/HomeGUI.fxml">
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -1364,13 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="44" column="71" lean-forward="false" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Driver/postgresql-9.4.1212.jar!/org/postgresql/jdbc/TimestampUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="206">
@@ -1378,24 +1127,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/LoginGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/RegistraUtenteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="331">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="62" column="57" lean-forward="false" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1422,23 +1157,11 @@
     <entry file="das://index:/106dc0cd/889d0e45-0be2-4a55-9e69-25d1a6576a76/CONTORNI_E_FILAMENTI.public.contorni_imp.pk_c" />
     <entry file="das://table:/106dc0cd/889d0e45-0be2-4a55-9e69-25d1a6576a76/CONTORNI_E_FILAMENTI.public.punti_contorni" />
     <entry file="das://table:/106dc0cd/889d0e45-0be2-4a55-9e69-25d1a6576a76/CONTORNI_E_FILAMENTI.public.contorni_imp" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/90bfa619-5dc9-411a-99b3-7e9830ee2b2d/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/90bfa619-5dc9-411a-99b3-7e9830ee2b2d/console.sql" />
     <entry file="das://table:/106dc0cd/90bfa619-5dc9-411a-99b3-7e9830ee2b2d/CONTORNI_E_FILAMENTI.public.punti_contorni" />
     <entry file="das://table:/106dc0cd/90bfa619-5dc9-411a-99b3-7e9830ee2b2d/CONTORNI_E_FILAMENTI.public.contorni" />
     <entry file="das://table:/106dc0cd/90bfa619-5dc9-411a-99b3-7e9830ee2b2d/CONTORNI_E_FILAMENTI.public.contorni_imp" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/console.sql" />
     <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1447,70 +1170,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.sql/java/sql/PreparedStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="1317" column="17" lean-forward="false" selection-start-line="1317" selection-start-column="17" selection-end-line="1317" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://src:table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.contorni_imp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.punti_contorni">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.filamenti">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.filamenti_imp">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.contorni">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.contorni_imp">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="333" column="16" lean-forward="false" selection-start-line="333" selection-start-column="16" selection-end-line="333" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.sql/java/sql/PreparedStatement.java" />
+    <entry file="das://src:table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.contorni_imp" />
+    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.punti_contorni" />
+    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.filamenti" />
+    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.filamenti_imp" />
+    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.contorni" />
+    <entry file="das://table:/106dc0cd/c8bce807-36ca-41df-85a1-7a37b0f7a3a3/CONTORNI_E_FILAMENTI.public.contorni_imp" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/io/PrintStream.java" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
     <entry file="file://$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1537,24 +1205,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/HomeGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="102" column="96" lean-forward="false" selection-start-line="102" selection-start-column="96" selection-end-line="102" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/InserisciFileDatiSatelliteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1563,29 +1213,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="27" column="84" lean-forward="false" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/persistence/Connessione.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="85">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+          <folding>
+            <marker date="1523884522230" expanded="true" signature="304:426" ph="/**...*/" />
+            <marker date="1523884522230" expanded="true" signature="722:728" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1593,13 +1228,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding>
-            <marker date="1523484886966" expanded="true" signature="906:1016" ph="SELECT * FRO... utenti" />
-            <marker date="1523484886966" expanded="true" signature="906:1025" ph="SELECT * FRO... utenti" />
-            <marker date="1523484886966" expanded="true" signature="906:1034" ph="SELECT * FRO... utenti" />
-            <marker date="1523484886966" expanded="true" signature="906:1098" ph="SELECT * FRO... utenti" />
-            <marker date="1523484886966" expanded="true" signature="3258:3301" ph="INSERT INTO utenti... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1611,72 +1240,218 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="62" column="57" lean-forward="false" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="38" column="49" lean-forward="true" selection-start-line="38" selection-start-column="49" selection-end-line="38" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/HomeGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1355#1356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/LoginGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="64" column="21" lean-forward="false" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="26" column="19" lean-forward="false" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="27" column="84" lean-forward="false" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/successPopUp/FileSatImportPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="247" lean-forward="false" selection-start-line="10" selection-start-column="247" selection-end-line="10" selection-end-column="247" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/FileSatImportPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="245" lean-forward="false" selection-start-line="10" selection-start-column="245" selection-end-line="10" selection-end-column="245" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="16" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="121" column="77" lean-forward="false" selection-start-line="121" selection-start-column="77" selection-end-line="121" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="58" column="12" lean-forward="true" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
+        <state relative-caret-position="494">
+          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="336" column="0" lean-forward="false" selection-start-line="336" selection-start-column="0" selection-end-line="336" selection-end-column="0" />
+        <state relative-caret-position="99">
+          <caret line="15" column="103" lean-forward="false" selection-start-line="15" selection-start-column="103" selection-end-line="15" selection-end-column="103" />
           <folding>
-            <marker date="1523485246290" expanded="true" signature="843:923" ph="COPY missing... " />
-            <marker date="1523485246290" expanded="true" signature="1381:1390" ph="TRUNCATE mis... " />
-            <marker date="1523485246290" expanded="true" signature="1738:1879" ph="COPY contorn... " />
-            <marker date="1523485246290" expanded="true" signature="2228:2313" ph="ALTER SEQUEN... contorni_imp_N_seq" />
-            <marker date="1523485246290" expanded="true" signature="5323:5478" ph="INSERT INTO satelliti... " />
-            <marker date="1523485246290" expanded="true" signature="5531:5688" ph="INSERT INTO satelliti... " />
-            <marker date="1523485246290" expanded="true" signature="5739:5888" ph="INSERT INTO agenzie... " />
-            <marker date="1523485246290" expanded="true" signature="6665:6809" ph="INSERT INTO bande... " />
-            <marker date="1523485246290" expanded="true" signature="8706:9079" ph="INSERT INTO filamenti... " />
-            <marker date="1523485246290" expanded="true" signature="8729:9078" ph="SELECT \&quot;IDF... filamenti_imp" />
-            <marker date="1523485246290" expanded="true" signature="8936:9077" ph="SELECT \&quot;IDF... filamenti" />
-            <marker date="1523485246290" expanded="true" signature="9114:9458" ph="UPDATE filamenti... " />
-            <marker date="1523485246290" expanded="true" signature="9152:9457" ph="SELECT COUNT... scheletri_imp" />
-            <marker date="1523485246290" expanded="true" signature="9905:10216" ph="INSERT INTO stelle... " />
-            <marker date="1523485246290" expanded="true" signature="9930:10215" ph="SELECT *FROM... stelle_imp" />
-            <marker date="1523485246290" expanded="true" signature="10099:10214" ph="SELECT \&quot;IDS... stelle" />
-            <marker date="1523485246290" expanded="true" signature="10622:11000" ph="INSERT INTO visibilita... " />
-            <marker date="1523485246290" expanded="true" signature="10651:11000" ph="SELECT \&quot;IDS... stelle_imp" />
-            <marker date="1523485246290" expanded="true" signature="10870:10999" ph="SELECT \&quot;STE... visibilita" />
-            <marker date="1523485246290" expanded="true" signature="11351:11779" ph="INSERT INTO misurazione... " />
-            <marker date="1523485246290" expanded="true" signature="11376:11778" ph="SELECT \&quot;INS... filamenti_imp" />
-            <marker date="1523485246290" expanded="true" signature="11605:11777" ph="SELECT \&quot;STR... misurazione" />
-            <marker date="1523485246290" expanded="true" signature="12124:12576" ph="INSERT INTO segmenti... " />
-            <marker date="1523485246290" expanded="true" signature="12147:12575" ph="SELECT si.\&quot;... scheletri_imp" />
-            <marker date="1523485246290" expanded="true" signature="12432:12573" ph="SELECT \&quot;IDB... segmenti" />
-            <marker date="1523485246290" expanded="true" signature="13684:13772" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="13684:13941" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="13684:14005" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="13684:14006" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="14474:14545" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="14474:14934" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="14474:14936" ph="INSERT INTO punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="14502:14538" ph="SELECT \&quot;GLO... contorni_imp" />
-            <marker date="1523485246290" expanded="true" signature="14502:14545" ph="SELECT \&quot;GLO... " />
-            <marker date="1523485246290" expanded="true" signature="14744:14932" ph="SELECT \&quot;N\&quot;... punti_contorni" />
-            <marker date="1523485246290" expanded="true" signature="15007:15294" ph="UPDATE punti_contorni... " />
-            <marker date="1523485246290" expanded="true" signature="15095:15226" ph="SELECT \&quot;GLO... contorni_imp" />
-            <marker date="1523485246290" expanded="true" signature="16017:16493" ph="INSERT INTO punti_segmenti... " />
-            <marker date="1523485246290" expanded="true" signature="16167:16492" ph="SELECT a.\&quot;I... scheletri_imp" />
-            <marker date="1523485246290" expanded="true" signature="16450:16490" ph="SELECT \&quot;NAM... punti_segmenti" />
-            <marker date="1523485246290" expanded="true" signature="16854:17286" ph="INSERT INTO contorni... " />
-            <marker date="1523485246290" expanded="true" signature="16900:16931" ph="SELECT fi.\&quot;... " />
-            <marker date="1523485246290" expanded="true" signature="16900:17127" ph="SELECT fi.\&quot;... filamenti_imp" />
-            <marker date="1523485246290" expanded="true" signature="16900:17285" ph="SELECT fi.\&quot;... filamenti_imp" />
-            <marker date="1523485246290" expanded="true" signature="16900:17286" ph="SELECT fi.\&quot;... " />
+            <marker date="1523893292952" expanded="true" signature="532:612" ph="COPY missing... " />
+            <marker date="1523893292952" expanded="true" signature="1070:1079" ph="TRUNCATE mis... " />
+            <marker date="1523893292952" expanded="true" signature="1427:1568" ph="COPY contorn... " />
+            <marker date="1523893292952" expanded="true" signature="1917:2002" ph="ALTER SEQUEN... contorni_imp_N_seq" />
+            <marker date="1523893292952" expanded="true" signature="5012:5167" ph="INSERT INTO satelliti... " />
+            <marker date="1523893292952" expanded="true" signature="5220:5377" ph="INSERT INTO satelliti... " />
+            <marker date="1523893292952" expanded="true" signature="5428:5577" ph="INSERT INTO agenzie... " />
+            <marker date="1523893292952" expanded="true" signature="6354:6498" ph="INSERT INTO bande... " />
+            <marker date="1523893292952" expanded="true" signature="6891:6912" ph="TRUNCATE con... " />
+            <marker date="1523893292952" expanded="true" signature="6952:6974" ph="TRUNCATE fil... " />
+            <marker date="1523893292952" expanded="true" signature="7014:7036" ph="TRUNCATE sch... " />
+            <marker date="1523893292952" expanded="true" signature="7073:7092" ph="TRUNCATE ste... " />
+            <marker date="1523893292952" expanded="true" signature="7897:8270" ph="INSERT INTO filamenti... " />
+            <marker date="1523893292952" expanded="true" signature="7920:8269" ph="SELECT \&quot;IDF... filamenti_imp" />
+            <marker date="1523893292952" expanded="true" signature="8127:8268" ph="SELECT \&quot;IDF... filamenti" />
+            <marker date="1523893292952" expanded="true" signature="8305:8649" ph="UPDATE filamenti... " />
+            <marker date="1523893292952" expanded="true" signature="8343:8648" ph="SELECT COUNT... scheletri_imp" />
+            <marker date="1523893292952" expanded="true" signature="9142:9453" ph="INSERT INTO stelle... " />
+            <marker date="1523893292952" expanded="true" signature="9167:9452" ph="SELECT *FROM... stelle_imp" />
+            <marker date="1523893292952" expanded="true" signature="9336:9451" ph="SELECT \&quot;IDS... stelle" />
+            <marker date="1523893292952" expanded="true" signature="9859:10237" ph="INSERT INTO visibilita... " />
+            <marker date="1523893292952" expanded="true" signature="9888:10237" ph="SELECT \&quot;IDS... stelle_imp" />
+            <marker date="1523893292952" expanded="true" signature="10107:10236" ph="SELECT \&quot;STE... visibilita" />
+            <marker date="1523893292952" expanded="true" signature="10588:11016" ph="INSERT INTO misurazione... " />
+            <marker date="1523893292952" expanded="true" signature="10613:11015" ph="SELECT \&quot;INS... filamenti_imp" />
+            <marker date="1523893292952" expanded="true" signature="10842:11014" ph="SELECT \&quot;STR... misurazione" />
+            <marker date="1523893292952" expanded="true" signature="11361:11813" ph="INSERT INTO segmenti... " />
+            <marker date="1523893292952" expanded="true" signature="11384:11812" ph="SELECT si.\&quot;... scheletri_imp" />
+            <marker date="1523893292952" expanded="true" signature="11669:11810" ph="SELECT \&quot;IDB... segmenti" />
+            <marker date="1523893292952" expanded="true" signature="13711:14171" ph="INSERT INTO punti_contorni... " />
+            <marker date="1523893292952" expanded="true" signature="13739:14170" ph="SELECT \&quot;GLO... contorni_imp" />
+            <marker date="1523893292952" expanded="true" signature="13981:14169" ph="SELECT \&quot;N\&quot;... punti_contorni" />
+            <marker date="1523893292952" expanded="true" signature="15254:15730" ph="INSERT INTO punti_segmenti... " />
+            <marker date="1523893292952" expanded="true" signature="15404:15729" ph="SELECT a.\&quot;I... scheletri_imp" />
+            <marker date="1523893292952" expanded="true" signature="15687:15727" ph="SELECT \&quot;NAM... punti_segmenti" />
+            <marker date="1523893292952" expanded="true" signature="16091:16523" ph="INSERT INTO contorni... " />
+            <marker date="1523893292952" expanded="true" signature="16137:16522" ph="SELECT fi.\&quot;... filamenti_imp" />
+            <marker date="1523893292952" expanded="true" signature="16347:16521" ph="SELECT conto... contorni" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -1741,6 +1516,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

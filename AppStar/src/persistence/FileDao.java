@@ -15,12 +15,6 @@ public class FileDao {
     // Chiamato da entity.UtenteAmministratore per importare uno dei file csv
     public static void importaFile(File file, String relazione, String satellite) throws SQLException {
 
-        //fa in modo che se il nome del satellite non e' compreso nel file, non si procede all'importazione.
-        if (!(file.getName().toLowerCase().contains(satellite.toLowerCase()))){
-            System.out.println("Il nome del file non contiene il satellite " + satellite);
-            return;
-        }
-
         Connessione.connettiti();
         String importazione = "COPY " + relazione +" FROM \'" + file.getPath() + "\' DELIMITER \',\' csv HEADER";
         //Il path del file da importare non deve contenere \Desktop\.
@@ -153,44 +147,33 @@ public class FileDao {
         }
     }
 
-    //TODO: eliminare distribuisciDati
-    public static void distribuisciDati(String satellite, String relazione, File file) throws FileNotFoundException, IOException{
-        //Distrubuisce i dati contenuti negli imp nel DB di AppStar (la prima volta).
-
-        /*Prerequisiti:
-        * 1) aver fatto gli import dei csv;
-        * 2) aver inserito dati satelliti.*/
+    public static void troncaImp() throws SQLException{
 
         Connessione.connettiti();
+        String troncaContorniImp = "TRUNCATE contorni_imp";
+        String troncaFilamentiImp = "TRUNCATE filamenti_imp";
+        String troncaScheletriImp = "TRUNCATE scheletri_imp";
+        String troncaStelleImp = "TRUNCATE stelle_imp";
 
-        /*if (relazione.equals("CONTORNI")){
-            aggiornaPuntiContorni();
-        }else if (relazione.equals("FILAMENTI")){
-            riempiFilamenti();
-            riempiMisurazione(); //RICHIEDE STRUMENTI
-            riempiSegmenti();
-            riempiContorni(); //RICHIEDE PUNTI_CONTORNI
-        }else if (relazione.equals("SCHELETRI")){
-            riempiFilamenti_NUM_SEG(); //RICHIEDE FILAMENTI
-            riempiSegmenti();
-            riempiPuntiSegmenti();
-        }else if (relazione.equals("STELLE"){
-            riempiStelle();
-            riempiVisibilita(satellite); //RICHIEDE SATELLITI e che il satellite sia specificato nel campo testo
-        }*/
-        //riempi Utenti, satelliti, agenzie, strumenti e bande tramite questa applicazione, poi...
-        riempiStelle();
-        riempiVisibilita(satellite);
-        riempiFilamenti(); // NUM_SEG = null
-        riempiMisurazione();
-        riempiSegmenti();
-        //TODO: riempiFilamenti_NUM_SEG()
-        riempiPuntiSegmenti();
-        riempiPuntiContorni(satellite, file);
-        riempiContorni(satellite);
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(troncaContorniImp);
+            PreparedStatement ps2 = CONN.prepareStatement(troncaFilamentiImp);
+            PreparedStatement ps3 = CONN.prepareStatement(troncaScheletriImp);
+            PreparedStatement ps4 = CONN.prepareStatement(troncaStelleImp);
+            ps1.executeUpdate();
+            ps2.executeUpdate();
+            ps3.executeUpdate();
+            ps4.executeUpdate();
+            System.out.println("Troncate le imp");
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        } finally {
+            CONN.close();
+        }
+
     }
 
-    private static void riempiFilamenti(){
+    private static void riempiFilamenti() throws SQLException{
         // OK riusabile. Riempe la tabella "filamenti".
 
         String fillQuery = "INSERT INTO filamenti (SELECT \"IDFIL\", \"NAME\" " +
@@ -209,6 +192,8 @@ public class FileDao {
             ps2.executeUpdate();
         }catch (SQLException e){
             System.out.println(e.getMessage());
+        } finally {
+            CONN.close();
         }
     }
 
