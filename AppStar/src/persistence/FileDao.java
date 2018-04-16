@@ -85,7 +85,12 @@ public class FileDao {
                     PreparedStatement ps6 = CONN.prepareStatement(importazione);
                     System.out.print("Importazione del file csv nella tabella " + relazione + "...");
                     ps6.execute();
-                    System.out.println(("COMPLETATO.\nNot implemented"));
+                    System.out.print(("COMPLETATO.\nImportazione del file csv nella tabella stelle..."));
+                    riempiStelle();
+                    System.out.print(("COMPLETATO.\nImportazione del file csv nella tabella visibilita'..."));
+                    riempiVisibilita(satellite);
+                    System.out.println("COMPLETATO.\nFINE");
+
                     break;
             }
 
@@ -202,7 +207,7 @@ public class FileDao {
 
         String fillQuery =  "INSERT INTO stelle  (    SELECT *" +
                                                       "FROM stelle_imp " +
-                                                      "WHERE \"IDSTAR\" NOT IN (  SELECT \"IDSTAR\"" +
+                                                      "WHERE \"NAMESTAR\" NOT IN (  SELECT \"NAME_STAR\"" +
                                                                                   "FROM stelle))";
 
         try{
@@ -216,10 +221,10 @@ public class FileDao {
     private static void riempiVisibilita(String satellite){
         //OK riusabile. Riempie la tabella "visibilita". Il satellite e' scelto nell'applicazione
 
-        String fillQuery =  "INSERT INTO visibilita  (    SELECT \"IDSTAR\", '" + satellite + "'" +
-                                                                "FROM stelle_imp " +
-                                                                "WHERE \"IDSTAR\" NOT IN (  SELECT \"STELLA\"" +
-                                                                                            "FROM visibilita)";
+        String fillQuery =  "INSERT INTO visibilita  (    SELECT '" + satellite + "', \"NAMESTAR\" " +
+                                                        "FROM stelle_imp " +
+                                                        "WHERE \"NAMESTAR\" NOT IN (SELECT \"STELLA\"" +
+                                                        "FROM visibilita))";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);

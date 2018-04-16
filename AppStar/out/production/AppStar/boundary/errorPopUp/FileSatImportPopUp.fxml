@@ -7,15 +7,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.errorPopUp.FileSatImportPopUp">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.errorPopUp.FileSatImportPopUp">
    <children>
       <ImageView fitHeight="150.0" fitWidth="450.0">
          <image>
             <Image url="@../../pics/sfondoPopUp.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="117.0" layoutY="42.0" text="Importazione fallita." textFill="WHITE">
+      <Label layoutX="152.0" layoutY="43.0" text="Importazione fallita." textFill="WHITE">
          <font>
             <Font name="Copperplate Gothic Light" size="13.0" />
          </font>
