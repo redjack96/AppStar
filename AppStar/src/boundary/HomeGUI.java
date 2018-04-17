@@ -64,7 +64,6 @@ public class HomeGUI implements Initializable {
     }
 
     public void initialize(URL location, ResourceBundle resources){
-
         infoFilamento.setSelected(true);
         //RadioButton selezionato di default.
         HomeController homeController = new HomeController();

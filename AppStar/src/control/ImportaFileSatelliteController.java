@@ -35,15 +35,4 @@ public class ImportaFileSatelliteController {
             importError.istanziaFileSatImportPopUpFXML();
         }
     }
-
-    //TODO: metodo troncaTabelleImp()
-    /* public void troncaTabelleImp(){
-    *   //TRUNCATE contorni_imp
-    *   //TRUNCATE filamenti_imp
-    *   //TRUNCATE scheletri_imp
-    *   //TRUNCATE stelle_imp
-    *
-    *   //execute tutti e 4
-    * }
-    * */
 }

@@ -63,12 +63,10 @@ public class ImportaFileSatelliteGUI implements Initializable {
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
-
-
-        String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                " IDFIL,GLON_CONT,GLAT_CONT\n" +
-                " Inoltre il nome del file deve contenere " + choiceBox.getValue();
-        csvInfo.setText(infoContorni);
+        String infoFilamenti = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
+                "IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT\n" +
+                "L'importazione richiede circa 2 secondi.\nInoltre il nome del file deve contenere " + choiceBox.getValue();
+        csvInfo.setText(infoFilamenti);
 
         csvInfo.setEditable(false);
 
@@ -77,9 +75,9 @@ public class ImportaFileSatelliteGUI implements Initializable {
         contorni.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String infoContorni = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDFIL,GLON_CONT,GLAT_CONT\n" +
-                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
+                String infoContorni = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
+                        "IDFIL,GLON_CONT,GLAT_CONT\n" +
+                        "L'importazione richiede 200 secondi nel caso peggiore.\nInoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoContorni);
             }
         });
@@ -87,9 +85,9 @@ public class ImportaFileSatelliteGUI implements Initializable {
         filamenti.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String infoFilamenti = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT\n" +
-                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
+                String infoFilamenti = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
+                        "IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT\n" +
+                        "L'importazione richiede circa 2 secondi.\nInoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoFilamenti);
             }
         });
@@ -97,9 +95,9 @@ public class ImportaFileSatelliteGUI implements Initializable {
         scheletri.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String infoScheletri = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDFIL,IDBRANCH,TYPE,GLON_BR,GLAT_BR,N,FLUX\n" +
-                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
+                String infoScheletri = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
+                        "IDFIL,IDBRANCH,TYPE,GLON_BR,GLAT_BR,N,FLUX\n" +
+                        "L'importazione richiede circa 120 secondi nel caso peggiore.\nInoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoScheletri);
             }
         });
@@ -107,24 +105,24 @@ public class ImportaFileSatelliteGUI implements Initializable {
         stelle.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                String infoStelle = "La tabella deve contenere le seguenti colonne separate da virgole:\n" +
-                        " IDSTAR,NAMESTAR,GLON_ST,GLAT_ST,FLUX_ST,TYPE_ST\n" +
-                        " Inoltre il nome del file deve contenere " + choiceBox.getValue();
+                String infoStelle = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
+                        "IDSTAR,NAMESTAR,GLON_ST,GLAT_ST,FLUX_ST,TYPE_ST\n" +
+                        "L'importazione richiede circa 7 secondi.\nInoltre il nome del file deve contenere " + choiceBox.getValue();
                 csvInfo.setText(infoStelle);
             }
         });
         //TODO: AttenderePopUp: Mostra un popUp mentre l'applicazione importa un file e lo distribuisce nel DB
         //TODO: (opzionale): su AttenderePopUp mostrare percentuale di completamento importazione (righe copiate/righe da copiare*100%)
-        //TODO: ImportatoPopUp: Mostra una schermata popUp(cambia testo AttenderePopUp) se l'importazione avviene correttamente
-        //TODO: NonImportatoPopUp: Mostra una schermata popUp se l'importazione fallisce (Possibilmente con l'errore della query)
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) throws NullPointerException{
+
                 String satellite = choiceBox.getValue();
                 FileChooser fileChooser = new FileChooser();
                 File file;
                 Stage stage = new Stage();
-                int RB = 1;
+                // nel file fxml e' preselezionato il radio button filamenti
+                int RB = 2;
 
                 if (contorni.isSelected()){
                     stage.setTitle("Importa file posizioni contorni...");
