@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="CONTORNI_E_FILAMENTI@localhost" uuid="c8bce807-36ca-41df-85a1-7a37b0f7a3a3">
+    <data-source source="LOCAL" name="CONTORNI_E_FILAMENTI@localhost" uuid="7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5433/CONTORNI_E_FILAMENTI</jdbc-url>
+      <driver-properties>
+        <property name="ApplicationName" value="DataGrip" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

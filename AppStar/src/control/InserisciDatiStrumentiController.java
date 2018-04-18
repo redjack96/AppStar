@@ -13,12 +13,12 @@ public class InserisciDatiStrumentiController {
         inserisciDatiStrumentiGUI.istanziaInserisciDatiStrumentiGUIFXML(e);
     }
 
-    public void nuoviDatiStrumento(float banda, String strumento){
+    public void nuoviDatiStrumento(float banda, String strumento, String satellite){
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
         if (utente.isAmministratore()){
             UtenteAmministratore amministratore = new UtenteAmministratore(utente.getNome(), utente.getCognome(),
                     utente.getUserID(), utente.getPassword(), utente.getEmail());
-            amministratore.inserisciNuoviDatiStrumento(banda, strumento);
+            amministratore.inserisciNuoviDatiStrumento(banda, strumento, satellite);
         }
     }
 }

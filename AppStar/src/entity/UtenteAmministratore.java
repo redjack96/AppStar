@@ -1,6 +1,6 @@
 package entity;
 
-import persistence.FileDao;
+import persistence.FileImportazioneDao;
 import persistence.UtenteDao;
 import java.io.File;
 import java.sql.SQLException;
@@ -37,13 +37,13 @@ public class UtenteAmministratore extends UtenteRegistrato {
         }
         try{
             if (RB == 1){
-                FileDao.importaFile(file, "contorni_imp", satellite);
+                FileImportazioneDao.importaFile(file, "contorni_imp", satellite);
             }else if(RB == 2){
-                FileDao.importaFile(file, "filamenti_imp", satellite);
+                FileImportazioneDao.importaFile(file, "filamenti_imp", satellite);
             }else if(RB == 3){
-                FileDao.importaFile(file, "scheletri_imp", satellite);
+                FileImportazioneDao.importaFile(file, "scheletri_imp", satellite);
             }else if(RB == 4){
-                FileDao.importaFile(file, "stelle_imp", satellite);
+                FileImportazioneDao.importaFile(file, "stelle_imp", satellite);
             }
             r = 1;
         }catch (SQLException e){
@@ -56,16 +56,16 @@ public class UtenteAmministratore extends UtenteRegistrato {
     public void inserisciNuoviDatiSatellite(String nomeAgenzia, String nomeSatellite, LocalDate dataInizio,
                                             Period durata){
         try{
-            FileDao.inserisciFileDatiSatellite(nomeAgenzia, nomeSatellite, dataInizio, durata);
+            FileImportazioneDao.inserisciFileDatiSatellite(nomeAgenzia, nomeSatellite, dataInizio, durata);
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
     }
 
-    public void inserisciNuoviDatiStrumento(float banda, String strumento){
+    public void inserisciNuoviDatiStrumento(float banda, String strumento, String satellite){
 
         try{
-            FileDao.inserisciDatiStrumento(banda, strumento);
+            FileImportazioneDao.inserisciDatiStrumento(banda, strumento, satellite);
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
@@ -74,7 +74,7 @@ public class UtenteAmministratore extends UtenteRegistrato {
     public void troncaDatiSatellite(){
 
         try{
-            FileDao.troncaImp();
+            FileImportazioneDao.troncaImp();
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }

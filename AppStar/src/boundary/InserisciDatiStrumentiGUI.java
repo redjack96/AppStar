@@ -2,6 +2,8 @@ package boundary;
 
 import control.HomeController;
 import control.InserisciDatiStrumentiController;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -30,6 +32,9 @@ public class InserisciDatiStrumentiGUI implements Initializable {
     private TextField strumento;
     @FXML
     private Label campiLabel;
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
+    @FXML
+    private ChoiceBox<String> choiceBox;
 
     public void istanziaInserisciDatiStrumentiGUIFXML(Event e){
         //Lancia l'interfaccia grafica InserisciDatiStrumentiGUI.fxml.
@@ -45,6 +50,9 @@ public class InserisciDatiStrumentiGUI implements Initializable {
 
     public void initialize(URL location, ResourceBundle resources) {
 
+        choiceBox.setItems(choiceBoxList);
+        choiceBox.setValue("Herschel");
+
         campiLabel.setVisible(false);
 
         InserisciDatiStrumentiController inserisciDatiStrumentiController = new InserisciDatiStrumentiController();
@@ -56,10 +64,11 @@ public class InserisciDatiStrumentiGUI implements Initializable {
                 if (banda.getLength() == 0 || strumento.getLength() == 0 ) {
                     campiLabel.setVisible(true);
                 }else{
+                    String satelliteText = choiceBox.getValue();
                     String bandaText = banda.getText();
                     String strumentoText = strumento.getText();
                     float bandaFloat = Float.valueOf(bandaText);
-                    inserisciDatiStrumentiController.nuoviDatiStrumento(bandaFloat, strumentoText);
+                    inserisciDatiStrumentiController.nuoviDatiStrumento(bandaFloat, strumentoText, satelliteText);
                 }
             }
         });

@@ -102,7 +102,9 @@ public class HomeGUI implements Initializable {
                             new InserisciDatiStrumentiController();
                     inserisciDatiStrumentiController.istanziaInserisciFileDatiSatelliteGUI(event);
                 }else if(infoFilamento.isSelected()){
-
+                    InfoFilamentiController infoFilamentiController =
+                            new InfoFilamentiController();
+                    infoFilamentiController.istanziaInfoFilamentiGUI(event);
                 }else if(ricercaFilamento.isSelected()){
 
                 }else if(ricercaStelle.isSelected()){
