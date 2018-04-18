@@ -2,7 +2,6 @@ package entity;
 
 import persistence.FileDao;
 
-import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -60,13 +59,23 @@ public class UtenteRegistrato {
         this.amministratore = amministratore;
     }
 
-    public ArrayList<String> calcolaCentroide(String nomeFil, String idFil, String satellite){
-        ArrayList<String> centroide = new ArrayList<>(2);
+    public ArrayList calcolaCentroide(String nomeFil, int idFil, String satellite){
+        ArrayList centroide = new ArrayList<>(2);
         try{
             centroide = FileDao.calcolaCentroide(nomeFil, idFil, satellite);
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
         return centroide;
+    }
+
+    public ArrayList calcolaEstensione(String nomeFil, int idFil, String satellite){
+        ArrayList estensione = new ArrayList<>(2);
+        try{
+            estensione = FileDao.calcolaEstensione(nomeFil, idFil, satellite);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+        return estensione;
     }
 }

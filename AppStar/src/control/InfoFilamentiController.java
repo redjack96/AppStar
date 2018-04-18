@@ -15,11 +15,19 @@ public class InfoFilamentiController {
         infoFilamentiGUI.istanziaInfoFilamentiGUIFXML(e);
     }
 
-    public ArrayList<String> calcolaCentroide(String nomeFil, String idFil, String satellite){
+    public ArrayList calcolaCentroide(String nomeFil, int idFil, String satellite){
 
-        ArrayList<String> centroide;
+        ArrayList centroide;
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
         centroide = utente.calcolaCentroide(nomeFil, idFil, satellite);
         return centroide;
+    }
+
+    public ArrayList calcolaEstensione(String nomeFil, int idFil, String satellite){
+
+        ArrayList estensione;
+        UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
+        estensione = utente.calcolaEstensione(nomeFil, idFil, satellite);
+        return estensione;
     }
 }

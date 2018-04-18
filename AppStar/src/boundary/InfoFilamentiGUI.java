@@ -68,19 +68,60 @@ public class InfoFilamentiGUI implements Initializable {
 
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
+        lonCentroide.setEditable(false);
+        latCentroide.setEditable(false);
+        estFilamento.setEditable(false);
+        numSegFilamento.setEditable(false);
 
         InfoFilamentiController infoFilamentiController = new InfoFilamentiController();
 
         opCentroide.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                ArrayList<String> centroide;
-                centroide = infoFilamentiController.calcolaCentroide(nomeFil.getText(), idFil.getText(), choiceBox.getValue());
-                lonCentroide.setText(centroide.get(0));
-                latCentroide.setText(centroide.get(1));
+                ArrayList centroide;
+                String filamento;
+                int idfil;
+                String id = idFil.getText();
+                if (id.equals("")) {
+                    idfil = 0;
+                } else{
+                    idfil = Integer.parseInt(id);
+                }
+                if (!nomeFil.getText().equals("")){
+                    filamento = nomeFil.getText();
+                } else if(!idFil.getText().equals("")) {
+                    filamento = idFil.getText();
+                } else filamento = "?";
+
+                centroide = infoFilamentiController.calcolaCentroide(nomeFil.getText(), idfil, choiceBox.getValue());
+                lonCentroide.setText((String) centroide.get(0) + "\nFilamento = " + filamento);
+                latCentroide.setText((String) centroide.get(1) + "\nFilamento = " + filamento);
             }
         });
 
+        opEstensione.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                ArrayList estensione;
+                String filamento;
+                int idfil;
+                String id = idFil.getText();
+                if (id.equals("")) {
+                    idfil = 0;
+                } else{
+                    idfil = Integer.parseInt(id);
+                }
+                if (!nomeFil.getText().equals("")){
+                    filamento = nomeFil.getText();
+                } else if(!idFil.getText().equals("")) {
+                    filamento = idFil.getText();
+                } else filamento = "?";
+
+                System.out.println("calcolo estensione");
+                estensione = infoFilamentiController.calcolaEstensione(nomeFil.getText(), idfil, choiceBox.getValue());
+                String result = "Il filamento " + filamento + " si estende per " + (String) estensione.get(0) + " gradi di longitudine e per " + (String) estensione.get(1) +  " gradi di longitudine.";
+                estFilamento.setText(result);
+            }});
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
