@@ -79,13 +79,18 @@ public class InfoFilamentiGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 ArrayList centroide;
-                String filamento;
+                String  filamento;
                 int idfil;
                 String id = idFil.getText();
                 if (id.equals("")) {
                     idfil = 0;
                 } else{
-                    idfil = Integer.parseInt(id);
+                    try {
+                        idfil = Integer.parseInt(id);
+                    } catch (java.lang.NumberFormatException j){
+                        System.out.println(j.getMessage());
+                        idfil = -1;
+                    }
                 }
                 if (!nomeFil.getText().equals("")){
                     filamento = nomeFil.getText();
@@ -109,7 +114,12 @@ public class InfoFilamentiGUI implements Initializable {
                 if (id.equals("")) {
                     idfil = 0;
                 } else{
-                    idfil = Integer.parseInt(id);
+                    try {
+                        idfil = Integer.parseInt(id);
+                    } catch (java.lang.NumberFormatException j){
+                        System.out.println(j.getMessage());
+                        idfil = -1;
+                    }
                 }
                 if (!nomeFil.getText().equals("")){
                     filamento = nomeFil.getText();
@@ -117,11 +127,44 @@ public class InfoFilamentiGUI implements Initializable {
                     filamento = idFil.getText();
                 } else filamento = "?";
 
-                System.out.println("calcolo estensione");
                 estensione = infoFilamentiController.calcolaEstensione(nomeFil.getText(), idfil, choiceBox.getValue());
                 String result = "Il filamento " + filamento + " si estende per " + (String) estensione.get(0) + " gradi di longitudine e per " + (String) estensione.get(1) +  " gradi di longitudine.";
                 estFilamento.setText(result);
             }});
+
+        opNumSeg.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+
+                String filamento;
+                int idfil;
+                String id = idFil.getText();
+                if (id.equals("")) {
+                    idfil = 0;
+                } else{
+                    try {
+                    idfil = Integer.parseInt(id);
+                    } catch (java.lang.NumberFormatException j){
+                        System.out.println(j.getMessage());
+                        idfil = -1;
+                    }
+                }
+                if (!nomeFil.getText().equals("")){
+                    filamento = nomeFil.getText();
+                } else if(!idFil.getText().equals("")) {
+                    filamento = idFil.getText();
+                } else filamento = "?";
+
+                if (idfil != -1){
+                    int num_seg = infoFilamentiController.calcolaNumSeg(nomeFil.getText(), idfil, choiceBox.getValue());
+                    String result = "Il filamento " + filamento + " ha " + num_seg + " segmenti. ";
+                    numSegFilamento.setText(result);
+                } else {
+                    String result = "Filamento " + filamento + " NON TROVATO. ";
+                    numSegFilamento.setText(result);
+                }
+            }});
+
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

@@ -8,7 +8,7 @@ public class Connessione {
     public static Connection CONN;
 
     /**
-     * Attraverso persistence.Connessione.connettiti() viene stabilita una connessione col DBMS PostgreSQL 9.4.
+     * Attraverso persistence.Connessione.connettiti() viene stabilita una connessione col DBMS PostgreSQL 9.6.
      */
     public static void connettiti(){
         try{

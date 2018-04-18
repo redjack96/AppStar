@@ -22,7 +22,7 @@ public class FileDao {
 
         String query2 = "SELECT AVG(p.\"GLON_CONT\") AS lon_centroide, AVG(p.\"GLAT_CONT\") AS lat_centroide\n" +
                 "FROM punti_contorni p JOIN contorni c ON p.\"N\" = c.\"NPCONT\" " +
-                "JOIN filamenti f ON f.\"NAME\" = c.\"NAME_FIL\" " +
+                "JOIN filamenti f ON f.\"NAME\" = c.\"NAME_FIL\" AND f.\"SATELLITE\" = p.\"SATELLITE\"" +
                 "WHERE f.\"IDFIL\" = ? AND p.\"SATELLITE\" = ?";
 
         try{
@@ -91,5 +91,39 @@ public class FileDao {
         }
     }
 
+    public static int calcolaNumSeg(String nomeFil, int idFil, String satellite) throws SQLException{
+        //Calcola l'estensione del filamento specificato.
+        int num_seg;
+
+        Connessione.connettiti();
+        String query1 = "SELECT \"NUM_SEG\"\n" +
+                "FROM filamenti\n" +
+                "WHERE (\"IDFIL\" = ? AND \"SATELLITE\" = ?) OR \"NAME\" = ?";
+
+        try{
+            PreparedStatement ps1;
+            ps1 = CONN.prepareStatement(query1);
+            if (idFil>=0) ps1.setInt(1, idFil); else ps1.setInt(1, 0);
+            ps1.setString(2, satellite);
+            ps1.setString(3, nomeFil);
+
+            ResultSet rs1 = ps1.executeQuery();
+            rs1.next();
+
+            num_seg = rs1.getInt(1);
+
+            System.out.println("Numero di segmenti calcolato correttamente");
+            return num_seg;
+        }catch (SQLException | NullPointerException | java.lang.IndexOutOfBoundsException  e){
+            System.out.println(e.getMessage());
+            System.out.println("Numero di segmenti non trovato");
+            return -1;
+        } finally{
+            CONN.close();
+        }
+    }
 }
+
+
+
 

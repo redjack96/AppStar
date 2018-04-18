@@ -30,4 +30,12 @@ public class InfoFilamentiController {
         estensione = utente.calcolaEstensione(nomeFil, idFil, satellite);
         return estensione;
     }
+
+    public int calcolaNumSeg(String nomeFil, int idFil, String satellite){
+
+        int num_seg;
+        UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
+        num_seg = utente.calcolaNumSeg(nomeFil, idFil, satellite);
+        return num_seg;
+    }
 }

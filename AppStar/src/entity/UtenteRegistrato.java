@@ -78,4 +78,15 @@ public class UtenteRegistrato {
         }
         return estensione;
     }
+    public int calcolaNumSeg(String nomeFil, int idFil, String satellite){
+        int num_seg;
+        try{
+            num_seg = FileDao.calcolaNumSeg(nomeFil, idFil, satellite);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+            num_seg = -1;
+        }
+        return num_seg;
+
+    }
 }
