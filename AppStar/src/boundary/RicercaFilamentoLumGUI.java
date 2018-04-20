@@ -34,7 +34,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
     @FXML
     private TextField range2;
     @FXML
-    private ObservableList<Filamento> listaFilamenti;
+    private ObservableList<Filamento> listaFilamenti;  //TODO_ non serve listaFilamenti
     @FXML
     private TableView tableView;
     @FXML
@@ -116,8 +116,8 @@ public class RicercaFilamentoLumGUI implements Initializable {
 
                 ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
                         numSegColumn, satColumn, new BigDecimal(slider.getValue()),
-                        new BigDecimal(Integer.parseInt(range1.getText())),
-                        new BigDecimal(Integer.parseInt(range2.getText())), simbolo, pagina);
+                        new BigDecimal((range1.getText())),
+                        new BigDecimal((range2.getText())), simbolo, pagina);
                 System.out.println(slider.getValue());
             }
         });
@@ -138,8 +138,8 @@ public class RicercaFilamentoLumGUI implements Initializable {
                     pagina -= 1;
                     ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
                             numSegColumn, satColumn, new BigDecimal(slider.getValue()),
-                            new BigDecimal(Integer.parseInt(range1.getText())),
-                            new BigDecimal(Integer.parseInt(range2.getText())), simbolo, pagina);
+                            new BigDecimal(range1.getText()),
+                            new BigDecimal(range2.getText()), simbolo, pagina);
                     paginaLabel.setText(String.valueOf(pagina));
                     if (pagina == 1){
                         precedente.setDisable(true);
@@ -163,13 +163,13 @@ public class RicercaFilamentoLumGUI implements Initializable {
                 pagina += 1;
                 ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
                         numSegColumn, satColumn, new BigDecimal(slider.getValue()),
-                        new BigDecimal(Integer.parseInt(range1.getText())),
-                        new BigDecimal(Integer.parseInt(range2.getText())), simbolo, pagina);
+                        new BigDecimal(range1.getText()),
+                        new BigDecimal(range2.getText()), simbolo, pagina);
                 paginaLabel.setText(String.valueOf(pagina));
                 precedente.setDisable(false);
             }
         });
-
+        // TODO: non serve "scarica"
         scarica.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

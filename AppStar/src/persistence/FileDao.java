@@ -8,6 +8,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -138,16 +139,17 @@ public class FileDao {
 
         BigDecimal _1 = new BigDecimal(1);
         BigDecimal _100 = new BigDecimal(100);
-        BigDecimal contrasto = _100.multiply(lum.subtract(_1));
+        //BigDecimal contrasto = _100.multiply(lum.subtract(_1));
+        BigDecimal contrasto2 = _1.add(lum.divide(_100,1, RoundingMode.DOWN)); // questa dovrebbe essere quella corretta
 
         String clausolaWHERE = "";
 
         if (simbolo.equals("uguale")){
-            clausolaWHERE = "WHERE m.\"CONTRAST\" = '" + contrasto + "'";
+            clausolaWHERE = "WHERE m.\"CONTRAST\" = '" + contrasto2 + "'";
         }else if (simbolo.equals("minore")){
-            clausolaWHERE = "WHERE m.\"CONTRAST\" < '" + contrasto + "'";
+            clausolaWHERE = "WHERE m.\"CONTRAST\" < '" + contrasto2 + "'";
         }else if (simbolo.equals("maggiore")){
-            clausolaWHERE = "WHERE m.\"CONTRAST\" > '" + contrasto + "'";
+            clausolaWHERE = "WHERE m.\"CONTRAST\" > '" + contrasto2 + "'";
         }
 
         int offset = pagina * 20;
@@ -161,23 +163,27 @@ public class FileDao {
         try{
             PreparedStatement ps1 = CONN.prepareStatement(query);
             ps1.setInt(1, offset);
+            //lista di
             filamento = FXCollections.observableArrayList();
             ResultSet rs = ps1.executeQuery();
             while (rs.next()){
-                Filamento filamenti = new Filamento(rs.getString("IDFIL"), rs.getString("NAME"),
+                Filamento tuplaFilamenti = new Filamento(rs.getString("IDFIL"), rs.getString("NAME"),
                         rs.getInt("NUM_SEG"), rs.getString("SATELLITE"));
-                filamento.add(filamenti);
+                filamento.add(tuplaFilamenti);
             }
         }catch (SQLException e){
             System.out.println(e.getMessage());
         } finally{
             CONN.close();
         }
+        // setta i nomi delle colonne
         id.setCellValueFactory(new PropertyValueFactory<>("id"));
         nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
         numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
         satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+        //svuota la tableview
         tableView.setItems(null);
+        //riempie la tableview con massimo 20 dei filamenti trovati
         tableView.setItems(filamento);
     }
 }

@@ -50,10 +50,7 @@
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="ricercaFilamentoNumSeg" layoutX="94.0" layoutY="210.0" mnemonicParsing="false" text="Ricerca filamento per numero di segmenti" textFill="WHITE">
-         <toggleGroup>
-            <ToggleGroup fx:id="radioGroup1" />
-         </toggleGroup>
+      <RadioButton fx:id="ricercaFilamentoNumSeg" layoutX="94.0" layoutY="210.0" mnemonicParsing="false" text="Ricerca filamento per numero di segmenti" textFill="WHITE" toggleGroup="$radioGroup">
          <font>
             <Font size="14.0" />
          </font>
