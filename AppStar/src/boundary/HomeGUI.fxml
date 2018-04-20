@@ -10,7 +10,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.HomeGUI">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.HomeGUI">
    <children>
       <ImageView fitHeight="450.0" fitWidth="844.0" layoutX="-44.0">
          <image>
@@ -40,22 +40,30 @@
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="infoFilamento" layoutX="179.0" layoutY="171.0" mnemonicParsing="false" text="Informazioni filamento" textFill="WHITE" toggleGroup="$radioGroup">
+      <RadioButton fx:id="infoFilamento" layoutX="94.0" layoutY="150.0" mnemonicParsing="false" text="Informazioni filamento" textFill="WHITE" toggleGroup="$radioGroup">
          <font>
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="ricercaFilamento" layoutX="179.0" layoutY="211.0" mnemonicParsing="false" text="Ricerca filamento" textFill="WHITE" toggleGroup="$radioGroup">
+      <RadioButton fx:id="ricercaFilamentoLum" layoutX="94.0" layoutY="180.0" mnemonicParsing="false" text="Ricerca filamento per luminosità" textFill="WHITE" toggleGroup="$radioGroup">
          <font>
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="ricercaStelle" layoutX="179.0" layoutY="255.0" mnemonicParsing="false" text="Ricerca stelle" textFill="WHITE" toggleGroup="$radioGroup">
+      <RadioButton fx:id="ricercaFilamentoNumSeg" layoutX="94.0" layoutY="210.0" mnemonicParsing="false" text="Ricerca filamento per numero di segmenti" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioGroup1" />
+         </toggleGroup>
          <font>
             <Font size="14.0" />
          </font>
       </RadioButton>
-      <RadioButton fx:id="calcolaDistanze" layoutX="179.0" layoutY="298.0" mnemonicParsing="false" text="Calcola distanze" textFill="WHITE" toggleGroup="$radioGroup">
+      <RadioButton fx:id="ricercaStelle" layoutX="93.0" layoutY="241.0" mnemonicParsing="false" text="Ricerca stelle" textFill="WHITE" toggleGroup="$radioGroup">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="calcolaDistanze" layoutX="93.0" layoutY="272.0" mnemonicParsing="false" text="Calcola distanze" textFill="WHITE" toggleGroup="$radioGroup">
          <font>
             <Font size="14.0" />
          </font>

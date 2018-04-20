@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.RicercaFilamentoLumGUI">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="807.0" layoutX="-5.0">
+         <image>
+            <Image url="@../pics/universo.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="33.0" layoutY="14.0" text="Ricerca Filamento per luminosità ed ellitticità" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="61.0" text="Luminosità rispetto al bordo " textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="134.0" text="Ellitticità del Filamento compresa tra" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Label>
+      <Slider fx:id="slider" blockIncrement="0.01" layoutX="505.0" layoutY="73.0" minorTickCount="4" prefHeight="38.0" prefWidth="245.0" showTickLabels="true" showTickMarks="true" snapToTicks="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Slider>
+      <Label fx:id="percentuale" layoutX="506.0" layoutY="51.0" text="??,?? %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="range1" layoutX="450.0" layoutY="131.0" prefHeight="25.0" prefWidth="32.0" />
+      <TextField fx:id="range2" layoutX="505.0" layoutY="131.0" prefHeight="25.0" prefWidth="32.0" />
+      <Label layoutX="557.0" layoutY="127.0" prefHeight="33.0" prefWidth="204.0" text="Valori estremi: 1 e 10 esclusi" textFill="#b0650c" wrapText="true">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="75.0" layoutY="166.0" prefHeight="195.0" prefWidth="650.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="162.25" text="ID" />
+            <TableColumn fx:id="nomeColumn" prefWidth="162.25" text="NOME" />
+            <TableColumn fx:id="numSegColumn" prefWidth="162.25" text="NUMERO SEGMENTI" />
+            <TableColumn fx:id="satColumn" prefWidth="162.25" text="SATELLITE" />
+         </columns>
+      </TableView>
+      <Button fx:id="indietro" layoutX="27.0" layoutY="382.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Indietro">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="scarica" layoutX="613.0" layoutY="382.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Scarica">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="successivo" layoutX="407.0" layoutY="371.0" mnemonicParsing="false" text="&gt;" />
+      <Button fx:id="precedente" layoutX="217.0" layoutY="370.0" mnemonicParsing="false" text="&lt;" />
+      <Button fx:id="cerca" layoutX="493.0" layoutY="366.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Cerca">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="uguale" layoutX="337.0" layoutY="52.0" mnemonicParsing="false" text="Pari a" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="radioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="minore" layoutX="337.0" layoutY="72.0" mnemonicParsing="false" text="Minore del" textFill="#b0650c" toggleGroup="$radioGroup">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="maggiore" layoutX="337.0" layoutY="92.0" mnemonicParsing="false" text="Maggiore del" textFill="#b0650c" toggleGroup="$radioGroup">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="275.0" layoutY="373.0" text="pagina" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="paginaLabel" layoutX="356.0" layoutY="373.0" text="1" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

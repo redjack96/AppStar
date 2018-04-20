@@ -1,5 +1,12 @@
 package persistence;
 
+import entity.Filamento;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+
 import java.math.BigDecimal;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -121,6 +128,57 @@ public class FileDao {
         } finally{
             CONN.close();
         }
+    }
+
+    public static void cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
+                                      TableColumn numSeg, TableColumn satellite, BigDecimal lum, BigDecimal ellipt1,
+                                      BigDecimal ellipt2, String simbolo, int pagina) throws SQLException{
+
+        Connessione.connettiti();
+
+        BigDecimal _1 = new BigDecimal(1);
+        BigDecimal _100 = new BigDecimal(100);
+        BigDecimal contrasto = _100.multiply(lum.subtract(_1));
+
+        String clausolaWHERE = "";
+
+        if (simbolo.equals("uguale")){
+            clausolaWHERE = "WHERE m.\"CONTRAST\" = '" + contrasto + "'";
+        }else if (simbolo.equals("minore")){
+            clausolaWHERE = "WHERE m.\"CONTRAST\" < '" + contrasto + "'";
+        }else if (simbolo.equals("maggiore")){
+            clausolaWHERE = "WHERE m.\"CONTRAST\" > '" + contrasto + "'";
+        }
+
+        int offset = pagina * 20;
+
+        String query =  "SELECT * " +
+                        "FROM filamenti f JOIN misurazione m ON f.\"NAME\" = m.\"FILAMENTO\" " +
+                        clausolaWHERE + " AND m.\"ELLIPTICITY\" > '" + ellipt1 +
+                                        "' AND m.\"ELLIPTICITY\" < '" + ellipt2 + "' " +
+                        "ORDER BY \"SATELLITE\" ASC, \"IDFIL\" ASC LIMIT 20 OFFSET ?";
+
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(query);
+            ps1.setInt(1, offset);
+            filamento = FXCollections.observableArrayList();
+            ResultSet rs = ps1.executeQuery();
+            while (rs.next()){
+                Filamento filamenti = new Filamento(rs.getString("IDFIL"), rs.getString("NAME"),
+                        rs.getInt("NUM_SEG"), rs.getString("SATELLITE"));
+                filamento.add(filamenti);
+            }
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        } finally{
+            CONN.close();
+        }
+        id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
+        satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+        tableView.setItems(null);
+        tableView.setItems(filamento);
     }
 }
 

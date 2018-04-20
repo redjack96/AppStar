@@ -1,7 +1,6 @@
 package boundary;
 
 import control.*;
-import entity.UtenteRegistrato;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -10,10 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -33,7 +29,9 @@ public class HomeGUI implements Initializable {
     @FXML
     private RadioButton infoFilamento;
     @FXML
-    private RadioButton ricercaFilamento;
+    private RadioButton ricercaFilamentoLum;
+    @FXML
+    private RadioButton ricercaFilamentoNumSeg;
     @FXML
     private RadioButton ricercaStelle;
     @FXML
@@ -56,6 +54,7 @@ public class HomeGUI implements Initializable {
 
         try{
             Parent root = FXMLLoader.load(getClass().getResource("/boundary/HomeGUI.fxml"));
+            root.prefHeight(450);
             ((Node) (e.getSource())).getScene().setRoot(root);
             //Imposta il root relativo alla schermata di Home.
         }catch (Exception er){
@@ -105,7 +104,12 @@ public class HomeGUI implements Initializable {
                     InfoFilamentiController infoFilamentiController =
                             new InfoFilamentiController();
                     infoFilamentiController.istanziaInfoFilamentiGUI(event);
-                }else if(ricercaFilamento.isSelected()){
+                }else if(ricercaFilamentoLum.isSelected()){
+                    RicercaFilamentoLumController ricercaFilamentoLumController =
+                            new RicercaFilamentoLumController();
+                    ((Node) (event.getSource())).getScene().getRoot().prefHeight(500);
+                    ricercaFilamentoLumController.istanziaRicercaFilamentoLumGUI(event);
+                }else if (ricercaFilamentoNumSeg.isSelected()){
 
                 }else if(ricercaStelle.isSelected()){
 

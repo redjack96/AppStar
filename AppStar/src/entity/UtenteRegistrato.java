@@ -1,7 +1,11 @@
 package entity;
 
+import javafx.collections.ObservableList;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import persistence.FileDao;
 
+import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -87,6 +91,15 @@ public class UtenteRegistrato {
             num_seg = -1;
         }
         return num_seg;
+    }
 
+    public void cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
+                               TableColumn numSeg, TableColumn satellite, BigDecimal lum, BigDecimal ellipt1,
+                               BigDecimal ellipt2, String simbolo, int pagina){
+        try{
+            FileDao.cercaFilamenti(filamento, tableView, id, nome, numSeg, satellite, lum, ellipt1, ellipt2, simbolo, pagina);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
     }
 }
