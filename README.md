@@ -1,5 +1,5 @@
 # AppStar
-Questa applicazione permette di interrogare un database PostgreSQL contenente dati su stelle e filamenti di gas attraverso un'interfaccia desktop.
+Questa applicazione e' un progetto universitario che permette di interrogare un database PostgreSQL contenente dati su stelle e filamenti di gas, attraverso un'interfaccia desktop.
 
 Funzioni disponibili:
 
@@ -9,9 +9,13 @@ Funzioni disponibili:
 
 - Funzioni Menu Home:
 	- (ADMIN) Registrazione di un nuovo utente: Permette di aggiungere l'utente al database
-	- FINIRE: (ADMIN) Importazione di file csv: importa i file in una tra le tabelle "contorni_imp" , "filamenti_imp", 				"scheletri_imp", "stelle_imp", per poi smistarli nel database. Per ora vengono smistate correttamente solo le tabelle 			"contorni" e "punti_contorni"
+	- (ADMIN) Importazione di file csv: importa i file in una tra le tabelle "contorni_imp" , "filamenti_imp", 				"scheletri_imp", "stelle_imp", per poi smistarli nel database.
 	- (ADMIN) Inserire dati satelliti
-	- FINIRE: (ADMIN) Inserire dati strumenti
-	- TODO: Ricerca filamenti
+	- (ADMIN) Inserire dati strumenti
+	- Calcolo Centroide, Estensione e numero segmenti di un filamento
+	- Ricerca filamenti per contrasto e ellitticità
+	- TODO: Ricerca filamenti per numero segmenti
+	- TODO: Ricerca di filamenti in regioni quadrate o circolari di mappa
+	- TODO: Ricerca di stelle in regioni rettangolari
 	- TODO: Ricerca stelle
 	- TODO: Calcoli su filamenti e stelle
