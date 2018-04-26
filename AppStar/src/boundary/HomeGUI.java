@@ -107,10 +107,11 @@ public class HomeGUI implements Initializable {
                 }else if(ricercaFilamentoLum.isSelected()){
                     RicercaFilamentoLumController ricercaFilamentoLumController =
                             new RicercaFilamentoLumController();
-                    ((Node) (event.getSource())).getScene().getRoot().prefHeight(500);
                     ricercaFilamentoLumController.istanziaRicercaFilamentoLumGUI(event);
                 }else if (ricercaFilamentoNumSeg.isSelected()){
-
+                    RicercaFilamentoSegController ricercaFilamentoSegController =
+                            new RicercaFilamentoSegController();
+                    ricercaFilamentoSegController.istanziaRicercaFilamentoSegGUI(event);
                 }else if(ricercaStelle.isSelected()){
 
                 }else if(calcolaDistanze.isSelected()){

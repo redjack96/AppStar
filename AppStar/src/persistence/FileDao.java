@@ -202,6 +202,60 @@ public class FileDao {
 
         return result;
     }
+
+    public static int cercaFilamentiSeg(ObservableList<Filamento> filamento, TableView tableView, TableColumn idColumn,
+                                        TableColumn nomeColumn, TableColumn satColumn, TableColumn numSegColumn,
+                                        int seg1, int seg2, int pagina) throws SQLException{
+
+        Connessione.connettiti();
+
+        int numRic;
+        int offset = (pagina-1) * 20;
+
+        String query = "SELECT * " +
+                        "FROM filamenti " +
+                        "WHERE \"NUM_SEG\" >= ? AND \"NUM_SEG\" <= ? " +
+                        "LIMIT 20 OFFSET ?";
+
+        String queryCount = "SELECT COUNT(*) " +
+                            "FROM filamenti " +
+                            "WHERE \"NUM_SEG\" >= ? AND \"NUM_SEG\" <= ?";
+
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(query);
+            ps1.setInt(1, seg1);
+            ps1.setInt(2, seg2);
+            ps1.setInt(3, offset);
+            filamento = FXCollections.observableArrayList();
+            ResultSet rs1 = ps1.executeQuery();
+            while (rs1.next()){
+                Filamento filamenti = new Filamento(rs1.getString("IDFIL"), rs1.getString("NAME"),
+                        rs1.getInt("NUM_SEG"), rs1.getString("SATELLITE"), null, null);
+                filamento.add(filamenti);
+            }
+
+            PreparedStatement ps2 = CONN.prepareStatement(queryCount);
+            ps2.setInt(1, seg1);
+            ps2.setInt(2, seg2);
+            ResultSet rs2 = ps2.executeQuery();
+            rs2.next();
+            numRic = rs2.getInt(1);
+            System.out.println("NUMERO RICORRENZE TROVATE: " + numRic);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+            numRic = 0;
+        } finally{
+            CONN.close();
+        }
+        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+        nomeColumn.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        satColumn.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+        numSegColumn.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
+        tableView.setItems(null);
+        tableView.setItems(filamento);
+
+        return numRic;
+    }
 }
 
 
