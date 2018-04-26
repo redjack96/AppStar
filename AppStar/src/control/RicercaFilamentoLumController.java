@@ -10,6 +10,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class RicercaFilamentoLumController {
 
@@ -18,10 +19,13 @@ public class RicercaFilamentoLumController {
         ricercaFilamentoLumGUI.istanziaRicercaFilamentoLumGUIFXML(e);
     }
 
-    public void cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
-                               TableColumn numSeg, TableColumn satellite, BigDecimal lum, BigDecimal ellipt1,
-                               BigDecimal ellipt2, String simbolo, int pagina){
+    public ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
+                               TableColumn numSeg, TableColumn satellite, TableColumn con, TableColumn ell,
+                               float lum, float ellipt1, float ellipt2, int pagina){
+        ArrayList<Integer> result = new ArrayList<>(2);
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
-        utente.cercaFilamenti(filamento, tableView, id, nome, numSeg, satellite, lum, ellipt1, ellipt2, simbolo, pagina);
+        result = utente.cercaFilamenti(filamento, tableView, id, nome, numSeg, satellite, con, ell, lum, ellipt1, ellipt2,
+                pagina);
+        return result;
     }
 }

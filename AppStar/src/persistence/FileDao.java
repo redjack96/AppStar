@@ -8,10 +8,10 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 import static persistence.Connessione.CONN;
@@ -131,60 +131,76 @@ public class FileDao {
         }
     }
 
-    public static void cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
-                                      TableColumn numSeg, TableColumn satellite, BigDecimal lum, BigDecimal ellipt1,
-                                      BigDecimal ellipt2, String simbolo, int pagina) throws SQLException{
+    public static ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
+                                      TableColumn numSeg, TableColumn satellite, TableColumn con, TableColumn ell,
+                                      float lum, float ellipt1, float ellipt2, int pagina)
+            throws SQLException, NumberFormatException{
 
         Connessione.connettiti();
 
-        BigDecimal _1 = new BigDecimal(1);
+        int numRic;
+        int tot;
+        ArrayList<Integer> result = new ArrayList<>(2);
+
+        /*BigDecimal _1 = new BigDecimal(1);
         BigDecimal _100 = new BigDecimal(100);
-        //BigDecimal contrasto = _100.multiply(lum.subtract(_1));
-        BigDecimal contrasto2 = _1.add(lum.divide(_100,1, RoundingMode.DOWN)); // questa dovrebbe essere quella corretta
+        BigDecimal contrasto = lum.divide(_100).add(_1);*/
 
-        String clausolaWHERE = "";
+        double contrasto = 1.0 + (lum/100.0);
 
-        if (simbolo.equals("uguale")){
-            clausolaWHERE = "WHERE m.\"CONTRAST\" = '" + contrasto2 + "'";
-        }else if (simbolo.equals("minore")){
-            clausolaWHERE = "WHERE m.\"CONTRAST\" < '" + contrasto2 + "'";
-        }else if (simbolo.equals("maggiore")){
-            clausolaWHERE = "WHERE m.\"CONTRAST\" > '" + contrasto2 + "'";
-        }
+        int offset = (pagina - 1) * 20;
 
-        int offset = pagina * 20;
-
-        String query =  "SELECT * " +
+        String query =  "SELECT f.\"IDFIL\", f.\"NAME\", f.\"NUM_SEG\", f.\"SATELLITE\", m.\"CONTRAST\", m.\"ELLIPTICITY\" " +
                         "FROM filamenti f JOIN misurazione m ON f.\"NAME\" = m.\"FILAMENTO\" " +
-                        clausolaWHERE + " AND m.\"ELLIPTICITY\" > '" + ellipt1 +
+                        "WHERE m.\"CONTRAST\" > '" + contrasto + "' AND m.\"ELLIPTICITY\" > '" + ellipt1 +
                                         "' AND m.\"ELLIPTICITY\" < '" + ellipt2 + "' " +
                         "ORDER BY \"SATELLITE\" ASC, \"IDFIL\" ASC LIMIT 20 OFFSET ?";
+
+        String queryCount =     "SELECT COUNT(*) AS \"CONTEGGIO\" " +
+                                "FROM filamenti f JOIN misurazione m ON f.\"NAME\" = m.\"FILAMENTO\" "+
+                                "WHERE m.\"CONTRAST\" > '" + contrasto + "' AND m.\"ELLIPTICITY\" > '" + ellipt1 +
+                                "' AND m.\"ELLIPTICITY\" < '" + ellipt2 + "' ";
+
+        String countAll =   "SELECT COUNT(*) FROM filamenti";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(query);
             ps1.setInt(1, offset);
-            //lista di
             filamento = FXCollections.observableArrayList();
             ResultSet rs = ps1.executeQuery();
             while (rs.next()){
-                Filamento tuplaFilamenti = new Filamento(rs.getString("IDFIL"), rs.getString("NAME"),
-                        rs.getInt("NUM_SEG"), rs.getString("SATELLITE"));
-                filamento.add(tuplaFilamenti);
+                Filamento filamenti = new Filamento(rs.getString("IDFIL"), rs.getString("NAME"),
+                        rs.getInt("NUM_SEG"), rs.getString("SATELLITE"),
+                        (rs.getBigDecimal("CONTRAST")), (rs.getBigDecimal("ELLIPTICITY")));
+                filamento.add(filamenti);
             }
+
+            Statement st2 = CONN.createStatement();
+            ResultSet rs2 = st2.executeQuery(queryCount);
+            rs2.next();
+            numRic = rs2.getInt(1);
+            System.out.println("NUMERO RICORRENZE TROVATE: " + numRic);
+            Statement st3 = CONN.createStatement();
+            ResultSet rs3 = st3.executeQuery(countAll);
+            rs3.next();
+            tot = rs3.getInt(1);
+            result.add(0, numRic); result.add(1, tot);
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            result.add(0, 0); result.add(1, 0);
         } finally{
             CONN.close();
         }
-        // setta i nomi delle colonne
         id.setCellValueFactory(new PropertyValueFactory<>("id"));
         nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
         numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
         satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
-        //svuota la tableview
+        con.setCellValueFactory(new PropertyValueFactory<>("con"));
+        ell.setCellValueFactory(new PropertyValueFactory<>("ell"));
         tableView.setItems(null);
-        //riempie la tableview con massimo 20 dei filamenti trovati
         tableView.setItems(filamento);
+
+        return result;
     }
 }
 

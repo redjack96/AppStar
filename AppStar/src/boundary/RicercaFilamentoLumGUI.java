@@ -5,6 +5,7 @@ import control.RicercaFilamentoLumController;
 import entity.Filamento;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.beans.value.WeakChangeListener;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -17,9 +18,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.*;
+import javafx.scene.text.Text;
 
 import java.math.BigDecimal;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class RicercaFilamentoLumGUI implements Initializable {
@@ -34,7 +37,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
     @FXML
     private TextField range2;
     @FXML
-    private ObservableList<Filamento> listaFilamenti;  //TODO_ non serve listaFilamenti
+    private ObservableList<Filamento> listaFilamenti;
     @FXML
     private TableView tableView;
     @FXML
@@ -46,25 +49,25 @@ public class RicercaFilamentoLumGUI implements Initializable {
     @FXML
     private TableColumn satColumn;
     @FXML
+    private TableColumn conColumn;
+    @FXML
+    private TableColumn elliptColumn;
+    @FXML
     private Button indietro;
     @FXML
     private Button cerca;
-    @FXML
-    private Button scarica;
-    @FXML
-    private RadioButton uguale;
-    @FXML
-    private RadioButton minore;
-    @FXML
-    private RadioButton maggiore;
     @FXML
     private Button precedente;
     @FXML
     private Button successivo;
     @FXML
-    private Label paginaLabel;
+    private TextField paginaText;
     @FXML
-    private Label percentuale;
+    private TextField percentualeText;
+    @FXML
+    private Label numRic;
+    @FXML
+    private Label tot;
 
     public void istanziaRicercaFilamentoLumGUIFXML(Event e){
         //Lancia l'interfaccia grafica RicercaFilamentoLumGUI.fxml.
@@ -82,68 +85,104 @@ public class RicercaFilamentoLumGUI implements Initializable {
 
         RicercaFilamentoLumController ricercaFilamentoLumController = new RicercaFilamentoLumController();
 
-        uguale.setSelected(true);
+        percentualeText.setText("00.00");
+        slider.setBlockIncrement(0.01);
         precedente.setDisable(true);
-
-        /*slider.setOnMouseDragOver(new EventHandler<MouseDragEvent>() {
-            @Override
-            public void handle(MouseDragEvent event) {
-                percentuale.setText(String.valueOf(slider.getValue()) + " %");
-                System.out.println(percentuale.getText());
-            }
-        });*/
 
         slider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                percentuale.setText(String.valueOf(newValue.toString() + " %"));
+                /*percentuale.setText(String.valueOf(newValue.toString() + " %"));*/
+                percentualeText.setText(String.valueOf(newValue.toString()));
             }
         });
+
+        paginaText.textProperty().addListener((new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                ArrayList<Integer> result = new ArrayList<>(2);
+                try{
+                    int pagina = Integer.parseInt(paginaText.getText());
+                    float minEllipticity = Float.parseFloat(range1.getText());
+                    float maxEllipticity = Float.parseFloat(range2.getText());
+                    float lum = Float.parseFloat(percentualeText.getText());
+                    if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
+                            lum < 0.0){
+                        System.out.println("Errore");
+                    }else {
+                        result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
+                                numSegColumn, satColumn, conColumn, elliptColumn, lum,
+                                minEllipticity, maxEllipticity, pagina);
+                        numRic.setText(String.valueOf(result.get(0)));
+                        tot.setText( " / " + String.valueOf(result.get(1)));
+                        if (pagina==1){
+                            precedente.setDisable(true);
+                        }else {
+                            precedente.setDisable(false);
+                        }
+                    }
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
+                }
+            }
+        }));
 
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 int pagina = 1;
-                paginaLabel.setText(String.valueOf(pagina));
-                String simbolo;
-                if (uguale.isSelected()){
-                    simbolo = "uguale";
-                }else if (minore.isSelected()){
-                    simbolo = "minore";
-                }else {
-                    simbolo = "maggiore";
+                ArrayList<Integer> result = new ArrayList<>(2);
+                //paginaLabel.setText(String.valueOf(pagina));
+                try{
+                    paginaText.setText(String.valueOf(pagina));
+                    float minEllipticity = Float.parseFloat(range1.getText());
+                    float maxEllipticity = Float.parseFloat(range2.getText());
+                    float lum = Float.parseFloat((percentualeText.getText()));
+                    if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
+                            lum < 0.0){
+                        System.out.println("Errore");
+                    }else {
+                        result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
+                                numSegColumn, satColumn, conColumn, elliptColumn, lum,
+                                minEllipticity, maxEllipticity, pagina);
+                        numRic.setText(String.valueOf(result.get(0)));
+                        tot.setText( " / " + String.valueOf(result.get(1)));
+                    }
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
                 }
-
-                ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                        numSegColumn, satColumn, new BigDecimal(slider.getValue()),
-                        new BigDecimal((range1.getText())),
-                        new BigDecimal((range2.getText())), simbolo, pagina);
-                System.out.println(slider.getValue());
             }
         });
 
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                int pagina = Integer.parseInt(paginaLabel.getText());
-                if (pagina>1){
-                    String simbolo;
-                    if (uguale.isSelected()){
-                        simbolo = "uguale";
-                    }else if (minore.isSelected()){
-                        simbolo = "minore";
-                    }else {
-                        simbolo = "maggiore";
+                //int pagina = Integer.parseInt(paginaLabel.getText());
+                ArrayList<Integer> result = new ArrayList<>(2);
+                try{
+                    int pagina = Integer.parseInt(paginaText.getText());
+                    if (pagina>1){
+                        pagina -= 1;
+                        float minEllipticity = Float.parseFloat(range1.getText());
+                        float maxEllipticity = Float.parseFloat(range2.getText());
+                        float lum = Float.parseFloat(percentualeText.getText());
+                        if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
+                                lum < 0.0){
+                            System.out.println("Errore");
+                        }else {
+                            result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
+                                    numSegColumn, satColumn, conColumn, elliptColumn, lum,
+                                    minEllipticity, maxEllipticity, pagina);
+                            numRic.setText(String.valueOf(result.get(0)));
+                            tot.setText( " / " + String.valueOf(result.get(1)));
+                            paginaText.setText(String.valueOf(pagina));
+                            if (pagina == 1){
+                                precedente.setDisable(true);
+                            }
+                        }
                     }
-                    pagina -= 1;
-                    ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                            numSegColumn, satColumn, new BigDecimal(slider.getValue()),
-                            new BigDecimal(range1.getText()),
-                            new BigDecimal(range2.getText()), simbolo, pagina);
-                    paginaLabel.setText(String.valueOf(pagina));
-                    if (pagina == 1){
-                        precedente.setDisable(true);
-                    }
+                }catch (NumberFormatException nFE){
+                        System.out.println(nFE.getMessage());
                 }
             }
         });
@@ -151,28 +190,30 @@ public class RicercaFilamentoLumGUI implements Initializable {
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                int pagina = Integer.parseInt(paginaLabel.getText());
-                String simbolo;
-                if (uguale.isSelected()){
-                    simbolo = "uguale";
-                }else if (minore.isSelected()){
-                    simbolo = "minore";
-                }else {
-                    simbolo = "maggiore";
+                ArrayList<Integer> result = new ArrayList<>(2);
+                //int pagina = Integer.parseInt(paginaLabel.getText());
+                int pagina = Integer.parseInt(paginaText.getText());
+
+                try{
+                    pagina += 1;
+                    float minEllipticity = Float.parseFloat(range1.getText());
+                    float maxEllipticity = Float.parseFloat(range2.getText());
+                    float lum = Float.parseFloat(percentualeText.getText());
+                    if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
+                            lum < 0.0){
+                        System.out.println("Errore");
+                    }else {
+                        result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
+                                numSegColumn, satColumn, conColumn, elliptColumn, lum,
+                                minEllipticity, maxEllipticity, pagina);
+                        numRic.setText(String.valueOf(result.get(0)));
+                        tot.setText( " / " + String.valueOf(result.get(1)));
+                        paginaText.setText(String.valueOf(pagina));
+                        precedente.setDisable(false);
+                    }
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
                 }
-                pagina += 1;
-                ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                        numSegColumn, satColumn, new BigDecimal(slider.getValue()),
-                        new BigDecimal(range1.getText()),
-                        new BigDecimal(range2.getText()), simbolo, pagina);
-                paginaLabel.setText(String.valueOf(pagina));
-                precedente.setDisable(false);
-            }
-        });
-        // TODO: non serve "scarica"
-        scarica.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
 
             }
         });

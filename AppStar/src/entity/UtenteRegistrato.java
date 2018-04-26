@@ -93,13 +93,19 @@ public class UtenteRegistrato {
         return num_seg;
     }
 
-    public void cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
-                               TableColumn numSeg, TableColumn satellite, BigDecimal lum, BigDecimal ellipt1,
-                               BigDecimal ellipt2, String simbolo, int pagina){
+    public ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
+                               TableColumn numSeg, TableColumn satellite, TableColumn con, TableColumn ell,
+                               float lum, float ellipt1, float ellipt2, int pagina){
+
+        ArrayList<Integer> result = new ArrayList<>(2);
+
         try{
-            FileDao.cercaFilamenti(filamento, tableView, id, nome, numSeg, satellite, lum, ellipt1, ellipt2, simbolo, pagina);
+            result = FileDao.cercaFilamenti(filamento, tableView, id, nome, numSeg, satellite, con, ell, lum, ellipt1,
+                    ellipt2, pagina);
         }catch (SQLException e){
+            result.add(0,0); result.add(1, 0);
             System.out.println(e.getMessage());
         }
+        return result;
     }
 }
