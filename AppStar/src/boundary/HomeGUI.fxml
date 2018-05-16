@@ -97,7 +97,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </RadioButton>
-                  <RadioButton fx:id="ricercaFilamentoNumSeg1" mnemonicParsing="false" text="Ricerca filamento in una regione" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="ricercaFilamentoRegione" mnemonicParsing="false" text="Ricerca filamento in una regione" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>

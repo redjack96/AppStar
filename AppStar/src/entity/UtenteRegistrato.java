@@ -123,4 +123,16 @@ public class UtenteRegistrato {
         }
         return result;
     }
+
+    public void cercaInRegione(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn
+            nome, TableColumn satellite, TableColumn numSeg, float lungh, float centLon, float
+                                       centLat, boolean geom, int pagina){
+
+        try{
+            FileDao.cercaInRegione(filamento, tableView, id, nome, satellite, numSeg, lungh, centLon, centLat, geom,
+                    pagina);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+    }
 }

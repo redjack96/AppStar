@@ -256,6 +256,68 @@ public class FileDao {
 
         return numRic;
     }
+
+    public static void cercaInRegione(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn
+                               nome, TableColumn satellite, TableColumn numSeg, float lungh, float centLon, float
+                               centLat, boolean geom, int pagina) throws SQLException{
+
+        Connessione.connettiti();
+
+        String query;
+        int offset = (pagina-1) * 20;
+
+        float maxLat = centLat + lungh/2;
+        float minLat = centLat - lungh/2;
+        float maxLon = centLon + lungh/2;
+        float minLon = centLon - lungh/2;
+
+        String squareQuery = "SELECT *\n" +
+                "FROM filamenti \n" +
+                "WHERE \"NAME\" NOT IN ( \n" +
+                "  SELECT DISTINCT c.\"NAME_FIL\"\n" +
+                "  FROM punti_contorni p JOIN contorni c ON (p.\"N\" = c.\"NPCONT\" AND p.\"SATELLITE\" = c.\"SATELLITE\")\n" +
+                "  WHERE p.\"GLON_CONT\" < '" + minLon + "' OR \n" +
+                "    p.\"GLON_CONT\" > '" + maxLon + "' OR\n" +
+                "    p.\"GLAT_CONT\" < '" + minLat + "' OR\n" +
+                "    p.\"GLAT_CONT\" > '" + maxLat + "')\n" +
+                "ORDER BY \"IDFIL\"\n" +
+                "LIMIT 20 OFFSET '" + offset + "';";
+
+        String circleQuery = "SELECT *\n" +
+                "FROM filamenti\n" +
+                "WHERE \"NAME\" NOT IN (\n" +
+                "SELECT DISTINCT c.\"NAME_FIL\"\n" +
+                "FROM punti_contorni p JOIN contorni c ON (p.\"N\" = c.\"NPCONT\" AND p.\"SATELLITE\" = c.\"SATELLITE\")\n" +
+                "WHERE sqrt((p.\"GLON_CONT\"- '" + centLon + "')^2 + (p.\"GLAT_CONT\" + '" + centLat + "')^2) > '" + lungh + "') \n" +
+                "ORDER BY \"IDFIL\" \n" +
+                "LIMIT 20 OFFSET '" + offset + "';";
+
+        if (geom){                  //true = quadrato
+            query = squareQuery;
+        } else {                    //false = cerchio
+            query = circleQuery;
+        }
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(query);
+            filamento = FXCollections.observableArrayList();
+            ResultSet rs1 = ps1.executeQuery();
+            while (rs1.next()){
+                Filamento filamenti = new Filamento(rs1.getString("IDFIL"), rs1.getString("NAME"),
+                        rs1.getInt("NUM_SEG"), rs1.getString("SATELLITE"), null, null);
+                filamento.add(filamenti);
+            }
+        }catch (SQLException e){
+        System.out.println(e.getMessage());
+        } finally{
+            CONN.close();
+        }
+        id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+        satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+        numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
+        tableView.setItems(null);
+        tableView.setItems(filamento);
+    }
 }
 
 
