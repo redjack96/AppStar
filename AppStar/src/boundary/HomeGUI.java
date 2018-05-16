@@ -35,9 +35,13 @@ public class HomeGUI implements Initializable {
     @FXML
     private RadioButton ricercaFilamentoRegione;
     @FXML
-    private RadioButton ricercaStelle;
+    private RadioButton ricercaStelleFilamento;
     @FXML
-    private RadioButton calcolaDistanze;
+    private RadioButton ricercaStelleRegione;
+    @FXML
+    private RadioButton calcolaDistanzeSegmento;
+    @FXML
+    private RadioButton calcolaDistanzeStelle;
     @FXML
     private Button logoutButton;
     @FXML
@@ -118,9 +122,15 @@ public class HomeGUI implements Initializable {
                     RicercaFilamentoRegioneController ricercaFilamentoRegioneController =
                             new RicercaFilamentoRegioneController();
                     ricercaFilamentoRegioneController.istanziaRicercaFilamentoRegioneGUI(event);
-                }else if(ricercaStelle.isSelected()){
+                }else if(ricercaStelleFilamento.isSelected()){
+                    RicercaStelleInFilamentoController ricercaStelleInFilamentoController =
+                            new RicercaStelleInFilamentoController();
+                    //ricercaStelleInFilamentoController.istanziaRicercaStelleInFilamentoGUI(event);
+                }else if(ricercaStelleRegione.isSelected()){
 
-                }else if(calcolaDistanze.isSelected()){
+                }else if(calcolaDistanzeSegmento.isSelected()){
+
+                }else if(calcolaDistanzeStelle.isSelected()){
 
                 }
             }

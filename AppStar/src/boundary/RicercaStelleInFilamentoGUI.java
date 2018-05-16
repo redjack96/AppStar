@@ -30,7 +30,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     private TextField paginaText;
     @FXML
     private ChoiceBox<String> choiceBox;
-    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herscel", "Spitzer");
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
     @FXML
     private TableView tableView;
     @FXML
@@ -45,8 +45,10 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     private Button successivo;
     @FXML
     private Button cerca;
+    @FXML
+    private Label numRic;
 
-    public void istanziaRicercaStelleInFilamentoGUIFXML(Event e){
+    public void istanziaRicercaStelleInFilamentoGUI(Event e){
 
         try{
             Parent root = FXMLLoader.load(getClass().getResource(("/boundary.RicercaStelleInFilamentoGUI.fxml")));

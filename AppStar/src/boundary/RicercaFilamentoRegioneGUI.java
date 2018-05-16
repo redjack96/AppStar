@@ -60,6 +60,9 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
     private RadioButton cerchio; //ok
     @FXML
     private RadioButton quadrato; //ok
+
+    private boolean bloccaPaginaText = false;
+
     public void istanziaRicercaFilamentoRegioneGUIFXML(Event e){
         //Lancia l'interfaccia grafica RicercaFilamentoRegioneGUI.fxml.
 
@@ -73,18 +76,33 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
     }
 
     private void ricerca(RicercaFilamentoRegioneController ricercaFilamentoRegioneController, int pagina) throws NumberFormatException{
+        long start, elapsed;
+        float result;
         boolean geom = false;
         if (quadrato.isSelected()){
-            geom = true;
+            geom = true;    // quadrato = true
+            System.out.println("Ricerca in un quadrato. Attendere...");
+        } else if (cerchio.isSelected()){
+            geom = false;  // cerchio = false
+            System.out.println("Ricerca in un cerchio. Attendere...");
         }
+        start = System.nanoTime();
         ricercaFilamentoRegioneController.cercaInRegione(listaFilamenti, tableView, idColumn, nomeColumn, satColumn,
                 numSegColumn, Float.parseFloat(dimText.getText()), Float.parseFloat(lonCentroide.getText()),
                 Float.parseFloat(latCentroide.getText()), geom, pagina);
+        elapsed = System.nanoTime();
+        result = (elapsed - start)/1000000000;
+        System.out.println("Completato. Tempo impiegato: " + result);
         if (pagina == 1){
             precedente.setDisable(true);
         }else {
             precedente.setDisable(false);
         }
+        // evita di far partire la ricerca quando viene cambiato il numero di pagina
+        bloccaPaginaText = true;
+        paginaText.setText(String.valueOf(pagina));
+        // toglie il blocco
+        bloccaPaginaText = false;
     }
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -95,7 +113,9 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
-                    ricerca(ricercaFilamentoRegioneController, pagina);
+                    if (!bloccaPaginaText) {
+                        ricerca(ricercaFilamentoRegioneController, pagina);
+                    }
                 } catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
@@ -121,7 +141,6 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
                     if (pagina>1){
                         pagina -= 1;
                         ricerca(ricercaFilamentoRegioneController, pagina);
-                        paginaText.setText(String.valueOf(pagina));
                     }
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
@@ -136,7 +155,6 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
                     int pagina = Integer.parseInt(paginaText.getText());
                     pagina +=1;
                     ricerca(ricercaFilamentoRegioneController, pagina);
-                    paginaText.setText(String.valueOf(pagina));
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
