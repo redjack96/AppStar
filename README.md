@@ -14,8 +14,8 @@ Questa applicazione e' un progetto universitario che permette di interrogare un 
 	- [x] Calcolo Centroide, Estensione e numero segmenti di un filamento
 	- [x] Ricerca filamenti per contrasto e ellitticità
 	- [x] Ricerca filamenti per numero di segmenti
-	- [ ] Ricerca di filamenti in regioni quadrate o circolari di mappa
-	- [ ] Ricerca di stelle in regioni rettangolari, interne o esterne ai filamenti
+	- [x] Ricerca di filamenti in regioni quadrate o circolari di mappa
 	- [ ] Ricerca delle stelle interne a un filamento
+	- [ ] Ricerca di stelle in regioni rettangolari, interne o esterne ai filamenti
 	- [ ] Calcolo della distanza minima degli estremi di un segmento di un filamento dal contorno
 	- [ ] Calcolo della distanza minima dalla spina dorsale per stelle interne a un filamento
