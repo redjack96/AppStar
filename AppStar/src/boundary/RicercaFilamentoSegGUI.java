@@ -60,8 +60,6 @@ public class RicercaFilamentoSegGUI implements Initializable {
     @FXML
     private Label numRic;
 
-    private boolean bloccaPaginaText = false;
-
     public void istanziaRicercaFilamentoSegGUIFXML(Event e){
         //Lancia l'interfaccia grafica RicercaFilamentoSegGUI.fxml.
 
@@ -74,32 +72,6 @@ public class RicercaFilamentoSegGUI implements Initializable {
         }
     }
 
-    private void ricerca(RicercaFilamentoSegController controller, int pagina) throws NumberFormatException{
-        int result = 0;
-        int minSeg = Integer.parseInt(range1.getText());
-        int maxSeg = Integer.parseInt(range2.getText());
-        if (minSeg < 0 || (maxSeg - minSeg <= 2)){
-            System.out.println("Errore: dimensione intervallo deve essere maggiore di 2!");
-        }else {
-            //TODO: Creare un popUp di attesa (Riusabile per Requisiti 8,9,10,11,12)
-            // numero di ricorrenze e popolamento tabella
-            result = controller.cercaFilamentiSeg(listaFilamenti, tableView, idColumn,
-                    nomeColumn, satColumn, numSegColumn, Integer.parseInt(range1.getText()),
-                    Integer.parseInt(range2.getText()), pagina);
-            numRic.setText(String.valueOf(result));
-            if (pagina==1){
-                precedente.setDisable(true);
-            }else {
-                precedente.setDisable(false);
-            }
-            // evita di far partire la ricerca quando viene cambiato il numero di pagina
-            bloccaPaginaText = true;
-            paginaText.setText(String.valueOf(pagina));
-            // toglie il blocco
-            bloccaPaginaText = false;
-        }
-    }
-
     public void initialize(URL location, ResourceBundle resources) {
 
         RicercaFilamentoSegController ricercaFilamentoSegController = new RicercaFilamentoSegController();
@@ -109,10 +81,24 @@ public class RicercaFilamentoSegGUI implements Initializable {
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                int result;
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
-                    if (!bloccaPaginaText) {
-                        ricerca(ricercaFilamentoSegController, pagina);
+                    int minSeg = Integer.parseInt(range1.getText());
+                    int maxSeg = Integer.parseInt(range2.getText());
+                    if (minSeg < 0 || (maxSeg - minSeg <= 2) || (minSeg > maxSeg)){
+                        System.out.println("Errore: dimensione intervallo deve essere maggiore di 2!");
+                    }else {
+                        //result = ?;
+                        result = ricercaFilamentoSegController.cercaFilamentiSeg(listaFilamenti, tableView, idColumn,
+                                nomeColumn, satColumn, numSegColumn, Integer.parseInt(range1.getText()),
+                                Integer.parseInt(range2.getText()), pagina);
+                        numRic.setText(String.valueOf(result));
+                        if (pagina==1){
+                            precedente.setDisable(true);
+                        }else {
+                            precedente.setDisable(false);
+                        }
                     }
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
@@ -124,8 +110,20 @@ public class RicercaFilamentoSegGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 int pagina = 1;
+                int result;
                 try{
-                    ricerca(ricercaFilamentoSegController, pagina);
+                    paginaText.setText(String.valueOf(pagina));
+                    int minSeg = Integer.parseInt(range1.getText());
+                    int maxSeg = Integer.parseInt(range2.getText());
+                    if (minSeg < 0 || (maxSeg - minSeg <= 2) || (minSeg > maxSeg)){
+                        System.out.println("Errore");
+                    }else {
+                        //Metodo result = ?;
+                        result = ricercaFilamentoSegController.cercaFilamentiSeg(listaFilamenti, tableView, idColumn,
+                                nomeColumn, satColumn, numSegColumn, Integer.parseInt(range1.getText()),
+                                Integer.parseInt(range2.getText()), pagina);
+                        numRic.setText(String.valueOf(result));
+                    }
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
@@ -135,11 +133,27 @@ public class RicercaFilamentoSegGUI implements Initializable {
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                //int pagina = Integer.parseInt(paginaLabel.getText());
+                int result;
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (pagina>1){
                         pagina -= 1;
-                        ricerca(ricercaFilamentoSegController, pagina);
+                        int minSeg = Integer.parseInt(range1.getText());
+                        int maxSeg = Integer.parseInt(range2.getText());
+                        if (minSeg < 0 || (maxSeg - minSeg <= 2) || (minSeg > maxSeg)){
+                            System.out.println("Errore");
+                        }else {
+                            // metodo result = ?;
+                            result = ricercaFilamentoSegController.cercaFilamentiSeg(listaFilamenti, tableView, idColumn,
+                                    nomeColumn, satColumn, numSegColumn, Integer.parseInt(range1.getText()),
+                                    Integer.parseInt(range2.getText()), pagina);
+                            numRic.setText(String.valueOf(result));
+                            paginaText.setText(String.valueOf(pagina));
+                            if (pagina == 1){
+                                precedente.setDisable(true);
+                            }
+                        }
                     }
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
@@ -150,11 +164,25 @@ public class RicercaFilamentoSegGUI implements Initializable {
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                int result = 0;
+                //int pagina = Integer.parseInt(paginaLabel.getText());
+                int pagina = Integer.parseInt(paginaText.getText());
 
                 try{
-                    int pagina = Integer.parseInt(paginaText.getText());
                     pagina += 1;
-                    ricerca(ricercaFilamentoSegController, pagina);
+                    int minSeg = Integer.parseInt(range1.getText());
+                    int maxSeg = Integer.parseInt(range2.getText());
+                    if (minSeg < 0 || (maxSeg - minSeg <= 2) || (minSeg > maxSeg)){
+                        System.out.println("Errore");
+                    }else {
+                        // Metodo result = ?;
+                        result = ricercaFilamentoSegController.cercaFilamentiSeg(listaFilamenti, tableView, idColumn,
+                                nomeColumn, satColumn, numSegColumn, Integer.parseInt(range1.getText()),
+                                Integer.parseInt(range2.getText()), pagina);
+                        numRic.setText(String.valueOf(result));
+                        paginaText.setText(String.valueOf(pagina));
+                        precedente.setDisable(false);
+                    }
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
