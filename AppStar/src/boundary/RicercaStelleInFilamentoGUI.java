@@ -28,8 +28,9 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     private URL locationd;
     @FXML
     private TextField idText;
+    @FXML
     private ChoiceBox<String> choiceBox;
-    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herscel", "Spitzer");
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
     private ObservableList<Stella> listaStelle;
     @FXML
     private TableView tableView;
@@ -61,8 +62,8 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     public void istanziaRicercaStelleInFilamentoGUIFXML(Event e){
 
         try{
-            Parent root = FXMLLoader.load(getClass().getResource(("/boundary.RicercaStelleInFilamentoGUI.fxml")));
-            ((javafx.scene.Node) (e.getSource())).getScene().setRoot((root));
+            Parent root = FXMLLoader.load(getClass().getResource("/boundary/RicercaStelleInFilamentoGUI.fxml"));
+            ((Node) (e.getSource())).getScene().setRoot(root);
         }catch (Exception er){
             System.out.println(er.getMessage());
         }
@@ -78,16 +79,22 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                ArrayList<Float> result = new ArrayList<>(4);
+                ArrayList<Float> result;
                 try{
                     result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
                             latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue());
-                    numRic.setText(String.valueOf(result.get(0)));
+                    System.out.println(Integer.parseInt(idText.getText()));
+                    System.out.println("boundary" + result.get(0));
+                    System.out.println("boundary" + result.get(1));
+                    System.out.println("boundary" + result.get(2));
+                    System.out.println("boundary" + result.get(3));
+
+                    numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
                     unbound.setText(String.valueOf(result.get(1)) + " %");
                     prestellar.setText(String.valueOf(result.get(2)) + " %");
-                    protostellar.setText(String.valueOf(result.get(4)) + " %");
+                    protostellar.setText(String.valueOf(result.get(3)) + " %");
                 }catch (NumberFormatException nFE){
-                    System.out.println(nFE.getMessage());
+                    nFE.printStackTrace();
                 }
             }
         });

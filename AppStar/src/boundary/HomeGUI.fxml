@@ -109,7 +109,7 @@
             </VBox>
             <VBox prefHeight="120.0" prefWidth="454.0">
                <children>
-                  <RadioButton fx:id="ricercaStelle" mnemonicParsing="false" text="Ricerca stelle in un filamento" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="ricercaStelleInFilamento" mnemonicParsing="false" text="Ricerca stelle in un filamento" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -117,7 +117,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </RadioButton>
-                  <RadioButton fx:id="calcolaDistanze" mnemonicParsing="false" text="Calcola distanza di un segmento dal contorno" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="calcolaDistanzeSegCon" mnemonicParsing="false" text="Calcola distanza di un segmento dal contorno" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -125,7 +125,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </RadioButton>
-                  <RadioButton fx:id="ricercaStelle1" mnemonicParsing="false" text="Ricerca stelle in una regione" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="ricercaStelleInRegione" mnemonicParsing="false" text="Ricerca stelle in una regione" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -133,7 +133,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </RadioButton>
-                  <RadioButton fx:id="calcolaDistanze1" mnemonicParsing="false" text="Calcola distanza di una stella dalla spina dorsale" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="calcolaDistanzeStellaSpina" mnemonicParsing="false" text="Calcola distanza di una stella dalla spina dorsale" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>

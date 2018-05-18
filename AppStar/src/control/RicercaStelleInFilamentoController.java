@@ -21,7 +21,7 @@ public class RicercaStelleInFilamentoController {
     public ArrayList<Float> cercaInFilamento(ObservableList<Stella> stella, TableView tableView, TableColumn id,
                                              TableColumn nameStar, TableColumn glon, TableColumn glat,
                                              TableColumn flux, TableColumn type, int idFil, String satellite){
-        ArrayList<Float> arrayList = new ArrayList<>(4);
+        ArrayList<Float> arrayList;
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
         arrayList = utente.cercaInFilamento(stella, tableView, id, nameStar, glon, glat, flux, type, idFil, satellite);
         return arrayList;

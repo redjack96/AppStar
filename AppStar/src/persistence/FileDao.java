@@ -328,36 +328,37 @@ public class FileDao {
         Connessione.connettiti();
 
         ArrayList<Float> array = new ArrayList<>(4);
-        int unbound = 0;
-        int prestellar = 0;
-        int protostellar = 0;
+        int unbound;
+        int prestellar;
+        int protostellar;
 
-        String query = "SELECT *" +
-                        "FROM stelle" +
-                        "WHERE \"IDSTAR\" IN (" +
-                                        "SELECT \"IDSTAR\" " +
-                                        "FROM punti_contorni p JOIN punti_contorni p2 " +
-                                            "ON (p2.\"N\" = (p.\"N\" + 1) AND p.\"SATELLITE\" = p2.\"SATELLITE\") " +
-                                            "JOIN contorni c ON (p.\"N\" = c.\"NPCONT\" " +
-                                            "AND p.\"SATELLITE\" = c.\"SATELLITE\") " +
-                                            "JOIN filamenti f ON (c.\"NAME_FIL\" = f.\"NAME\" " +
-                                            "AND c.\"SATELLITE\" = f.\"SATELLITE\"), " +
-                                            "stelle " +
-                                        "WHERE f.\"SATELLITE\" =  '"+ satellite +"' AND f.\"IDFIL\" = '"+ idFil +"' " +
-                                        "GROUP BY \"IDSTAR\" " +
-                                        "HAVING abs(sum(atan(((p.\"GLON_CONT\"-\"GLON_ST\" )*" +
-                                            "(p2.\"GLAT_CONT\"-\"GLAT_ST\")-(p.\"GLAT_CONT\"-\"GLAT_ST\")*" +
-                                            "(p2.\"GLON_CONT\"-\"GLON_ST\"))/((p.\"GLON_CONT\"-\"GLON_ST\")*" +
-                                            "(p2.\"GLON_CONT\"-\"GLON_ST\") + ((p.\"GLAT_CONT\"-\"GLAT_ST\"))*" +
-                                            "((p2.\"GLAT_CONT\"-\"GLAT_ST\")))))) >= 0.01 " +
-                                            "LIMIT 50) "; // +
+        String query = "SELECT * \n" +
+                "FROM stelle \n" +
+                "WHERE \"IDSTAR\" IN (SELECT \"IDSTAR\" \n" +
+                "                   FROM punti_contorni p JOIN punti_contorni p2 ON (p2.\"N\" = (p.\"N\" + 1) AND \n" +
+                "                                                                    p.\"SATELLITE\" = p2.\"SATELLITE\") \n" +
+                "                     JOIN contorni c ON (p.\"N\" = c.\"NPCONT\" AND p.\"SATELLITE\" = c.\"SATELLITE\") \n" +
+                "                     JOIN filamenti f ON (c.\"NAME_FIL\" = f.\"NAME\" AND c.\"SATELLITE\" = f.\"SATELLITE\"), stelle \n" +
+                "                   WHERE f.\"SATELLITE\" =  '" + satellite + "' AND f.\"IDFIL\" = '" + idFil + "' \n" +
+                "                   GROUP BY \"IDSTAR\" \n" +
+                "                   HAVING abs(sum(atan(((p.\"GLON_CONT\"-\"GLON_ST\" )*(p2.\"GLAT_CONT\"-\"GLAT_ST\")-\n" +
+                "                                        (p.\"GLAT_CONT\"-\"GLAT_ST\")*(p2.\"GLON_CONT\"-\"GLON_ST\"))/\n" +
+                "                                       ((p.\"GLON_CONT\"-\"GLON_ST\")*(p2.\"GLON_CONT\"-\"GLON_ST\") + \n" +
+                "                                        ((p.\"GLAT_CONT\"-\"GLAT_ST\"))*((p2.\"GLAT_CONT\"-\"GLAT_ST\")))))) >= 0.01) \n" +
+                "LIMIT 50 "; // +
                         //"GROUP BY \"TYPE\"";
 
         try{
-            PreparedStatement ps1 = CONN.prepareStatement(query);
+            Statement st1 = CONN.createStatement();
             stella = FXCollections.observableArrayList();
-            ResultSet rs1 = ps1.executeQuery();
+            ResultSet rs1 = st1.executeQuery(query);
+            unbound = 0; prestellar = 0; protostellar = 0;
+            System.out.println("sto per entrare nel while");
             while (rs1.next()){
+                System.out.println("sto nel while");
+                System.out.println("WHILEfileDao unbound" + unbound);
+                System.out.println("WHILEfileDao prestellar" + prestellar);
+                System.out.println("WHILEfileDao protostellar" + protostellar);
                 Stella stelle = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
                         rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
                         rs1.getFloat("FLUX"), rs1.getString("TYPE"));
@@ -365,11 +366,15 @@ public class FileDao {
                     prestellar += 1;
                 }else if (rs1.getString("TYPE").equals("PROTOSTELLAR")){
                     protostellar +=1;
-                }else {
+                }else if (rs1.getString("TYPE").equals("UNBOUND")){
                     unbound +=1;
                 }
                 stella.add(stelle);
+                System.out.println("fileDao unbound" + unbound);
+                System.out.println("fileDao prestellar" + prestellar);
+                System.out.println("fileDao protostellar" + protostellar);
             }
+            System.out.println("sono uscito dal while");
             float totale = unbound + prestellar + protostellar;
             float unboundPerc = (unbound/totale)*100;
             float prestellarPerc = (prestellar/totale)*100;
@@ -378,12 +383,13 @@ public class FileDao {
             array.add(0, totale); array.add(1, unboundPerc);
             array.add(2, prestellarPerc); array.add(3, protostellarPerc);
         }catch (SQLException e){
-            array.add(0, null); array.add(1, null); array.add(2, null); array.add(3,null);
-            System.out.println(e.getMessage());
+            array.add(0, Float.parseFloat("0")); array.add(1, Float.parseFloat("0"));
+            array.add(2, Float.parseFloat("0")); array.add(3,Float.parseFloat("0"));
+            System.out.println(e.getMessage() + "catch del fileDao");
         } finally {
             CONN.close();
         }
-        id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
         nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
         glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
         glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
