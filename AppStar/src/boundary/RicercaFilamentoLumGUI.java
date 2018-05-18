@@ -69,6 +69,8 @@ public class RicercaFilamentoLumGUI implements Initializable {
     @FXML
     private Label tot;
 
+    private boolean bloccaPaginaText = false;
+
     public void istanziaRicercaFilamentoLumGUIFXML(Event e){
         //Lancia l'interfaccia grafica RicercaFilamentoLumGUI.fxml.
 
@@ -78,6 +80,34 @@ public class RicercaFilamentoLumGUI implements Initializable {
             //Imposta il root relativo alla schermata di ricerca del filamento per luminosita.
         }catch (Exception er){
             System.err.println(er.getMessage());
+        }
+    }
+
+    private void ricerca(RicercaFilamentoLumController controller, int pagina) throws NumberFormatException{
+        ArrayList<Integer> result;
+        float minEllipticity = Float.parseFloat(range1.getText());
+        float maxEllipticity = Float.parseFloat(range2.getText());
+        float lum = Float.parseFloat((percentualeText.getText()));
+        if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
+                lum < 0.0){
+            System.out.println("Errore: hai inserito ellitticita' non valide o luminosita' negativa.");
+        }else {
+            //System.out.println("Sto cercando...");
+            result = controller.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
+                    numSegColumn, satColumn, conColumn, elliptColumn, lum,
+                    minEllipticity, maxEllipticity, pagina);
+            numRic.setText(String.valueOf(result.get(0)));
+            tot.setText( " / " + String.valueOf(result.get(1)));
+            // evita di far partire la ricerca quando viene cambiato il numero di pagina
+            bloccaPaginaText = true;
+            paginaText.setText(String.valueOf(pagina));
+            // toglie il blocco
+            bloccaPaginaText = false;
+        }
+        if (pagina==1){
+            precedente.setDisable(true);
+        }else {
+            precedente.setDisable(false);
         }
     }
 
@@ -92,7 +122,6 @@ public class RicercaFilamentoLumGUI implements Initializable {
         slider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                /*percentuale.setText(String.valueOf(newValue.toString() + " %"));*/
                 percentualeText.setText(String.valueOf(newValue.toString()));
             }
         });
@@ -100,26 +129,11 @@ public class RicercaFilamentoLumGUI implements Initializable {
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                ArrayList<Integer> result = new ArrayList<>(2);
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
-                    float minEllipticity = Float.parseFloat(range1.getText());
-                    float maxEllipticity = Float.parseFloat(range2.getText());
-                    float lum = Float.parseFloat(percentualeText.getText());
-                    if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
-                            lum < 0.0){
-                        System.out.println("Errore");
-                    }else {
-                        result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                                numSegColumn, satColumn, conColumn, elliptColumn, lum,
-                                minEllipticity, maxEllipticity, pagina);
-                        numRic.setText(String.valueOf(result.get(0)));
-                        tot.setText( " / " + String.valueOf(result.get(1)));
-                        if (pagina==1){
-                            precedente.setDisable(true);
-                        }else {
-                            precedente.setDisable(false);
-                        }
+                    if (!bloccaPaginaText) {
+                        System.out.println("Sto cercando mentre e' cambiata pagina...");
+                        ricerca(ricercaFilamentoLumController, pagina);
                     }
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
@@ -131,23 +145,8 @@ public class RicercaFilamentoLumGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 int pagina = 1;
-                ArrayList<Integer> result = new ArrayList<>(2);
-                //paginaLabel.setText(String.valueOf(pagina));
                 try{
-                    paginaText.setText(String.valueOf(pagina));
-                    float minEllipticity = Float.parseFloat(range1.getText());
-                    float maxEllipticity = Float.parseFloat(range2.getText());
-                    float lum = Float.parseFloat((percentualeText.getText()));
-                    if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
-                            lum < 0.0){
-                        System.out.println("Errore");
-                    }else {
-                        result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                                numSegColumn, satColumn, conColumn, elliptColumn, lum,
-                                minEllipticity, maxEllipticity, pagina);
-                        numRic.setText(String.valueOf(result.get(0)));
-                        tot.setText( " / " + String.valueOf(result.get(1)));
-                    }
+                    ricerca(ricercaFilamentoLumController, pagina);
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
@@ -157,29 +156,11 @@ public class RicercaFilamentoLumGUI implements Initializable {
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                //int pagina = Integer.parseInt(paginaLabel.getText());
-                ArrayList<Integer> result = new ArrayList<>(2);
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (pagina>1){
                         pagina -= 1;
-                        float minEllipticity = Float.parseFloat(range1.getText());
-                        float maxEllipticity = Float.parseFloat(range2.getText());
-                        float lum = Float.parseFloat(percentualeText.getText());
-                        if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
-                                lum < 0.0){
-                            System.out.println("Errore");
-                        }else {
-                            result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                                    numSegColumn, satColumn, conColumn, elliptColumn, lum,
-                                    minEllipticity, maxEllipticity, pagina);
-                            numRic.setText(String.valueOf(result.get(0)));
-                            tot.setText( " / " + String.valueOf(result.get(1)));
-                            paginaText.setText(String.valueOf(pagina));
-                            if (pagina == 1){
-                                precedente.setDisable(true);
-                            }
-                        }
+                        ricerca(ricercaFilamentoLumController, pagina);
                     }
                 }catch (NumberFormatException nFE){
                         System.out.println(nFE.getMessage());
@@ -190,27 +171,10 @@ public class RicercaFilamentoLumGUI implements Initializable {
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                ArrayList<Integer> result = new ArrayList<>(2);
-                //int pagina = Integer.parseInt(paginaLabel.getText());
-                int pagina = Integer.parseInt(paginaText.getText());
-
                 try{
+                    int pagina = Integer.parseInt(paginaText.getText());
                     pagina += 1;
-                    float minEllipticity = Float.parseFloat(range1.getText());
-                    float maxEllipticity = Float.parseFloat(range2.getText());
-                    float lum = Float.parseFloat(percentualeText.getText());
-                    if (minEllipticity <= 1.0 || maxEllipticity >=10.0 || (minEllipticity > maxEllipticity) ||
-                            lum < 0.0){
-                        System.out.println("Errore");
-                    }else {
-                        result = ricercaFilamentoLumController.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
-                                numSegColumn, satColumn, conColumn, elliptColumn, lum,
-                                minEllipticity, maxEllipticity, pagina);
-                        numRic.setText(String.valueOf(result.get(0)));
-                        tot.setText( " / " + String.valueOf(result.get(1)));
-                        paginaText.setText(String.valueOf(pagina));
-                        precedente.setDisable(false);
-                    }
+                    ricerca(ricercaFilamentoLumController, pagina);
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }

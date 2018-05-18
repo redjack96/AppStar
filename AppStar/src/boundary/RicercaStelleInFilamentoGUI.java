@@ -84,10 +84,10 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
                     result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
                             latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue());
                     System.out.println(Integer.parseInt(idText.getText()));
-                    System.out.println("boundary" + result.get(0));
-                    System.out.println("boundary" + result.get(1));
-                    System.out.println("boundary" + result.get(2));
-                    System.out.println("boundary" + result.get(3));
+                    System.out.println("Numero stelle mostrate: " + result.get(0));
+                    System.out.println("% unbound" + result.get(1));
+                    System.out.println("% prestellar" + result.get(2));
+                    System.out.println("% protostellar" + result.get(3));
 
                     numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
                     unbound.setText(String.valueOf(result.get(1)) + " %");

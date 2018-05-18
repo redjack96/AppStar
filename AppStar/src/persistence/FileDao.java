@@ -353,28 +353,30 @@ public class FileDao {
             stella = FXCollections.observableArrayList();
             ResultSet rs1 = st1.executeQuery(query);
             unbound = 0; prestellar = 0; protostellar = 0;
-            System.out.println("sto per entrare nel while");
             while (rs1.next()){
-                System.out.println("sto nel while");
+                /*
                 System.out.println("WHILEfileDao unbound" + unbound);
                 System.out.println("WHILEfileDao prestellar" + prestellar);
-                System.out.println("WHILEfileDao protostellar" + protostellar);
+                System.out.println("WHILEfileDao protostellar" + protostellar);*/
                 Stella stelle = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
                         rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
                         rs1.getFloat("FLUX"), rs1.getString("TYPE"));
-                if (rs1.getString("TYPE").equals("PRESTELLAR")){
-                    prestellar += 1;
-                }else if (rs1.getString("TYPE").equals("PROTOSTELLAR")){
-                    protostellar +=1;
-                }else if (rs1.getString("TYPE").equals("UNBOUND")){
-                    unbound +=1;
+                switch (rs1.getString("TYPE")) {
+                    case "PRESTELLAR":
+                        prestellar += 1;
+                        break;
+                    case "PROTOSTELLAR":
+                        protostellar += 1;
+                        break;
+                    case "UNBOUND":
+                        unbound += 1;
+                        break;
                 }
                 stella.add(stelle);
-                System.out.println("fileDao unbound" + unbound);
+                /*System.out.println("fileDao unbound" + unbound);
                 System.out.println("fileDao prestellar" + prestellar);
-                System.out.println("fileDao protostellar" + protostellar);
+                System.out.println("fileDao protostellar" + protostellar);*/
             }
-            System.out.println("sono uscito dal while");
             float totale = unbound + prestellar + protostellar;
             float unboundPerc = (unbound/totale)*100;
             float prestellarPerc = (prestellar/totale)*100;
@@ -385,7 +387,7 @@ public class FileDao {
         }catch (SQLException e){
             array.add(0, Float.parseFloat("0")); array.add(1, Float.parseFloat("0"));
             array.add(2, Float.parseFloat("0")); array.add(3,Float.parseFloat("0"));
-            System.out.println(e.getMessage() + "catch del fileDao");
+            System.out.println(e.getMessage());
         } finally {
             CONN.close();
         }

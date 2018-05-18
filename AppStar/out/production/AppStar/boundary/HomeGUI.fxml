@@ -117,7 +117,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </RadioButton>
-                  <RadioButton fx:id="calcolaDistanzeSegCon" mnemonicParsing="false" text="Calcola distanza di un segmento dal contorno" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="ricercaStelleInRegione" mnemonicParsing="false" text="Ricerca stelle in una regione" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -125,7 +125,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </RadioButton>
-                  <RadioButton fx:id="ricercaStelleInRegione" mnemonicParsing="false" text="Ricerca stelle in una regione" textFill="WHITE" toggleGroup="$radioGroup">
+                  <RadioButton fx:id="calcolaDistanzeSegCon" mnemonicParsing="false" text="Calcola distanza di un segmento dal contorno" textFill="WHITE" toggleGroup="$radioGroup">
                      <font>
                         <Font size="14.0" />
                      </font>
