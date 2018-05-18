@@ -135,4 +135,20 @@ public class UtenteRegistrato {
             System.out.println(e.getMessage());
         }
     }
+
+    public ArrayList<Float> cercaInFilamento(ObservableList<Stella> stella, TableView tableView, TableColumn id,
+                                             TableColumn nameStar, TableColumn glon, TableColumn glat,
+                                             TableColumn flux, TableColumn type, int idFil, String satellite){
+
+        ArrayList<Float> arrayList = new ArrayList<>(4);
+
+        try{
+            arrayList = FileDao.cercaInFilamento(stella, tableView, id, nameStar, glon, glat, flux, type, idFil,
+                    satellite);
+        }catch (SQLException e){
+
+            System.out.println(e.getMessage());
+        }
+        return arrayList;
+    }
 }

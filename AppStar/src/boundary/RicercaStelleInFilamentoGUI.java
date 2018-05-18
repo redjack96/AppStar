@@ -2,6 +2,7 @@ package boundary;
 
 import control.HomeController;
 import control.RicercaStelleInFilamentoController;
+import entity.Stella;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -17,6 +18,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.*;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class RicercaStelleInFilamentoGUI implements Initializable {
@@ -26,29 +28,37 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     private URL locationd;
     @FXML
     private TextField idText;
-    @FXML
-    private TextField paginaText;
-    @FXML
     private ChoiceBox<String> choiceBox;
-    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herscel", "Spitzer");
+    private ObservableList<Stella> listaStelle;
     @FXML
     private TableView tableView;
     @FXML
+    private TableColumn idColumn;
+    @FXML
+    private TableColumn nomeColumn;
+    @FXML
+    private TableColumn lonColumn;
+    @FXML
+    private TableColumn latColumn;
+    @FXML
+    private TableColumn fluxColumn;
+    @FXML
     private TableColumn tipoColumn;
     @FXML
-    private TableColumn PercentualeColumn;
+    private Label numRic;
+    @FXML
+    private Label unbound;
+    @FXML
+    private Label prestellar;
+    @FXML
+    private Label protostellar;
     @FXML
     private Button indietro;
     @FXML
-    private Button precedente;
-    @FXML
-    private Button successivo;
-    @FXML
     private Button cerca;
-    @FXML
-    private Label numRic;
 
-    public void istanziaRicercaStelleInFilamentoGUI(Event e){
+    public void istanziaRicercaStelleInFilamentoGUIFXML(Event e){
 
         try{
             Parent root = FXMLLoader.load(getClass().getResource(("/boundary.RicercaStelleInFilamentoGUI.fxml")));
@@ -58,75 +68,24 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
         }
     }
 
-    public float ricerca(RicercaStelleInFilamentoController controller, int pagina){
-        float result = 0;
-        //result = funzione(...)
-        if (pagina == 1){
-            precedente.setDisable(true);
-        }else{
-            precedente.setDisable(true);
-        }
-        return result;
-    }
-
     public void initialize(URL location, ResourceBundle resource){
 
-        RicercaStelleInFilamentoController ricercaStelleInFilamentoController = new RicercaStelleInFilamentoController();
+        RicercaStelleInFilamentoController controller = new RicercaStelleInFilamentoController();
 
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
-        paginaText.textProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                float result;
-                try{
-                    int pagina = Integer.parseInt(paginaText.getText());
-                    ricerca(ricercaStelleInFilamentoController, pagina);
-                }catch (NumberFormatException nFE){
-                    System.out.println(nFE.getMessage());
-                }
-            }
-        });
-
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                int pagina = 1;
-                float result;
+                ArrayList<Float> result = new ArrayList<>(4);
                 try{
-                    paginaText.setText(String.valueOf(pagina));
-                    ricerca(ricercaStelleInFilamentoController, pagina);
-                }catch (NumberFormatException nFE){
-                    System.out.println(nFE.getMessage());
-                }
-            }
-        });
-
-        precedente.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                float result;
-                try {
-                    int pagina = Integer.parseInt(paginaText.getText());
-                    if (pagina > 1) {
-                        pagina -= 1;
-                        result = ricerca(ricercaStelleInFilamentoController, pagina);
-                    }
-                }catch (NumberFormatException nFE){
-                        System.out.println(nFE.getMessage());
-                    }
-                }
-        });
-
-        successivo.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                float result;
-                int pagina = Integer.parseInt(paginaText.getText());
-                try{
-                    pagina+=1;
-                    result = ricerca(ricercaStelleInFilamentoController, pagina);
+                    result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
+                            latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue());
+                    numRic.setText(String.valueOf(result.get(0)));
+                    unbound.setText(String.valueOf(result.get(1)) + " %");
+                    prestellar.setText(String.valueOf(result.get(2)) + " %");
+                    protostellar.setText(String.valueOf(result.get(4)) + " %");
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }

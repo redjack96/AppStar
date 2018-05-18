@@ -1,6 +1,7 @@
 package persistence;
 
 import entity.Filamento;
+import entity.Stella;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
@@ -317,6 +318,81 @@ public class FileDao {
         numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
         tableView.setItems(null);
         tableView.setItems(filamento);
+    }
+
+    public static ArrayList<Float> cercaInFilamento(ObservableList<Stella> stella, TableView tableView, TableColumn id,
+                                                      TableColumn nameStar, TableColumn glon, TableColumn glat,
+                                                      TableColumn flux, TableColumn type, int idFil, String satellite)
+            throws SQLException{
+
+        Connessione.connettiti();
+
+        ArrayList<Float> array = new ArrayList<>(4);
+        int unbound = 0;
+        int prestellar = 0;
+        int protostellar = 0;
+
+        String query = "SELECT *" +
+                        "FROM stelle" +
+                        "WHERE \"IDSTAR\" IN (" +
+                                        "SELECT \"IDSTAR\" " +
+                                        "FROM punti_contorni p JOIN punti_contorni p2 " +
+                                            "ON (p2.\"N\" = (p.\"N\" + 1) AND p.\"SATELLITE\" = p2.\"SATELLITE\") " +
+                                            "JOIN contorni c ON (p.\"N\" = c.\"NPCONT\" " +
+                                            "AND p.\"SATELLITE\" = c.\"SATELLITE\") " +
+                                            "JOIN filamenti f ON (c.\"NAME_FIL\" = f.\"NAME\" " +
+                                            "AND c.\"SATELLITE\" = f.\"SATELLITE\"), " +
+                                            "stelle " +
+                                        "WHERE f.\"SATELLITE\" =  '"+ satellite +"' AND f.\"IDFIL\" = '"+ idFil +"' " +
+                                        "GROUP BY \"IDSTAR\" " +
+                                        "HAVING abs(sum(atan(((p.\"GLON_CONT\"-\"GLON_ST\" )*" +
+                                            "(p2.\"GLAT_CONT\"-\"GLAT_ST\")-(p.\"GLAT_CONT\"-\"GLAT_ST\")*" +
+                                            "(p2.\"GLON_CONT\"-\"GLON_ST\"))/((p.\"GLON_CONT\"-\"GLON_ST\")*" +
+                                            "(p2.\"GLON_CONT\"-\"GLON_ST\") + ((p.\"GLAT_CONT\"-\"GLAT_ST\"))*" +
+                                            "((p2.\"GLAT_CONT\"-\"GLAT_ST\")))))) >= 0.01 " +
+                                            "LIMIT 50) "; // +
+                        //"GROUP BY \"TYPE\"";
+
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(query);
+            stella = FXCollections.observableArrayList();
+            ResultSet rs1 = ps1.executeQuery();
+            while (rs1.next()){
+                Stella stelle = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
+                        rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
+                        rs1.getFloat("FLUX"), rs1.getString("TYPE"));
+                if (rs1.getString("TYPE").equals("PRESTELLAR")){
+                    prestellar += 1;
+                }else if (rs1.getString("TYPE").equals("PROTOSTELLAR")){
+                    protostellar +=1;
+                }else {
+                    unbound +=1;
+                }
+                stella.add(stelle);
+            }
+            float totale = unbound + prestellar + protostellar;
+            float unboundPerc = (unbound/totale)*100;
+            float prestellarPerc = (prestellar/totale)*100;
+            float protostellarPerc = (protostellar/totale)*100;
+            //array contiene [totale stelle trovate, percentuale unbound, percentule prestellar, percentuale protostellar].
+            array.add(0, totale); array.add(1, unboundPerc);
+            array.add(2, prestellarPerc); array.add(3, protostellarPerc);
+        }catch (SQLException e){
+            array.add(0, null); array.add(1, null); array.add(2, null); array.add(3,null);
+            System.out.println(e.getMessage());
+        } finally {
+            CONN.close();
+        }
+        id.setCellValueFactory(new PropertyValueFactory<>("id"));
+        nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
+        glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
+        glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
+        flux.setCellValueFactory(new PropertyValueFactory<>("flux"));
+        type.setCellValueFactory(new PropertyValueFactory<>("type"));
+        tableView.setItems(null);
+        tableView.setItems(stella);
+
+        return array;
     }
 }
 

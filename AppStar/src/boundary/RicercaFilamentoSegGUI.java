@@ -1,12 +1,10 @@
 package boundary;
 
 import control.HomeController;
-import control.RicercaFilamentoLumController;
 import control.RicercaFilamentoSegController;
 import entity.Filamento;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.beans.value.WeakChangeListener;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
