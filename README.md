@@ -1,6 +1,7 @@
 # AppStar
 Questa applicazione e' un progetto universitario che permette di interrogare un database PostgreSQL contenente dati su stelle e filamenti di gas, attraverso un'interfaccia desktop.
 
+<<<<<<< HEAD
 Funzioni disponibili:
 
 - Menu Login: inserimento user e password di un utente registrato, tasto Login, tasto Esci.
@@ -17,6 +18,7 @@ Funzioni disponibili:
 	- TODO: Ricerca filamenti
 	- TODO. Ricerca stelle
 >>>>>>> Branch_Lorenzo
+=======
 ## Descrizione Applicazione
 - [x] __Requisito 1__
 	- Menu Login: inserimento user e password di un utente registrato. L'amministratore ha (id, password) = (lorzar, lorzar)
@@ -35,3 +37,4 @@ Funzioni disponibili:
 	- [ ] Ricerca di stelle in regioni rettangolari, interne o esterne ai filamenti
 	- [ ] Calcolo della distanza minima degli estremi di un segmento di un filamento dal contorno
 	- [ ] Calcolo della distanza minima dalla spina dorsale per stelle interne a un filamento
+>>>>>>> Branch_Lorenzo
