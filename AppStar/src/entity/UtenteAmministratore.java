@@ -1,6 +1,6 @@
 package entity;
 
-import persistence.FileDao;
+import persistence.FileImportazioneDao;
 import persistence.UtenteDao;
 import java.io.File;
 import java.sql.SQLException;
@@ -28,36 +28,53 @@ public class UtenteAmministratore extends UtenteRegistrato {
         }
     }
     //chiamato da control.FileSatelliteController in importaFile()
-    public void importaFileCSV(File file, int RB, String satellite){
-
+    public int importaFileCSV(File file, int RB, String satellite){
+        int r;
+        //fa in modo che se il nome del satellite non e' compreso nel file, non si procede all'importazione.
+        if (!(file.getName().toLowerCase().contains(satellite.toLowerCase()))){
+            System.out.println("Il nome del file non contiene il satellite " + satellite);
+            return -1;
+        }
         try{
             if (RB == 1){
-                FileDao.importaFile(file, "contorni_imp", satellite);
+                FileImportazioneDao.importaFile(file, "contorni_imp", satellite);
             }else if(RB == 2){
-                FileDao.importaFile(file, "filamenti_imp", satellite);
+                FileImportazioneDao.importaFile(file, "filamenti_imp", satellite);
             }else if(RB == 3){
-                FileDao.importaFile(file, "scheletri_imp", satellite);
+                FileImportazioneDao.importaFile(file, "scheletri_imp", satellite);
             }else if(RB == 4){
-                FileDao.importaFile(file, "stelle_imp", satellite);
+                FileImportazioneDao.importaFile(file, "stelle_imp", satellite);
             }
+            r = 1;
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            r = -1;
         }
+        return r;
     }
 
     public void inserisciNuoviDatiSatellite(String nomeAgenzia, String nomeSatellite, LocalDate dataInizio,
                                             Period durata){
         try{
-            FileDao.inserisciFileDatiSatellite(nomeAgenzia, nomeSatellite, dataInizio, durata);
+            FileImportazioneDao.inserisciFileDatiSatellite(nomeAgenzia, nomeSatellite, dataInizio, durata);
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }
     }
 
-    public void inserisciNuoviDatiStrumento(float banda, String strumento){
+    public void inserisciNuoviDatiStrumento(float banda, String strumento, String satellite){
 
         try{
-            FileDao.inserisciDatiStrumento(banda, strumento);
+            FileImportazioneDao.inserisciDatiStrumento(banda, strumento, satellite);
+        }catch (SQLException e){
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void troncaDatiSatellite(){
+
+        try{
+            FileImportazioneDao.troncaImp();
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }

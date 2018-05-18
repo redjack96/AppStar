@@ -8,30 +8,23 @@ import java.util.ArrayList;
 public class UtenteDao {
 
     /**
-     * Il metodo seguente e' una verifica dell'esistenza di un eventuale account con le credenziali inserite
+     * Il metodo seguente  verifica l'esistenza di un account con le credenziali inserite
      * dall'utente (attraverso una QuerySQL) nella table 'utenti' contenuta nel database 'CONTORNI_E_FILAMENTI'.
-     * QuerySQL:
-     *      SELECT *
-     *      FROM utenti
-     *      WHERE (USER_ID = 'userID inserito dall'utente'
-     *          AND PASSOWRD = 'password inserita dall'utente')
      *
      * @param userID: String.
      * @param password: String.
      * @return infoUtente: ArrayList(Nome, Cognome, UserID, Password, eMail, isAdmin).
-     * @throws SQLException
+     * @throws SQLException: in caso di errori nelle query
      */
     public static ArrayList controlloAccount(String userID, String password) throws SQLException{
-        int b = -1;
-        ArrayList infoUtente = new ArrayList(6);//Inizializzazione ArrayList infoUtente.
+        //int b = -1;
+        ArrayList<String> infoUtente = new ArrayList<>(6);//Inizializzazione ArrayList infoUtente.
         Connessione.connettiti();
         try{
-            String inQueryUserID = "USER_ID";
-            String inQueryPassword = "PASSWORD";
             String controlloQuery = "SELECT * " +
                                     "FROM utenti " +
-                                    "WHERE ("+'"' + inQueryUserID + '"' + " = ? " +
-                                        "AND "+ '"' + inQueryPassword + '"' + " = ?)";
+                                    "WHERE (\"USER_ID\" = ? " +
+                                        "AND \"PASSWORD\" = ?)";
             PreparedStatement ps = Connessione.CONN.prepareStatement(controlloQuery);
             ps.setString(1, userID);
             ps.setString(2, password);
@@ -49,14 +42,14 @@ public class UtenteDao {
                 infoUtente.add(rs.getString("EMAIL"));      //infoUtente = (-, -, -, -, eMail, _).
                 if (rs.getBoolean("AMMINISTRATORE")){
                     //se l'utente verificato e' un amministratore...
-                    b = 1;
+                    //b = 1;
                     infoUtente.add("amministratore");                   //infoUtente = (-, -, -, -, -, "amministratore").
                 }else if (!rs.getBoolean("AMMINISTRATORE")){
                     //... altrimenti.
-                    b = 0;
+                    //b = 0;
                     infoUtente.add("notAmministratore");                //infoUtente = (-, -, -, -, -, "notAmministratore").
                 }
-                System.out.println("INFORMAZIONI UTENTE COMPILATE CON SUCCESSO " + b);
+                System.out.println("INFORMAZIONI UTENTE COMPILATE CON SUCCESSO ");
             }
         }catch (SQLException e){
             System.out.println(e.getMessage());
@@ -83,6 +76,7 @@ public class UtenteDao {
             ps.setString(5, email);
             ps.setBoolean(6, admin);
             ps.executeUpdate();
+            System.out.println("Inserito nuovo utente con successo!");
         }catch (SQLException e){
             System.out.println(e.getMessage());
         }finally{

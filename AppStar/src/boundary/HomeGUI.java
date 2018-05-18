@@ -1,7 +1,6 @@
 package boundary;
 
 import control.*;
-import entity.UtenteRegistrato;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
@@ -10,10 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -33,11 +29,19 @@ public class HomeGUI implements Initializable {
     @FXML
     private RadioButton infoFilamento;
     @FXML
-    private RadioButton ricercaFilamento;
+    private RadioButton ricercaFilamentoLum;
     @FXML
-    private RadioButton ricercaStelle;
+    private RadioButton ricercaFilamentoNumSeg;
     @FXML
-    private RadioButton calcolaDistanze;
+    private RadioButton ricercaFilamentoRegione;
+    @FXML
+    private RadioButton ricercaStelleInFilamento;
+    @FXML
+    private RadioButton ricercaStelleInRegione;
+    @FXML
+    private RadioButton calcolaDistanzeSegCon;
+    @FXML
+    private RadioButton calcolaDistanzeStellaSpina;
     @FXML
     private Button logoutButton;
     @FXML
@@ -56,6 +60,7 @@ public class HomeGUI implements Initializable {
 
         try{
             Parent root = FXMLLoader.load(getClass().getResource("/boundary/HomeGUI.fxml"));
+            root.prefHeight(450);
             ((Node) (e.getSource())).getScene().setRoot(root);
             //Imposta il root relativo alla schermata di Home.
         }catch (Exception er){
@@ -64,7 +69,6 @@ public class HomeGUI implements Initializable {
     }
 
     public void initialize(URL location, ResourceBundle resources){
-
         infoFilamento.setSelected(true);
         //RadioButton selezionato di default.
         HomeController homeController = new HomeController();
@@ -88,6 +92,7 @@ public class HomeGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 if (importaFileSatellite.isSelected()){
+                    homeController.troncaDati();
                     ImportaFileSatelliteController importaFileSatelliteController = new ImportaFileSatelliteController();
                     importaFileSatelliteController.istanziaImportaFileSatelliteGUI(event);
                 }else if(registraUtente.isSelected()){
@@ -102,12 +107,30 @@ public class HomeGUI implements Initializable {
                             new InserisciDatiStrumentiController();
                     inserisciDatiStrumentiController.istanziaInserisciFileDatiSatelliteGUI(event);
                 }else if(infoFilamento.isSelected()){
+                    InfoFilamentiController infoFilamentiController =
+                            new InfoFilamentiController();
+                    infoFilamentiController.istanziaInfoFilamentiGUI(event);
+                }else if(ricercaFilamentoLum.isSelected()){
+                    RicercaFilamentoLumController ricercaFilamentoLumController =
+                            new RicercaFilamentoLumController();
+                    ricercaFilamentoLumController.istanziaRicercaFilamentoLumGUI(event);
+                }else if (ricercaFilamentoNumSeg.isSelected()){
+                    RicercaFilamentoSegController ricercaFilamentoSegController =
+                            new RicercaFilamentoSegController();
+                    ricercaFilamentoSegController.istanziaRicercaFilamentoSegGUI(event);
+                }else if(ricercaFilamentoRegione.isSelected()){
+                    RicercaFilamentoRegioneController ricercaFilamentoRegioneController =
+                            new RicercaFilamentoRegioneController();
+                    ricercaFilamentoRegioneController.istanziaRicercaFilamentoRegioneGUI(event);
+                }else if(ricercaStelleInFilamento.isSelected()){
+                    RicercaStelleInFilamentoController ricercaStelleInFilamentoController =
+                            new RicercaStelleInFilamentoController();
+                    ricercaStelleInFilamentoController.istanziaRicercaStelleInFilamentoGUI(event);
+                }else if(ricercaStelleInRegione.isSelected()){
 
-                }else if(ricercaFilamento.isSelected()){
+                }else if(calcolaDistanzeSegCon.isSelected()){
 
-                }else if(ricercaStelle.isSelected()){
-
-                }else if(calcolaDistanze.isSelected()){
+                }else if(calcolaDistanzeStellaSpina.isSelected()){
 
                 }
             }
