@@ -57,7 +57,15 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     @FXML
     private Button indietro;
     @FXML
+    private Button precedente;
+    @FXML
+    private Button successivo;
+    @FXML
+    private TextField paginaText;
+    @FXML
     private Button cerca;
+
+    private boolean bloccaPaginaText = false;
 
     public void istanziaRicercaStelleInFilamentoGUIFXML(Event e){
 
@@ -69,6 +77,32 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
         }
     }
 
+    private void ricerca(RicercaStelleInFilamentoController controller, int pagina) throws NumberFormatException{
+        ArrayList<Float> result;
+            result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
+                    latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);
+            System.out.println(Integer.parseInt(idText.getText()));
+            System.out.println("Numero stelle mostrate: " + result.get(0));
+            System.out.println("% unbound" + result.get(1));
+            System.out.println("% prestellar" + result.get(2));
+            System.out.println("% protostellar" + result.get(3));
+
+            numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
+            unbound.setText(String.valueOf(result.get(1)) + " %");
+            prestellar.setText(String.valueOf(result.get(2)) + " %");
+            protostellar.setText(String.valueOf(result.get(3)) + " %");
+            if (pagina==1){
+                precedente.setDisable(true);
+            }else {
+                precedente.setDisable(false);
+            }
+            // evita di far partire la ricerca quando viene cambiato il numero di pagina
+            bloccaPaginaText = true;
+            paginaText.setText(String.valueOf(pagina));
+            // toglie il blocco
+            bloccaPaginaText = false;
+    }
+
     public void initialize(URL location, ResourceBundle resource){
 
         RicercaStelleInFilamentoController controller = new RicercaStelleInFilamentoController();
@@ -76,26 +110,63 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
+        precedente.setDisable(true);
+
+        paginaText.textProperty().addListener((new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                try{
+                    int pagina = Integer.parseInt(paginaText.getText());
+                    if (!bloccaPaginaText) {
+                        System.out.println("Sto cercando dopo un cambio pagina...");
+                        ricerca(controller, pagina);
+                    }
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
+                }
+            }
+        }));
+
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                ArrayList<Float> result;
                 try{
-                    result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
-                            latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue());
-                    System.out.println(Integer.parseInt(idText.getText()));
-                    System.out.println("Numero stelle mostrate: " + result.get(0));
-                    System.out.println("% unbound" + result.get(1));
-                    System.out.println("% prestellar" + result.get(2));
-                    System.out.println("% protostellar" + result.get(3));
-
-                    numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
-                    unbound.setText(String.valueOf(result.get(1)) + " %");
-                    prestellar.setText(String.valueOf(result.get(2)) + " %");
-                    protostellar.setText(String.valueOf(result.get(3)) + " %");
+                    ricerca(controller, 1);
                 }catch (NumberFormatException nFE){
                     nFE.printStackTrace();
                 }
+            }
+        });
+
+        precedente.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                try{
+                    int pagina = Integer.parseInt(paginaText.getText());
+                    if (pagina>1){
+                        pagina -= 1;
+                        System.out.println("Sto cercando la pagina precedente...");
+                        ricerca(controller, pagina);
+                    }
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
+                }
+            }
+        });
+
+        successivo.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+
+                try{
+                    int pagina = Integer.parseInt(paginaText.getText());
+                    pagina += 1;
+                    System.out.println("Sto cercando la pagina successiva...");
+                    ricerca(controller, pagina);
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
+                }
+
             }
         });
 

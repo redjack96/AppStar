@@ -29,7 +29,7 @@ public class RicercaStelleInRegioneGUI implements Initializable {
     private Button cerca;
     @FXML
     private Button indietro;
-    private ObservableList<Filamento> listaFilamenti;
+    private ObservableList<Filamento> listaStelle;
     @FXML
     private TableView tableView;
     @FXML

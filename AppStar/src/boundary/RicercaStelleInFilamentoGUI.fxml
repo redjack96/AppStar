@@ -59,17 +59,17 @@
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="250.0" layoutY="411.0" text="Numero di stelle trovate:" textFill="#b0650c">
+      <Label layoutX="275.0" layoutY="410.0" text="Numero di stelle trovate:" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="numRic" layoutX="475.0" layoutY="411.0" prefHeight="16.0" prefWidth="159.0" text="0" textFill="#b0650c">
+      <Label fx:id="numRic" layoutX="500.0" layoutY="410.0" prefHeight="16.0" prefWidth="159.0" text="0" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="choiceBox" layoutX="526.0" layoutY="82.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="choiceBox" layoutX="525.0" layoutY="82.0" prefWidth="150.0" />
       <Label layoutX="674.0" layoutY="146.0" text="UNBOUND" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
@@ -98,6 +98,14 @@
       <Label fx:id="protostellar" layoutX="680.0" layoutY="293.0" prefHeight="16.0" prefWidth="84.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="precedente" layoutX="292.0" layoutY="368.0" mnemonicParsing="false" text="&lt;" />
+      <TextField fx:id="paginaText" layoutX="414.0" layoutY="368.0" prefHeight="25.0" prefWidth="46.0" text="1" />
+      <Button fx:id="successivo" layoutX="482.0" layoutY="369.0" mnemonicParsing="false" text="&gt;" />
+      <Label layoutX="334.0" layoutY="370.0" text="Pagina" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Label>
    </children>
