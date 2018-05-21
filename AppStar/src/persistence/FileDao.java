@@ -334,24 +334,25 @@ public class FileDao {
         int protostellar;
         int offset = (pagina-1) * 20;
 
+        // Serve per la verifica iniziale e trova le stelle
         String query = "SELECT *\n" +
                 "FROM stelle\n" +
                 "WHERE \"IDSTAR\" IN ( SELECT stella FROM stelle_in_filamenti_tmp WHERE  in_filamento = (" +
                                                                                         "SELECT \"NAME\" \n" +
                                                                                         "FROM filamenti \n" +
-                                                                                        "WHERE \"IDFIL\" = ?))" +
+                                                                                        "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?))" +
                 "LIMIT 20 OFFSET ?";
-
+        // trova il numero di stelle per ogni tipo
         String query2 = "SELECT s.\"TYPE\", COUNT(*) AS numero_tipo \n" +
                         "FROM stelle s \n" +
                         "WHERE s.\"IDSTAR\" IN ( SELECT stella \n" +
                                                 "FROM stelle_in_filamenti_tmp \n" +
                                                 "WHERE  in_filamento = (SELECT \"NAME\" \n" +
                                                                         "FROM filamenti \n" +
-                                                                        "WHERE \"IDFIL\" = ?)) \n" +
+                                                                        "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?)) \n" +
                         "GROUP BY s.\"TYPE\" \n" +
                         "ORDER BY s.\"TYPE\" ";
-
+        //inserisce le stelle se la prima query di verifica fallisce
         String insert = "INSERT INTO stelle_in_filamenti_tmp  (\n" +
                 "SELECT \"IDSTAR\", f.\"NAME\"\n" +
                 "FROM punti_contorni p\n" +
@@ -400,7 +401,8 @@ public class FileDao {
             //Prova a cercare i filamenti nella tabella temporanea.
             PreparedStatement ps1 = CONN.prepareStatement(query);
             ps1.setInt(1, idFil);
-            ps1.setInt(2, offset);
+            ps1.setString(2, satellite);
+            ps1.setInt(3, offset);
             stella = FXCollections.observableArrayList();
             ResultSet rs1 = ps1.executeQuery();
 
@@ -409,8 +411,10 @@ public class FileDao {
                 System.out.println("Inserisco stelle del filamento  nella tabella");
                 PreparedStatement ps2 = CONN.prepareStatement(insert);
                 ps2.setString(1, satellite); ps2.setInt(2, idFil);
+                ps2.executeUpdate();
                 //... e ripete la ricerca.
-                rs1 = ps1.executeQuery();
+                rs1.close();
+                rs1 = ps1.executeQuery(); // ps1 perche' riesegue la query iniziale
             }
             /*PreparedStatement ps1 = CONN.prepareStatement(insert);
             ps1.executeUpdate();
@@ -447,6 +451,7 @@ public class FileDao {
             //In ogni caso vengono contati i tipi di stelle.
             PreparedStatement ps3 = CONN.prepareStatement(query2);
             ps3.setInt(1, idFil);
+            ps3.setString(2, satellite);
             ResultSet rs3 = ps3.executeQuery();
             /*System.out.println("riga = " +rs3.getRow());*/
             int i = 0;
@@ -462,6 +467,7 @@ public class FileDao {
                 }
                 i++;
             }
+            System.out.println("prestar: "+ prestellar  + "\nprotostar: "+ protostellar + "\nunbound: " + unbound);
            /* float totale = unbound + prestellar + protostellar;
             float unboundPerc = (unbound/totale)*100;
             float prestellarPerc = (prestellar/totale)*100;

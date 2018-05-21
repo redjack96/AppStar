@@ -79,28 +79,31 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
 
     private void ricerca(RicercaStelleInFilamentoController controller, int pagina) throws NumberFormatException{
         ArrayList<Float> result;
-            result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
-                    latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);
-            System.out.println(Integer.parseInt(idText.getText()));
-            System.out.println("Numero stelle mostrate: " + result.get(0));
-            System.out.println("% unbound" + result.get(1));
-            System.out.println("% prestellar" + result.get(2));
-            System.out.println("% protostellar" + result.get(3));
+        result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
+                latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);
+        System.out.println(Integer.parseInt(idText.getText()));
+        System.out.println("Numero stelle mostrate: " + result.get(0));
+        System.out.println("% unbound" + result.get(1));
+        System.out.println("% prestellar" + result.get(2));
+        System.out.println("% protostellar" + result.get(3));
 
-            numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
-            unbound.setText(String.valueOf(result.get(1)) + " %");
-            prestellar.setText(String.valueOf(result.get(2)) + " %");
-            protostellar.setText(String.valueOf(result.get(3)) + " %");
-            if (pagina==1){
-                precedente.setDisable(true);
-            }else {
-                precedente.setDisable(false);
-            }
-            // evita di far partire la ricerca quando viene cambiato il numero di pagina
-            bloccaPaginaText = true;
-            paginaText.setText(String.valueOf(pagina));
-            // toglie il blocco
-            bloccaPaginaText = false;
+        numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
+        unbound.setText(String.valueOf(result.get(1)) + " %");
+        prestellar.setText(String.valueOf(result.get(2)) + " %");
+        protostellar.setText(String.valueOf(result.get(3)) + " %");
+        // la somma fa 100.0 !
+        //System.out.println("100 ?: "+ (result.get(1) + result.get(2) + result.get(3)));
+
+        if (pagina==1){
+            precedente.setDisable(true);
+        }else {
+            precedente.setDisable(false);
+        }
+    // evita di far partire la ricerca quando viene cambiato il numero di pagina
+    bloccaPaginaText = true;
+    paginaText.setText(String.valueOf(pagina));
+    // toglie il blocco
+    bloccaPaginaText = false;
     }
 
     public void initialize(URL location, ResourceBundle resource){

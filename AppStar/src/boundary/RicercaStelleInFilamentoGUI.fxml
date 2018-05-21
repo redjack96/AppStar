@@ -85,17 +85,17 @@
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="unbound" layoutX="680.0" layoutY="171.0" prefHeight="16.0" prefWidth="84.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="unbound" layoutX="663.0" layoutY="171.0" prefHeight="16.0" prefWidth="118.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="prestellar" layoutX="680.0" layoutY="232.0" prefHeight="16.0" prefWidth="84.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="prestellar" layoutX="663.0" layoutY="232.0" prefHeight="16.0" prefWidth="118.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="protostellar" layoutX="680.0" layoutY="293.0" prefHeight="16.0" prefWidth="84.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="protostellar" layoutX="663.0" layoutY="293.0" prefHeight="16.0" prefWidth="118.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
