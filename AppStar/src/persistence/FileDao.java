@@ -571,14 +571,24 @@ public class FileDao {
         Connessione.connettiti();
 
         ArrayList<Float> distanze = new ArrayList<>(2);
-        String query = "";
+        String query = "SELECT round(min(sqrt((u.\"GLON_CONT\"- p.\"GLON_BR\")^2 + (u.\"GLAT_CONT\" - p.\"GLAT_BR\")^2)),5) AS distanza_dal_contorno\n" +
+                "FROM punti_segmenti p JOIN contorni c ON p.\"NAME_FIL\" = c.\"NAME_FIL\" JOIN punti_contorni u ON (c.\"NPCONT\" = u.\"N\" and c.\"SATELLITE\" = u.\"SATELLITE\")\n" +
+                "WHERE p.\"SEGMENTO\" = ? AND p.\"NAME_FIL\" = (SELECT \"NAME\" FROM filamenti WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?) AND (p.\"N\" = 1 OR p.\"N\" in (\n" +
+                "  SELECT max(q.\"N\")\n" +
+                "  FROM punti_segmenti q\n" +
+                "  WHERE p.\"SEGMENTO\" = q.\"SEGMENTO\" AND p.\"NAME_FIL\" = q.\"NAME_FIL\"))\n" +
+                "GROUP BY p.\"IDSEG\",p.\"SEGMENTO\", p.\"GLON_BR\", p.\"GLAT_BR\", p.\"N\";\n";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(query);
+            ps1.setInt(1,idSeg);
+            ps1.setInt(2, idFil);
+            ps1.setString(3, satellite);
             ResultSet rs1 = ps1.executeQuery();
-            rs1.first();
-            distanze.add(0, rs1.getFloat("distanza1"));
-            distanze.add(1, rs1.getFloat("distanza2"));
+            rs1.next();
+            distanze.add(0, rs1.getFloat("distanza_dal_contorno"));
+            rs1.next();
+            distanze.add(1, rs1.getFloat("distanza_dal_contorno"));
             rs1.close();
         }catch (SQLException e){
             e.printStackTrace();
