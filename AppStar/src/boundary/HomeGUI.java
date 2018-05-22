@@ -127,11 +127,17 @@ public class HomeGUI implements Initializable {
                             new RicercaStelleInFilamentoController();
                     ricercaStelleInFilamentoController.istanziaRicercaStelleInFilamentoGUI(event);
                 }else if(ricercaStelleInRegione.isSelected()){
-
+                    RicercaStelleInRegioneController ricercaStelleInRegioneController =
+                            new RicercaStelleInRegioneController();
+                    ricercaStelleInRegioneController.istanziaRicercaStelleInRegioneGUI(event);
                 }else if(calcolaDistanzeSegCon.isSelected()){
-
+                    CalcolaDistanzeSegConController calcolaDistanzeSegConController =
+                            new CalcolaDistanzeSegConController();
+                    calcolaDistanzeSegConController.istanziaCalcolaDistanzeSegConGUI(event);
                 }else if(calcolaDistanzeStellaSpina.isSelected()){
-
+                    CalcolaDistanzeStellaSpinaController calcolaDistanzeStellaSpinaController =
+                            new CalcolaDistanzeStellaSpinaController();
+                    calcolaDistanzeStellaSpinaController.istanziaCalcolaDistanzeStellaSpinaGUI(event);
                 }
             }
         });

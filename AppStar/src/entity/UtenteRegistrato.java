@@ -147,9 +147,35 @@ public class UtenteRegistrato {
             arrayList = FileDao.cercaInFilamento(stella, tableView, id, nameStar, glon, glat, flux, type, idFil,
                     satellite, pagina);
         }catch (SQLException e){
-
             System.out.println(e.getMessage());
         }
         return arrayList;
     }
+
+    public ArrayList<Integer> cercaInRegione(ObservableList<Stella> stella, TableView tableView, TableColumn id,
+                                             TableColumn nameStar, TableColumn glon, TableColumn glat,
+                                             TableColumn flux, TableColumn type, float h, float b, float lon,
+                                             float lat, int pagina){
+        ArrayList<Integer> arrayList = new ArrayList<>(6);
+
+        try{
+            arrayList = FileDao.cercaInRegione(stella, tableView, id, nameStar, glon, glat, flux, type, h, b, lon, lat,
+                    pagina);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return arrayList;
+    }
+
+    public ArrayList<Float> calcolaDistanzeSegCon(int idSeg, int idFil, String satellite){
+        ArrayList<Float> distanze = new ArrayList<>(2);
+        try{
+            distanze = FileDao.calcolaDistSegCon(idSeg, idFil, satellite);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return distanze;
+    }
+
+    //public metodo da FileDao per CalcolaDistanzeStellaSpinaController
 }

@@ -496,13 +496,14 @@ public class FileDao {
     public static ArrayList<Integer> cercaInRegione(ObservableList<Stella> stella, TableView tableView, TableColumn id,
                                                   TableColumn nameStar, TableColumn glon, TableColumn glat,
                                                   TableColumn flux, TableColumn type, float h, float b, float lon,
-                                                  float lat) throws SQLException{
+                                                  float lat, int pagina) throws SQLException{
         Connessione.connettiti();
 
         ArrayList<Integer> array = new ArrayList<>(6);
         int unboundIn; int unboundOut;
         int prestellarIn; int prestellarOut;
         int protostellarIn; int protostellarOut;
+        int offset = (pagina-1)*20;
 
         String query1 = "";
 
@@ -517,6 +518,7 @@ public class FileDao {
                 Stella stelle = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
                         rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
                         rs1.getFloat("FLUX"), rs1.getString("TYPE"));
+                stella.add(stelle);
             }
             /*if (condizione){
                 switch (rs1.getString("TYPE")) {
@@ -563,6 +565,31 @@ public class FileDao {
 
         return array;
     }
+
+    public static ArrayList<Float> calcolaDistSegCon(int idSeg, int idFil, String satellite) throws SQLException{
+
+        Connessione.connettiti();
+
+        ArrayList<Float> distanze = new ArrayList<>(2);
+        String query = "";
+
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(query);
+            ResultSet rs1 = ps1.executeQuery();
+            rs1.first();
+            distanze.add(0, rs1.getFloat("distanza1"));
+            distanze.add(1, rs1.getFloat("distanza2"));
+            rs1.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+            distanze.add(0, null); distanze.add(1, null);
+        } finally{
+            CONN.close();
+        }
+        return distanze;
+    }
+
+    //public static void calcolaDistStellaSpina() throws SQLException{}
 }
 
 

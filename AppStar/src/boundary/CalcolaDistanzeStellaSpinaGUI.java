@@ -1,10 +1,11 @@
 package boundary;
 
+import control.CalcolaDistanzeStellaSpinaController;
 import control.HomeController;
-import control.RicercaStelleInRegioneController;
-import entity.Stella;
+import entity.StellaSpina;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -17,19 +18,19 @@ import javafx.scene.Parent;
 import javafx.scene.control.*;
 
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class RicercaStelleInRegioneGUI implements Initializable {
+public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
     @FXML
-    private ResourceBundle resources;
+    private ResourceBundle resource;
     @FXML
-    private URL location;
+    private URL locationd;
     @FXML
-    private Button cerca;
+    private TextField idText;
     @FXML
-    private Button indietro;
-    private ObservableList<Stella> listaStelle;
+    private ChoiceBox<String> choiceBox;
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
+    private ObservableList<StellaSpina> listaStelle;
     @FXML
     private TableView tableView;
     @FXML
@@ -37,13 +38,17 @@ public class RicercaStelleInRegioneGUI implements Initializable {
     @FXML
     private TableColumn nomeColumn;
     @FXML
-    private TableColumn latColumn;
-    @FXML
     private TableColumn lonColumn;
+    @FXML
+    private TableColumn latColumn;
     @FXML
     private TableColumn fluxColumn;
     @FXML
     private TableColumn tipoColumn;
+    @FXML
+    private TableColumn distanzaColumn;
+    @FXML
+    private Button indietro;
     @FXML
     private Button precedente;
     @FXML
@@ -51,39 +56,25 @@ public class RicercaStelleInRegioneGUI implements Initializable {
     @FXML
     private TextField paginaText;
     @FXML
-    private TextField baseText;
-    @FXML
-    private TextField altezzaText;
-    @FXML
-    private TextField lonCentroide;
-    @FXML
-    private TextField latCentroide;
+    private Button cerca;
 
     private boolean bloccaPaginaText = false;
 
-    public void istanziaRicercaStelleInRegioneGUIFXML(Event e){
-        //Lancia l'interfaccia grafica RicercaStelleInRegioneGUI.fxml.
+    public void istanziaCalcolaDistanzeStellaSpinaGUIFXML(Event e){
 
         try{
-            Parent root = FXMLLoader.load(getClass().getResource("/boundary/RicercaStelleInRegioneGUI.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/boundary/CalcolaDistanzeStellaSpinaGUI.fxml"));
             ((Node) (e.getSource())).getScene().setRoot(root);
-            //Imposta il root relativo alla schermata di ricerca delle stelle in una regione.
         }catch (Exception er){
-            System.err.println(er.getMessage());
+            System.out.println(er.getMessage());
         }
     }
 
-    private void ricerca(RicercaStelleInRegioneController controller, int pagina) throws NumberFormatException{
-        long start, elapsed;
-        float result;
-        boolean geom = false;
-        ArrayList<String> percentuali = controller.cercaStelleRegione(listaStelle, tableView, idColumn, nomeColumn,
-                lonColumn, latColumn, fluxColumn, tipoColumn, altezzaText, baseText, lonCentroide, latCentroide, pagina);
-        start = System.nanoTime();
-        elapsed = System.nanoTime();
-        result = (elapsed - start)/1000000000;
-        System.out.println("Completato. Tempo impiegato: " + result);
-        if (pagina == 1){
+    private void ricerca(CalcolaDistanzeStellaSpinaController controller, int pagina) throws NumberFormatException{
+        /*controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
+                latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);*/
+
+        if (pagina==1){
             precedente.setDisable(true);
         }else {
             precedente.setDisable(false);
@@ -94,19 +85,26 @@ public class RicercaStelleInRegioneGUI implements Initializable {
         // toglie il blocco
         bloccaPaginaText = false;
     }
-    public void initialize(URL location, ResourceBundle resources) {
 
-        RicercaStelleInRegioneController controller = new RicercaStelleInRegioneController();
+    public void initialize(URL location, ResourceBundle resource){
+
+        CalcolaDistanzeStellaSpinaController controller = new CalcolaDistanzeStellaSpinaController();
+
+        choiceBox.setItems(choiceBoxList);
+        choiceBox.setValue("Herschel");
+
+        precedente.setDisable(true);
+
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (!bloccaPaginaText) {
-                        //System.out.println("Sto cercando dopo aver cambiato il numero di pagina...");
+                        System.out.println("Sto cercando dopo un cambio pagina...");
                         ricerca(controller, pagina);
                     }
-                } catch (NumberFormatException nFE){
+                }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
             }
@@ -116,10 +114,9 @@ public class RicercaStelleInRegioneGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 try{
-                    //System.out.println("Sto cercando dopo aver premuto \"Cerca\"...");
                     ricerca(controller, 1);
-                }catch (NumberFormatException nFE ){
-                    System.out.println(nFE.getMessage());
+                }catch (NumberFormatException nFE){
+                    nFE.printStackTrace();
                 }
             }
         });
@@ -128,11 +125,10 @@ public class RicercaStelleInRegioneGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 try{
-
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (pagina>1){
                         pagina -= 1;
-                        //System.out.println("Sto cercando la pagina precedente");
+                        System.out.println("Sto cercando la pagina precedente...");
                         ricerca(controller, pagina);
                     }
                 }catch (NumberFormatException nFE){
@@ -144,14 +140,16 @@ public class RicercaStelleInRegioneGUI implements Initializable {
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
-                    pagina +=1;
-                    //System.out.println("Sto cercando la pagina successiva");
+                    pagina += 1;
+                    System.out.println("Sto cercando la pagina successiva...");
                     ricerca(controller, pagina);
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
                 }
+
             }
         });
 
