@@ -2,6 +2,8 @@ package boundary;
 
 import control.CalcolaDistanzeSegConController;
 import control.HomeController;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -25,9 +27,9 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
     @FXML
     private ResourceBundle resource;
     @FXML
-    private URL locationd;
+    private URL location;
     @FXML
-    private TextField idSegText;
+    private ChoiceBox<Integer> idSegCB;
     @FXML
     private TextField idFilText;
     @FXML
@@ -41,8 +43,6 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
     private Button indietro;
     @FXML
     private Button cerca;
-
-    private boolean bloccaPaginaText = false;
 
     public void istanziaCalcolaDistanzeSegConGUIFXML(Event e){
 
@@ -61,12 +61,51 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
+
+        idFilText.textProperty().addListener((new ChangeListener<String>(){
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                try{
+                    ObservableList<Integer> array = controller.trovaSegmenti(idFilText, choiceBox);
+                    idSegCB.setItems(array);
+                    if (!array.isEmpty()) {
+                        idSegCB.setValue(array.get(0));
+                    }
+
+                }catch (NumberFormatException nFE){
+                    nFE.printStackTrace();
+                } catch (java.lang.IndexOutOfBoundsException oob) {
+                    oob.printStackTrace();
+                    System.out.println("Filamento inserito non e' nel database");
+                }
+            }
+        }));
+
+        choiceBox.valueProperty().addListener((new ChangeListener<String>(){
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+                try{
+                    ObservableList<Integer> array = controller.trovaSegmenti(idFilText, choiceBox);
+                    idSegCB.setItems(array);
+                    if (!array.isEmpty()) {
+                        idSegCB.setValue(array.get(0));
+                    }
+
+                }catch (NumberFormatException nFE){
+                    System.out.println(nFE.getMessage());
+                } catch (java.lang.IndexOutOfBoundsException oob) {
+                oob.printStackTrace();
+                System.out.println("Il satellite scelto non ha rilevato il satellite inserito");
+            }
+            }
+        }));
+
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 try{
                     ArrayList<String> distanze;
-                    distanze = controller.calcolaDistanze(idSegText, idFilText, choiceBox);
+                    distanze = controller.calcolaDistanze(idSegCB, idFilText, choiceBox);
                     distanza1.setText(distanze.get(0));
                     distanza2.setText(distanze.get(1));
                 }catch (NumberFormatException nFE){

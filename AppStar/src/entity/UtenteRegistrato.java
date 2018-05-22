@@ -177,5 +177,15 @@ public class UtenteRegistrato {
         return distanze;
     }
 
+    public ArrayList<Integer> trovaSegmenti(int idFil, String satellite){
+        ArrayList<Integer> lista = null;
+        try {
+            lista = FileDao.trovaSegmenti(idFil, satellite);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return lista;
+    }
+
     //public metodo da FileDao per CalcolaDistanzeStellaSpinaController
 }

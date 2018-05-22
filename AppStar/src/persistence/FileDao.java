@@ -598,6 +598,30 @@ public class FileDao {
         }
         return distanze;
     }
+    public static ArrayList<Integer> trovaSegmenti(int idFil, String satellite) throws SQLException{
+        Connessione.connettiti();
+        ArrayList<Integer> listaChoiceBox = new ArrayList<>();
+
+        String query = "SELECT s.\"IDBRANCH\"\n" +
+                "FROM segmenti s JOIN filamenti f ON s.\"NAME_FIL\" = f.\"NAME\"\n" +
+                "WHERE f.\"IDFIL\" = ? AND f.\"SATELLITE\" = ? \n" +
+                "ORDER BY s.\"IDBRANCH\"";
+        try {
+            PreparedStatement ps1 = CONN.prepareStatement(query);
+            ps1.setInt(1, idFil);
+            ps1.setString(2, satellite);
+            ResultSet rs1 = ps1.executeQuery();
+            while (rs1.next()){
+                listaChoiceBox.add(rs1.getInt("IDBRANCH"));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        } finally {
+            CONN.close();
+        }
+        return listaChoiceBox;
+    }
 
     //public static void calcolaDistStellaSpina() throws SQLException{}
 }

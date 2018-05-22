@@ -21,13 +21,12 @@
             <Font name="Copperplate Gothic Bold" size="24.0" />
          </font>
       </Label>
-      <TextField fx:id="idSegText" layoutX="176.0" layoutY="85.0" prefHeight="25.0" prefWidth="84.0" promptText="Minimo" text="26" />
-      <Label layoutX="62.0" layoutY="91.0" text="Id del segmento" textFill="#b0650c">
+      <Label layoutX="517.0" layoutY="92.0" text="Id del segmento" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="296.0" layoutY="85.0" prefHeight="25.0" prefWidth="118.0" text="Id del filamento" textFill="#b0650c">
+      <Label layoutX="31.0" layoutY="85.0" prefHeight="25.0" prefWidth="118.0" text="Id del filamento" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="12.0" />
          </font>
@@ -52,9 +51,9 @@
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="idFilText" layoutX="414.0" layoutY="86.0" prefHeight="25.0" prefWidth="84.0" promptText="Minimo" text="45" />
-      <ChoiceBox fx:id="choiceBox" layoutX="618.0" layoutY="85.0" prefWidth="150.0" />
-      <Label layoutX="532.0" layoutY="86.0" prefHeight="25.0" prefWidth="73.0" text="Satellite" textFill="#b0650c">
+      <TextField fx:id="idFilText" layoutX="163.0" layoutY="86.0" prefHeight="25.0" prefWidth="84.0" promptText="Filamento" />
+      <ChoiceBox fx:id="choiceBox" layoutX="350.0" layoutY="86.0" prefWidth="150.0" />
+      <Label layoutX="277.0" layoutY="86.0" prefHeight="25.0" prefWidth="73.0" text="Satellite" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="12.0" />
          </font>
@@ -79,5 +78,6 @@
             <Font name="Copperplate Gothic Light" size="24.0" />
          </font>
       </Label>
+      <ChoiceBox fx:id="idSegCB" layoutX="624.0" layoutY="87.0" prefWidth="150.0" />
    </children>
 </AnchorPane>
