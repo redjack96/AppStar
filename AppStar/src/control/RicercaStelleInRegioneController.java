@@ -44,11 +44,11 @@ public class RicercaStelleInRegioneController {
                 pagina);
 
 
-        int unboundIn = arrayList.get(0); int prestellarIn = arrayList.get(1); int protostellarIn = arrayList.get(2);
-        int unboundOut = arrayList.get(3); int prestellarOut = arrayList.get(4); int protostellarOut = arrayList.get(5);
-        int totaleIn = unboundIn + prestellarIn + protostellarIn;
-        int totaleOut = unboundOut + prestellarOut + protostellarOut;
-        int totale = totaleIn + totaleOut;
+        double unboundIn = arrayList.get(0); double prestellarIn = arrayList.get(1); double protostellarIn = arrayList.get(2);
+        double unboundOut = arrayList.get(3); double prestellarOut = arrayList.get(4); double protostellarOut = arrayList.get(5);
+        double totaleIn = unboundIn + prestellarIn + protostellarIn;
+        double totaleOut = unboundOut + prestellarOut + protostellarOut;
+        double totale = totaleIn + totaleOut;
 
         String totaleInPerc = String.valueOf(100*totaleIn/totale);
         String totaleOutPerc = String.valueOf(100*totaleOut/totale);

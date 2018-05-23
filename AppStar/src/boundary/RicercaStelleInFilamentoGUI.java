@@ -78,7 +78,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     }
 
     private void ricerca(RicercaStelleInFilamentoController controller, int pagina) throws NumberFormatException{
-        ArrayList<Float> result;
+        ArrayList<Double> result;
         result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
                 latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);
         System.out.println(Integer.parseInt(idText.getText()));

@@ -98,14 +98,14 @@ public class RicercaStelleInRegioneGUI implements Initializable {
         elapsed = System.nanoTime();
         result = (elapsed - start)/1000000000;
         System.out.println("Completato. Tempo impiegato: " + result);
-        inFilamentiPerc.setText(percentuali.get(0));
-        unboundInPerc.setText(percentuali.get(1));
-        prestellarInPerc.setText(percentuali.get(2));
-        protostellarInPerc.setText(percentuali.get(3));
-        outFilamentiPerc.setText(percentuali.get(4));
-        unboundOutPerc.setText(percentuali.get(5));
-        prestellarOutPerc.setText(percentuali.get(6));
-        protostellarOutPerc.setText(percentuali.get(7));
+        inFilamentiPerc.setText(percentuali.get(0) + " %");
+        outFilamentiPerc.setText(percentuali.get(1) + " %");
+        unboundInPerc.setText(percentuali.get(2) + " %");
+        prestellarInPerc.setText(percentuali.get(3) + " %");
+        protostellarInPerc.setText(percentuali.get(4) + " %");
+        unboundOutPerc.setText(percentuali.get(5) + " %");
+        prestellarOutPerc.setText(percentuali.get(6) + " %");
+        protostellarOutPerc.setText(percentuali.get(7) + " %");
         if (pagina == 1){
             precedente.setDisable(true);
         }else {

@@ -84,12 +84,12 @@
             <Font name="Copperplate Gothic Light" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="599.0" layoutY="33.0" text="Stelle nei filamenti" textFill="#b0650c">
+      <Label layoutX="605.0" layoutY="35.0" text="Stelle nei filamenti" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="inFilamentiPerc" layoutX="655.0" layoutY="56.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="inFilamentiPerc" layoutX="602.0" layoutY="56.0" prefHeight="16.0" prefWidth="174.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
@@ -109,17 +109,17 @@
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="protostellarInPerc" layoutX="725.0" layoutY="130.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="protostellarInPerc" layoutX="725.0" layoutY="130.0" prefHeight="16.0" prefWidth="69.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="unboundInPerc" layoutX="725.0" layoutY="83.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="unboundInPerc" layoutX="725.0" layoutY="83.0" prefHeight="16.0" prefWidth="69.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="prestellarInPerc" layoutX="725.0" layoutY="106.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="prestellarInPerc" layoutX="725.0" layoutY="106.0" prefHeight="16.0" prefWidth="69.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
@@ -129,7 +129,7 @@
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="outFilamentiPerc" layoutX="662.0" layoutY="202.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="outFilamentiPerc" layoutX="605.0" layoutY="203.0" prefHeight="16.0" prefWidth="174.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
@@ -149,17 +149,17 @@
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="protostellarOutPerc" layoutX="732.0" layoutY="276.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="protostellarOutPerc" layoutX="732.0" layoutY="276.0" prefHeight="16.0" prefWidth="62.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="unboundOutPerc" layoutX="732.0" layoutY="229.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="unboundOutPerc" layoutX="732.0" layoutY="229.0" prefHeight="16.0" prefWidth="62.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="prestellarOutPerc" layoutX="732.0" layoutY="252.0" text="0 %" textFill="#b0650c">
+      <Label fx:id="prestellarOutPerc" layoutX="732.0" layoutY="252.0" prefHeight="16.0" prefWidth="62.0" text="0 %" textFill="#b0650c">
          <font>
             <Font name="Copperplate Gothic Light" size="14.0" />
          </font>
