@@ -39,9 +39,9 @@
       <TableView fx:id="tableView" layoutX="31.0" layoutY="118.0" prefHeight="215.0" prefWidth="745.0">
          <columns>
             <TableColumn fx:id="idColumn" prefWidth="67.0" text="ID" />
-            <TableColumn fx:id="nomeColumn" prefWidth="123.0" text="NOME" />
-            <TableColumn fx:id="lonColumn" prefWidth="114.0" text="LONGITUDINE" />
-            <TableColumn fx:id="latColumn" prefWidth="125.0" text="LATITUDINE" />
+            <TableColumn fx:id="nomeColumn" prefWidth="136.0" text="NOME" />
+            <TableColumn fx:id="lonColumn" prefWidth="118.0" text="LONGITUDINE" />
+            <TableColumn fx:id="latColumn" prefWidth="108.0" text="LATITUDINE" />
             <TableColumn fx:id="fluxColumn" prefWidth="82.0" text="FLUSSO" />
             <TableColumn fx:id="tipoColumn" prefWidth="109.0" text="TIPO" />
             <TableColumn fx:id="distanzaColumn" prefWidth="124.0" text="DISTANZA" />
@@ -62,16 +62,6 @@
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Button>
-      <Label layoutX="275.0" layoutY="410.0" text="Numero di stelle trovate:" textFill="#b0650c">
-         <font>
-            <Font name="Copperplate Gothic Light" size="14.0" />
-         </font>
-      </Label>
-      <Label fx:id="numRic" layoutX="500.0" layoutY="410.0" prefHeight="16.0" prefWidth="159.0" text="0" textFill="#b0650c">
-         <font>
-            <Font name="Copperplate Gothic Light" size="14.0" />
-         </font>
-      </Label>
       <ChoiceBox fx:id="choiceBox" layoutX="495.0" layoutY="70.0" prefHeight="25.0" prefWidth="99.0" />
       <Button fx:id="precedente" layoutX="292.0" layoutY="368.0" mnemonicParsing="false" text="&lt;" />
       <TextField fx:id="paginaText" layoutX="414.0" layoutY="368.0" prefHeight="25.0" prefWidth="46.0" text="1" />

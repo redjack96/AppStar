@@ -609,22 +609,24 @@ public class FileDao {
                         "--Questa serve per scrivere idfil al posto del nome del filamento\n" +
                 "CREATE OR REPLACE VIEW nome_filamento AS (SELECT \"NAME\" \n" +
                 "FROM filamenti f\n" +
-                "WHERE f.\"SATELLITE\" =  '"+satellite+"' AND f.\"IDFIL\" = '"+idFil+"' );\n" +
+                "WHERE f.\"SATELLITE\" =  '"+satellite+"' AND f.\"IDFIL\" = '"+idFil+"' )";
 
-                        "--Questa fa il calcolo vero e proprio. Sostituire solo la clausola ORDER BY a seconda di quale --->RADIOBUTTON<----- scegli: ordina per distanza o per flusso.\n" +
+
+        String queryDistanze2 =
+                                "--Questa fa il calcolo vero e proprio. Sostituire solo la clausola ORDER BY a seconda di quale --->RADIOBUTTON<----- scegli: ordina per distanza o per flusso.\n" +
                 "SELECT u.\"IDSTAR\", u.\"NAME_STAR\", u.\"GLON_ST\", u.\"GLAT_ST\", u.\"FLUX\", u.\"TYPE\", \n" +
                                 "round(min(sqrt((u.\"GLON_ST\"- pp.\"GLON_BR\")^2 + (u.\"GLAT_ST\" - pp.\"GLAT_BR\")^2)),5) as distanza\n" +
                 "FROM stelle u , punti_segmenti pp\n" +
                         "--WHERE la stella e' contenuta nel filamento\n" +
                 "WHERE \"IDSTAR\" in (SELECT stella  \n" +
                                     "FROM stelle_in_filamenti_tmp\n" +
-                                    "WHERE in_filamento = (SELECT \"NAME\" \n" +
+                                    "WHERE in_filamento IN (SELECT \"NAME\" \n" +
                                                             "FROM nome_filamento)) \n" +
                                     "  AND  (pp.\"GLON_BR\",pp.\"GLAT_BR\") IN (SELECT \"GLON_BR\", \"GLAT_BR\" \n" +
                                                                                 "FROM punti_segmenti ppp JOIN segmenti ss \n" +
                                                                                     "ON (ppp.\"SEGMENTO\" = ss.\"IDBRANCH\" AND \n" +
                                                                                     "ppp.\"NAME_FIL\" = ss.\"NAME_FIL\")\n" +
-                "WHERE ss.\"TYPE\" = 'S' AND ppp.\"NAME_FIL\" = (SELECT \"NAME\" FROM nome_filamento))\n" +
+                "WHERE ss.\"TYPE\" = 'S' AND ppp.\"NAME_FIL\" IN (SELECT \"NAME\" FROM nome_filamento))\n" +
                 "GROUP BY  u.\"IDSTAR\", u.\"NAME_STAR\", u.\"GLON_ST\", u.\"GLAT_ST\", u.\"FLUX\", u.\"TYPE\" \n" +
                 clausolaOrderBy +
                 "LIMIT 20 OFFSET '"+offset+"' ";
@@ -664,7 +666,9 @@ public class FileDao {
                 rs1.close();
             }
 
-            PreparedStatement ps3 = CONN.prepareStatement(queryDistanze);
+            PreparedStatement psView = CONN.prepareStatement(queryDistanze);
+            psView.executeUpdate();
+            PreparedStatement ps3 = CONN.prepareStatement(queryDistanze2);
             ResultSet rs3 = ps3.executeQuery();
 
             while (rs3.next()){
