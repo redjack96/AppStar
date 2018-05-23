@@ -5,6 +5,10 @@
       <artifact name="AppStar:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/persistence/FileDao.java" line="583" />
+    <bookmark url="file://$PROJECT_DIR$/src/persistence/FileDao.java" line="323" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
@@ -199,41 +203,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="597" column="0" lean-forward="true" selection-start-line="597" selection-start-column="0" selection-end-line="597" selection-end-column="0" />
+            <state relative-caret-position="34">
+              <caret line="625" column="0" lean-forward="true" selection-start-line="625" selection-start-column="0" selection-end-line="625" selection-end-column="0" />
               <folding>
-                <marker date="1526983529909" expanded="true" signature="836:1090" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1526983529909" expanded="true" signature="1119:1461" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1526983529909" expanded="true" signature="2895:3221" ph="SELECT max(\... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="4508:4645" ph="SELECT \&quot;NUM... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="6210:6689" ph="SELECT f.\&quot;I... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="6726:7058" ph="SELECT COUNT... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="7092:7122" ph="SELECT COUNT... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="9319:9491" ph="SELECT * FRO... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="9524:9664" ph="SELECT COUNT... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="11743:12374" ph="SELECT *\nFR... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="11861:12277" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1526983529909" expanded="true" signature="12409:12911" ph="SELECT *\nFR... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="12523:12812" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1526983529909" expanded="true" signature="14800:15348" ph="SELECT *\nFR... stelle" />
-                <marker date="1526983529909" expanded="true" signature="14887:15309" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1526983529909" expanded="true" signature="15046:15286" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="15046:15308" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="15427:16080" ph="SELECT s.\&quot;T... stelle" />
-                <marker date="1526983529909" expanded="true" signature="15427:16081" ph="SELECT s.\&quot;T... stelle" />
-                <marker date="1526983529909" expanded="true" signature="15570:15954" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1526983529909" expanded="true" signature="15570:15977" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1526983529909" expanded="true" signature="15746:15954" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="16178:17261" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1526983529909" expanded="true" signature="16239:17215" ph="SELECT \&quot;IDS... punti_contorni" />
-                <marker date="1526983529909" expanded="true" signature="28096:28866" ph="SELECT round... punti_segmenti" />
-                <marker date="1526983529909" expanded="true" signature="28473:28545" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1526983529909" expanded="true" signature="28604:28767" ph="SELECT max(q... punti_segmenti" />
-                <marker date="1526983529909" expanded="true" signature="29750:29972" ph="SELECT s.\&quot;I... segmenti" />
+                <marker date="1527075192063" expanded="true" signature="887:1141" ph="SELECT AVG(p... punti_contorni" />
+                <marker date="1527075192063" expanded="true" signature="1170:1512" ph="SELECT AVG(p... punti_contorni" />
+                <marker date="1527075192063" expanded="true" signature="3010:3336" ph="SELECT max(\... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="4684:4821" ph="SELECT \&quot;NUM... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="6310:6789" ph="SELECT f.\&quot;I... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="6826:7158" ph="SELECT COUNT... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="7192:7222" ph="SELECT COUNT... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="9501:9673" ph="SELECT * FRO... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="9706:9846" ph="SELECT COUNT... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="12010:12641" ph="SELECT *\nFR... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="12128:12544" ph="SELECT DISTI... punti_contorni" />
+                <marker date="1527075192063" expanded="true" signature="12676:13178" ph="SELECT *\nFR... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="12790:13079" ph="SELECT DISTI... punti_contorni" />
+                <marker date="1527075192063" expanded="true" signature="15123:15671" ph="SELECT *\nFR... stelle" />
+                <marker date="1527075192063" expanded="true" signature="15210:15632" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527075192063" expanded="true" signature="15369:15609" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="15369:15631" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="15750:16403" ph="SELECT s.\&quot;T... stelle" />
+                <marker date="1527075192063" expanded="true" signature="15750:16404" ph="SELECT s.\&quot;T... stelle" />
+                <marker date="1527075192063" expanded="true" signature="15893:16277" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527075192063" expanded="true" signature="15893:16300" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527075192063" expanded="true" signature="16069:16277" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="16501:17587" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527075192063" expanded="true" signature="16562:17541" ph="SELECT \&quot;IDS... punti_contorni" />
+                <marker date="1527075192063" expanded="true" signature="25123:25893" ph="SELECT round... punti_segmenti" />
+                <marker date="1527075192063" expanded="true" signature="25500:25572" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="25631:25794" ph="SELECT max(q... punti_segmenti" />
+                <marker date="1527075192063" expanded="true" signature="26856:27078" ph="SELECT s.\&quot;I... segmenti" />
+                <marker date="1527075192063" expanded="true" signature="28391:28712" ph="SELECT *\nFR... stelle" />
+                <marker date="1527075192063" expanded="true" signature="28391:28713" ph="SELECT *\nFR... stelle" />
+                <marker date="1527075192063" expanded="true" signature="28478:28684" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527075192063" expanded="true" signature="28565:28683" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527075192063" expanded="true" signature="28932:30015" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527075192063" expanded="true" signature="28993:29969" ph="SELECT \&quot;IDS... punti_contorni" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaFilamentoSegGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="96" column="56" lean-forward="true" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaStelleInRegioneGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInRegioneGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="84" column="9" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,18 +271,18 @@
       <file leaf-file-name="CalcolaDistanzeSegConGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="76" column="42" lean-forward="true" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+            <state relative-caret-position="280">
+              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalcolaDistanzeSegConController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CalcolaDistanzeSegConController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeSegConController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+            <state relative-caret-position="646">
+              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,8 +293,8 @@
       <file leaf-file-name="UtenteRegistrato.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="190" column="1" lean-forward="true" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
+            <state relative-caret-position="2703">
+              <caret line="190" column="1" lean-forward="false" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -273,8 +303,8 @@
       <file leaf-file-name="RicercaStelleInFilamentoGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInFilamentoGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="130" column="9" lean-forward="true" selection-start-line="117" selection-start-column="76" selection-end-line="130" selection-end-column="9" />
+            <state relative-caret-position="1887">
+              <caret line="130" column="9" lean-forward="false" selection-start-line="117" selection-start-column="76" selection-end-line="130" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -300,6 +330,7 @@
       <find>calcolaCentroide</find>
       <find>in</find>
       <find>precede</find>
+      <find>// REQ 11 - Cerca i segmenti di un filamento per aggiornare la choice box</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -360,10 +391,10 @@
         <option value="$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.fxml" />
         <option value="$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.fxml" />
         <option value="/PostgreSQL Fragment (FileDao.java:28095).sql" />
-        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
         <option value="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
-        <option value="$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.java" />
         <option value="$PROJECT_DIR$/src/control/CalcolaDistanzeSegConController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.java" />
+        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
       </list>
     </option>
   </component>
@@ -379,7 +410,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="775" />
@@ -1012,7 +1043,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1053,6 +1083,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -1257,11 +1288,13 @@
       <workItem from="1526898787783" duration="12780000" />
       <workItem from="1526916123414" duration="209000" />
       <workItem from="1526926299987" duration="881000" />
+      <workItem from="1527013739583" duration="399000" />
+      <workItem from="1527066836014" duration="3441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="413856000" />
+    <option name="totallyTimeSpent" value="417841000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1273,7 +1306,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1284,47 +1317,26 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38135594" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38135594" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561728" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38135594" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1390,24 +1402,24 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/Integer.java" />
     <entry file="file://$PROJECT_DIR$/src/boundary/HomeGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="38" lean-forward="true" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
         </state>
       </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="46" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/InfoFilamentiGUI.class">
@@ -1418,13 +1430,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/InfoFilamentiGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="31" column="25" lean-forward="true" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class">
@@ -1435,76 +1447,76 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/LoginGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/RicercaFilamentoLumGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/RicercaFilamentoLumGUI.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="16" column="208" lean-forward="true" selection-start-line="16" selection-start-column="208" selection-end-line="16" selection-end-column="208" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.base/javafx/beans/value/WeakChangeListener.java" />
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.base/javafx/beans/value/ChangeListener.java" />
     <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoLumGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
         </state>
       </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.controls/javafx/scene/control/TableView.java" />
-    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/javafx.controls/javafx/scene/control/TableView.java" />
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="46" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/RicercaFilamentoLumController.java">
@@ -1551,13 +1563,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/AppStar/boundary/RicercaStelleInFilamentoGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java">
@@ -1629,14 +1641,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/successPopUp/CalcolaDistanzeStellaSpina.java" />
     <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInFilamentoGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="71" column="23" lean-forward="false" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Stella.java">
@@ -1673,14 +1685,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java">
@@ -1693,10 +1705,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="255" lean-forward="false" selection-start-line="11" selection-start-column="255" selection-end-line="11" selection-end-column="255" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2703">
+          <caret line="190" column="1" lean-forward="false" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInFilamentoGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="130" column="9" lean-forward="false" selection-start-line="117" selection-start-column="76" selection-end-line="130" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeSegConController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="125" column="51" lean-forward="false" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
+          <caret line="96" column="56" lean-forward="true" selection-start-line="96" selection-start-column="56" selection-end-line="96" selection-end-column="56" />
           <folding />
         </state>
       </provider>
@@ -1709,92 +1766,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="597" column="0" lean-forward="true" selection-start-line="597" selection-start-column="0" selection-end-line="597" selection-end-column="0" />
-          <folding>
-            <marker date="1526983529909" expanded="true" signature="836:1090" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1526983529909" expanded="true" signature="1119:1461" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1526983529909" expanded="true" signature="2895:3221" ph="SELECT max(\... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="4508:4645" ph="SELECT \&quot;NUM... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="6210:6689" ph="SELECT f.\&quot;I... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="6726:7058" ph="SELECT COUNT... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="7092:7122" ph="SELECT COUNT... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="9319:9491" ph="SELECT * FRO... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="9524:9664" ph="SELECT COUNT... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="11743:12374" ph="SELECT *\nFR... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="11861:12277" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1526983529909" expanded="true" signature="12409:12911" ph="SELECT *\nFR... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="12523:12812" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1526983529909" expanded="true" signature="14800:15348" ph="SELECT *\nFR... stelle" />
-            <marker date="1526983529909" expanded="true" signature="14887:15309" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1526983529909" expanded="true" signature="15046:15286" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="15046:15308" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="15427:16080" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1526983529909" expanded="true" signature="15427:16081" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1526983529909" expanded="true" signature="15570:15954" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1526983529909" expanded="true" signature="15570:15977" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1526983529909" expanded="true" signature="15746:15954" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="16178:17261" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1526983529909" expanded="true" signature="16239:17215" ph="SELECT \&quot;IDS... punti_contorni" />
-            <marker date="1526983529909" expanded="true" signature="28096:28866" ph="SELECT round... punti_segmenti" />
-            <marker date="1526983529909" expanded="true" signature="28473:28545" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1526983529909" expanded="true" signature="28604:28767" ph="SELECT max(q... punti_segmenti" />
-            <marker date="1526983529909" expanded="true" signature="29750:29972" ph="SELECT s.\&quot;I... segmenti" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="190" column="1" lean-forward="true" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInFilamentoGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="130" column="9" lean-forward="true" selection-start-line="117" selection-start-column="76" selection-end-line="130" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="255" lean-forward="false" selection-start-line="11" selection-start-column="255" selection-end-line="11" selection-end-column="255" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="76" column="42" lean-forward="true" selection-start-line="76" selection-start-column="42" selection-end-line="76" selection-end-column="42" />
+        <state relative-caret-position="280">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeSegConController.java">
+    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+        <state relative-caret-position="34">
+          <caret line="625" column="0" lean-forward="true" selection-start-line="625" selection-start-column="0" selection-end-line="625" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1527075192063" expanded="true" signature="887:1141" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527075192063" expanded="true" signature="1170:1512" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527075192063" expanded="true" signature="3010:3336" ph="SELECT max(\... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="4684:4821" ph="SELECT \&quot;NUM... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="6310:6789" ph="SELECT f.\&quot;I... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="6826:7158" ph="SELECT COUNT... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="7192:7222" ph="SELECT COUNT... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="9501:9673" ph="SELECT * FRO... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="9706:9846" ph="SELECT COUNT... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="12010:12641" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="12128:12544" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527075192063" expanded="true" signature="12676:13178" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="12790:13079" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527075192063" expanded="true" signature="15123:15671" ph="SELECT *\nFR... stelle" />
+            <marker date="1527075192063" expanded="true" signature="15210:15632" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527075192063" expanded="true" signature="15369:15609" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="15369:15631" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="15750:16403" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527075192063" expanded="true" signature="15750:16404" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527075192063" expanded="true" signature="15893:16277" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527075192063" expanded="true" signature="15893:16300" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527075192063" expanded="true" signature="16069:16277" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="16501:17587" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527075192063" expanded="true" signature="16562:17541" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527075192063" expanded="true" signature="25123:25893" ph="SELECT round... punti_segmenti" />
+            <marker date="1527075192063" expanded="true" signature="25500:25572" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="25631:25794" ph="SELECT max(q... punti_segmenti" />
+            <marker date="1527075192063" expanded="true" signature="26856:27078" ph="SELECT s.\&quot;I... segmenti" />
+            <marker date="1527075192063" expanded="true" signature="28391:28712" ph="SELECT *\nFR... stelle" />
+            <marker date="1527075192063" expanded="true" signature="28391:28713" ph="SELECT *\nFR... stelle" />
+            <marker date="1527075192063" expanded="true" signature="28478:28684" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527075192063" expanded="true" signature="28565:28683" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527075192063" expanded="true" signature="28932:30015" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527075192063" expanded="true" signature="28993:29969" ph="SELECT \&quot;IDS... punti_contorni" />
           </folding>
         </state>
       </provider>

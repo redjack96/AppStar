@@ -24,10 +24,12 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class CalcolaDistanzeSegConGUI implements Initializable {
+/*
     @FXML
     private ResourceBundle resource;
     @FXML
     private URL location;
+*/
     @FXML
     private ChoiceBox<Integer> idSegCB;
     @FXML
@@ -81,6 +83,7 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
             }
         }));
 
+        // quando scegli un altro satellite
         choiceBox.valueProperty().addListener((new ChangeListener<String>(){
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
