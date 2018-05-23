@@ -58,6 +58,22 @@ public class RicercaStelleInRegioneGUI implements Initializable {
     private TextField lonCentroide;
     @FXML
     private TextField latCentroide;
+    @FXML
+    private Label inFilamentiPerc;
+    @FXML
+    private Label unboundInPerc;
+    @FXML
+    private Label prestellarInPerc;
+    @FXML
+    private Label protostellarInPerc;
+    @FXML
+    private Label outFilamentiPerc;
+    @FXML
+    private Label unboundOutPerc;
+    @FXML
+    private Label prestellarOutPerc;
+    @FXML
+    private Label protostellarOutPerc;
 
     private boolean bloccaPaginaText = false;
 
@@ -76,13 +92,20 @@ public class RicercaStelleInRegioneGUI implements Initializable {
     private void ricerca(RicercaStelleInRegioneController controller, int pagina) throws NumberFormatException{
         long start, elapsed;
         float result;
-        boolean geom = false;
+        start = System.nanoTime();
         ArrayList<String> percentuali = controller.cercaStelleRegione(listaStelle, tableView, idColumn, nomeColumn,
                 lonColumn, latColumn, fluxColumn, tipoColumn, altezzaText, baseText, lonCentroide, latCentroide, pagina);
-        start = System.nanoTime();
         elapsed = System.nanoTime();
         result = (elapsed - start)/1000000000;
         System.out.println("Completato. Tempo impiegato: " + result);
+        inFilamentiPerc.setText(percentuali.get(0));
+        unboundInPerc.setText(percentuali.get(1));
+        prestellarInPerc.setText(percentuali.get(2));
+        protostellarInPerc.setText(percentuali.get(3));
+        outFilamentiPerc.setText(percentuali.get(4));
+        unboundOutPerc.setText(percentuali.get(5));
+        prestellarOutPerc.setText(percentuali.get(6));
+        protostellarOutPerc.setText(percentuali.get(7));
         if (pagina == 1){
             precedente.setDisable(true);
         }else {
