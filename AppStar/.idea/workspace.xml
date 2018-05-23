@@ -5,10 +5,6 @@
       <artifact name="AppStar:jar" />
     </artifacts-to-build>
   </component>
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/persistence/FileDao.java" line="584" />
-    <bookmark url="file://$PROJECT_DIR$/src/persistence/FileDao.java" line="324" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="">
       <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
@@ -38,11 +34,13 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/control/InserisciFileDatiSatelliteController.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/Connessione.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/FileDao.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/src/pics/sfondoPopUp.jpg" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/AppStar_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/AppStar_jar.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76/storage_v2/_src_/database/CONTORNI_E_FILAMENTI.CrC6oQ.meta" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76/storage_v2/_src_/database/CONTORNI_E_FILAMENTI.CrC6oQ/schema/public.abK9xQ.meta" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
@@ -90,6 +88,7 @@
       <change beforePath="$PROJECT_DIR$/src/control/RegistraUtenteController.java" afterPath="$PROJECT_DIR$/src/control/RegistraUtenteController.java" />
       <change beforePath="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" afterPath="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
       <change beforePath="$PROJECT_DIR$/src/entity/UtenteConnesso.java" afterPath="$PROJECT_DIR$/src/entity/UtenteConnesso.java" />
+      <change beforePath="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" afterPath="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
       <change beforePath="$PROJECT_DIR$/src/persistance/Connessione.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/persistance/FileDao.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/persistance/UtenteDao.java" afterPath="" />
@@ -203,7 +202,7 @@
       <file leaf-file-name="CalcolaDistanzeStellaSpinaGUI.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
+            <state relative-caret-position="1122">
               <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
               <folding />
             </state>
@@ -217,7 +216,7 @@
           </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+              <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -226,49 +225,46 @@
       <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="669" column="35" lean-forward="false" selection-start-line="669" selection-start-column="35" selection-end-line="669" selection-end-column="35" />
+            <state relative-caret-position="505">
+              <caret line="485" column="30" lean-forward="false" selection-start-line="485" selection-start-column="30" selection-end-line="485" selection-end-column="30" />
               <folding>
-                <marker date="1527084735923" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1527084735923" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1527084735923" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1527084735923" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1527084735923" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
-                <marker date="1527084735923" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527084735923" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
-                <marker date="1527084735923" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527084735923" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527084735923" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
-                <marker date="1527084735923" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
-                <marker date="1527084735923" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
-                <marker date="1527084735923" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
-                <marker date="1527084735923" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
-                <marker date="1527084735923" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527084735923" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
-                <marker date="1527084735923" expanded="true" signature="29180:29317" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527084735923" expanded="true" signature="29581:31043" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527084735923" expanded="true" signature="29581:31051" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527084735923" expanded="true" signature="29581:31063" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527084735923" expanded="true" signature="29989:30244" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527084735923" expanded="true" signature="30141:30243" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527084735923" expanded="true" signature="30332:30860" ph="SELECT \&quot;GLO... punti_segmenti" />
-                <marker date="1527084735923" expanded="true" signature="30824:30859" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527084735923" expanded="true" signature="31161:32244" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527084735923" expanded="true" signature="31222:32198" ph="SELECT \&quot;IDS... punti_contorni" />
+                <marker date="1527085445906" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
+                <marker date="1527085445906" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
+                <marker date="1527085445906" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
+                <marker date="1527085445906" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
+                <marker date="1527085445906" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
+                <marker date="1527085445906" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527085445906" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
+                <marker date="1527085445906" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527085445906" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527085445906" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
+                <marker date="1527085445906" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
+                <marker date="1527085445906" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
+                <marker date="1527085445906" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
+                <marker date="1527085445906" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
+                <marker date="1527085445906" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527085445906" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
+                <marker date="1527085445906" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527085445906" expanded="true" signature="29612:31094" ph="SELECT u.\&quot;I... stelle" />
+                <marker date="1527085445906" expanded="true" signature="30020:30275" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527085445906" expanded="true" signature="30172:30274" ph="SELECT \&quot;NAM... nome_filamento" />
+                <marker date="1527085445906" expanded="true" signature="30363:30891" ph="SELECT \&quot;GLO... punti_segmenti" />
+                <marker date="1527085445906" expanded="true" signature="30855:30890" ph="SELECT \&quot;NAM... nome_filamento" />
+                <marker date="1527085445906" expanded="true" signature="31192:32275" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527085445906" expanded="true" signature="31253:32229" ph="SELECT \&quot;IDS... punti_contorni" />
               </folding>
             </state>
           </provider>
@@ -277,7 +273,7 @@
       <file leaf-file-name="CalcolaDistanzeSegConController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeSegConController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
+            <state relative-caret-position="459">
               <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -298,7 +294,7 @@
         <entry file="file://$PROJECT_DIR$/src/entity/Stella.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="94" />
+              <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -307,8 +303,8 @@
       <file leaf-file-name="UtenteRegistrato.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="197" column="32" lean-forward="true" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
+            <state relative-caret-position="2822">
+              <caret line="197" column="32" lean-forward="false" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -424,7 +420,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="697" />
@@ -1056,6 +1052,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1067,8 +1064,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1116,7 +1113,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1310,11 +1306,12 @@
       <workItem from="1526926299987" duration="881000" />
       <workItem from="1527013739583" duration="399000" />
       <workItem from="1527066836014" duration="3441000" />
+      <workItem from="1527085828496" duration="577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425195000" />
+    <option name="totallyTimeSpent" value="425772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1326,7 +1323,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1337,11 +1334,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38117284" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38135594" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1350,32 +1347,12 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38135594" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25567323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1760,22 +1737,22 @@
     <entry file="file://$PROJECT_DIR$/src/entity/Stella.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="94" />
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="197" column="32" lean-forward="true" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
+        <state relative-caret-position="2822">
+          <caret line="197" column="32" lean-forward="false" selection-start-line="197" selection-start-column="32" selection-end-line="197" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeSegConController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
+        <state relative-caret-position="459">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
@@ -1795,14 +1772,14 @@
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="1122">
           <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
           <folding />
         </state>
@@ -1810,49 +1787,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="669" column="35" lean-forward="false" selection-start-line="669" selection-start-column="35" selection-end-line="669" selection-end-column="35" />
+        <state relative-caret-position="505">
+          <caret line="485" column="30" lean-forward="false" selection-start-line="485" selection-start-column="30" selection-end-line="485" selection-end-column="30" />
           <folding>
-            <marker date="1527084735923" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527084735923" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527084735923" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527084735923" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527084735923" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
-            <marker date="1527084735923" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527084735923" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1527084735923" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527084735923" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527084735923" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
-            <marker date="1527084735923" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
-            <marker date="1527084735923" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
-            <marker date="1527084735923" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
-            <marker date="1527084735923" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
-            <marker date="1527084735923" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527084735923" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
-            <marker date="1527084735923" expanded="true" signature="29180:29317" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527084735923" expanded="true" signature="29581:31043" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527084735923" expanded="true" signature="29581:31051" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527084735923" expanded="true" signature="29581:31063" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527084735923" expanded="true" signature="29989:30244" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527084735923" expanded="true" signature="30141:30243" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527084735923" expanded="true" signature="30332:30860" ph="SELECT \&quot;GLO... punti_segmenti" />
-            <marker date="1527084735923" expanded="true" signature="30824:30859" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527084735923" expanded="true" signature="31161:32244" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527084735923" expanded="true" signature="31222:32198" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527085445906" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527085445906" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527085445906" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527085445906" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527085445906" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
+            <marker date="1527085445906" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527085445906" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527085445906" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527085445906" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527085445906" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527085445906" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
+            <marker date="1527085445906" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
+            <marker date="1527085445906" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
+            <marker date="1527085445906" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
+            <marker date="1527085445906" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527085445906" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
+            <marker date="1527085445906" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527085445906" expanded="true" signature="29612:31094" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527085445906" expanded="true" signature="30020:30275" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527085445906" expanded="true" signature="30172:30274" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527085445906" expanded="true" signature="30363:30891" ph="SELECT \&quot;GLO... punti_segmenti" />
+            <marker date="1527085445906" expanded="true" signature="30855:30890" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527085445906" expanded="true" signature="31192:32275" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527085445906" expanded="true" signature="31253:32229" ph="SELECT \&quot;IDS... punti_contorni" />
           </folding>
         </state>
       </provider>
@@ -1917,7 +1891,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

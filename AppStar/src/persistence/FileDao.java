@@ -611,7 +611,7 @@ public class FileDao {
                 "FROM filamenti f\n" +
                 "WHERE f.\"SATELLITE\" =  '"+satellite+"' AND f.\"IDFIL\" = '"+idFil+"' )";
 
-
+        // query vera e propria
         String queryDistanze2 =
                                 "--Questa fa il calcolo vero e proprio. Sostituire solo la clausola ORDER BY a seconda di quale --->RADIOBUTTON<----- scegli: ordina per distanza o per flusso.\n" +
                 "SELECT u.\"IDSTAR\", u.\"NAME_STAR\", u.\"GLON_ST\", u.\"GLAT_ST\", u.\"FLUX\", u.\"TYPE\", \n" +
