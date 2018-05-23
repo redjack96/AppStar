@@ -226,49 +226,49 @@
       <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="611" column="84" lean-forward="false" selection-start-line="611" selection-start-column="84" selection-end-line="611" selection-end-column="84" />
+            <state relative-caret-position="164">
+              <caret line="669" column="35" lean-forward="false" selection-start-line="669" selection-start-column="35" selection-end-line="669" selection-end-column="35" />
               <folding>
-                <marker date="1527080707677" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1527080707677" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1527080707677" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1527080707677" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1527080707677" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
-                <marker date="1527080707677" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527080707677" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
-                <marker date="1527080707677" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527080707677" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527080707677" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
-                <marker date="1527080707677" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
-                <marker date="1527080707677" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
-                <marker date="1527080707677" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
-                <marker date="1527080707677" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
-                <marker date="1527080707677" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527080707677" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
-                <marker date="1527080707677" expanded="true" signature="29180:29317" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527080707677" expanded="true" signature="29544:31004" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527080707677" expanded="true" signature="29544:31012" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527080707677" expanded="true" signature="29544:31024" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527080707677" expanded="true" signature="29952:30206" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527080707677" expanded="true" signature="30103:30205" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527080707677" expanded="true" signature="30294:30821" ph="SELECT \&quot;GLO... punti_segmenti" />
-                <marker date="1527080707677" expanded="true" signature="30785:30820" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527080707677" expanded="true" signature="31122:32205" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527080707677" expanded="true" signature="31183:32159" ph="SELECT \&quot;IDS... punti_contorni" />
+                <marker date="1527084735923" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
+                <marker date="1527084735923" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
+                <marker date="1527084735923" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
+                <marker date="1527084735923" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
+                <marker date="1527084735923" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
+                <marker date="1527084735923" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527084735923" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
+                <marker date="1527084735923" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527084735923" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527084735923" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
+                <marker date="1527084735923" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
+                <marker date="1527084735923" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
+                <marker date="1527084735923" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
+                <marker date="1527084735923" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
+                <marker date="1527084735923" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527084735923" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
+                <marker date="1527084735923" expanded="true" signature="29180:29317" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527084735923" expanded="true" signature="29581:31043" ph="SELECT u.\&quot;I... stelle" />
+                <marker date="1527084735923" expanded="true" signature="29581:31051" ph="SELECT u.\&quot;I... stelle" />
+                <marker date="1527084735923" expanded="true" signature="29581:31063" ph="SELECT u.\&quot;I... stelle" />
+                <marker date="1527084735923" expanded="true" signature="29989:30244" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527084735923" expanded="true" signature="30141:30243" ph="SELECT \&quot;NAM... nome_filamento" />
+                <marker date="1527084735923" expanded="true" signature="30332:30860" ph="SELECT \&quot;GLO... punti_segmenti" />
+                <marker date="1527084735923" expanded="true" signature="30824:30859" ph="SELECT \&quot;NAM... nome_filamento" />
+                <marker date="1527084735923" expanded="true" signature="31161:32244" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527084735923" expanded="true" signature="31222:32198" ph="SELECT \&quot;IDS... punti_contorni" />
               </folding>
             </state>
           </provider>
@@ -424,7 +424,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="697" />
@@ -1314,7 +1314,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423157000" />
+    <option name="totallyTimeSpent" value="424981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1326,8 +1326,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1342,7 +1341,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1811,49 +1810,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="611" column="84" lean-forward="false" selection-start-line="611" selection-start-column="84" selection-end-line="611" selection-end-column="84" />
+        <state relative-caret-position="164">
+          <caret line="669" column="35" lean-forward="false" selection-start-line="669" selection-start-column="35" selection-end-line="669" selection-end-column="35" />
           <folding>
-            <marker date="1527080707677" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527080707677" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527080707677" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527080707677" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527080707677" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
-            <marker date="1527080707677" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527080707677" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1527080707677" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527080707677" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527080707677" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
-            <marker date="1527080707677" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
-            <marker date="1527080707677" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
-            <marker date="1527080707677" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
-            <marker date="1527080707677" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
-            <marker date="1527080707677" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527080707677" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
-            <marker date="1527080707677" expanded="true" signature="29180:29317" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527080707677" expanded="true" signature="29544:31004" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527080707677" expanded="true" signature="29544:31012" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527080707677" expanded="true" signature="29544:31024" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527080707677" expanded="true" signature="29952:30206" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527080707677" expanded="true" signature="30103:30205" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527080707677" expanded="true" signature="30294:30821" ph="SELECT \&quot;GLO... punti_segmenti" />
-            <marker date="1527080707677" expanded="true" signature="30785:30820" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527080707677" expanded="true" signature="31122:32205" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527080707677" expanded="true" signature="31183:32159" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527084735923" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527084735923" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527084735923" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="6337:6816" ph="SELECT f.\&quot;I... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="6853:7185" ph="SELECT COUNT... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="7219:7249" ph="SELECT COUNT... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="9528:9700" ph="SELECT * FRO... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="9733:9873" ph="SELECT COUNT... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="12037:12668" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="12155:12571" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527084735923" expanded="true" signature="12703:13205" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="12817:13106" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527084735923" expanded="true" signature="15150:15698" ph="SELECT *\nFR... stelle" />
+            <marker date="1527084735923" expanded="true" signature="15237:15659" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527084735923" expanded="true" signature="15396:15658" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="15777:16430" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527084735923" expanded="true" signature="15920:16327" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527084735923" expanded="true" signature="16096:16326" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="16528:17614" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527084735923" expanded="true" signature="16589:17568" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527084735923" expanded="true" signature="25150:25920" ph="SELECT round... punti_segmenti" />
+            <marker date="1527084735923" expanded="true" signature="25527:25599" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="25658:25821" ph="SELECT max(q... punti_segmenti" />
+            <marker date="1527084735923" expanded="true" signature="26883:27105" ph="SELECT s.\&quot;I... segmenti" />
+            <marker date="1527084735923" expanded="true" signature="28582:28904" ph="SELECT *\nFR... stelle" />
+            <marker date="1527084735923" expanded="true" signature="28669:28875" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527084735923" expanded="true" signature="28756:28874" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="29138:29330" ph="CREATE OR RE... nome_filamento" />
+            <marker date="1527084735923" expanded="true" signature="29180:29317" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="29180:29328" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527084735923" expanded="true" signature="29581:31043" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527084735923" expanded="true" signature="29581:31051" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527084735923" expanded="true" signature="29581:31063" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527084735923" expanded="true" signature="29989:30244" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527084735923" expanded="true" signature="30141:30243" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527084735923" expanded="true" signature="30332:30860" ph="SELECT \&quot;GLO... punti_segmenti" />
+            <marker date="1527084735923" expanded="true" signature="30824:30859" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527084735923" expanded="true" signature="31161:32244" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527084735923" expanded="true" signature="31222:32198" ph="SELECT \&quot;IDS... punti_contorni" />
           </folding>
         </state>
       </provider>
