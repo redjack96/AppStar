@@ -187,5 +187,15 @@ public class UtenteRegistrato {
         return lista;
     }
 
-    //public metodo da FileDao per CalcolaDistanzeStellaSpinaController
+    public void calcolaDistanzeStellaSpina(ObservableList<StellaSpina> listaStelle, TableView tableView, TableColumn id,
+                                           TableColumn nameStar, TableColumn glon, TableColumn glat,
+                                           TableColumn flux, TableColumn type, TableColumn distanza, int idFil,
+                                           String satellite, String ord, int pagina){
+        try{
+            FileDao.calcolaDistStellaSpina(listaStelle, tableView, id, nameStar, glon, glat, flux, type, distanza, idFil,
+                    satellite, ord, pagina);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 }

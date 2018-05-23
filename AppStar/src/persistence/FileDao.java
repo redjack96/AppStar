@@ -2,6 +2,7 @@ package persistence;
 
 import entity.Filamento;
 import entity.Stella;
+import entity.StellaSpina;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
@@ -582,18 +583,19 @@ public class FileDao {
 
     /**/
     //REQ 12 - Trova la distanza delle stelle in un filamento dalla spina dorsale. Permette di ordinare per distanza o flusso
-    public static void calcolaDistStellaSpina(ObservableList<Stella> listaStelle, TableView tableView, TableColumn id,
+    public static void calcolaDistStellaSpina(ObservableList<StellaSpina> listaStelle, TableView tableView, TableColumn id,
                                               TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                              TableColumn flux, TableColumn type, int idFil, String satellite,
-                                              int pagina) throws SQLException{
+                                              TableColumn flux, TableColumn type, TableColumn distanza, int idFil,
+                                              String satellite, String ord, int pagina) throws SQLException{
         Connessione.connettiti();
 
-        ArrayList<Integer> array = new ArrayList<>(3);
-        int unbound;
-        int prestellar;
-        int protostellar;
+        String clausolaOrderBy = "ORDER BY distanza \n";
         int offset = (pagina-1) * 20;
-
+        if (ord.equals("distanza")){
+           clausolaOrderBy = "ORDER BY distanza \n";
+        } else if (ord.equals("flusso")){
+            clausolaOrderBy = "ORDER BY \"FLUX\"\n";
+        }
         // Serve per la verifica iniziale e trova le stelle
         String queryStelle = "SELECT *\n" +
                 "FROM stelle\n" +
@@ -603,7 +605,29 @@ public class FileDao {
                 "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?))" +
                 "LIMIT 1";
         // calcola la distanza minimo di ogni stella nel filamento dalla spina dorsale
-        String queryDistanze = "";
+        String queryDistanze =
+                        "--Questa serve per scrivere idfil al posto del nome del filamento\n" +
+                "CREATE OR REPLACE VIEW nome_filamento AS (SELECT \"NAME\" \n" +
+                "FROM filamenti f\n" +
+                "WHERE f.\"SATELLITE\" =  '"+satellite+"' AND f.\"IDFIL\" = '"+idFil+"' );\n" +
+
+                        "--Questa fa il calcolo vero e proprio. Sostituire solo la clausola ORDER BY a seconda di quale --->RADIOBUTTON<----- scegli: ordina per distanza o per flusso.\n" +
+                "SELECT u.\"IDSTAR\", u.\"NAME_STAR\", u.\"GLON_ST\", u.\"GLAT_ST\", u.\"FLUX\", u.\"TYPE\", \n" +
+                                "round(min(sqrt((u.\"GLON_ST\"- pp.\"GLON_BR\")^2 + (u.\"GLAT_ST\" - pp.\"GLAT_BR\")^2)),5) as distanza\n" +
+                "FROM stelle u , punti_segmenti pp\n" +
+                        "--WHERE la stella e' contenuta nel filamento\n" +
+                "WHERE \"IDSTAR\" in (SELECT stella  \n" +
+                                    "FROM stelle_in_filamenti_tmp\n" +
+                                    "WHERE in_filamento = (SELECT \"NAME\" \n" +
+                                                            "FROM nome_filamento)) \n" +
+                                    "  AND  (pp.\"GLON_BR\",pp.\"GLAT_BR\") IN (SELECT \"GLON_BR\", \"GLAT_BR\" \n" +
+                                                                                "FROM punti_segmenti ppp JOIN segmenti ss \n" +
+                                                                                    "ON (ppp.\"SEGMENTO\" = ss.\"IDBRANCH\" AND \n" +
+                                                                                    "ppp.\"NAME_FIL\" = ss.\"NAME_FIL\")\n" +
+                "WHERE ss.\"TYPE\" = 'S' AND ppp.\"NAME_FIL\" = (SELECT \"NAME\" FROM nome_filamento))\n" +
+                "GROUP BY  u.\"IDSTAR\", u.\"NAME_STAR\", u.\"GLON_ST\", u.\"GLAT_ST\", u.\"FLUX\", u.\"TYPE\" \n" +
+                clausolaOrderBy +
+                "LIMIT 20 OFFSET '"+offset+"' ";
         //inserisce le stelle se la prima query di verifica fallisce
         String insert = "INSERT INTO stelle_in_filamenti_tmp  (\n" +
                 "SELECT \"IDSTAR\", f.\"NAME\"\n" +
@@ -638,20 +662,20 @@ public class FileDao {
                 ps2.executeUpdate();
                 //... e ripete la ricerca.
                 rs1.close();
-                rs1 = ps1.executeQuery(); // ps1 perche' riesegue la query iniziale
             }
 
-            while (rs1.next()){
+            PreparedStatement ps3 = CONN.prepareStatement(queryDistanze);
+            ResultSet rs3 = ps3.executeQuery();
 
-                Stella stella = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
-                        rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
-                        rs1.getFloat("FLUX"), rs1.getString("TYPE"));
+            while (rs3.next()){
+
+                StellaSpina stella = new StellaSpina(rs3.getInt("IDSTAR"), rs3.getString("NAME_STAR"),
+                        rs3.getFloat("GLON_ST"), rs3.getFloat("GLAT_ST"),
+                        rs3.getFloat("FLUX"), rs3.getString("TYPE"), rs3.getFloat("distanza"));
 
                 listaStelle.add(stella);
             }
-
         }catch (SQLException e){
-            array.add(0, 0); array.add(1, 0); array.add(2, 0);
             System.out.println(e.getMessage());
         } finally {
             CONN.close();
@@ -662,6 +686,7 @@ public class FileDao {
         glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
         flux.setCellValueFactory(new PropertyValueFactory<>("flux"));
         type.setCellValueFactory(new PropertyValueFactory<>("type"));
+        distanza.setCellValueFactory(new PropertyValueFactory<>("distanza"));
         tableView.setItems(null);
         tableView.setItems(listaStelle);
 

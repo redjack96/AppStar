@@ -81,7 +81,7 @@
             <Font name="Copperplate Gothic Light" size="18.0" />
          </font>
       </Label>
-      <RadioButton layoutX="618.0" layoutY="39.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" selected="true" text="Ordina per distanza dalla spina dorsale" textFill="#b0650c" wrapText="true">
+      <RadioButton fx:id="distRB" layoutX="618.0" layoutY="39.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" selected="true" text="Ordina per distanza dalla spina dorsale" textFill="#b0650c" wrapText="true">
          <font>
             <Font name="Copperplate Gothic Light" size="12.0" />
          </font>
@@ -89,7 +89,7 @@
             <ToggleGroup fx:id="radioGroup" />
          </toggleGroup>
       </RadioButton>
-      <RadioButton layoutX="618.0" layoutY="87.0" mnemonicParsing="false" text="Ordina per flusso" textFill="#b0650c" toggleGroup="$radioGroup">
+      <RadioButton fx:id="fluxRB" layoutX="618.0" layoutY="87.0" mnemonicParsing="false" text="Ordina per flusso" textFill="#b0650c" toggleGroup="$radioGroup">
          <font>
             <Font name="Copperplate Gothic Light" size="12.0" />
          </font>

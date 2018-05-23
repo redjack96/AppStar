@@ -48,6 +48,10 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
     @FXML
     private TableColumn distanzaColumn;
     @FXML
+    private RadioButton distRB;
+    @FXML
+    private RadioButton fluxRB;
+    @FXML
     private Button indietro;
     @FXML
     private Button precedente;
@@ -73,6 +77,16 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
     private void ricerca(CalcolaDistanzeStellaSpinaController controller, int pagina) throws NumberFormatException{
         /*controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
                 latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);*/
+
+        String ord;
+        if (distRB.isSelected()){
+            ord = "distanza";
+        }else{
+            ord = "flusso";
+        }
+
+        controller.calcolaDistanze(listaStelle, tableView, idColumn, nomeColumn, lonColumn, latColumn, fluxColumn,
+                tipoColumn, distanzaColumn, idText, choiceBox, ord, pagina);
 
         if (pagina==1){
             precedente.setDisable(true);
