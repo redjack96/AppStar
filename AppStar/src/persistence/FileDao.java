@@ -136,8 +136,8 @@ public class FileDao {
     }
 
     // REQ 6 - Ricerca i filamenti in base al contrasto E alla ellitticita'
-    public static ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
-                                      TableColumn numSeg, TableColumn satellite, TableColumn con, TableColumn ell,
+    public static ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id, TableColumn<Filamento, String> nome,
+                                      TableColumn<Filamento, Integer> numSeg, TableColumn<Filamento, String> satellite, TableColumn<Filamento, Float> con, TableColumn<Filamento, Float> ell,
                                       float lum, float ellipt1, float ellipt2, int pagina)
             throws SQLException, NumberFormatException{
 
@@ -205,8 +205,8 @@ public class FileDao {
     }
 
     // REQ 7 - Ricerca i filamenti con un numero di segmenti compreso in un range
-    public static int cercaFilamentiSeg(ObservableList<Filamento> filamento, TableView tableView, TableColumn idColumn,
-                                        TableColumn nomeColumn, TableColumn satColumn, TableColumn numSegColumn,
+    public static int cercaFilamentiSeg(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> idColumn,
+                                        TableColumn<Filamento, String> nomeColumn, TableColumn<Filamento, String> satColumn, TableColumn<Filamento, Integer> numSegColumn,
                                         int seg1, int seg2, int pagina) throws SQLException{
 
         Connessione.connettiti();
@@ -260,8 +260,8 @@ public class FileDao {
     }
 
     // REQ 8 - Ricerca tutti i filamenti che sono interni a un cerchio o un quadrato
-    public static void cercaInRegione(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn
-                               nome, TableColumn satellite, TableColumn numSeg, float lungh, float centLon, float
+    public static void cercaInRegione(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id, TableColumn<Filamento, String>
+                               nome, TableColumn<Filamento, String> satellite, TableColumn<Filamento, Integer> numSeg, float lungh, float centLon, float
                                centLat, boolean geom, int pagina) throws SQLException{
 
         Connessione.connettiti();
@@ -323,9 +323,9 @@ public class FileDao {
     }
 
     // REQ 9 - Cerca le stelle dentro un filamento
-    public static ArrayList<Integer> cercaInFilamento(ObservableList<Stella> listaStelle, TableView tableView, TableColumn id,
-                                                      TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                                      TableColumn flux, TableColumn type, int idFil, String satellite,
+    public static ArrayList<Integer> cercaInFilamento(ObservableList<Stella> listaStelle, TableView<Stella> tableView, TableColumn<Stella, Integer> id,
+                                                      TableColumn<Stella, String> nameStar, TableColumn<Stella, Float> glon, TableColumn<Stella, Float> glat,
+                                                      TableColumn<Stella, Float> flux, TableColumn<Stella, String> type, int idFil, String satellite,
                                                     int pagina)
             throws SQLException{
 
@@ -449,9 +449,9 @@ public class FileDao {
         return array;
     }
     // REQ10 - Calcola i tipi di stelle interne a una regione rettangolare suddividendole in interne e esterne ai filamenti (nella regione)
-    public static ArrayList<Integer> cercaInRegione(ObservableList<Stella> stella, TableView tableView, TableColumn id,
-                                                  TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                                  TableColumn flux, TableColumn type, float h, float b, float lon,
+    public static ArrayList<Integer> cercaInRegione(ObservableList<Stella> stella, TableView<Stella> tableView, TableColumn<Stella, Integer> id,
+                                                  TableColumn<Stella, String> nameStar, TableColumn<Stella, Float> glon, TableColumn<Stella, Float> glat,
+                                                  TableColumn<Stella, Float> flux, TableColumn<Stella, String> type, float h, float b, float lon,
                                                   float lat, int pagina) throws SQLException{
         Connessione.connettiti();
 
@@ -633,9 +633,9 @@ public class FileDao {
 
     /**/
     //REQ 12 - Trova la distanza delle stelle in un filamento dalla spina dorsale. Permette di ordinare per distanza o flusso
-    public static void calcolaDistStellaSpina(ObservableList<StellaSpina> listaStelle, TableView tableView, TableColumn id,
-                                              TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                              TableColumn flux, TableColumn type, TableColumn distanza, int idFil,
+    public static void calcolaDistStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
+                                              TableColumn<StellaSpina, String> nameStar, TableColumn<StellaSpina, Float> glon, TableColumn<StellaSpina, Float> glat,
+                                              TableColumn<StellaSpina, Float> flux, TableColumn<StellaSpina, String> type, TableColumn<StellaSpina, Float> distanza, int idFil,
                                               String satellite, String ord, int pagina) throws SQLException{
         Connessione.connettiti();
 

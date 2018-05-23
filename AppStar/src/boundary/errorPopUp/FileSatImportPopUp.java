@@ -16,10 +16,6 @@ import java.util.ResourceBundle;
 
 public class FileSatImportPopUp implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private Button okButton;
 
     public void istanziaFileSatImportPopUpFXML(){

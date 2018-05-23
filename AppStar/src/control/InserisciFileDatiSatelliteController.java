@@ -5,7 +5,6 @@ import entity.UtenteAmministratore;
 import entity.UtenteConnesso;
 import entity.UtenteRegistrato;
 import javafx.event.Event;
-
 import java.time.LocalDate;
 import java.time.Period;
 

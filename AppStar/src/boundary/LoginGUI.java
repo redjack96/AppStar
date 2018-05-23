@@ -21,10 +21,6 @@ import java.util.ResourceBundle;
 
 public class LoginGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private TextField userIDTextField;
     @FXML
     private PasswordField passwordPasswordField;

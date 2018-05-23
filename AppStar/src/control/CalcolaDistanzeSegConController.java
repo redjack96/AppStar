@@ -40,8 +40,6 @@ public class CalcolaDistanzeSegConController {
 
         listaChoicebox.addAll(lista);
 
-        //System.out.println(listaChoicebox);
-
         return listaChoicebox;
     }
 }

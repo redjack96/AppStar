@@ -4,8 +4,6 @@ import boundary.InfoFilamentiGUI;
 import entity.UtenteConnesso;
 import entity.UtenteRegistrato;
 import javafx.event.Event;
-
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class InfoFilamentiController {
