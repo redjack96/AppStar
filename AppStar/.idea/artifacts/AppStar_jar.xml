@@ -1,9 +1,12 @@
 <component name="ArtifactManager">
   <artifact name="AppStar:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/AppStar_jar</output-path>
+    <output-path>$USER_HOME$/Desktop</output-path>
     <root id="root">
       <element id="archive" name="AppStar.jar">
         <element id="module-output" name="AppStar" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
       </element>
     </root>
   </artifact>
