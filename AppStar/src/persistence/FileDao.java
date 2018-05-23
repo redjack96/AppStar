@@ -461,45 +461,95 @@ public class FileDao {
         int protostellarIn; int protostellarOut;
         int offset = (pagina-1)*20;
 
-        String query1 = "";
+        String queryFilRet = "CREATE OR REPLACE VIEW filamenti_in_rettangolo AS (\n" +
+                "SELECT DISTINCT \"NAME\"\n" +
+                "FROM filamenti f JOIN contorni c ON f.\"NAME\" = c.\"NAME_FIL\" JOIN\n" +
+                "punti_contorni p ON (p.\"N\" = c.\"NPCONT\" AND p.\"SATELLITE\" = c.\"SATELLITE\")\n" +
+                "WHERE  f.\"SATELLITE\" = 'Herschel' AND \n" +
+                "\"GLON_CONT\" > '"+(lon-b)/2+"' AND \n" +
+                "\"GLON_CONT\" < '"+(lon+b)/2+"'  AND\n" +
+                "\"GLAT_CONT\" > '"+(lat-h)/2+"' AND\n" +
+                "\"GLAT_CONT\" < '"+(lat+h)/2+"' \n" +
+                ")";
 
+        String queryStarRet = "CREATE OR REPLACE VIEW stelle_in_rettangolo  AS (\n" +
+                "SELECT \"IDSTAR\"\n" +
+                "FROM stelle\n" +
+                "WHERE \n"+
+                "\"GLON_ST\" > '"+(lon-b)/2+"' AND \n" +
+                "\"GLON_ST\" < '"+(lon+b)/2+"'  AND\n" +
+                "\"GLAT_ST\" > '"+(lat-h)/2+"' AND\n" +
+                "\"GLAT_ST\" < '"+(lat+h)/2+"' \n" +
+                ")";
+
+        String queryStarInRetInFil = "CREATE OR REPLACE VIEW stelle_in_rettangolo_e_filamenti AS (\n" +
+                "SELECT distinct \"IDSTAR\"\n" +
+                "FROM punti_contorni p JOIN punti_contorni p2 ON (p2.\"N\" = (p.\"N\" + 1) AND p.\"SATELLITE\" = p2.\"SATELLITE\")\n" +
+                                        "JOIN contorni c ON (p.\"N\" = c.\"NPCONT\" AND p.\"SATELLITE\" = c.\"SATELLITE\")\n" +
+                                        "JOIN filamenti f ON (c.\"NAME_FIL\" = f.\"NAME\" AND c.\"SATELLITE\" = f.\"SATELLITE\"), stelle\n" +
+                "WHERE f.\"SATELLITE\" =  'Herschel' AND f.\"NAME\" IN (SELECT * " +
+                                                                        "FROM filamenti_in_rettangolo) AND \"IDSTAR\" IN (SELECT * " +
+                                                                                                                        "FROM stelle_in_rettangolo)\n" +
+                "GROUP BY \"IDSTAR\"  -- stelle interne al rettangolo e ai filamenti\n" +
+                "HAVING abs(sum(atan(((p.\"GLON_CONT\"-\"GLON_ST\" )*(p2.\"GLAT_CONT\"-\"GLAT_ST\")-(p.\"GLAT_CONT\"-\"GLAT_ST\")*(p2.\"GLON_CONT\"-\"GLON_ST\"))/\n" +
+                    "((p.\"GLON_CONT\"-\"GLON_ST\")* (p2.\"GLON_CONT\"-\"GLON_ST\") + ((p.\"GLAT_CONT\"-\"GLAT_ST\"))*( (p2.\"GLAT_CONT\"-\"GLAT_ST\")))))) >= 0.01\n" +
+                    ")";
+
+        String queryTipoStelle =    "--questa query conta i tipi di stelle: " +
+                                    "--1. quelle nel rettangolo e nei filamenti \n" +
+                                    "--2. quelle nel rettangolo che sono sia fuori, sia dentro i filamenti \n" +
+                "SELECT 'SOLO DENTRO' as conteggio, s.\"TYPE\" ,count(*) as NumeroStelle\n" +
+                "FROM stelle_in_rettangolo_e_filamenti rf JOIN stelle s ON rf.\"IDSTAR\" = s.\"IDSTAR\"\n" +
+                "GROUP BY s.\"TYPE\"\n" +
+                "UNION\n" +
+                "SELECT 'NEL RETTANGOLO' as conteggio, s1.\"TYPE\" ,count(*) as NumeroStelle\n" +
+                "FROM stelle_in_rettangolo r JOIN stelle s1 ON r.\"IDSTAR\" = s1.\"IDSTAR\"\n" +
+                "GROUP BY s1.\"TYPE\" \n" +
+                "ORDER BY conteggio, \"TYPE\"";
+
+        String queryMostraStelle =      "-- per mostrare le stelle trovate usare questa query:\n" +
+                "SELECT *\n" +
+                "FROM stelle\n" +
+                "WHERE \"IDSTAR\" IN (SELECT * FROM stelle_in_rettangolo) \n" +
+                "LIMIT 20 OFFSET ?";
         try{
-            PreparedStatement ps1 = CONN.prepareStatement(query1);
+            PreparedStatement ps1 = CONN.prepareStatement(queryFilRet);
+            ps1.executeUpdate();
+            PreparedStatement ps2 = CONN.prepareStatement(queryStarRet);
+            ps2.executeUpdate();
+            PreparedStatement ps3 = CONN.prepareStatement(queryStarInRetInFil);
+            ps3.executeUpdate();
+
+
+            PreparedStatement ps4 = CONN.prepareStatement(queryTipoStelle);
+            ResultSet rs4 = ps4.executeQuery();
+
+            int unboundInRett;
+            int prestellarInRett;
+            int protostellarInRett;
+
+            rs4.next(); prestellarInRett = rs4.getInt("numerostelle");
+            rs4.next(); protostellarInRett = rs4.getInt("numerostelle");
+            rs4.next(); unboundInRett = rs4.getInt("numerostelle");
+            rs4.next(); prestellarIn = rs4.getInt("numerostelle");
+            rs4.next(); protostellarIn = rs4.getInt("numerostelle");
+            rs4.next(); unboundIn = rs4.getInt("numerostelle");
+
+            prestellarOut = prestellarInRett - prestellarIn;
+            protostellarOut = protostellarInRett - protostellarIn;
+            unboundOut = unboundInRett - unboundIn;
+
+            PreparedStatement ps = CONN.prepareStatement(queryMostraStelle);
+            ps.setInt(1, offset);
             stella = FXCollections.observableArrayList();
-            ResultSet rs1 = ps1.executeQuery();
-            unboundIn = 0; unboundOut = 0;
-            prestellarIn = 0; prestellarOut = 0;
-            protostellarIn = 0; protostellarOut = 0;
-            while (rs1.next()){
-                Stella stelle = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
-                        rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
-                        rs1.getFloat("FLUX"), rs1.getString("TYPE"));
+
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                Stella stelle = new Stella(rs.getInt("IDSTAR"), rs.getString("NAME_STAR"),
+                        rs.getFloat("GLON_ST"), rs.getFloat("GLAT_ST"),
+                        rs.getFloat("FLUX"), rs.getString("TYPE"));
                 stella.add(stelle);
             }
-            /*if (condizione){
-                switch (rs1.getString("TYPE")) {
-                    case "PRESTELLAR":
-                        prestellarIn += 1;
-                        break;
-                    case "PROTOSTELLAR":
-                        protostellarIn += 1;
-                        break;
-                    case "UNBOUND":
-                        unboundIn += 1;
-                        break;
-                }
-            }else {
-                switch (rs1.getString("TYPE")) {
-                    case "PRESTELLAR":
-                        prestellarOut += 1;
-                        break;
-                    case "PROTOSTELLAR":
-                        protostellarOut += 1;
-                        break;
-                    case "UNBOUND":
-                        unboundOut += 1;
-                        break;
-            }*/
             array.add(0, unboundIn); array.add(1, prestellarIn); array.add(2, protostellarIn);
             array.add(3, unboundOut); array.add(4, prestellarOut); array.add(5, protostellarOut);
         }catch (SQLException e){

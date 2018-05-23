@@ -28,12 +28,21 @@ public class RicercaStelleInRegioneController {
 
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
 
-        float h = Float.parseFloat(hField.getText());
-        float b = Float.parseFloat(bField.getText());
-        float lon = Float.parseFloat(lonField.getText());
-        float lat = Float.parseFloat(latField.getText());
+        float h, b, lon, lat;
+
+        try{
+            h = Float.parseFloat(hField.getText());
+            b = Float.parseFloat(bField.getText());
+            lon = Float.parseFloat(lonField.getText());
+            lat = Float.parseFloat(latField.getText());
+        }catch (NumberFormatException nFE){
+            nFE.printStackTrace();
+            h = b = lon = lat = 0;
+        }
+
         arrayList = utente.cercaInRegione(stella, tableView, id, nameStar, glon, glat, flux, type, h, b, lon, lat,
                 pagina);
+
 
         int unboundIn = arrayList.get(0); int prestellarIn = arrayList.get(1); int protostellarIn = arrayList.get(2);
         int unboundOut = arrayList.get(3); int prestellarOut = arrayList.get(4); int protostellarOut = arrayList.get(5);
@@ -41,14 +50,14 @@ public class RicercaStelleInRegioneController {
         int totaleOut = unboundOut + prestellarOut + protostellarOut;
         int totale = totaleIn + totaleOut;
 
-        String totaleInPerc = String.valueOf(totaleIn/totale);
-        String totaleOutPerc = String.valueOf(totaleOut/totale);
-        String unboundInPerc = String.valueOf(unboundIn/totaleIn);
-        String prestellarInPerc = String.valueOf(prestellarIn/totaleIn);
-        String protostellarInPerc = String.valueOf(protostellarIn/totaleIn);
-        String unboundOutPerc = String.valueOf(unboundOut/totaleOut);
-        String prestellarOutPerc = String.valueOf(prestellarOut/totaleOut);
-        String protostellarOutPerc = String.valueOf(protostellarOut/totaleOut);
+        String totaleInPerc = String.valueOf(100*totaleIn/totale);
+        String totaleOutPerc = String.valueOf(100*totaleOut/totale);
+        String unboundInPerc = String.valueOf(100*unboundIn/totaleIn);
+        String prestellarInPerc = String.valueOf(100*prestellarIn/totaleIn);
+        String protostellarInPerc = String.valueOf(100*protostellarIn/totaleIn);
+        String unboundOutPerc = String.valueOf(100*unboundOut/totaleOut);
+        String prestellarOutPerc = String.valueOf(100*prestellarOut/totaleOut);
+        String protostellarOutPerc = String.valueOf(100*protostellarOut/totaleOut);
 
         stringArrayList.add(0, totaleInPerc);
         stringArrayList.add(1, totaleOutPerc);
