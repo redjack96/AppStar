@@ -55,7 +55,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
     @FXML
     private RadioButton quadrato; //ok
 
-    private ObservableList<Filamento> listaFilamenti;
+    private ObservableList<Filamento> listaFilamenti = null;
     private boolean bloccaPaginaText = false;
 
     public void istanziaRicercaFilamentoRegioneGUIFXML(Event e){
