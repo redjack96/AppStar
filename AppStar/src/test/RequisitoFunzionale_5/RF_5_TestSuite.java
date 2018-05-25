@@ -1,13 +1,12 @@
-package test.RequisitoFunzionale_3;
+package test.RequisitoFunzionale_5;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(value=Suite.class)
 //@SuiteClasses(value={testClass.class, ...})
-@SuiteClasses(value={RegistraUtenteTest.class, NuovoLoginTest.class, InserimentoDatiStrumentoTest.class})
-public class RF_3_TestSuite {
+@Suite.SuiteClasses(value={CalcolaCentroideTest.class, CalcolaEstensioneTest.class, CalcolaNumeroSegmentiTest.class})
+public class RF_5_TestSuite {
 //	I test saranno avviati direttamente
 //  dalle classi specificate in @SuiteClasses.
 }

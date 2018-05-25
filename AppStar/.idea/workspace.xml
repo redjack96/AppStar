@@ -134,12 +134,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="LoginTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="527">
+              <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,52 +147,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NuovoLoginTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/NuovoLoginTest.java">
+      <file leaf-file-name="RF_3_TestSuite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+            <state relative-caret-position="68">
+              <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utenti" pinned="false" current-in-tab="false">
-        <entry file="das://table:/fc0a3505/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.utenti">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeforeAfterLoginTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/BeforeAfterLoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strumenti" pinned="false" current-in-tab="false">
-        <entry file="das://table:/fc0a3505/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.strumenti">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -200,8 +162,8 @@
       <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="120" lean-forward="false" selection-start-line="15" selection-start-column="120" selection-end-line="15" selection-end-column="120" />
+            <state relative-caret-position="34">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -210,18 +172,8 @@
       <file leaf-file-name="CalcolaCentroideTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalcolaEstensioneTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="425">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -229,63 +181,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
+      <file leaf-file-name="BeforeAfterLoginTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/BeforeAfterLoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="175" column="41" lean-forward="true" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+            <state relative-caret-position="153">
+              <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RF_1_e_2_TestSuite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/RF_1_e_2_TestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
-                <marker date="1527260607563" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1527260607563" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-                <marker date="1527260607563" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="6382:6861" ph="SELECT f.\&quot;I... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="6898:7230" ph="SELECT COUNT... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="7264:7294" ph="SELECT COUNT... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="9573:9745" ph="SELECT * FRO... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="9778:9918" ph="SELECT COUNT... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="12082:12713" ph="SELECT *\nFR... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="12200:12616" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1527260607563" expanded="true" signature="12748:13250" ph="SELECT *\nFR... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="12862:13151" ph="SELECT DISTI... punti_contorni" />
-                <marker date="1527260607563" expanded="true" signature="15195:15743" ph="SELECT *\nFR... stelle" />
-                <marker date="1527260607563" expanded="true" signature="15282:15704" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527260607563" expanded="true" signature="15441:15703" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="15822:16475" ph="SELECT s.\&quot;T... stelle" />
-                <marker date="1527260607563" expanded="true" signature="15965:16372" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527260607563" expanded="true" signature="16141:16371" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="16573:17659" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527260607563" expanded="true" signature="16634:17613" ph="SELECT \&quot;IDS... punti_contorni" />
-                <marker date="1527260607563" expanded="true" signature="22359:22971" ph="CREATE OR RE... filamenti_in_rettangolo" />
-                <marker date="1527260607563" expanded="true" signature="22433:22946" ph="SELECT DISTI... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="23006:23404" ph="CREATE OR RE... stelle_in_rettangolo" />
-                <marker date="1527260607563" expanded="true" signature="23078:23379" ph="SELECT \&quot;IDS... stelle" />
-                <marker date="1527260607563" expanded="true" signature="23446:24789" ph="CREATE OR RE... stelle_in_rettangolo_e_filamenti" />
-                <marker date="1527260607563" expanded="true" signature="23529:24761" ph="SELECT disti... punti_contorni" />
-                <marker date="1527260607563" expanded="true" signature="24039:24153" ph="SELECT * FRO... filamenti_in_rettangolo" />
-                <marker date="1527260607563" expanded="true" signature="24174:24333" ph="SELECT * FRO... stelle_in_rettangolo" />
-                <marker date="1527260607563" expanded="true" signature="25089:25311" ph="SELECT 'SOLO... stelle_in_rettangolo_e_filamenti" />
-                <marker date="1527260607563" expanded="true" signature="25089:25629" ph="SELECT 'SOLO... " />
-                <marker date="1527260607563" expanded="true" signature="25362:25577" ph="SELECT 'NEL stelle_in_rettangolo" />
-                <marker date="1527260607563" expanded="true" signature="25750:25912" ph="SELECT *\nFR... stelle" />
-                <marker date="1527260607563" expanded="true" signature="25836:25870" ph="SELECT * FRO... stelle_in_rettangolo" />
-                <marker date="1527260607563" expanded="true" signature="28930:29700" ph="SELECT round... punti_segmenti" />
-                <marker date="1527260607563" expanded="true" signature="29307:29379" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="29438:29601" ph="SELECT max(q... punti_segmenti" />
-                <marker date="1527260607563" expanded="true" signature="30663:30885" ph="SELECT s.\&quot;I... segmenti" />
-                <marker date="1527260607563" expanded="true" signature="32362:32684" ph="SELECT *\nFR... stelle" />
-                <marker date="1527260607563" expanded="true" signature="32449:32655" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527260607563" expanded="true" signature="32536:32654" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="32918:33110" ph="CREATE OR RE... nome_filamento" />
-                <marker date="1527260607563" expanded="true" signature="32960:33108" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527260607563" expanded="true" signature="33392:34874" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527260607563" expanded="true" signature="33800:34055" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527260607563" expanded="true" signature="33952:34054" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527260607563" expanded="true" signature="34143:34671" ph="SELECT \&quot;GLO... punti_segmenti" />
-                <marker date="1527260607563" expanded="true" signature="34635:34670" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527260607563" expanded="true" signature="34972:36055" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527260607563" expanded="true" signature="35033:36009" ph="SELECT \&quot;IDS... punti_contorni" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalcolaEstensioneTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="79" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CalcolaNumeroSegmentiTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaNumeroSegmentiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RF_5_TestSuite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/RF_5_TestSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -295,8 +250,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -324,8 +279,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/entity/Filamento.java" />
-        <option value="$PROJECT_DIR$/out/production/AppStar/boundary/RicercaFilamentoLumGUI.fxml" />
         <option value="$PROJECT_DIR$/src/control/RicercaFilamentoLumController.java" />
         <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoLumGUI.java" />
         <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.fxml" />
@@ -366,15 +319,17 @@
         <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
         <option value="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/RF_1_e_2_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/NuovoLoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/InserimentoDatiStrumentoTest.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java" />
         <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/package-info.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java" />
       </list>
     </option>
   </component>
@@ -390,7 +345,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="869" />
     <option name="width" value="504" />
     <option name="height" value="775" />
@@ -1021,7 +976,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1033,6 +987,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1045,62 +1000,11 @@
               <item name="AppStar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="boundary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="RequisitoFunzionale_3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="RequisitoFunzionale_5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="RequisitoFuzionale_1_e_2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1146,7 +1050,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RF_1_e_2_TestSuite">
+  <component name="RunManager" selected="JUnit.RF_5_TestSuite">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -1167,31 +1071,6 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
-    </configuration>
-    <configuration name="BeforeAfterLoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.RequisitoFuzionale_1_e_2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AppStar" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.RequisitoFuzionale_1_e_2" />
-      <option name="MAIN_CLASS_NAME" value="test.RequisitoFuzionale_1_e_2.BeforeAfterLoginTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration name="LoginTest.adminVerificato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1255,6 +1134,31 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_3" />
       <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_3.RF_3_TestSuite" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RF_5_TestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.RequisitoFunzionale_5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_5" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_5.RF_5_TestSuite" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1364,19 +1268,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JAR Application.APPSTAR" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BeforeAfterLoginTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.adminVerificato" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RegistraUtenteTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.LoginTest.adminVerificato" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RegistraUtenteTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.RF_5_TestSuite" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RegistraUtenteTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginTest.adminVerificato" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BeforeAfterLoginTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RF_5_TestSuite" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RegistraUtenteTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.adminVerificato" />
       </list>
     </recent_temporary>
   </component>
@@ -1427,44 +1331,45 @@
       <workItem from="1527013739583" duration="399000" />
       <workItem from="1527066836014" duration="3441000" />
       <workItem from="1527092987228" duration="6225000" />
-      <workItem from="1527168967413" duration="17514000" />
+      <workItem from="1527168967413" duration="17312000" />
+      <workItem from="1527263308625" duration="2196000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RF_1_e_2_TestSuite - 2018.05.25 at 16h 50m 50s.xml">
-      <configuration name="RF_1_e_2_TestSuite" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 17h 49m 50s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.25 at 15h 52m 44s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 17h 51m 22s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.25 at 15h 54m 22s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 17h 55m 48s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.25 at 15h 54m 54s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 17h 57m 00s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.25 at 15h 58m 41s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 18h 00m 07s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.25 at 16h 44m 49s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 18h 02m 08s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegistraUtenteTest - 2018.05.25 at 12h 59m 29s.xml">
-      <configuration name="RegistraUtenteTest" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 18h 06m 22s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegistraUtenteTest - 2018.05.25 at 13h 02m 49s.xml">
-      <configuration name="RegistraUtenteTest" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 18h 08m 00s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegistraUtenteTest - 2018.05.25 at 13h 03m 28s.xml">
-      <configuration name="RegistraUtenteTest" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 18h 09m 34s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegistraUtenteTest - 2018.05.25 at 13h 04m 32s.xml">
-      <configuration name="RegistraUtenteTest" configurationId="JUnit" />
+    <history-entry file="RF_5_TestSuite - 2018.05.25 at 18h 13m 31s.xml">
+      <configuration name="RF_5_TestSuite" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="450399000" />
+    <option name="totallyTimeSpent" value="452393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1476,7 +1381,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1487,13 +1392,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38472623" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38425925" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28668684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083207265" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1506,6 +1410,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1562,35 +1467,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/entity/Stella.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeStellaSpinaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -1607,7 +1483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1643,49 +1518,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.25477/ParametrizedCalculatorTestAdd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-670">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.19772/CalculatorTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.15486/Calculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.10663/BeforeAfterCalculatorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.25477/ParametrizedCalculatorTestAdd.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.19772/CalculatorTestSuite.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.15486/Calculator.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa23020.10663/BeforeAfterCalculatorTest.java" />
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa26280.27852/CalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#1797#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1693,9 +1534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1965#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1713,28 +1551,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1279#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/ParametrizedLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/ParametrizedLoginTest.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa26280.27948/ParametrizedCalculatorTestAdd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-381">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2019#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1742,10 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#1327#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1753,7 +1573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="485">
           <caret line="77" column="51" lean-forward="true" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1761,9 +1580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1771,7 +1587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-76">
           <caret line="139" column="91" lean-forward="false" selection-start-line="139" selection-start-column="91" selection-end-line="139" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1779,7 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-382">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1787,7 +1601,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1799,21 +1612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="103" lean-forward="false" selection-start-line="9" selection-start-column="103" selection-end-line="9" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-347">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1843,66 +1645,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/cccc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/cccc.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/cccc.java" />
+    <entry file="file://$PROJECT_DIR$/src/entity/cccc.form" />
     <entry file="file://$PROJECT_DIR$/src/persistence/FileImportazioneDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <marker date="1524061989494" expanded="true" signature="567:647" ph="COPY missing... " />
-            <marker date="1524061989494" expanded="true" signature="976:985" ph="TRUNCATE mis... " />
-            <marker date="1524061989494" expanded="true" signature="1240:1381" ph="COPY contorn... " />
-            <marker date="1524061989494" expanded="true" signature="1452:1537" ph="ALTER SEQUEN... contorni_imp_N_seq" />
-            <marker date="1524061989494" expanded="true" signature="6578:6733" ph="INSERT INTO satelliti... " />
-            <marker date="1524061989494" expanded="true" signature="6786:6943" ph="INSERT INTO satelliti... " />
-            <marker date="1524061989494" expanded="true" signature="6994:7143" ph="INSERT INTO agenzie... " />
-            <marker date="1524061989494" expanded="true" signature="7881:8035" ph="INSERT INTO strumenti... " />
-            <marker date="1524061989494" expanded="true" signature="8071:8215" ph="INSERT INTO bande... " />
-            <marker date="1524061989494" expanded="true" signature="8816:8837" ph="TRUNCATE con... " />
-            <marker date="1524061989494" expanded="true" signature="8877:8899" ph="TRUNCATE fil... " />
-            <marker date="1524061989494" expanded="true" signature="8939:8961" ph="TRUNCATE sch... " />
-            <marker date="1524061989494" expanded="true" signature="8998:9017" ph="TRUNCATE ste... " />
-            <marker date="1524061989494" expanded="true" signature="9818:10022" ph="INSERT INTO filamenti... " />
-            <marker date="1524061989494" expanded="true" signature="9875:10021" ph="SELECT \&quot;IDF... filamenti_imp" />
-            <marker date="1524061989494" expanded="true" signature="9980:10020" ph="SELECT \&quot;IDF... filamenti" />
-            <marker date="1524061989494" expanded="true" signature="10487:10733" ph="UPDATE filamenti... " />
-            <marker date="1524061989494" expanded="true" signature="10525:10674" ph="SELECT COUNT... scheletri_imp" />
-            <marker date="1524061989494" expanded="true" signature="11075:11391" ph="INSERT INTO stelle... " />
-            <marker date="1524061989494" expanded="true" signature="11100:11390" ph="SELECT *FROM... stelle_imp" />
-            <marker date="1524061989494" expanded="true" signature="11271:11389" ph="SELECT \&quot;NAM... stelle" />
-            <marker date="1524061989494" expanded="true" signature="11797:12127" ph="INSERT INTO visibilita... " />
-            <marker date="1524061989494" expanded="true" signature="11826:12126" ph="SELECT 'miss... stelle_imp" />
-            <marker date="1524061989494" expanded="true" signature="12032:12125" ph="SELECT \&quot;STE... visibilita" />
-            <marker date="1524061989494" expanded="true" signature="12478:12906" ph="INSERT INTO misurazione... " />
-            <marker date="1524061989494" expanded="true" signature="12503:12905" ph="SELECT \&quot;INS... filamenti_imp" />
-            <marker date="1524061989494" expanded="true" signature="12732:12904" ph="SELECT \&quot;STR... misurazione" />
-            <marker date="1524061989494" expanded="true" signature="13291:13802" ph="INSERT INTO segmenti... " />
-            <marker date="1524061989494" expanded="true" signature="13314:13801" ph="SELECT DISTI... scheletri_imp" />
-            <marker date="1524061989494" expanded="true" signature="13672:13784" ph="SELECT \&quot;IDB... segmenti" />
-            <marker date="1524061989494" expanded="true" signature="14299:14759" ph="INSERT INTO punti_contorni... " />
-            <marker date="1524061989494" expanded="true" signature="14327:14758" ph="SELECT \&quot;GLO... contorni_imp" />
-            <marker date="1524061989494" expanded="true" signature="14569:14757" ph="SELECT \&quot;N\&quot;... punti_contorni" />
-            <marker date="1524061989494" expanded="true" signature="15204:15306" ph="SELECT count... punti_segmenti" />
-            <marker date="1524061989494" expanded="true" signature="15566:15648" ph="ALTER SEQUEN... punti_segmenti_IDSEG_seq" />
-            <marker date="1524061989494" expanded="true" signature="15726:16446" ph="INSERT INTO punti_segmenti... " />
-            <marker date="1524061989494" expanded="true" signature="15880:16445" ph="SELECT a.\&quot;I... scheletri_imp" />
-            <marker date="1524061989494" expanded="true" signature="16163:16444" ph="SELECT \&quot;SEG... punti_segmenti" />
-            <marker date="1524061989494" expanded="true" signature="16783:17215" ph="INSERT INTO contorni... " />
-            <marker date="1524061989494" expanded="true" signature="16829:17214" ph="SELECT fi.\&quot;... filamenti_imp" />
-            <marker date="1524061989494" expanded="true" signature="17039:17213" ph="SELECT conto... contorni" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1910,9 +1658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="13" column="33" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1927,9 +1672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-26">
           <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
-          <folding>
-            <element signature="method#getInfo#0;class#UtenteRegistrato#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1937,7 +1679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1945,21 +1686,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/RF_1_e_2_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="das://table:/fc0a3505/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.bande">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/fc0a3505/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.utenti">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -1973,128 +1718,116 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/fc0a3505/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.utenti">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/BeforeAfterLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="120" lean-forward="false" selection-start-line="15" selection-start-column="120" selection-end-line="15" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="175" column="41" lean-forward="true" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
-          <folding>
-            <marker date="1527260607563" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527260607563" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527260607563" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="6382:6861" ph="SELECT f.\&quot;I... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="6898:7230" ph="SELECT COUNT... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="7264:7294" ph="SELECT COUNT... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="9573:9745" ph="SELECT * FRO... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="9778:9918" ph="SELECT COUNT... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="12082:12713" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="12200:12616" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527260607563" expanded="true" signature="12748:13250" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="12862:13151" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527260607563" expanded="true" signature="15195:15743" ph="SELECT *\nFR... stelle" />
-            <marker date="1527260607563" expanded="true" signature="15282:15704" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527260607563" expanded="true" signature="15441:15703" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="15822:16475" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1527260607563" expanded="true" signature="15965:16372" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527260607563" expanded="true" signature="16141:16371" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="16573:17659" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527260607563" expanded="true" signature="16634:17613" ph="SELECT \&quot;IDS... punti_contorni" />
-            <marker date="1527260607563" expanded="true" signature="22359:22971" ph="CREATE OR RE... filamenti_in_rettangolo" />
-            <marker date="1527260607563" expanded="true" signature="22433:22946" ph="SELECT DISTI... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="23006:23404" ph="CREATE OR RE... stelle_in_rettangolo" />
-            <marker date="1527260607563" expanded="true" signature="23078:23379" ph="SELECT \&quot;IDS... stelle" />
-            <marker date="1527260607563" expanded="true" signature="23446:24789" ph="CREATE OR RE... stelle_in_rettangolo_e_filamenti" />
-            <marker date="1527260607563" expanded="true" signature="23529:24761" ph="SELECT disti... punti_contorni" />
-            <marker date="1527260607563" expanded="true" signature="24039:24153" ph="SELECT * FRO... filamenti_in_rettangolo" />
-            <marker date="1527260607563" expanded="true" signature="24174:24333" ph="SELECT * FRO... stelle_in_rettangolo" />
-            <marker date="1527260607563" expanded="true" signature="25089:25311" ph="SELECT 'SOLO... stelle_in_rettangolo_e_filamenti" />
-            <marker date="1527260607563" expanded="true" signature="25089:25629" ph="SELECT 'SOLO... " />
-            <marker date="1527260607563" expanded="true" signature="25362:25577" ph="SELECT 'NEL stelle_in_rettangolo" />
-            <marker date="1527260607563" expanded="true" signature="25750:25912" ph="SELECT *\nFR... stelle" />
-            <marker date="1527260607563" expanded="true" signature="25836:25870" ph="SELECT * FRO... stelle_in_rettangolo" />
-            <marker date="1527260607563" expanded="true" signature="28930:29700" ph="SELECT round... punti_segmenti" />
-            <marker date="1527260607563" expanded="true" signature="29307:29379" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="29438:29601" ph="SELECT max(q... punti_segmenti" />
-            <marker date="1527260607563" expanded="true" signature="30663:30885" ph="SELECT s.\&quot;I... segmenti" />
-            <marker date="1527260607563" expanded="true" signature="32362:32684" ph="SELECT *\nFR... stelle" />
-            <marker date="1527260607563" expanded="true" signature="32449:32655" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527260607563" expanded="true" signature="32536:32654" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="32918:33110" ph="CREATE OR RE... nome_filamento" />
-            <marker date="1527260607563" expanded="true" signature="32960:33108" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527260607563" expanded="true" signature="33392:34874" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527260607563" expanded="true" signature="33800:34055" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527260607563" expanded="true" signature="33952:34054" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527260607563" expanded="true" signature="34143:34671" ph="SELECT \&quot;GLO... punti_segmenti" />
-            <marker date="1527260607563" expanded="true" signature="34635:34670" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527260607563" expanded="true" signature="34972:36055" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527260607563" expanded="true" signature="35033:36009" ph="SELECT \&quot;IDS... punti_contorni" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="2703">
+          <caret line="175" column="41" lean-forward="false" selection-start-line="175" selection-start-column="41" selection-end-line="175" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/NuovoLoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
-          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/RF_5_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaNumeroSegmentiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/RF_1_e_2_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/BeforeAfterLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="10" lean-forward="false" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/TestLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

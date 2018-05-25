@@ -18,6 +18,6 @@ package test.RequisitoFunzionale_3;
 * COSA VERRÀ MODIFICATO NEL DATABASE:     nulla.
 *
 * COSA VERRÀ ELMINIATO DAL DATABASE:      nulla.
-*
+* TODO: Cancellazione dati prima dei test.
 * ----------------------------------------------------------------------------------------------------------------------
 * */
