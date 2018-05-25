@@ -59,8 +59,18 @@ public class UtenteRegistrato {
     public boolean isAmministratore() {
         return amministratore;
     }
-    protected void setAmministratore(boolean amministratore){
-        this.amministratore = amministratore;
+    public void setAmministratore(boolean amministratore){ this.amministratore = amministratore; }
+    public ArrayList<String> getInfo(){
+        ArrayList<String> info = new ArrayList<>(6);
+        String admin = "";
+        if (this.isAmministratore()){
+            admin = "amministratore";
+        }else if(!this.isAmministratore()){
+            admin = "notAmministratore";
+        }
+        info.add(this.nome); info.add(this.cognome); info.add(this.userID); info.add(this.password);
+        info.add(this.email); info.add(admin);
+        return info;
     }
 
     public ArrayList calcolaCentroide(String nomeFil, int idFil, String satellite){

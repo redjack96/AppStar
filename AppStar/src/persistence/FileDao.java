@@ -136,8 +136,8 @@ public class FileDao {
     }
 
     // REQ 6 - Ricerca i filamenti in base al contrasto E alla ellitticita'
-    public static ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn nome,
-                                      TableColumn numSeg, TableColumn satellite, TableColumn con, TableColumn ell,
+    public static ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView<Filamento> tableView,
+                                                    TableColumn<Filamento, Integer> id, TableColumn nome, TableColumn numSeg, TableColumn satellite, TableColumn con, TableColumn ell,
                                       float lum, float ellipt1, float ellipt2, int pagina)
             throws SQLException, NumberFormatException{
 

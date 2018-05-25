@@ -56,7 +56,7 @@ public class UtenteDao {
         return infoUtente;
     }
 
-    public static void inserisciAccount(String nome, String cognome, String userID, String password, String email,
+    public static boolean inserisciAccount(String nome, String cognome, String userID, String password, String email,
                                         boolean admin) throws SQLException{
 
         Connessione.connettiti();
@@ -73,8 +73,10 @@ public class UtenteDao {
             ps.setBoolean(6, admin);
             ps.executeUpdate();
             System.out.println("Inserito nuovo utente con successo!");
+            return true;
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            return false;
         }finally{
             Connessione.CONN.close();
         }
