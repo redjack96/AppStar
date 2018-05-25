@@ -23,15 +23,9 @@ import java.util.ResourceBundle;
 
 public class RicercaStelleInFilamentoGUI implements Initializable {
     @FXML
-    private ResourceBundle resource;
-    @FXML
-    private URL locationd;
-    @FXML
     private TextField idText;
     @FXML
     private ChoiceBox<String> choiceBox;
-    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
-    private ObservableList<Stella> listaStelle;
     @FXML
     private TableView tableView;
     @FXML
@@ -65,6 +59,8 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     @FXML
     private Button cerca;
 
+    private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
+    private ObservableList<Stella> listaStelle = null;
     private boolean bloccaPaginaText = false;
 
     public void istanziaRicercaStelleInFilamentoGUIFXML(Event e){

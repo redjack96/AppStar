@@ -15,10 +15,6 @@ import java.util.ResourceBundle;
 
 public class HomeGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private RadioButton importaFileSatellite;
     @FXML
     private RadioButton registraUtente;

@@ -1,6 +1,5 @@
 package control;
 
-import boundary.RicercaFilamentoLumGUI;
 import boundary.RicercaFilamentoSegGUI;
 import entity.Filamento;
 import entity.UtenteConnesso;
@@ -10,7 +9,6 @@ import javafx.event.Event;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-import java.util.ArrayList;
 
 public class RicercaFilamentoSegController {
 

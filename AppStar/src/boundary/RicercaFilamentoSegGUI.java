@@ -1,12 +1,10 @@
 package boundary;
 
 import control.HomeController;
-import control.RicercaFilamentoLumController;
 import control.RicercaFilamentoSegController;
 import entity.Filamento;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.beans.value.WeakChangeListener;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -16,29 +14,15 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.*;
-import javafx.scene.text.Text;
-
-import java.math.BigDecimal;
 import java.net.URL;
-import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class RicercaFilamentoSegGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
-    private Slider slider;
-    @FXML
     private TextField range1;
     @FXML
     private TextField range2;
-    @FXML
-    private ObservableList<Filamento> listaFilamenti;
     @FXML
     private TableView tableView;
     @FXML
@@ -62,6 +46,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
     @FXML
     private Label numRic;
 
+    private ObservableList<Filamento> listaFilamenti = null;
     private boolean bloccaPaginaText = false;
 
     public void istanziaRicercaFilamentoSegGUIFXML(Event e){
@@ -77,7 +62,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
     }
 
     private void ricerca(RicercaFilamentoSegController controller, int pagina) throws NumberFormatException{
-        int result = 0;
+        int result;
         int minSeg = Integer.parseInt(range1.getText());
         int maxSeg = Integer.parseInt(range2.getText());
         if (minSeg < 0 || (maxSeg - minSeg <= 2)){

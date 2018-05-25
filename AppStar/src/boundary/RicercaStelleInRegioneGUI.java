@@ -15,21 +15,16 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
-
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class RicercaStelleInRegioneGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private Button cerca;
     @FXML
     private Button indietro;
-    private ObservableList<Stella> listaStelle;
+    private ObservableList<Stella> listaStelle = null;
     @FXML
     private TableView tableView;
     @FXML

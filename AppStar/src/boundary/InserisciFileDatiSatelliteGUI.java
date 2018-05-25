@@ -14,17 +14,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.stage.WindowEvent;
-
 import java.net.URL;
 import java.time.Period;
 import java.util.ResourceBundle;
 
 public class InserisciFileDatiSatelliteGUI implements Initializable {
-    @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
     @FXML
     private Button indietroButton;
     @FXML

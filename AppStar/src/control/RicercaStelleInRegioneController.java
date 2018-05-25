@@ -23,7 +23,7 @@ public class RicercaStelleInRegioneController {
                                                 TableColumn flux, TableColumn type, TextField hField, TextField bField,
                                                 TextField lonField, TextField latField, int pagina){
 
-        ArrayList<Integer> arrayList = new ArrayList<>(6);
+        ArrayList<Integer> arrayList;
         ArrayList<String > stringArrayList = new ArrayList<>(8);
 
         UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);

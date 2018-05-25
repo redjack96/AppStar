@@ -4,8 +4,6 @@ import javafx.collections.ObservableList;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import persistence.FileDao;
-
-import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -103,9 +101,9 @@ public class UtenteRegistrato {
         return num_seg;
     }
 
-    public ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView tableView, TableColumn id,
-                                             TableColumn nome, TableColumn numSeg, TableColumn satellite, TableColumn con,
-                                             TableColumn ell, float lum, float ellipt1, float ellipt2, int pagina){
+    public ArrayList<Integer> cercaFilamenti(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id,
+                                             TableColumn<Filamento, String> nome, TableColumn<Filamento, Integer> numSeg, TableColumn<Filamento, String> satellite, TableColumn<Filamento, Float> con,
+                                             TableColumn<Filamento, Float> ell, float lum, float ellipt1, float ellipt2, int pagina){
 
         ArrayList<Integer> result = new ArrayList<>(2);
 
@@ -119,8 +117,8 @@ public class UtenteRegistrato {
         return result;
     }
 
-    public int cercaFilamentiSeg(ObservableList<Filamento> filamento, TableView tableView, TableColumn id,
-                                 TableColumn nome, TableColumn satellite, TableColumn numSeg, int seg1, int seg2,
+    public int cercaFilamentiSeg(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id,
+                                 TableColumn<Filamento, String> nome, TableColumn<Filamento, String> satellite, TableColumn<Filamento, Integer> numSeg, int seg1, int seg2,
                                  int pagina){
 
         int result;
@@ -134,8 +132,8 @@ public class UtenteRegistrato {
         return result;
     }
 
-    public void cercaInRegione(ObservableList<Filamento> filamento, TableView tableView, TableColumn id, TableColumn
-            nome, TableColumn satellite, TableColumn numSeg, float lungh, float centLon, float
+    public void cercaInRegione(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id, TableColumn<Filamento, String>
+            nome, TableColumn<Filamento, String> satellite, TableColumn<Filamento, Integer> numSeg, float lungh, float centLon, float
                                        centLat, boolean geom, int pagina){
 
         try{
@@ -146,9 +144,9 @@ public class UtenteRegistrato {
         }
     }
 
-    public ArrayList<Integer> cercaInFilamento(ObservableList<Stella> stella, TableView tableView, TableColumn id,
-                                             TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                             TableColumn flux, TableColumn type, int idFil, String satellite,
+    public ArrayList<Integer> cercaInFilamento(ObservableList<Stella> stella, TableView<Stella> tableView, TableColumn<Stella, Integer> id,
+                                             TableColumn<Stella, String> nameStar, TableColumn<Stella, Float> glon, TableColumn<Stella, Float> glat,
+                                             TableColumn<Stella, Float> flux, TableColumn<Stella, String> type, int idFil, String satellite,
                                              int pagina){
 
         ArrayList<Integer> arrayList = new ArrayList<>(3);
@@ -162,9 +160,9 @@ public class UtenteRegistrato {
         return arrayList;
     }
 
-    public ArrayList<Integer> cercaInRegione(ObservableList<Stella> stella, TableView tableView, TableColumn id,
-                                             TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                             TableColumn flux, TableColumn type, float h, float b, float lon,
+    public ArrayList<Integer> cercaInRegione(ObservableList<Stella> stella, TableView<Stella> tableView, TableColumn<Stella, Integer> id,
+                                             TableColumn<Stella, String> nameStar, TableColumn<Stella, Float> glon, TableColumn<Stella, Float> glat,
+                                             TableColumn<Stella, Float> flux, TableColumn<Stella, String> type, float h, float b, float lon,
                                              float lat, int pagina){
         ArrayList<Integer> arrayList = new ArrayList<>(6);
 
@@ -197,9 +195,9 @@ public class UtenteRegistrato {
         return lista;
     }
 
-    public void calcolaDistanzeStellaSpina(ObservableList<StellaSpina> listaStelle, TableView tableView, TableColumn id,
-                                           TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                           TableColumn flux, TableColumn type, TableColumn distanza, int idFil,
+    public void calcolaDistanzeStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
+                                           TableColumn<StellaSpina, String> nameStar, TableColumn<StellaSpina, Float> glon, TableColumn<StellaSpina, Float> glat,
+                                           TableColumn<StellaSpina, Float> flux, TableColumn<StellaSpina, String> type, TableColumn<StellaSpina, Float> distanza, int idFil,
                                            String satellite, String ord, int pagina){
         try{
             FileDao.calcolaDistStellaSpina(listaStelle, tableView, id, nameStar, glon, glat, flux, type, distanza, idFil,

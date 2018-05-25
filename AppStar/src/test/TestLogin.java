@@ -25,7 +25,7 @@ public class TestLogin {
     @Test
     public void adminVerificato() throws SQLException{
         System.out.println("----------VERIFICA DI LOGIN DA PARTE DI UN AMMINISTRATORE REGISTRATO----------");
-        ArrayList<String> infoUtente;
+        ArrayList infoUtente;
         infoUtente = controlloAccount("lorzar", "lorzar");
         definisciInfoLorenzo();
         Assert.assertEquals(infoLorenzo, infoUtente);
@@ -34,7 +34,7 @@ public class TestLogin {
     @Test
     public void adminNonVerificato() throws SQLException{
         System.out.println("----------VERIFICA DI LOGIN DA PARTE DI UN AMMINISTRATORE NON REGISTRATO----------");
-        ArrayList<String> infoUtente;
+        ArrayList infoUtente;
         infoUtente = controlloAccount("noName", "noPass");
         definisciInfoLorenzo();
         Assert.assertNotEquals(infoLorenzo, infoUtente);
@@ -43,7 +43,7 @@ public class TestLogin {
     @Test
     public void utenteVerificato() throws SQLException{
         System.out.println("----------VERIFICA DI LOGIN DA PARTE DI UN UTENTE REGISTRATO----------");
-        ArrayList<String> infoUtente;
+        ArrayList infoUtente;
         infoUtente = controlloAccount("red_jack", "redjack");
         definisciInfoGiacomo();
         Assert.assertEquals(infoGiacomo, infoUtente);

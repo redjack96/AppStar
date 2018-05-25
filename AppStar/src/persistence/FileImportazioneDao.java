@@ -30,7 +30,7 @@ public class FileImportazioneDao {
 
             switch (relazione) {
 
-                case "contorni_imp": {  // TODO: Testare con Spitzer
+                case "contorni_imp": {
 
                     importazione = "COPY contorni_imp(\"IDFIL\", \"GLON_CONT\", \"GLAT_CONT\") FROM '" + file.getPath() +
                             "' DELIMITER ',' csv HEADER";
@@ -54,7 +54,7 @@ public class FileImportazioneDao {
                     System.out.println("COMPLETATO.\nFINE. TEMPO IMPIEGATO CONTORNI: "+ result);
                     break;
                 }
-                case "filamenti_imp": { //TODO: controllare Segmenti e Punti_segmenti
+                case "filamenti_imp": {
                     PreparedStatement ps4 = CONN.prepareStatement(importazione);
                     System.out.print("Importazione del file csv nella tabella " + relazione + "...");
 
@@ -119,7 +119,7 @@ public class FileImportazioneDao {
         } catch (SQLException e) {
             System.out.println(e.getMessage());
             CONN.close();
-            System.exit(1); //TODO eliminare la riga, quando tutti gli errori delle query sono risolti
+
         } finally {
             CONN.close();
         }
@@ -154,7 +154,7 @@ public class FileImportazioneDao {
             CONN.close();
         }
     }
-    //TODO: Prima inserire il nome dello strumento in 'strumenti' poi le bande in 'bande'.
+
     public static void inserisciDatiStrumento(float banda, String strumento, String satellite) throws SQLException{
 
         Connessione.connettiti();

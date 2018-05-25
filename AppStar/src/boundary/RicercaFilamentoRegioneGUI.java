@@ -1,7 +1,6 @@
 package boundary;
 
 import control.HomeController;
-import control.RicercaFilamentoLumController;
 import control.RicercaFilamentoRegioneController;
 import entity.Filamento;
 import javafx.beans.value.ChangeListener;
@@ -26,14 +25,9 @@ import java.util.ResourceBundle;
 
 public class RicercaFilamentoRegioneGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private Button cerca;
     @FXML
     private Button indietro;
-    private ObservableList<Filamento> listaFilamenti;
     @FXML
     private TableView tableView; //ok
     @FXML
@@ -61,6 +55,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
     @FXML
     private RadioButton quadrato; //ok
 
+    private ObservableList<Filamento> listaFilamenti = null;
     private boolean bloccaPaginaText = false;
 
     public void istanziaRicercaFilamentoRegioneGUIFXML(Event e){

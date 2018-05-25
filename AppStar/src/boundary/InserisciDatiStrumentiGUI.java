@@ -13,15 +13,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class InserisciDatiStrumentiGUI implements Initializable {
-    @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
     @FXML
     private Button indietroButton;
     @FXML
@@ -56,8 +51,7 @@ public class InserisciDatiStrumentiGUI implements Initializable {
         campiLabel.setVisible(false);
 
         InserisciDatiStrumentiController inserisciDatiStrumentiController = new InserisciDatiStrumentiController();
-        //TODO: manca la scelta del Satellite a cui lo strumento appartiene (usa choiceBox su scene builder)
-        //TODO: non inserisce nel database (deve riempire le tabelle 'strumenti' e 'bande')
+
         inserisciButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

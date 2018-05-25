@@ -16,18 +16,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
-
-import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class InfoFilamentiGUI implements Initializable {
-
-    @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
     @FXML
     private TextField nomeFil;
     @FXML
@@ -99,8 +92,8 @@ public class InfoFilamentiGUI implements Initializable {
                 } else filamento = "?";
 
                 centroide = infoFilamentiController.calcolaCentroide(nomeFil.getText(), idfil, choiceBox.getValue());
-                lonCentroide.setText((String) centroide.get(0) + "\nFilamento = " + filamento);
-                latCentroide.setText((String) centroide.get(1) + "\nFilamento = " + filamento);
+                lonCentroide.setText(centroide.get(0) + "\nFilamento = " + filamento);
+                latCentroide.setText(centroide.get(1) + "\nFilamento = " + filamento);
             }
         });
 
@@ -128,7 +121,7 @@ public class InfoFilamentiGUI implements Initializable {
                 } else filamento = "?";
 
                 estensione = infoFilamentiController.calcolaEstensione(nomeFil.getText(), idfil, choiceBox.getValue());
-                String result = "Il filamento " + filamento + " si estende per " + (String) estensione.get(0) + " gradi di longitudine e per " + (String) estensione.get(1) +  " gradi di longitudine.";
+                String result = "Il filamento " + filamento + " si estende per " + estensione.get(0) + " gradi di longitudine e per " + estensione.get(1) +  " gradi di longitudine.";
                 estFilamento.setText(result);
             }});
 

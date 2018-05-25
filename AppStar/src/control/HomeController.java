@@ -16,8 +16,7 @@ public class HomeController {
 
     public UtenteRegistrato getUtente(){
         //Ritorna utente che contiene l'istanza dell'utente connesso attualmente.
-        UtenteRegistrato utente = UtenteConnesso.getInstance(null, null);
-        return utente;
+        return UtenteConnesso.getInstance(null, null);
     }
 
     public boolean verificaAmministratore(){

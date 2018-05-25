@@ -23,10 +23,6 @@ import java.util.ResourceBundle;
 
 public class ImportaFileSatelliteGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private Button indietroButton;
     @FXML
     private Button importaButton;

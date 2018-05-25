@@ -5,7 +5,6 @@ import control.RicercaFilamentoLumController;
 import entity.Filamento;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
-import javafx.beans.value.WeakChangeListener;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.Event;
@@ -15,29 +14,18 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.*;
-import javafx.scene.text.Text;
-
-import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class RicercaFilamentoLumGUI implements Initializable {
     @FXML
-    private ResourceBundle resources;
-    @FXML
-    private URL location;
-    @FXML
     private Slider slider;
     @FXML
     private TextField range1;
     @FXML
     private TextField range2;
-    @FXML
-    private ObservableList<Filamento> listaFilamenti;
     @FXML
     private TableView tableView;
     @FXML
@@ -69,6 +57,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
     @FXML
     private Label tot;
 
+    private ObservableList<Filamento> listaFilamenti;
     private boolean bloccaPaginaText = false;
 
     public void istanziaRicercaFilamentoLumGUIFXML(Event e){
