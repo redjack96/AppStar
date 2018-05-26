@@ -2,6 +2,7 @@ package test.RequisitoFunzionale_3;
 
 import org.junit.Assert;
 import org.junit.Test;
+import persistence.TestDao;
 
 import java.sql.SQLException;
 
@@ -26,6 +27,9 @@ public class RegistraUtenteTest {
 
     @Test
     public void inserimentoAccount() throws SQLException{
+        System.err.println("\n--PRIMO TEST DEL PACCHETTO Suite, CONFIGURAZIONE DATABASE IN CORSO...--\n");
+        new TestDao().req_fun_3_deleteData();
+        System.err.println("\n--CONFIGURAZIONE DATABASE COMPLETATA!--\n");
         System.out.println("\n----------INSERIMENTO DI UN NUOVO AMMINISTRATORE----------\n" +
                 "L'amministratore che sta utilizzando l'applicazione ha appena aggiunto i dati di un nuovo \n" +
                 "amministratore: {Alberto, Rossi, albertone, albertone, albertone@gmail.com, amministratore}");
