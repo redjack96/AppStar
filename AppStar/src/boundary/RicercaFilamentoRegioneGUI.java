@@ -103,7 +103,6 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         RicercaFilamentoRegioneController ricercaFilamentoRegioneController = new RicercaFilamentoRegioneController();
-
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -123,7 +122,6 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 try{
-                    //System.out.println("Sto cercando dopo aver premuto \"Cerca\"...");
                     ricerca(ricercaFilamentoRegioneController, 1);
                 }catch (NumberFormatException nFE ){
                     System.out.println(nFE.getMessage());

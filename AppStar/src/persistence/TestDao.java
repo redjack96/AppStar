@@ -1,5 +1,6 @@
 package persistence;
 
+import java.io.File;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,9 +9,21 @@ import java.util.ArrayList;
 
 import static persistence.Connessione.CONN;
 
-public class TestDao {
+public class TestDao{
+    public void deleteAlberto() throws SQLException{
+        Connessione.connettiti();
 
-    public void req_fun_3_deleteData() throws SQLException{
+        String deleteAmministratore = "DELETE FROM utenti WHERE \"USER_ID\" = '"+"albertone"+"'";
+        try{
+            PreparedStatement ps3 = CONN.prepareStatement(deleteAmministratore);
+            ps3.executeUpdate();
+        } catch (SQLException e){
+            e.printStackTrace();
+        } finally {
+            CONN.close();
+        }
+    }
+    public void req_fun_3_deleteDataStrumento() throws SQLException{
 
         Connessione.connettiti();
 
@@ -18,19 +31,40 @@ public class TestDao {
 
         String deleteStrumento = "DELETE FROM strumenti WHERE \"STRUMENTO\" = '"+"ANDREA"+"'";
 
-        String deleteAmministratore = "DELETE FROM utenti WHERE \"USER_ID\" = '"+"albertone"+"'";
-
         try{
             PreparedStatement ps1 = CONN.prepareStatement(deleteBanda);
             PreparedStatement ps2 = CONN.prepareStatement(deleteStrumento);
-            PreparedStatement ps3 = CONN.prepareStatement(deleteAmministratore);
 
-            ps1.executeUpdate(); ps2.executeUpdate(); ps3.executeUpdate();
+            ps1.executeUpdate(); ps2.executeUpdate();
         } catch (SQLException e){
             e.printStackTrace();
         } finally {
             CONN.close();
         }
+    }
+
+    public void req_fun_3_deleteDataSatellite() throws SQLException{
+
+        Connessione.connettiti();
+
+        String deleteAgenzia = "DELETE FROM agenzie WHERE \"NAME_AG\" = '"+"ASI"+"'";
+
+        String deleteSatellite = "DELETE FROM satelliti WHERE \"NAME_SAT\" = '"+"AGILE"+"'";
+
+        try{
+            PreparedStatement ps1 = CONN.prepareStatement(deleteAgenzia);
+            PreparedStatement ps2 = CONN.prepareStatement(deleteSatellite);
+
+            ps1.executeUpdate(); ps2.executeUpdate();
+        } catch (SQLException e){
+            e.printStackTrace();
+        } finally {
+            CONN.close();
+        }
+    }
+
+    public void req_fun_4_importData(File file) throws SQLException{
+        // importare filamenti_Herschel.csv, poi stelle_Herschel.csv, poi nulla.txt
     }
 
     public int req_fun_6_getNoFilamenti(float lum, float ellipt1, float ellipt2)

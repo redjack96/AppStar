@@ -10,7 +10,7 @@ import test.RequisitoFunzionale_5.RF_5_TestSuite;
 import test.RequisitoFunzionale_6.RF_6_TestSuite;
 import test.RequisitoFunzionale_7.RF_7_TestSuite;
 import test.RequisitoFunzionale_9.RF_9_TestSuite;
-import test.RequisitoFuzionale_1_e_2.RF_1_e_2_TestSuite;
+import test.RequisitoFunzionale_1_e_2.RF_1_e_2_TestSuite;
 
 @RunWith(value=Suite.class)
 //@SuiteClasses(value={testClass.class, ...})

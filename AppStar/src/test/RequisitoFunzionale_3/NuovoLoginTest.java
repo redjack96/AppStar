@@ -6,12 +6,7 @@ import entity.UtenteConnesso;
 import entity.UtenteRegistrato;
 import org.junit.Assert;
 import org.junit.Test;
-
-
-import java.sql.SQLException;
 import java.util.ArrayList;
-
-import static entity.UtenteConnesso.utente;
 
 public class NuovoLoginTest {
     private ArrayList<String> infoAlberto = new ArrayList<>(6);

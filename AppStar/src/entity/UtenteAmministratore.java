@@ -28,12 +28,15 @@ public class UtenteAmministratore extends UtenteRegistrato {
         }
     }
     //chiamato da control.FileSatelliteController in importaFile()
-    public int importaFileCSV(File file, int RB, String satellite){
+    public int importaFileCSV(File file, int RB, String satellite) {
         int r;
         //fa in modo che se il nome del satellite non e' compreso nel file, non si procede all'importazione.
-        if (!(file.getName().toLowerCase().contains(satellite.toLowerCase()))){
+        if (!(file.getName().toLowerCase().contains(satellite.toLowerCase()))) {
             System.out.println("Il nome del file non contiene il satellite " + satellite);
             return -1;
+        }  else if (!(file.getName().contains(".csv"))){
+            System.out.println("Il file non e' in formato .csv");
+        return -1;
         }
         try{
             if (RB == 1){
@@ -53,12 +56,14 @@ public class UtenteAmministratore extends UtenteRegistrato {
         return r;
     }
 
-    public void inserisciNuoviDatiSatellite(String nomeAgenzia, String nomeSatellite, LocalDate dataInizio,
+    public boolean inserisciNuoviDatiSatellite(String nomeAgenzia, String nomeSatellite, LocalDate dataInizio,
                                             Period durata){
         try{
             FileImportazioneDao.inserisciFileDatiSatellite(nomeAgenzia, nomeSatellite, dataInizio, durata);
+            return true;
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            return false;
         }
     }
 
