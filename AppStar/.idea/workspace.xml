@@ -161,124 +161,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestDao.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/persistence/TestDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
+            <state relative-caret-position="279">
+              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1527426202646" expanded="true" signature="385:441" ph="DELETE FROM utenti... " />
-                <marker date="1527426202646" expanded="true" signature="835:889" ph="DELETE FROM bande... " />
-                <marker date="1527426202646" expanded="true" signature="927:985" ph="DELETE FROM strumenti... " />
-                <marker date="1527426202646" expanded="true" signature="1472:1523" ph="DELETE FROM agenzie... " />
-                <marker date="1527426202646" expanded="true" signature="1561:1617" ph="DELETE FROM satelliti... " />
-                <marker date="1527426202646" expanded="true" signature="2402:2686" ph="SELECT COUNT... filamenti" />
-                <marker date="1527426202646" expanded="true" signature="3367:3483" ph="SELECT COUNT... filamenti" />
-                <marker date="1527426202646" expanded="true" signature="4303:4597" ph="SELECT *\nFR... stelle" />
-                <marker date="1527426202646" expanded="true" signature="4390:4596" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527426202646" expanded="true" signature="4477:4595" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527426202646" expanded="true" signature="4676:5121" ph="SELECT s.\&quot;T... stelle" />
-                <marker date="1527426202646" expanded="true" signature="4803:5034" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527426202646" expanded="true" signature="4915:5033" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527426202646" expanded="true" signature="5219:6305" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527426202646" expanded="true" signature="5280:6259" ph="SELECT \&quot;IDS... punti_contorni" />
-                <marker date="1527426202646" expanded="true" signature="8963:9285" ph="SELECT *\nFR... stelle" />
-                <marker date="1527426202646" expanded="true" signature="9050:9256" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527426202646" expanded="true" signature="9137:9255" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527426202646" expanded="true" signature="9519:9727" ph="CREATE OR RE... nome_filamento" />
-                <marker date="1527426202646" expanded="true" signature="9561:9725" ph="SELECT \&quot;NAM... filamenti" />
-                <marker date="1527426202646" expanded="true" signature="10001:11173" ph="SELECT u.\&quot;I... stelle" />
-                <marker date="1527426202646" expanded="true" signature="10417:10612" ph="SELECT stell... stelle_in_filamenti_tmp" />
-                <marker date="1527426202646" expanded="true" signature="10545:10611" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527426202646" expanded="true" signature="10688:11048" ph="SELECT \&quot;GLO... punti_segmenti" />
-                <marker date="1527426202646" expanded="true" signature="11012:11047" ph="SELECT \&quot;NAM... nome_filamento" />
-                <marker date="1527426202646" expanded="true" signature="11270:12353" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-                <marker date="1527426202646" expanded="true" signature="11331:12307" ph="SELECT \&quot;IDS... punti_contorni" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/application/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/package-info.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtenteAmministratore.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="63" column="32" lean-forward="true" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImportazioneTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/ImportazioneTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13">
-              <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeforeAfterInserisciDatiStrumentoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/BeforeAfterInserisciDatiStrumentoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BeforeImportazioneTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/BeforeImportazioneTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RF_4_TestSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/RF_4_TestSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="10" column="75" lean-forward="false" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InserimentoDatiStrumentoTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/InserimentoDatiStrumentoTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="22" column="88" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="88" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1527509200479" expanded="true" signature="335:391" ph="DELETE FROM utenti... " />
+                <marker date="1527509200479" expanded="true" signature="785:839" ph="DELETE FROM bande... " />
+                <marker date="1527509200479" expanded="true" signature="877:935" ph="DELETE FROM strumenti... " />
+                <marker date="1527509200479" expanded="true" signature="1422:1473" ph="DELETE FROM agenzie... " />
+                <marker date="1527509200479" expanded="true" signature="1511:1567" ph="DELETE FROM satelliti... " />
+                <marker date="1527509200479" expanded="true" signature="2192:2476" ph="SELECT COUNT... filamenti" />
+                <marker date="1527509200479" expanded="true" signature="3157:3273" ph="SELECT COUNT... filamenti" />
+                <marker date="1527509200479" expanded="true" signature="4093:4387" ph="SELECT *\nFR... stelle" />
+                <marker date="1527509200479" expanded="true" signature="4180:4386" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527509200479" expanded="true" signature="4267:4385" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527509200479" expanded="true" signature="4466:4911" ph="SELECT s.\&quot;T... stelle" />
+                <marker date="1527509200479" expanded="true" signature="4593:4824" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527509200479" expanded="true" signature="4705:4823" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527509200479" expanded="true" signature="5009:6095" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527509200479" expanded="true" signature="5070:6049" ph="SELECT \&quot;IDS... punti_contorni" />
+                <marker date="1527509200479" expanded="true" signature="8757:9079" ph="SELECT *\nFR... stelle" />
+                <marker date="1527509200479" expanded="true" signature="8844:9050" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527509200479" expanded="true" signature="8931:9049" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527509200479" expanded="true" signature="9313:9521" ph="CREATE OR RE... nome_filamento" />
+                <marker date="1527509200479" expanded="true" signature="9355:9519" ph="SELECT \&quot;NAM... filamenti" />
+                <marker date="1527509200479" expanded="true" signature="9795:10967" ph="SELECT u.\&quot;I... stelle" />
+                <marker date="1527509200479" expanded="true" signature="10211:10406" ph="SELECT stell... stelle_in_filamenti_tmp" />
+                <marker date="1527509200479" expanded="true" signature="10339:10405" ph="SELECT \&quot;NAM... nome_filamento" />
+                <marker date="1527509200479" expanded="true" signature="10482:10842" ph="SELECT \&quot;GLO... punti_segmenti" />
+                <marker date="1527509200479" expanded="true" signature="10806:10841" ph="SELECT \&quot;NAM... nome_filamento" />
+                <marker date="1527509200479" expanded="true" signature="11064:12147" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+                <marker date="1527509200479" expanded="true" signature="11125:12101" ph="SELECT \&quot;IDS... punti_contorni" />
               </folding>
             </state>
           </provider>
@@ -320,20 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/TestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/package-info.java" />
-        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/package-info.java" />
-        <option value="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/BeforeAfterRF3.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RicercaPerLuminositaTest.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RF_6_TestSuite.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_6/package-info.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RicercaPerSegTest.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RF_7_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_7/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_8/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_9/package-info.java" />
@@ -345,22 +247,17 @@
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_8/RicercaInRegioneTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_10/RF_10_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_10/package-info.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_11/CalcolaDistanzaSegConTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_11/RF_11_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_11/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaSegConTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_12/RF_11_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_12/package-info.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaStellaSpinaTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/RF_1_e_2_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/allRF_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.fxml" />
-        <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/BeforeAfterInserisciDatiStrumentoTest.java" />
-        <option value="$PROJECT_DIR$/src/persistence/TestDao.java" />
-        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/NuovoLoginTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RegistraUtenteTest.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java" />
@@ -371,6 +268,25 @@
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/package-info.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/RF_4_TestSuite.java" />
         <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/BeforeImportazioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaNumeroSegmentiTest.java" />
+        <option value="$PROJECT_DIR$/src/control/CalcolaDistanzeStellaSpinaController.java" />
+        <option value="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
+        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaStellaSpinaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RicercaPerLuminositaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_11/CalcolaDistanzaSegConTest.java" />
+        <option value="$PROJECT_DIR$/src/persistence/TestDao.java" />
+        <option value="$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.fxml" />
+        <option value="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
+        <option value="/PostgreSQL Fragment (FileImportazioneDao.java:13022).sql" />
+        <option value="/PostgreSQL Fragment (FileImportazioneDao.java:12209).sql" />
+        <option value="$PROJECT_DIR$/src/persistence/FileImportazioneDao.java" />
+        <option value="$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.java" />
+        <option value="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java" />
       </list>
     </option>
   </component>
@@ -1020,6 +936,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -1037,32 +955,19 @@
               <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppStar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="boundary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
               <item name="AppStar" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="boundary" type="462c0819:PsiDirectoryNode" />
+              <item name="errorPopUp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -1092,20 +997,20 @@
     <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\pics" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="test.RequisitoFunzionale_10" />
-      <recent name="test.RequisitoFunzionale_9" />
-      <recent name="boundary.errorPopUp" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\test\RequisitoFunzionale_12" />
       <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\test\RequisitoFunzionale_10" />
       <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\test\RequisitoFunzionale_9" />
       <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\boundary" />
       <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\out\production\AppStar\boundary" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.RequisitoFunzionale_10" />
+      <recent name="test.RequisitoFunzionale_9" />
+      <recent name="boundary.errorPopUp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\pics" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1120,7 +1025,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RF_4_TestSuite">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
       <option name="HTML_USED" value="false" />
@@ -1161,19 +1066,44 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="InserimentoDatiStrumentoTest.inserimentoDatiSatellite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalcolaDistanzaSegConTest.calcolaDistanzaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="test.RequisitoFunzionale_3.*" />
+          <option name="PATTERN" value="test.RequisitoFunzionale_11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="AppStar" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_3" />
-      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_3.InserimentoDatiStrumentoTest" />
-      <option name="METHOD_NAME" value="inserimentoDatiSatellite" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_11" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_11.CalcolaDistanzaSegConTest" />
+      <option name="METHOD_NAME" value="calcolaDistanzaTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="LoginTest.utenteNonVerificato" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.RequisitoFunzionale_1_e_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_1_e_2" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_1_e_2.LoginTest" />
+      <option name="METHOD_NAME" value="utenteNonVerificato" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -1223,31 +1153,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_3" />
       <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_3.RF_3_TestSuite" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="RF_4_TestSuite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="test.RequisitoFunzionale_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="AppStar" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_4" />
-      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_4.RF_4_TestSuite" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1333,18 +1238,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JAR Application.APPSTAR" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.InserimentoDatiStrumentoTest.inserimentoDatiSatellite" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RF_4_TestSuite" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginTest.utenteNonVerificato" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CalcolaDistanzaSegConTest.calcolaDistanzaTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RF_4_TestSuite" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.InserimentoDatiStrumentoTest.inserimentoDatiSatellite" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CalcolaDistanzaSegConTest.calcolaDistanzaTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginTest.utenteNonVerificato" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RF_3_TestSuite" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RF_1_e_2_TestSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -1397,43 +1302,44 @@
       <workItem from="1527092987228" duration="6225000" />
       <workItem from="1527168967413" duration="17312000" />
       <workItem from="1527263308625" duration="2196000" />
+      <workItem from="1527508276481" duration="6612000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RF_1_e_2_TestSuite - 2018.05.27 at 14h 35m 21s.xml">
+    <history-entry file="CalcolaDistanzaSegConTest_calcolaDistanzaTest - 2018.05.28 at 14h 00m 07s.xml">
+      <configuration name="CalcolaDistanzaSegConTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTest - 2018.05.27 at 16h 25m 00s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTest - 2018.05.27 at 16h 26m 54s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTest - 2018.05.27 at 16h 29m 50s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTest - 2018.05.27 at 16h 30m 50s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTest - 2018.05.27 at 16h 34m 41s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTest - 2018.05.27 at 16h 35m 01s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginTest_utenteNonVerificato - 2018.05.28 at 13h 53m 05s.xml">
+      <configuration name="LoginTest.utenteNonVerificato" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RF_1_e_2_TestSuite - 2018.05.27 at 17h 10m 27s.xml">
       <configuration name="RF_1_e_2_TestSuite" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.27 at 14h 38m 04s.xml">
+    <history-entry file="RF_3_TestSuite - 2018.05.27 at 17h 15m 18s.xml">
       <configuration name="RF_3_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.27 at 14h 39m 03s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.27 at 14h 39m 52s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.27 at 14h 40m 37s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_3_TestSuite - 2018.05.27 at 14h 41m 04s.xml">
-      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_4_TestSuite - 2018.05.27 at 15h 19m 58s.xml">
-      <configuration name="RF_4_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_4_TestSuite - 2018.05.27 at 15h 29m 37s.xml">
-      <configuration name="RF_4_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_4_TestSuite - 2018.05.27 at 15h 32m 40s.xml">
-      <configuration name="RF_4_TestSuite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RF_4_TestSuite - 2018.05.27 at 15h 33m 15s.xml">
-      <configuration name="RF_4_TestSuite" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482197000" />
+    <option name="totallyTimeSpent" value="495402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1446,56 +1352,35 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561728" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9050847" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27231467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2881997" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083207265" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561728" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38425925" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38305086" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28668684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2912254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083207265" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1503,28 +1388,28 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24810892" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083207265" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32561728" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38472623" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38425925" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683812" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28668684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1560,230 +1445,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/TestLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_6/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RicercaPerSegTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_8/RicercaInRegioneTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RicercaPerLuminositaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RF_6_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RF_7_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_8/RF_8_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="false" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_9/RF_9_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_11/RF_11_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_12/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="97" lean-forward="false" selection-start-line="8" selection-start-column="97" selection-end-line="8" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_10/RF_10_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_12/RF_12_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaStellaSpinaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/RF_5_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="93" column="14" lean-forward="false" selection-start-line="93" selection-start-column="14" selection-end-line="93" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="170" column="1" lean-forward="true" selection-start-line="170" selection-start-column="1" selection-end-line="170" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/allRF_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="96" lean-forward="false" selection-start-line="17" selection-start-column="96" selection-end-line="17" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/test.RequisitoFunzionale_3.InserimentoDatiStrumentoTest">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>test.RequisitoFunzionale_3.InserimentoDatiStrumentoTest</OriginalElement>
-          <nodes>
-            <node x="" y="">test.RequisitoFunzionale_3.InserimentoDatiStrumentoTest</node>
-            <node x="" y="">test.RequisitoFunzionale_3.RegistraUtenteTest</node>
-            <node x="" y="">test.RequisitoFunzionale_3.NuovoLoginTest</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="242.0" y="174.5" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-            <Category>Fields</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-583">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/106dc0cd/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.strumenti">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1812,37 +1473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="true" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/BeforeAfterLoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/RF_1_e_2_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RegistraUtenteTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
           <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1850,56 +1484,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence/TestDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="314" column="0" lean-forward="false" selection-start-line="314" selection-start-column="0" selection-end-line="314" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1527426202646" expanded="true" signature="385:441" ph="DELETE FROM utenti... " />
-            <marker date="1527426202646" expanded="true" signature="835:889" ph="DELETE FROM bande... " />
-            <marker date="1527426202646" expanded="true" signature="927:985" ph="DELETE FROM strumenti... " />
-            <marker date="1527426202646" expanded="true" signature="1472:1523" ph="DELETE FROM agenzie... " />
-            <marker date="1527426202646" expanded="true" signature="1561:1617" ph="DELETE FROM satelliti... " />
-            <marker date="1527426202646" expanded="true" signature="2402:2686" ph="SELECT COUNT... filamenti" />
-            <marker date="1527426202646" expanded="true" signature="3367:3483" ph="SELECT COUNT... filamenti" />
-            <marker date="1527426202646" expanded="true" signature="4303:4597" ph="SELECT *\nFR... stelle" />
-            <marker date="1527426202646" expanded="true" signature="4390:4596" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527426202646" expanded="true" signature="4477:4595" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527426202646" expanded="true" signature="4676:5121" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1527426202646" expanded="true" signature="4803:5034" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527426202646" expanded="true" signature="4915:5033" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527426202646" expanded="true" signature="5219:6305" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527426202646" expanded="true" signature="5280:6259" ph="SELECT \&quot;IDS... punti_contorni" />
-            <marker date="1527426202646" expanded="true" signature="8963:9285" ph="SELECT *\nFR... stelle" />
-            <marker date="1527426202646" expanded="true" signature="9050:9256" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527426202646" expanded="true" signature="9137:9255" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527426202646" expanded="true" signature="9519:9727" ph="CREATE OR RE... nome_filamento" />
-            <marker date="1527426202646" expanded="true" signature="9561:9725" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527426202646" expanded="true" signature="10001:11173" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527426202646" expanded="true" signature="10417:10612" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527426202646" expanded="true" signature="10545:10611" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527426202646" expanded="true" signature="10688:11048" ph="SELECT \&quot;GLO... punti_segmenti" />
-            <marker date="1527426202646" expanded="true" signature="11012:11047" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527426202646" expanded="true" signature="11270:12353" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527426202646" expanded="true" signature="11331:12307" ph="SELECT \&quot;IDS... punti_contorni" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1907,7 +1491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1915,66 +1498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="273" column="11" lean-forward="false" selection-start-line="273" selection-start-column="11" selection-end-line="273" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <marker date="1527267046144" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527267046144" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
-            <marker date="1527267046144" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="6463:6942" ph="SELECT f.\&quot;I... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="6979:7311" ph="SELECT COUNT... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="7345:7375" ph="SELECT COUNT... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="9743:9915" ph="SELECT * FRO... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="9948:10088" ph="SELECT COUNT... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="12341:12972" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="12459:12875" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527267046144" expanded="true" signature="13007:13509" ph="SELECT *\nFR... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="13121:13410" ph="SELECT DISTI... punti_contorni" />
-            <marker date="1527267046144" expanded="true" signature="15556:16104" ph="SELECT *\nFR... stelle" />
-            <marker date="1527267046144" expanded="true" signature="15643:16065" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527267046144" expanded="true" signature="15802:16064" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="16183:16836" ph="SELECT s.\&quot;T... stelle" />
-            <marker date="1527267046144" expanded="true" signature="16326:16733" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527267046144" expanded="true" signature="16502:16732" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="16934:18020" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527267046144" expanded="true" signature="16995:17974" ph="SELECT \&quot;IDS... punti_contorni" />
-            <marker date="1527267046144" expanded="true" signature="22822:23434" ph="CREATE OR RE... filamenti_in_rettangolo" />
-            <marker date="1527267046144" expanded="true" signature="22896:23409" ph="SELECT DISTI... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="23469:23867" ph="CREATE OR RE... stelle_in_rettangolo" />
-            <marker date="1527267046144" expanded="true" signature="23541:23842" ph="SELECT \&quot;IDS... stelle" />
-            <marker date="1527267046144" expanded="true" signature="23909:25252" ph="CREATE OR RE... stelle_in_rettangolo_e_filamenti" />
-            <marker date="1527267046144" expanded="true" signature="23992:25224" ph="SELECT disti... punti_contorni" />
-            <marker date="1527267046144" expanded="true" signature="24502:24616" ph="SELECT * FRO... filamenti_in_rettangolo" />
-            <marker date="1527267046144" expanded="true" signature="24637:24796" ph="SELECT * FRO... stelle_in_rettangolo" />
-            <marker date="1527267046144" expanded="true" signature="25552:25774" ph="SELECT 'SOLO... stelle_in_rettangolo_e_filamenti" />
-            <marker date="1527267046144" expanded="true" signature="25552:26092" ph="SELECT 'SOLO... " />
-            <marker date="1527267046144" expanded="true" signature="25825:26040" ph="SELECT 'NEL stelle_in_rettangolo" />
-            <marker date="1527267046144" expanded="true" signature="26213:26375" ph="SELECT *\nFR... stelle" />
-            <marker date="1527267046144" expanded="true" signature="26299:26333" ph="SELECT * FRO... stelle_in_rettangolo" />
-            <marker date="1527267046144" expanded="true" signature="29393:30163" ph="SELECT round... punti_segmenti" />
-            <marker date="1527267046144" expanded="true" signature="29770:29842" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="29901:30064" ph="SELECT max(q... punti_segmenti" />
-            <marker date="1527267046144" expanded="true" signature="31126:31348" ph="SELECT s.\&quot;I... segmenti" />
-            <marker date="1527267046144" expanded="true" signature="32982:33304" ph="SELECT *\nFR... stelle" />
-            <marker date="1527267046144" expanded="true" signature="33069:33275" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527267046144" expanded="true" signature="33156:33274" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="33538:33730" ph="CREATE OR RE... nome_filamento" />
-            <marker date="1527267046144" expanded="true" signature="33580:33728" ph="SELECT \&quot;NAM... filamenti" />
-            <marker date="1527267046144" expanded="true" signature="34012:35494" ph="SELECT u.\&quot;I... stelle" />
-            <marker date="1527267046144" expanded="true" signature="34420:34675" ph="SELECT stell... stelle_in_filamenti_tmp" />
-            <marker date="1527267046144" expanded="true" signature="34572:34674" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527267046144" expanded="true" signature="34763:35291" ph="SELECT \&quot;GLO... punti_segmenti" />
-            <marker date="1527267046144" expanded="true" signature="35255:35290" ph="SELECT \&quot;NAM... nome_filamento" />
-            <marker date="1527267046144" expanded="true" signature="35592:36675" ph="INSERT INTO stelle_in_filamenti_tmp... " />
-            <marker date="1527267046144" expanded="true" signature="35653:36629" ph="SELECT \&quot;IDS... punti_contorni" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1997,71 +1520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/persistence/FileImportazioneDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <marker date="1527111083000" expanded="true" signature="567:647" ph="COPY missing... " />
-            <marker date="1527111083000" expanded="true" signature="976:985" ph="TRUNCATE mis... " />
-            <marker date="1527111083000" expanded="true" signature="1210:1351" ph="COPY contorn... " />
-            <marker date="1527111083000" expanded="true" signature="1422:1507" ph="ALTER SEQUEN... contorni_imp_N_seq" />
-            <marker date="1527111083000" expanded="true" signature="6400:6555" ph="INSERT INTO satelliti... " />
-            <marker date="1527111083000" expanded="true" signature="6608:6765" ph="INSERT INTO satelliti... " />
-            <marker date="1527111083000" expanded="true" signature="6816:6965" ph="INSERT INTO agenzie... " />
-            <marker date="1527111083000" expanded="true" signature="7613:7767" ph="INSERT INTO strumenti... " />
-            <marker date="1527111083000" expanded="true" signature="7803:7947" ph="INSERT INTO bande... " />
-            <marker date="1527111083000" expanded="true" signature="8548:8569" ph="TRUNCATE con... " />
-            <marker date="1527111083000" expanded="true" signature="8609:8631" ph="TRUNCATE fil... " />
-            <marker date="1527111083000" expanded="true" signature="8671:8693" ph="TRUNCATE sch... " />
-            <marker date="1527111083000" expanded="true" signature="8730:8749" ph="TRUNCATE ste... " />
-            <marker date="1527111083000" expanded="true" signature="9550:9754" ph="INSERT INTO filamenti... " />
-            <marker date="1527111083000" expanded="true" signature="9607:9753" ph="SELECT \&quot;IDF... filamenti_imp" />
-            <marker date="1527111083000" expanded="true" signature="9712:9752" ph="SELECT \&quot;IDF... filamenti" />
-            <marker date="1527111083000" expanded="true" signature="10219:10465" ph="UPDATE filamenti... " />
-            <marker date="1527111083000" expanded="true" signature="10257:10406" ph="SELECT COUNT... scheletri_imp" />
-            <marker date="1527111083000" expanded="true" signature="10807:11123" ph="INSERT INTO stelle... " />
-            <marker date="1527111083000" expanded="true" signature="10832:11122" ph="SELECT *FROM... stelle_imp" />
-            <marker date="1527111083000" expanded="true" signature="11003:11121" ph="SELECT \&quot;NAM... stelle" />
-            <marker date="1527111083000" expanded="true" signature="11529:11859" ph="INSERT INTO visibilita... " />
-            <marker date="1527111083000" expanded="true" signature="11558:11858" ph="SELECT 'miss... stelle_imp" />
-            <marker date="1527111083000" expanded="true" signature="11764:11857" ph="SELECT \&quot;STE... visibilita" />
-            <marker date="1527111083000" expanded="true" signature="12210:12638" ph="INSERT INTO misurazione... " />
-            <marker date="1527111083000" expanded="true" signature="12235:12637" ph="SELECT \&quot;INS... filamenti_imp" />
-            <marker date="1527111083000" expanded="true" signature="12464:12636" ph="SELECT \&quot;STR... misurazione" />
-            <marker date="1527111083000" expanded="true" signature="13023:13534" ph="INSERT INTO segmenti... " />
-            <marker date="1527111083000" expanded="true" signature="13046:13533" ph="SELECT DISTI... scheletri_imp" />
-            <marker date="1527111083000" expanded="true" signature="13404:13516" ph="SELECT \&quot;IDB... segmenti" />
-            <marker date="1527111083000" expanded="true" signature="14031:14491" ph="INSERT INTO punti_contorni... " />
-            <marker date="1527111083000" expanded="true" signature="14059:14490" ph="SELECT \&quot;GLO... contorni_imp" />
-            <marker date="1527111083000" expanded="true" signature="14301:14489" ph="SELECT \&quot;N\&quot;... punti_contorni" />
-            <marker date="1527111083000" expanded="true" signature="14936:15038" ph="SELECT count... punti_segmenti" />
-            <marker date="1527111083000" expanded="true" signature="15298:15380" ph="ALTER SEQUEN... punti_segmenti_IDSEG_seq" />
-            <marker date="1527111083000" expanded="true" signature="15458:16178" ph="INSERT INTO punti_segmenti... " />
-            <marker date="1527111083000" expanded="true" signature="15612:16177" ph="SELECT a.\&quot;I... scheletri_imp" />
-            <marker date="1527111083000" expanded="true" signature="15895:16176" ph="SELECT \&quot;SEG... punti_segmenti" />
-            <marker date="1527111083000" expanded="true" signature="16515:16947" ph="INSERT INTO contorni... " />
-            <marker date="1527111083000" expanded="true" signature="16561:16946" ph="SELECT fi.\&quot;... filamenti_imp" />
-            <marker date="1527111083000" expanded="true" signature="16771:16945" ph="SELECT conto... contorni" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/control/InserisciFileDatiSatelliteController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/InserimentoDatiStrumentoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" column="88" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="22" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2069,14 +1531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1413">
-          <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2109,7 +1563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="10" column="75" lean-forward="false" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2120,21 +1573,408 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/BeforeImportazioneTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_8/RicercaInRegioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_10/RicercaInRegioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_11/RF_11_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeStellaSpinaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="19" column="71" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="197" column="31" lean-forward="true" selection-start-line="197" selection-start-column="31" selection-end-line="197" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_8/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10540">
+          <caret line="636" column="77" lean-forward="false" selection-start-line="636" selection-start-column="77" selection-end-line="636" selection-end-column="77" />
+          <folding>
+            <marker date="1527431673330" expanded="true" signature="914:1168" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527431673330" expanded="true" signature="1197:1539" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527431673330" expanded="true" signature="3037:3363" ph="SELECT max(\... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="4711:4848" ph="SELECT \&quot;NUM... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="6463:6942" ph="SELECT f.\&quot;I... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="6979:7311" ph="SELECT COUNT... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="7345:7375" ph="SELECT COUNT... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="9743:9915" ph="SELECT * FRO... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="9948:10088" ph="SELECT COUNT... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="12341:12972" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="12459:12875" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527431673330" expanded="true" signature="13007:13509" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="13121:13410" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527431673330" expanded="true" signature="15556:16104" ph="SELECT *\nFR... stelle" />
+            <marker date="1527431673330" expanded="true" signature="15643:16065" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527431673330" expanded="true" signature="15802:16064" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="16183:16836" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527431673330" expanded="true" signature="16326:16733" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527431673330" expanded="true" signature="16502:16732" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="16934:18020" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527431673330" expanded="true" signature="16995:17974" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527431673330" expanded="true" signature="22822:23434" ph="CREATE OR RE... filamenti_in_rettangolo" />
+            <marker date="1527431673330" expanded="true" signature="22896:23409" ph="SELECT DISTI... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="23469:23867" ph="CREATE OR RE... stelle_in_rettangolo" />
+            <marker date="1527431673330" expanded="true" signature="23541:23842" ph="SELECT \&quot;IDS... stelle" />
+            <marker date="1527431673330" expanded="true" signature="23909:25252" ph="CREATE OR RE... stelle_in_rettangolo_e_filamenti" />
+            <marker date="1527431673330" expanded="true" signature="23992:25224" ph="SELECT disti... punti_contorni" />
+            <marker date="1527431673330" expanded="true" signature="24502:24616" ph="SELECT * FRO... filamenti_in_rettangolo" />
+            <marker date="1527431673330" expanded="true" signature="24637:24796" ph="SELECT * FRO... stelle_in_rettangolo" />
+            <marker date="1527431673330" expanded="true" signature="25552:25774" ph="SELECT 'SOLO... stelle_in_rettangolo_e_filamenti" />
+            <marker date="1527431673330" expanded="true" signature="25552:26092" ph="SELECT 'SOLO... " />
+            <marker date="1527431673330" expanded="true" signature="25825:26040" ph="SELECT 'NEL stelle_in_rettangolo" />
+            <marker date="1527431673330" expanded="true" signature="26213:26375" ph="SELECT *\nFR... stelle" />
+            <marker date="1527431673330" expanded="true" signature="26299:26333" ph="SELECT * FRO... stelle_in_rettangolo" />
+            <marker date="1527431673330" expanded="true" signature="29393:30163" ph="SELECT round... punti_segmenti" />
+            <marker date="1527431673330" expanded="true" signature="29770:29842" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="29901:30064" ph="SELECT max(q... punti_segmenti" />
+            <marker date="1527431673330" expanded="true" signature="31126:31348" ph="SELECT s.\&quot;I... segmenti" />
+            <marker date="1527431673330" expanded="true" signature="32985:33307" ph="SELECT *\nFR... stelle" />
+            <marker date="1527431673330" expanded="true" signature="33072:33278" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527431673330" expanded="true" signature="33159:33277" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="33541:33733" ph="CREATE OR RE... nome_filamento" />
+            <marker date="1527431673330" expanded="true" signature="33583:33731" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527431673330" expanded="true" signature="34015:35497" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527431673330" expanded="true" signature="34423:34678" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527431673330" expanded="true" signature="34575:34677" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527431673330" expanded="true" signature="34766:35294" ph="SELECT \&quot;GLO... punti_segmenti" />
+            <marker date="1527431673330" expanded="true" signature="35258:35293" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527431673330" expanded="true" signature="35595:36678" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527431673330" expanded="true" signature="35656:36632" ph="SELECT \&quot;IDS... punti_contorni" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/RF_1_e_2_TestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/InserimentoDatiStrumentoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="55" selection-end-line="34" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="36" lean-forward="false" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaNumeroSegmentiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RF_6_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_9/RicercaInFilamentoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RicercaPerSegTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RicercaPerLuminositaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaStellaSpinaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/BeforeAfterLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/BeforeImportazioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_11/CalcolaDistanzaSegConTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/ImportazioneTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="12" column="52" lean-forward="true" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="31" column="87" lean-forward="true" selection-start-line="31" selection-start-column="87" selection-end-line="31" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/FileImportazioneDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5287">
+          <caret line="319" column="0" lean-forward="true" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+          <folding>
+            <marker date="1527511301492" expanded="true" signature="567:647" ph="COPY missing... " />
+            <marker date="1527511301492" expanded="true" signature="976:985" ph="TRUNCATE mis... " />
+            <marker date="1527511301492" expanded="true" signature="1210:1351" ph="COPY contorn... " />
+            <marker date="1527511301492" expanded="true" signature="1422:1507" ph="ALTER SEQUEN... contorni_imp_N_seq" />
+            <marker date="1527511301492" expanded="true" signature="6400:6555" ph="INSERT INTO satelliti... " />
+            <marker date="1527511301492" expanded="true" signature="6608:6765" ph="INSERT INTO satelliti... " />
+            <marker date="1527511301492" expanded="true" signature="6816:6965" ph="INSERT INTO agenzie... " />
+            <marker date="1527511301492" expanded="true" signature="7613:7767" ph="INSERT INTO strumenti... " />
+            <marker date="1527511301492" expanded="true" signature="7803:7947" ph="INSERT INTO bande... " />
+            <marker date="1527511301492" expanded="true" signature="8548:8569" ph="TRUNCATE con... " />
+            <marker date="1527511301492" expanded="true" signature="8609:8631" ph="TRUNCATE fil... " />
+            <marker date="1527511301492" expanded="true" signature="8671:8693" ph="TRUNCATE sch... " />
+            <marker date="1527511301492" expanded="true" signature="8730:8749" ph="TRUNCATE ste... " />
+            <marker date="1527511301492" expanded="true" signature="9550:9716" ph="INSERT INTO filamenti... " />
+            <marker date="1527511301492" expanded="true" signature="9550:9739" ph="INSERT INTO filamenti... " />
+            <marker date="1527511301492" expanded="true" signature="9628:9715" ph="SELECT \&quot;IDF... filamenti_imp" />
+            <marker date="1527511301492" expanded="true" signature="10204:10450" ph="UPDATE filamenti... " />
+            <marker date="1527511301492" expanded="true" signature="10242:10391" ph="SELECT COUNT... scheletri_imp" />
+            <marker date="1527511301492" expanded="true" signature="10792:10961" ph="INSERT INTO stelle... " />
+            <marker date="1527511301492" expanded="true" signature="10792:10984" ph="INSERT INTO stelle... " />
+            <marker date="1527511301492" expanded="true" signature="10817:10900" ph="SELECT * FRO... stelle_imp" />
+            <marker date="1527511301492" expanded="true" signature="10817:10960" ph="SELECT *FROM... stelle_imp" />
+            <marker date="1527511301492" expanded="true" signature="11390:11599" ph="INSERT INTO visibilita... " />
+            <marker date="1527511301492" expanded="true" signature="11390:11622" ph="INSERT INTO visibilita... " />
+            <marker date="1527511301492" expanded="true" signature="11419:11536" ph="SELECT 'miss... stelle_imp" />
+            <marker date="1527511301492" expanded="true" signature="11419:11598" ph="SELECT 'miss... stelle_imp" />
+            <marker date="1527511301492" expanded="true" signature="11973:12129" ph="INSERT INTO misurazione... " />
+            <marker date="1527511301492" expanded="true" signature="11973:12209" ph="INSERT INTO misurazione... " />
+            <marker date="1527511301492" expanded="true" signature="11998:12129" ph="SELECT \&quot;INS... filamenti_imp" />
+            <marker date="1527511301492" expanded="true" signature="12594:12904" ph="INSERT INTO segmenti... " />
+            <marker date="1527511301492" expanded="true" signature="12617:12880" ph="SELECT DISTI... scheletri_imp" />
+            <marker date="1527511301492" expanded="true" signature="13401:13629" ph="INSERT INTO punti_contorni... " />
+            <marker date="1527511301492" expanded="true" signature="13401:13652" ph="INSERT INTO punti_contorni... " />
+            <marker date="1527511301492" expanded="true" signature="13429:13567" ph="SELECT \&quot;GLO... contorni_imp" />
+            <marker date="1527511301492" expanded="true" signature="13429:13628" ph="SELECT \&quot;GLO... contorni_imp" />
+            <marker date="1527511301492" expanded="true" signature="14097:14199" ph="SELECT count... punti_segmenti" />
+            <marker date="1527511301492" expanded="true" signature="14459:14541" ph="ALTER SEQUEN... punti_segmenti_IDSEG_seq" />
+            <marker date="1527511301492" expanded="true" signature="14619:15039" ph="INSERT INTO punti_segmenti... " />
+            <marker date="1527511301492" expanded="true" signature="14619:15063" ph="INSERT INTO punti_segmenti... " />
+            <marker date="1527511301492" expanded="true" signature="14773:14983" ph="SELECT a.\&quot;I... scheletri_imp" />
+            <marker date="1527511301492" expanded="true" signature="14773:15039" ph="SELECT a.\&quot;I... scheletri_imp" />
+            <marker date="1527511301492" expanded="true" signature="15400:15613" ph="INSERT INTO contorni... " />
+            <marker date="1527511301492" expanded="true" signature="15400:15636" ph="INSERT INTO contorni... " />
+            <marker date="1527511301492" expanded="true" signature="15446:15590" ph="SELECT fi.\&quot;... filamenti_imp" />
+            <marker date="1527511301492" expanded="true" signature="15446:15612" ph="SELECT fi.\&quot;... filamenti_imp" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-479">
+          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/TestDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1527509200479" expanded="true" signature="335:391" ph="DELETE FROM utenti... " />
+            <marker date="1527509200479" expanded="true" signature="785:839" ph="DELETE FROM bande... " />
+            <marker date="1527509200479" expanded="true" signature="877:935" ph="DELETE FROM strumenti... " />
+            <marker date="1527509200479" expanded="true" signature="1422:1473" ph="DELETE FROM agenzie... " />
+            <marker date="1527509200479" expanded="true" signature="1511:1567" ph="DELETE FROM satelliti... " />
+            <marker date="1527509200479" expanded="true" signature="2192:2476" ph="SELECT COUNT... filamenti" />
+            <marker date="1527509200479" expanded="true" signature="3157:3273" ph="SELECT COUNT... filamenti" />
+            <marker date="1527509200479" expanded="true" signature="4093:4387" ph="SELECT *\nFR... stelle" />
+            <marker date="1527509200479" expanded="true" signature="4180:4386" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527509200479" expanded="true" signature="4267:4385" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527509200479" expanded="true" signature="4466:4911" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527509200479" expanded="true" signature="4593:4824" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527509200479" expanded="true" signature="4705:4823" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527509200479" expanded="true" signature="5009:6095" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527509200479" expanded="true" signature="5070:6049" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527509200479" expanded="true" signature="8757:9079" ph="SELECT *\nFR... stelle" />
+            <marker date="1527509200479" expanded="true" signature="8844:9050" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527509200479" expanded="true" signature="8931:9049" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527509200479" expanded="true" signature="9313:9521" ph="CREATE OR RE... nome_filamento" />
+            <marker date="1527509200479" expanded="true" signature="9355:9519" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527509200479" expanded="true" signature="9795:10967" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527509200479" expanded="true" signature="10211:10406" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527509200479" expanded="true" signature="10339:10405" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527509200479" expanded="true" signature="10482:10842" ph="SELECT \&quot;GLO... punti_segmenti" />
+            <marker date="1527509200479" expanded="true" signature="10806:10841" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527509200479" expanded="true" signature="11064:12147" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527509200479" expanded="true" signature="11125:12101" ph="SELECT \&quot;IDS... punti_contorni" />
+          </folding>
         </state>
       </provider>
     </entry>

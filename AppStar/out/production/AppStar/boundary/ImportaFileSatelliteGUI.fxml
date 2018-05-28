@@ -64,5 +64,10 @@
       <TextArea fx:id="csvInfo" layoutX="254.0" layoutY="131.0" prefHeight="84.0" prefWidth="520.0" />
       <ChoiceBox fx:id="choiceBox" layoutX="83.0" layoutY="101.0" prefWidth="150.0" />
       <Label layoutX="78.0" layoutY="322.0" prefHeight="17.0" prefWidth="401.0" text="L'ordine di importazione consigliato e' filamenti, scheletri, contorni, stelle." textFill="#b0650c" wrapText="true" />
+      <Label fx:id="stato" layoutX="261.0" layoutY="365.0" text="Attendere..." textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="45.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -29,10 +29,10 @@ public class ImportaFileSatelliteController {
         if (r == 1){
             boundary.successPopUp.FileSatImportPopUp importSuccess = new boundary.successPopUp.FileSatImportPopUp();
             importSuccess.istanziaFileSatImportPopUpFXML();
-        } else{
-            System.out.println("Errore importazione in imp");
+        } else if (!csv.getPath().contains(".csv") || !csv.getPath().contains(satellite)) {
+            System.out.println("Importazione fallita");
             boundary.errorPopUp.FileSatImportPopUp importError = new boundary.errorPopUp.FileSatImportPopUp();
-            importError.istanziaFileSatImportPopUpFXML();
+            importError.istanziaFileSatImportPopUpFXML("Formato file errato");
         }
     }
 }

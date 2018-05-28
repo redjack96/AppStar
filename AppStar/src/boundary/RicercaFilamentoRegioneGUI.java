@@ -74,6 +74,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
         long start, elapsed;
         float result;
         boolean geom = false;
+
         if (quadrato.isSelected()){
             geom = true;    // quadrato = true
             System.out.println("Ricerca in un quadrato. Attendere...");
@@ -81,6 +82,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
             geom = false;  // cerchio = false
             System.out.println("Ricerca in un cerchio. Attendere...");
         }
+
         start = System.nanoTime();
 
         ricercaFilamentoRegioneController.cercaInRegione(listaFilamenti, tableView, idColumn, nomeColumn, satColumn,
@@ -103,13 +105,13 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         RicercaFilamentoRegioneController ricercaFilamentoRegioneController = new RicercaFilamentoRegioneController();
+
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (!bloccaPaginaText) {
-                        //System.out.println("Sto cercando dopo aver cambiato il numero di pagina...");
                         ricerca(ricercaFilamentoRegioneController, pagina);
                     }
                 } catch (NumberFormatException nFE){
@@ -133,11 +135,9 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 try{
-
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (pagina>1){
                         pagina -= 1;
-                        //System.out.println("Sto cercando la pagina precedente");
                         ricerca(ricercaFilamentoRegioneController, pagina);
                     }
                 }catch (NumberFormatException nFE){
@@ -152,9 +152,8 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     pagina +=1;
-                    //System.out.println("Sto cercando la pagina successiva");
                     ricerca(ricercaFilamentoRegioneController, pagina);
-                }catch (NumberFormatException nFE){
+                }catch (NumberFormatException nFE ){
                     System.out.println(nFE.getMessage());
                 }
             }

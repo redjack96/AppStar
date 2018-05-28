@@ -16,7 +16,7 @@ public class CalcolaDistanzeStellaSpinaController {
         CalcolaDistanzeStellaSpinaGUI calcolaDistanzeStellaSpinaGUI= new CalcolaDistanzeStellaSpinaGUI();
         calcolaDistanzeStellaSpinaGUI.istanziaCalcolaDistanzeStellaSpinaGUIFXML(e);
     }
-
+    //REQ 12
     public void calcolaDistanze(ObservableList<StellaSpina> listaStelle, TableView tableView, TableColumn id,
                                 TableColumn nameStar, TableColumn glon, TableColumn glat,
                                 TableColumn flux, TableColumn type, TableColumn distanza, TextField idFilField,

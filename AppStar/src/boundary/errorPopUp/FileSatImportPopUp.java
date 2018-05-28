@@ -18,7 +18,7 @@ public class FileSatImportPopUp implements Initializable {
     @FXML
     private Button okButton;
 
-    public void istanziaFileSatImportPopUpFXML(){
+    public void istanziaFileSatImportPopUpFXML(String message){
         //Lancia l'interfaccia grafica FileSatImportPopUp.fxml.
 
         try{
@@ -26,6 +26,7 @@ public class FileSatImportPopUp implements Initializable {
             Stage stage = new Stage();
             stage.setTitle("INFO");
             stage.setScene(new Scene(root, 450, 150));
+            stage.setTitle(message);
             stage.show();
         }catch (Exception er){
             System.err.println(er.getMessage());

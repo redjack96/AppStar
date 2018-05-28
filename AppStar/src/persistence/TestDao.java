@@ -1,12 +1,9 @@
 package persistence;
 
-import java.io.File;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-
 import static persistence.Connessione.CONN;
 
 public class TestDao{
@@ -61,10 +58,6 @@ public class TestDao{
         } finally {
             CONN.close();
         }
-    }
-
-    public void req_fun_4_importData(File file) throws SQLException{
-        // importare filamenti_Herschel.csv, poi stelle_Herschel.csv, poi nulla.txt
     }
 
     public int req_fun_6_getNoFilamenti(float lum, float ellipt1, float ellipt2)
@@ -219,8 +212,9 @@ public class TestDao{
         }
         return tot;
     }
+}
 
-    public ArrayList<Float> req_fun_11_getDistanzaSegCon(int idSeg, int idFil, String Satellite) throws SQLException{
+    /*public ArrayList<Float> req_fun_11_getDistanzaSegCon(int idSeg, int idFil, String Satellite) throws SQLException{
         return FileDao.calcolaDistSegCon(idSeg, idFil, Satellite);
     }
 
@@ -298,11 +292,7 @@ public class TestDao{
             psView.executeUpdate();
             PreparedStatement ps3 = CONN.prepareStatement(queryDistanze2);
             ResultSet rs3 = ps3.executeQuery();
-            if (rs3.next()){
-                return true;
-            }else {
-                return false;
-            }
+            return true;
         }catch (SQLException e){
             System.out.println(e.getMessage());
             return false;
@@ -312,3 +302,4 @@ public class TestDao{
     }
 }
 
+*/

@@ -634,7 +634,7 @@ public class FileDao {
 
     /**/
     //REQ 12 - Trova la distanza delle stelle in un filamento dalla spina dorsale. Permette di ordinare per distanza o flusso
-    public static void calcolaDistStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
+    public static boolean calcolaDistStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
                                               TableColumn<StellaSpina, String> nameStar, TableColumn<StellaSpina, Float> glon, TableColumn<StellaSpina, Float> glat,
                                               TableColumn<StellaSpina, Float> flux, TableColumn<StellaSpina, String> type, TableColumn<StellaSpina, Float> distanza, int idFil,
                                               String satellite, String ord, int pagina) throws SQLException{
@@ -732,19 +732,23 @@ public class FileDao {
             }
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            return false;
         } finally {
             CONN.close();
         }
-        id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
-        nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
-        glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
-        glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
-        flux.setCellValueFactory(new PropertyValueFactory<>("flux"));
-        type.setCellValueFactory(new PropertyValueFactory<>("type"));
-        distanza.setCellValueFactory(new PropertyValueFactory<>("distanza"));
-        tableView.setItems(null);
-        tableView.setItems(listaStelle);
 
+        if (tableView != null ) {
+            id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
+            nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
+            glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
+            glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
+            flux.setCellValueFactory(new PropertyValueFactory<>("flux"));
+            type.setCellValueFactory(new PropertyValueFactory<>("type"));
+            distanza.setCellValueFactory(new PropertyValueFactory<>("distanza"));
+            tableView.setItems(null);
+            tableView.setItems(listaStelle);
+        }
+        return true;
     }
 }
 

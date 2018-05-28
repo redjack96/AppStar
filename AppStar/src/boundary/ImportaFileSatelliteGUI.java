@@ -27,6 +27,8 @@ public class ImportaFileSatelliteGUI implements Initializable {
     @FXML
     private Button importaButton;
     @FXML
+    private Label stato;
+    @FXML
     private RadioButton contorni;
     @FXML
     private RadioButton filamenti;
@@ -58,6 +60,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
 
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
+        stato.setVisible(false);
 
         String infoFilamenti = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
                 "IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT\n" +
@@ -107,8 +110,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 csvInfo.setText(infoStelle);
             }
         });
-        //TODO: AttenderePopUp: Mostra un popUp mentre l'applicazione importa un file e lo distribuisce nel DB
-        //TODO: (opzionale): su AttenderePopUp mostrare percentuale di completamento importazione (righe copiate/righe da copiare*100%)
+        //TODO: AttenderePopUp: Mostra un popUp mentre l'applicazione importa un file
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) throws NullPointerException{
@@ -135,11 +137,14 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 }
 
                 try{
+                    stato.setVisible(true);
+                    stato.setText("Attendere...");
                     file = fileChooser.showOpenDialog(stage);
                     System.out.println(RB+file.getPath());
                     importaFileSatelliteController.importaFile(file, RB, satellite);
+                    stato.setText("Completato!");
                 }catch (NullPointerException nPE){
-                    System.out.println(nPE.getMessage()); // prima senza .getMessage()
+                    System.out.println(nPE.getMessage());
                 }
             }
         });

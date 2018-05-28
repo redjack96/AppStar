@@ -195,7 +195,7 @@ public class UtenteRegistrato {
         return lista;
     }
 
-    public void calcolaDistanzeStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
+    public boolean calcolaDistanzeStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
                                            TableColumn<StellaSpina, String> nameStar, TableColumn<StellaSpina, Float> glon, TableColumn<StellaSpina, Float> glat,
                                            TableColumn<StellaSpina, Float> flux, TableColumn<StellaSpina, String> type, TableColumn<StellaSpina, Float> distanza, int idFil,
                                            String satellite, String ord, int pagina){
@@ -204,6 +204,8 @@ public class UtenteRegistrato {
                     satellite, ord, pagina);
         }catch (SQLException e){
             e.printStackTrace();
+            return false;
         }
+        return true;
     }
 }

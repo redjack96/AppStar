@@ -41,8 +41,8 @@ public class LoginTest {
         System.out.println("\n----------VERIFICA DI LOGIN DA PARTE DI UN UTENTE NON REGISTRATO----------\n" +
                 "Tizio non è un utente registrato nel database e sta provando ad accedere con credenziali non identificate.");
         ArrayList infoUtente;
-        infoUtente = controlloAccount("noName", "noPass");
-        Assert.assertEquals(new ArrayList<String>(), infoUtente); // lista vuota = infoUtente ?
+        infoUtente = controlloAccount("", "");
+        Assert.assertEquals(new ArrayList<String>(), infoUtente); // lista vuota = infoUtente
         System.err.print("Tizio NON È riucito a connettersi.");
     }
 

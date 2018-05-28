@@ -204,7 +204,9 @@ public class FileImportazioneDao {
     private static void riempiFilamenti(String satellite){
         // OK riusabile. Riempe la tabella "filamenti".
 
-        String fillQuery = "INSERT INTO filamenti(\"IDFIL\",\"NAME\",\"SATELLITE\") (SELECT \"IDFIL\", \"NAME\", '" + satellite + "'FROM filamenti_imp WHERE (\"IDFIL\",\"NAME\") NOT IN (    SELECT \"IDFIL\", \"NAME\"FROM filamenti))";
+        String fillQuery = "INSERT INTO filamenti(\"IDFIL\",\"NAME\",\"SATELLITE\") (" +
+                "SELECT \"IDFIL\", \"NAME\", '" + satellite + "' " +
+                "FROM filamenti_imp) ON CONFLICT DO NOTHING";
         try {
             PreparedStatement ps = CONN.prepareStatement(fillQuery);
             ps.executeUpdate();
@@ -232,10 +234,9 @@ public class FileImportazioneDao {
     private static void riempiStelle(){
         //OK riusabile. Riempie la tabella "stelle".
 
-        String fillQuery =  "INSERT INTO stelle  (    SELECT *" +
+        String fillQuery =  "INSERT INTO stelle  (    SELECT * " +
                                                       "FROM stelle_imp " +
-                                                      "WHERE \"NAMESTAR\" NOT IN (  SELECT \"NAME_STAR\"" +
-                                                                                  "FROM stelle))";
+                                                      ") ON CONFLICT DO NOTHING";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
@@ -250,8 +251,7 @@ public class FileImportazioneDao {
 
         String fillQuery =  "INSERT INTO visibilita  (    SELECT '" + satellite + "', \"NAMESTAR\" " +
                                                         "FROM stelle_imp " +
-                                                        "WHERE \"NAMESTAR\" NOT IN (SELECT \"STELLA\"" +
-                                                        "FROM visibilita))";
+                                                        ") ON CONFLICT DO NOTHING";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
@@ -265,8 +265,7 @@ public class FileImportazioneDao {
         //OK riusabile. Riempie la tabella "misurazione".
 
         String fillQuery =  "INSERT INTO misurazione (SELECT \"INSTRUMENT\", \"NAME\", \"MEAN_DENS\", \"MEAN_TEMP\", \"ELLIPTICITY\", \"CONTRAST\", \"TOTAL_FLUX\" \n" +
-                                                    " FROM filamenti_imp WHERE (\"INSTRUMENT\", \"NAME\") NOT IN (SELECT \"STRUMENTO\", \"FILAMENTO\" \n" +
-                                                                                                                " FROM misurazione))";
+                                                    " FROM filamenti_imp) ON CONFLICT DO NOTHING";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
@@ -280,10 +279,8 @@ public class FileImportazioneDao {
         //OK riusabile. Riempie la tabella "segmenti". Herschel: 4 secondi. Spitzer 8 secondi.
 
         String fillQuery =  "INSERT INTO segmenti ( SELECT DISTINCT si.\"IDBRANCH\", si.\"TYPE\", fi.\"NAME\" " +
-                                                    "FROM scheletri_imp si JOIN filamenti_imp fi ON si.\"IDFIL\" = fi.\"IDFIL\" " +
-                                                    "WHERE (si.\"IDBRANCH\", fi.\"NAME\") NOT IN ( " +
-                                                            "SELECT \"IDBRANCH\", \"NAME_FIL\" " +
-                                                            "FROM segmenti) AND si.\"N\"= 1)";
+                                                  " FROM scheletri_imp si JOIN filamenti_imp fi ON si.\"IDFIL\" = fi.\"IDFIL\" " +
+                                                  " WHERE  si.\"N\"= 1) ON CONFLICT DO NOTHING";
         try {
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
             ps1.executeUpdate();
@@ -299,10 +296,7 @@ public class FileImportazioneDao {
             //[SPITZER] 1 min se vuota, 9 secondi se piena
             String query = "INSERT INTO punti_contorni (SELECT \"GLON_CONT\", \"GLAT_CONT\",\"N\",'" + satellite + "'" +
                                                       " FROM contorni_imp " +
-                                                      " WHERE NOT EXISTS(" +
-                    " SELECT \"N\"" +
-                    " FROM punti_contorni\n " +
-                    " WHERE punti_contorni.\"SATELLITE\" = '" + satellite + "' AND punti_contorni.\"N\" = contorni_imp.\"N\"));";
+                                                      " ) ON CONFLICT DO NOTHING;";
 
             try {
 
@@ -333,9 +327,7 @@ public class FileImportazioneDao {
             String fillQuery = "INSERT INTO punti_segmenti(\"SEGMENTO\", \"GLON_BR\", \"GLAT_BR\", \"N\", \"FLUX\", \"NAME_FIL\" ) \n" +
                     "                          ( SELECT a.\"IDBRANCH\", a.\"GLON_BR\", a.\"GLAT_BR\", a.\"N\", a.\"FLUX\", b.\"NAME\" \n" +
                     "                            FROM scheletri_imp a JOIN filamenti_imp b ON a.\"IDFIL\" = b.\"IDFIL\" \n" +
-                    "                            WHERE NOT EXISTS(SELECT \"SEGMENTO\",\"N\",\"NAME_FIL\" \n" +
-                    "                                             FROM punti_segmenti \n" +
-                    "                                             WHERE (\"SEGMENTO\",\"N\",\"NAME_FIL\") = (a.\"IDBRANCH\",a.\"N\", b.\"NAME\")))";
+                    "                            ) ON CONFLICT DO NOTHING";
 
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
             ps1.executeUpdate();
@@ -350,10 +342,7 @@ public class FileImportazioneDao {
         String fillQuery =  "INSERT INTO contorni  (  " +
                 "SELECT fi.\"NAME\", ci.\"N\", '" + satellite + "' " +
                 "FROM filamenti_imp fi JOIN contorni_imp ci ON fi.\"IDFIL\" = ci.\"IDFIL\" " +
-                "WHERE NOT EXISTS ( " +
-                    "SELECT contorni.* " +
-                    "FROM contorni " +
-                    "WHERE (\"NAME_FIL\", \"NPCONT\", \"SATELLITE\") = (fi.\"NAME\", ci.\"N\", '"+ satellite +"')))";
+                ") ON CONFLICT DO NOTHING";
 
         try{
             PreparedStatement ps1 = CONN.prepareStatement(fillQuery);
