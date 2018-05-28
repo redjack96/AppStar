@@ -137,7 +137,7 @@ public class UtenteRegistrato {
                                        centLat, boolean geom, int pagina){
 
         try{
-            FileDao.cercaInRegione(filamento, tableView, id, nome, satellite, numSeg, lungh, centLon, centLat, geom,
+            FileDao.cercaFilamentiInRegione(filamento, tableView, id, nome, satellite, numSeg, lungh, centLon, centLat, geom,
                     pagina);
         }catch (SQLException e){
             System.out.println(e.getMessage());

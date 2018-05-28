@@ -148,6 +148,16 @@ public class FileDao {
         int tot;
         ArrayList<Integer> result = new ArrayList<>(2);
 
+        if (lum < 0){
+            System.out.println("La luminosita' e' negativa...");
+            result.add(0, 0); result.add(1, 0);
+            return result;
+        } else if (ellipt1 <= 1 || ellipt2 >= 10){
+            System.out.println("L'ellitticita' e' fuori range...");
+            result.add(0, 0); result.add(1, 0);
+            return result;
+        }
+
         double contrasto = 1.0 + (lum/100.0);
 
         int offset = (pagina - 1) * 20;
@@ -193,14 +203,16 @@ public class FileDao {
         } finally{
             CONN.close();
         }
-        id.setCellValueFactory(new PropertyValueFactory<>("id"));
-        nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
-        satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
-        con.setCellValueFactory(new PropertyValueFactory<>("con"));
-        ell.setCellValueFactory(new PropertyValueFactory<>("ell"));
-        tableView.setItems(null);
-        tableView.setItems(filamento);
+        if (tableView != null) {
+            id.setCellValueFactory(new PropertyValueFactory<>("id"));
+            nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+            numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
+            satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+            con.setCellValueFactory(new PropertyValueFactory<>("con"));
+            ell.setCellValueFactory(new PropertyValueFactory<>("ell"));
+            tableView.setItems(null);
+            tableView.setItems(filamento);
+        }
 
         return result;
     }
@@ -213,6 +225,9 @@ public class FileDao {
         Connessione.connettiti();
 
         int numRic;
+        if ((seg2 - seg1)<= 2){
+            return 0;
+        }
         int offset = (pagina-1) * 20;
 
         String query = "SELECT * " +
@@ -250,22 +265,29 @@ public class FileDao {
         } finally{
             CONN.close();
         }
-        idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-        nomeColumn.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        satColumn.setCellValueFactory(new PropertyValueFactory<>("satellite"));
-        numSegColumn.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
-        tableView.setItems(null);
-        tableView.setItems(filamento);
+        if (tableView != null) {
+            idColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+            nomeColumn.setCellValueFactory(new PropertyValueFactory<>("nome"));
+            satColumn.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+            numSegColumn.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
+            tableView.setItems(null);
+            tableView.setItems(filamento);
+        }
 
         return numRic;
     }
 
     // REQ 8 - Ricerca tutti i filamenti che sono interni a un cerchio o un quadrato
-    public static void cercaInRegione(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id, TableColumn<Filamento, String>
+    public static int cercaFilamentiInRegione(ObservableList<Filamento> filamento, TableView<Filamento> tableView, TableColumn<Filamento, Integer> id, TableColumn<Filamento, String>
                                nome, TableColumn<Filamento, String> satellite, TableColumn<Filamento, Integer> numSeg, float lungh, float centLon, float
                                centLat, boolean geom, int pagina) throws SQLException{
 
         Connessione.connettiti();
+
+        if (lungh < 0){
+            System.out.println("La lunghezza del raggio o del lato non puo' essere negativa");
+            return 0;
+        }
 
         String query;
         int offset = (pagina-1) * 20;
@@ -315,12 +337,15 @@ public class FileDao {
         } finally{
             CONN.close();
         }
-        id.setCellValueFactory(new PropertyValueFactory<>("id"));
-        nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
-        satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
-        numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
-        tableView.setItems(null);
-        tableView.setItems(filamento);
+        if (tableView != null) {
+            id.setCellValueFactory(new PropertyValueFactory<>("id"));
+            nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
+            satellite.setCellValueFactory(new PropertyValueFactory<>("satellite"));
+            numSeg.setCellValueFactory(new PropertyValueFactory<>("numSeg"));
+            tableView.setItems(null);
+            tableView.setItems(filamento);
+        }
+        return 1;
     }
 
     // REQ 9 - Cerca le stelle dentro un filamento
@@ -328,7 +353,7 @@ public class FileDao {
                                                       TableColumn<Stella, String> nameStar, TableColumn<Stella, Float> glon, TableColumn<Stella, Float> glat,
                                                       TableColumn<Stella, Float> flux, TableColumn<Stella, String> type, int idFil, String satellite,
                                                     int pagina)
-            throws SQLException{
+            throws SQLException {
 
         Connessione.connettiti();
 
@@ -336,26 +361,26 @@ public class FileDao {
         int unbound;
         int prestellar;
         int protostellar;
-        int offset = (pagina-1) * 20;
+        int offset = (pagina - 1) * 20;
 
         // Serve per la verifica iniziale e trova le stelle
         String query = "SELECT *\n" +
                 "FROM stelle\n" +
                 "WHERE \"IDSTAR\" IN ( SELECT stella FROM stelle_in_filamenti_tmp WHERE  in_filamento = (" +
-                                                                                        "SELECT \"NAME\" \n" +
-                                                                                        "FROM filamenti \n" +
-                                                                                        "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?))" +
+                "SELECT \"NAME\" \n" +
+                "FROM filamenti \n" +
+                "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?))" +
                 "LIMIT 20 OFFSET ?";
         // trova il numero di stelle per ogni tipo
         String query2 = "SELECT s.\"TYPE\", COUNT(*) AS numero_tipo \n" +
-                        "FROM stelle s \n" +
-                        "WHERE s.\"IDSTAR\" IN ( SELECT stella \n" +
-                                                "FROM stelle_in_filamenti_tmp \n" +
-                                                "WHERE  in_filamento = (SELECT \"NAME\" \n" +
-                                                                        "FROM filamenti \n" +
-                                                                        "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?)) \n" +
-                        "GROUP BY s.\"TYPE\" \n" +
-                        "ORDER BY s.\"TYPE\" ";
+                "FROM stelle s \n" +
+                "WHERE s.\"IDSTAR\" IN ( SELECT stella \n" +
+                "FROM stelle_in_filamenti_tmp \n" +
+                "WHERE  in_filamento = (SELECT \"NAME\" \n" +
+                "FROM filamenti \n" +
+                "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?)) \n" +
+                "GROUP BY s.\"TYPE\" \n" +
+                "ORDER BY s.\"TYPE\" ";
         //inserisce le stelle se la prima query di verifica fallisce
         String insert = "INSERT INTO stelle_in_filamenti_tmp  (\n" +
                 "SELECT \"IDSTAR\", f.\"NAME\"\n" +
@@ -370,11 +395,11 @@ public class FileDao {
                 "ON CONFLICT DO NOTHING";
 
 //------------------------------------------------INSERT PER RICERCA GENERICA-------------------------------------------
-                // sostituire alla clausola where della query precedente la seguente clausola
-                //"WHERE f.\"SATELLITE\" =  ? AND f.\"IDFIL\"= ?   \n"
+        // sostituire alla clausola where della query precedente la seguente clausola
+        //"WHERE f.\"SATELLITE\" =  ? AND f.\"IDFIL\"= ?   \n"
 //------------------------------------------------------------------------------------------------------------------------
 
-        try{
+        try {
             //Prova a cercare i filamenti nella tabella temporanea.
             PreparedStatement ps1 = CONN.prepareStatement(query);
             ps1.setInt(1, idFil);
@@ -387,16 +412,19 @@ public class FileDao {
                 //...allora li inserisce...
                 System.out.println("Inserisco stelle del filamento  nella tabella");
                 PreparedStatement ps2 = CONN.prepareStatement(insert);
-                ps2.setString(1, satellite); ps2.setInt(2, idFil);
+                ps2.setString(1, satellite);
+                ps2.setInt(2, idFil);
                 ps2.executeUpdate();
                 //... e ripete la ricerca.
                 rs1.close();
                 rs1 = ps1.executeQuery(); // ps1 perche' riesegue la query iniziale
             }
 
-            unbound = 0; prestellar = 0; protostellar = 0;
+            unbound = 0;
+            prestellar = 0;
+            protostellar = 0;
             System.out.println("mostro le stelle");
-            while (rs1.next()){
+            while (rs1.next()) {
                 // prende i dati dell'entita' "stella"
                 Stella stella = new Stella(rs1.getInt("IDSTAR"), rs1.getString("NAME_STAR"),
                         rs1.getFloat("GLON_ST"), rs1.getFloat("GLAT_ST"),
@@ -427,18 +455,23 @@ public class FileDao {
                 }
                 i++;
             }
-            System.out.println("prestar: "+ prestellar  + "\nprotostar: "+ protostellar + "\nunbound: " + unbound);
+            System.out.println("prestar: " + prestellar + "\nprotostar: " + protostellar + "\nunbound: " + unbound);
 
             //array contiene [numero prestellar, numero protostellar, numero unbound].*/
-            array.add(0, prestellar); array.add(1, protostellar); array.add(2, unbound);
+            array.add(0, prestellar);
+            array.add(1, protostellar);
+            array.add(2, unbound);
             System.out.println("FINE");
-        }catch (SQLException e){
-            array.add(0, 0); array.add(1, 0); array.add(2, 0);
+        } catch (SQLException e) {
+            array.add(0, 0);
+            array.add(1, 0);
+            array.add(2, 0);
             System.out.println(e.getMessage());
         } finally {
             CONN.close();
         }
-        id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
+        if (tableView != null){
+            id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
         nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
         glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
         glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
@@ -446,6 +479,7 @@ public class FileDao {
         type.setCellValueFactory(new PropertyValueFactory<>("type"));
         tableView.setItems(null);
         tableView.setItems(listaStelle);
+        }
 
         return array;
     }
@@ -456,12 +490,15 @@ public class FileDao {
                                                   float lat, int pagina) throws SQLException{
         Connessione.connettiti();
 
+        System.out.println("h = "+ h + "; b = "+b+"; lon = "+ lon +"; lat = "+ lat);
+
         ArrayList<Integer> array = new ArrayList<>(6);
         int unboundIn; int unboundOut;
         int prestellarIn; int prestellarOut;
         int protostellarIn; int protostellarOut;
         int offset = (pagina-1)*20;
-
+        // si considerano i filamenti che sono contenuti in tutto o in parte nle rettangolo.
+        // Per velocizzare l'esecuzione abbiamo considerato solo Herschel
         String queryFilRet = "CREATE OR REPLACE VIEW filamenti_in_rettangolo AS (\n" +
                 "SELECT DISTINCT \"NAME\"\n" +
                 "FROM filamenti f JOIN contorni c ON f.\"NAME\" = c.\"NAME_FIL\" JOIN\n" +
@@ -472,7 +509,7 @@ public class FileDao {
                 "\"GLAT_CONT\" > '"+(lat-h)/2+"' AND\n" +
                 "\"GLAT_CONT\" < '"+(lat+h)/2+"' \n" +
                 ")";
-
+        // Salviamo in una vista tutte le stelle nel rettangolo specificato
         String queryStarRet = "CREATE OR REPLACE VIEW stelle_in_rettangolo  AS (\n" +
                 "SELECT \"IDSTAR\"\n" +
                 "FROM stelle\n" +
@@ -482,7 +519,7 @@ public class FileDao {
                 "\"GLAT_ST\" > '"+(lat-h)/2+"' AND\n" +
                 "\"GLAT_ST\" < '"+(lat+h)/2+"' \n" +
                 ")";
-
+        // salviamo in un'altra vista tutte le stelle che sono interne al rettangolo E ai filamenti nel rettangolo
         String queryStarInRetInFil = "CREATE OR REPLACE VIEW stelle_in_rettangolo_e_filamenti AS (\n" +
                 "SELECT distinct \"IDSTAR\"\n" +
                 "FROM punti_contorni p JOIN punti_contorni p2 ON (p2.\"N\" = (p.\"N\" + 1) AND p.\"SATELLITE\" = p2.\"SATELLITE\")\n" +
@@ -521,21 +558,29 @@ public class FileDao {
             PreparedStatement ps3 = CONN.prepareStatement(queryStarInRetInFil);
             ps3.executeUpdate();
 
-
             PreparedStatement ps4 = CONN.prepareStatement(queryTipoStelle);
             ResultSet rs4 = ps4.executeQuery();
 
             int unboundInRett;
             int prestellarInRett;
             int protostellarInRett;
-
-            rs4.next(); prestellarInRett = rs4.getInt("numerostelle");
+            boolean x = rs4.next();
+            if (!x){
+                array.add(0, 0); array.add(1, 0); array.add(2, 0);
+                array.add(3, 0); array.add(4, 0); array.add(5, 0);
+                System.out.println("Nessuna stella trovata.");
+                tableView.setItems(null);
+                return array;
+            }
+            prestellarInRett = rs4.getInt("numerostelle");
             rs4.next(); protostellarInRett = rs4.getInt("numerostelle");
             rs4.next(); unboundInRett = rs4.getInt("numerostelle");
             rs4.next(); prestellarIn = rs4.getInt("numerostelle");
             rs4.next(); protostellarIn = rs4.getInt("numerostelle");
             rs4.next(); unboundIn = rs4.getInt("numerostelle");
 
+            // il numero di stelle di ogni tipo e' pari alla differenza tra quelle nel rettangolo e quelle
+            // che sono anche nei filamenti
             prestellarOut = prestellarInRett - prestellarIn;
             protostellarOut = protostellarInRett - protostellarIn;
             unboundOut = unboundInRett - unboundIn;
@@ -553,7 +598,7 @@ public class FileDao {
             }
             array.add(0, unboundIn); array.add(1, prestellarIn); array.add(2, protostellarIn);
             array.add(3, unboundOut); array.add(4, prestellarOut); array.add(5, protostellarOut);
-        }catch (SQLException e){
+        }catch (SQLException  e){
             array.add(0, 0); array.add(1, 0); array.add(2, 0);
             array.add(3, 0); array.add(4, 0); array.add(5, 0);
             e.printStackTrace();
@@ -561,15 +606,16 @@ public class FileDao {
         } finally{
             CONN.close();
         }
-        id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
-        nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
-        glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
-        glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
-        flux.setCellValueFactory(new PropertyValueFactory<>("flux"));
-        type.setCellValueFactory(new PropertyValueFactory<>("type"));
-        tableView.setItems(null);
-        tableView.setItems(stella);
-
+        if (tableView != null) {
+            id.setCellValueFactory(new PropertyValueFactory<>("idStar"));
+            nameStar.setCellValueFactory(new PropertyValueFactory<>("nameStar"));
+            glon.setCellValueFactory(new PropertyValueFactory<>("glon"));
+            glat.setCellValueFactory(new PropertyValueFactory<>("glat"));
+            flux.setCellValueFactory(new PropertyValueFactory<>("flux"));
+            type.setCellValueFactory(new PropertyValueFactory<>("type"));
+            tableView.setItems(null);
+            tableView.setItems(stella);
+        }
         return array;
     }
     //REQ 11 - calcola la distanza minima degli estremi del segmento dal contorno
@@ -632,7 +678,6 @@ public class FileDao {
         return listaChoiceBox;
     }
 
-    /**/
     //REQ 12 - Trova la distanza delle stelle in un filamento dalla spina dorsale. Permette di ordinare per distanza o flusso
     public static boolean calcolaDistStellaSpina(ObservableList<StellaSpina> listaStelle, TableView<StellaSpina> tableView, TableColumn<StellaSpina, Integer> id,
                                               TableColumn<StellaSpina, String> nameStar, TableColumn<StellaSpina, Float> glon, TableColumn<StellaSpina, Float> glat,
@@ -648,22 +693,18 @@ public class FileDao {
             clausolaOrderBy = "ORDER BY \"FLUX\"\n";
         }
         // Serve per la verifica iniziale e trova le stelle
-        String queryStelle = "SELECT *\n" +
-                "FROM stelle\n" +
-                "WHERE \"IDSTAR\" IN ( SELECT stella FROM stelle_in_filamenti_tmp WHERE  in_filamento = (" +
-                "SELECT \"NAME\" \n" +
-                "FROM filamenti \n" +
-                "WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?))" +
-                "LIMIT 1";
+        String queryStelle = "SELECT EXISTS(SELECT * " +
+                                            "FROM stelle_in_filamenti_tmp " +
+                                            "WHERE in_filamento = (SELECT \"NAME\" FROM filamenti WHERE \"IDFIL\" = ? AND \"SATELLITE\" = ?)) AS \"filamentoGiaControllato\"";
         // calcola la distanza minimo di ogni stella nel filamento dalla spina dorsale
-        String queryDistanze =
+        String nomeFil =
                         "--Questa serve per scrivere idfil al posto del nome del filamento\n" +
                 "CREATE OR REPLACE VIEW nome_filamento AS (SELECT \"NAME\" \n" +
                 "FROM filamenti f\n" +
                 "WHERE f.\"SATELLITE\" =  '"+satellite+"' AND f.\"IDFIL\" = '"+idFil+"' )";
 
         // query vera e propria
-        String queryDistanze2 =
+        String queryDistanze =
                                 "--Questa fa il calcolo vero e proprio. Sostituire solo la clausola ORDER BY a seconda di quale --->RADIOBUTTON<----- scegli: ordina per distanza o per flusso.\n" +
                 "SELECT u.\"IDSTAR\", u.\"NAME_STAR\", u.\"GLON_ST\", u.\"GLAT_ST\", u.\"FLUX\", u.\"TYPE\", \n" +
                                 "round(min(sqrt((u.\"GLON_ST\"- pp.\"GLON_BR\")^2 + (u.\"GLAT_ST\" - pp.\"GLAT_BR\")^2)),5) as distanza\n" +
@@ -706,8 +747,8 @@ public class FileDao {
 
             listaStelle = FXCollections.observableArrayList();
             ResultSet rs1 = ps1.executeQuery();
-
-            if (!rs1.next()) { //se rs1 non trova i filamenti nella tabella temporanea...
+            rs1.next();
+            if (!rs1.getBoolean("filamentoGiaControllato")) { //se del filamento non abbiamo trovato le stelle al suo interno...
                 //...allora li inserisce...
                 System.out.println("Inserisco stelle del filamento  nella tabella");
                 PreparedStatement ps2 = CONN.prepareStatement(insert);
@@ -717,19 +758,23 @@ public class FileDao {
                 rs1.close();
             }
 
-            PreparedStatement psView = CONN.prepareStatement(queryDistanze);
+            PreparedStatement psView = CONN.prepareStatement(nomeFil);
             psView.executeUpdate();
-            PreparedStatement ps3 = CONN.prepareStatement(queryDistanze2);
+            PreparedStatement ps3 = CONN.prepareStatement(queryDistanze);
             ResultSet rs3 = ps3.executeQuery();
-
-            while (rs3.next()){
-
+            boolean x = rs3.next();
+            if (!x){
+                System.out.println("non sono state trovate stelle");
+                return false;
+            }
+            do {
                 StellaSpina stella = new StellaSpina(rs3.getInt("IDSTAR"), rs3.getString("NAME_STAR"),
                         rs3.getFloat("GLON_ST"), rs3.getFloat("GLAT_ST"),
                         rs3.getFloat("FLUX"), rs3.getString("TYPE"), rs3.getFloat("distanza"));
 
                 listaStelle.add(stella);
             }
+            while (rs3.next());
         }catch (SQLException e){
             System.out.println(e.getMessage());
             return false;
@@ -748,6 +793,7 @@ public class FileDao {
             tableView.setItems(null);
             tableView.setItems(listaStelle);
         }
+        System.out.println("Stelle trovate!");
         return true;
     }
 }

@@ -18,7 +18,7 @@ public class ImportazioneTest {
         Assert.assertEquals(true, utente.isAmministratore());
         UtenteAmministratore admin = new UtenteAmministratore(utente.getNome(), utente.getCognome(), utente.getUserID(),
                 utente.getPassword(), utente.getEmail());
-        File file = new File("C:\\Giacomo\\Universita\\Basi_Di_Dati\\Progetto\\Esame Basi Dati\\filamenti_Herschel.csv");
+        File file = new File("filamenti_Herschel.csv");
         // x=1 significa che l'importazione avviene con successo
         int x = admin.importaFileCSV(file, 2, "Herschel");
         Assert.assertEquals(1, x);
@@ -29,7 +29,7 @@ public class ImportazioneTest {
     public void importazioneTest2(){
         UtenteAmministratore admin = new UtenteAmministratore(utente.getNome(), utente.getCognome(), utente.getUserID(),
                 utente.getPassword(), utente.getEmail());
-        File file = new File("C:\\Giacomo\\Universita\\Basi_Di_Dati\\Progetto\\Esame Basi Dati\\stelle_Herschel.csv");
+        File file = new File("stelle_Herschel.csv");
         // x=1 significa che l'importazione avviene con successo
         int x = admin.importaFileCSV(file, 4, "Herschel");
         Assert.assertEquals(1, x);
