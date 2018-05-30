@@ -10,12 +10,15 @@ Questa applicazione e' un progetto universitario che permette di interrogare un 
 	- [x] (ADMIN) Importazione di file csv: importa i file in una tra le tabelle "contorni_imp" , "filamenti_imp", 				"scheletri_imp", "stelle_imp", per poi smistarli nel database.
 	- [x] (ADMIN) Inserire dati satelliti
 	- [x] (ADMIN) Inserire dati strumenti
-- [ ] __Requisiti 5-12__
+- [x] __Requisiti 5-12__
 	- [x] Calcolo Centroide, Estensione e numero segmenti di un filamento
 	- [x] Ricerca filamenti per contrasto e ellitticità
 	- [x] Ricerca filamenti per numero di segmenti
 	- [x] Ricerca di filamenti in regioni quadrate o circolari di mappa
-	- [ ] Ricerca delle stelle interne a un filamento
-	- [ ] Ricerca di stelle in regioni rettangolari, interne o esterne ai filamenti
-	- [ ] Calcolo della distanza minima degli estremi di un segmento di un filamento dal contorno
-	- [ ] Calcolo della distanza minima dalla spina dorsale per stelle interne a un filamento
+	- [x] Ricerca delle stelle interne a un filamento
+	- [x] Ricerca di stelle in regioni rettangolari, interne o esterne ai filamenti
+	- [x] Calcolo della distanza minima degli estremi di un segmento di un filamento dal contorno
+	- [x] Calcolo della distanza minima dalla spina dorsale per stelle interne a un filamento
+- [x] __TestCase per ogni requisito__
+- [ ] __Relazione__
+- [ ] __Class Diagrams__
