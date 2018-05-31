@@ -22,15 +22,11 @@ import java.util.ResourceBundle;
 
 public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
     @FXML
-    private ResourceBundle resource;
-    @FXML
-    private URL locationd;
-    @FXML
     private TextField idText;
     @FXML
     private ChoiceBox<String> choiceBox;
     private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
-    private ObservableList<StellaSpina> listaStelle;
+    private ObservableList<StellaSpina> listaStelle = null;
     @FXML
     private TableView tableView;
     @FXML
@@ -75,8 +71,6 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
     }
 
     private void ricerca(CalcolaDistanzeStellaSpinaController controller, int pagina) throws NumberFormatException{
-        /*controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
-                latColumn, fluxColumn, tipoColumn, Integer.parseInt(idText.getText()), choiceBox.getValue(), pagina);*/
 
         String ord;
         if (distRB.isSelected()){
