@@ -60,6 +60,10 @@ public class UtenteDao {
                                         boolean admin) throws SQLException{
 
         Connessione.connettiti();
+        if (userID.length() < 6 || password.length() < 6){
+            System.out.println("User e Password devono avere almeno 6 caratteri");
+            return false;
+        }
         try{
             //String NOME = "NOME"; String COGNOME = "COGNOME"; String USER_ID = "USER_ID"; String PASSWORD = "PASSWORD";
             //String EMAIL = "EMAIL"; String AMMINISTRATORE = "AMMINISTRATORE";

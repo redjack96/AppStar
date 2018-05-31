@@ -79,7 +79,7 @@ public class FileImportazioneDao {
 
                     break;
                 }
-                case "scheletri_imp":  //TODO: fare test
+                case "scheletri_imp":
                     PreparedStatement ps5 = CONN.prepareStatement(importazione);
                     System.out.print("Importazione del file csv nella tabella " + relazione + "...");
 
@@ -148,6 +148,7 @@ public class FileImportazioneDao {
             ps1.executeUpdate(); ps2.executeUpdate();
 
             System.out.println("Dati aggiunti alle tabelle satelliti e agenzie con successo!");
+
         }catch (SQLException e){
             System.out.println(e.getMessage());
         } finally {
@@ -155,24 +156,29 @@ public class FileImportazioneDao {
         }
     }
 
-    public static void inserisciDatiStrumento(float banda, String strumento, String satellite) throws SQLException{
+    public static boolean inserisciDatiStrumento(float banda, String strumento, String satellite) throws SQLException{
 
         Connessione.connettiti();
-        String insertStrumenti = " INSERT INTO strumenti(\"STRUMENTO\",\"SAT\") VALUES ('" + strumento + "', '" + satellite + "')" +
-                                " ON CONFLICT DO NOTHING";
+        String insertStrumenti = " INSERT INTO strumenti(\"STRUMENTO\",\"SAT\") VALUES ('" + strumento + "', '" + satellite + "')";
+                                //" ON CONFLICT DO NOTHING";
         String insertBanda =    "INSERT INTO bande(\"WAVE_LENGTH\", \"STRUMENTO\") VALUES " +
                                             "('" + banda + "', '" + strumento + "')";
-
+        boolean success;
         try{
             PreparedStatement ps1 = CONN.prepareStatement(insertStrumenti);
             ps1.executeUpdate();
             PreparedStatement ps2 = CONN.prepareStatement(insertBanda);
             ps2.executeUpdate();
+            success = true;
+
         }catch (SQLException e){
             System.out.println(e.getMessage());
+            success = false;
         } finally {
             CONN.close();
         }
+        System.out.println(success);
+        return success;
     }
 
     public static void troncaImp() throws SQLException{

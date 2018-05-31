@@ -68,14 +68,14 @@ public class UtenteAmministratore extends UtenteRegistrato {
     }
 
     public boolean inserisciNuoviDatiStrumento(float banda, String strumento, String satellite){
-
+        boolean success;
         try{
-            FileImportazioneDao.inserisciDatiStrumento(banda, strumento, satellite);
-            return true;
+            success = FileImportazioneDao.inserisciDatiStrumento(banda, strumento, satellite);
         }catch (SQLException e){
             System.out.println(e.getMessage());
-            return false;
+            success = false;
         }
+        return success;
     }
 
     public void troncaDatiSatellite(){

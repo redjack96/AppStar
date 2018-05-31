@@ -11,7 +11,7 @@ public class RicercaPerLuminositaTest {
 
     @Test
     public void ricercaFil() throws SQLException{
-        System.out.println("\n----------VERIFICA RICERCA FILAMENTO PER LUMINOSITÀ----------\n" +
+        System.out.println("\n----------VERIFICA RICERCA FILAMENTO PER LUMINOSITÀ E ELLITTICITÀ----------\n" +
                 "Cerchiamo i filamenti in un range compreso tra 2.3 e 9.9,  ad avere una luminosità maggiore del 40%. Ci \n" +
                 "aspettiamo dunque che dopo una ricerca dei filamenti per luminosità passando i parametri 825 \n" +
                 "(percentuale luminosità), 2.3 (range minimo ellitticità) e 9.9 (range massimo ellitticità) l'applicazione \n" +
@@ -24,7 +24,7 @@ public class RicercaPerLuminositaTest {
 
     @Test
     public void ricercaConLuminositaNegativa() throws SQLException{
-        System.out.println("\n----------VERIFICA RICERCA FILAMENTO PER LUMINOSITÀ----------\n" +
+        System.out.println("\n----------VERIFICA RICERCA FILAMENTO CON LUMINOSITÀ NEGATIVA----------\n" +
                 "Cerchiamo i filamenti con una luminosità negativa. Questo e' impossibile quindi ci aspettiamo " +
                 "che non venga trovato nessun filamento.");
 
@@ -36,7 +36,7 @@ public class RicercaPerLuminositaTest {
 
     @Test
     public void ricercaConEllitticitaFuoriRange() throws SQLException{
-        System.out.println("\n----------VERIFICA RICERCA FILAMENTO PER LUMINOSITÀ----------\n" +
+        System.out.println("\n----------VERIFICA RICERCA FILAMENTO CON ELLITTICITÀ FUORI RANGE----------\n" +
                 "Cerchiamo i filamenti con un contrasto fuori range. Questo e' impossibile quindi ci aspettiamo " +
                 "che non venga trovato nessun filamento.");
 

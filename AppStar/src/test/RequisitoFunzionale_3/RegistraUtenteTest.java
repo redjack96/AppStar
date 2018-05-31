@@ -35,4 +35,15 @@ public class RegistraUtenteTest {
         System.err.println("Alberto Rossi È UN NUOVO AMMINISTRATORE.");
     }
 
+    @Test
+    public void inserimentoAccountFallimentare() throws SQLException{
+        System.out.println("\n----------INSERIMENTO DI UN NUOVO UTENTE----------\n" +
+                "L'amministratore che sta utilizzando l'applicazione sta tentando di aggiungere un nuovo utente:" +
+                " {Alberto, Rossi, al, al, albertone@gmail.com, notAmministratore}");
+        setCredenzialiAlberto();
+        boolean result = inserisciAccount(this.nome, this.cognome, "al", "al", this.email, this.admin);
+        Assert.assertEquals(false, result);
+        System.err.println("Alberto Rossi non e' stato registrato in quanto l'ID e la password hanno meno di 6 caratteri.");
+    }
+
 }

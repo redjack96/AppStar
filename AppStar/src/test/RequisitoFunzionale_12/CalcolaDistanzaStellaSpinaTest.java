@@ -23,7 +23,7 @@ public class CalcolaDistanzaStellaSpinaTest {
         System.out.println("\n-----------VERIFICA CALCOLO DISTANZE DELLE STELLA DALLA SPINA DORSALE----------\n" +
                 "Verifichiamo che il metodo che permette all'utente di calcolare le distanze delle stelle contenute \n" +
                 "nel filamento 0 di Herschel rispetto alla spina dorsale RESTITUISCA un result set vuoto.");
-        boolean x = calcolaDistStellaSpina(null,null,null,null,null,null,null,null,null,0, "Herschel", "distanza", 1);
+        boolean x = calcolaDistStellaSpina(null,null,null,null,null,null,null,null,null,0, "Herschel", "flusso", 1);
         Assert.assertEquals(false, x);
         System.err.println("\nDistanze NON calcolate.");
     }

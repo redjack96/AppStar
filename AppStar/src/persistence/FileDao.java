@@ -10,10 +10,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.math.BigDecimal;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 
 import static persistence.Connessione.CONN;
@@ -35,7 +32,7 @@ public class FileDao {
                 "FROM punti_contorni p JOIN contorni c ON p.\"N\" = c.\"NPCONT\" " +
                 "JOIN filamenti f ON f.\"NAME\" = c.\"NAME_FIL\" AND f.\"SATELLITE\" = p.\"SATELLITE\"" +
                 "WHERE f.\"IDFIL\" = ? AND p.\"SATELLITE\" = ?";
-
+        ArrayList result;
         try{
             PreparedStatement ps1;
             if (!nomeFil.equals("")){
@@ -55,16 +52,17 @@ public class FileDao {
             centroide.add(0, lon_centroide.toString());
             centroide.add(1, lat_centroide.toString());
             System.out.println("Centroide calcolato correttamente");
-            return centroide;
+            result = centroide;
         }catch (SQLException | NullPointerException | java.lang.IndexOutOfBoundsException e){
             ArrayList<String> errore = new ArrayList<>(2);
             errore.add(0, "NON TROVATO");
             errore.add(1, "NON TROVATO");
             System.out.println("Centroide non trovato");
-            return errore;
+            result = errore;
         } finally{
             CONN.close();
         }
+        return result;
     }
     // REQ 5 - calcola l'estensione del contorno di un filamento
     public static ArrayList calcolaEstensione(String nomeFil, int idFil, String satellite) throws SQLException{
@@ -75,7 +73,7 @@ public class FileDao {
         String query1 = "SELECT max(\"GLON_CONT\")-min(\"GLON_CONT\") AS est_lon, max(\"GLAT_CONT\")-min(\"GLAT_CONT\") AS est_lat\n" +
                 "FROM filamenti f JOIN contorni c ON f.\"NAME\" = c.\"NAME_FIL\" JOIN punti_contorni p ON c.\"NPCONT\" = p.\"N\" \n" +
                 "WHERE \"NAME\" = ? OR (f.\"IDFIL\" = ? AND f.\"SATELLITE\" = ?)";
-
+        ArrayList result;
         try{
             PreparedStatement ps1;
             ps1 = CONN.prepareStatement(query1);
@@ -90,16 +88,17 @@ public class FileDao {
             estensione.add(0, lon_centroide.toString());
             estensione.add(1, lat_centroide.toString());
             System.out.println("Estensione calcolata correttamente");
-            return estensione;
+            result = estensione;
         }catch (SQLException | NullPointerException | java.lang.IndexOutOfBoundsException e){
             ArrayList<String> errore = new ArrayList<>(2);
             errore.add(0, "NON TROVATO");
             errore.add(1, "NON TROVATO");
             System.out.println("Estensione non trovata");
-            return errore;
+            result = errore;
         } finally{
             CONN.close();
         }
+        return result;
     }
 
     // REQ 5 - Calcola il numero di segmenti di un filamento
@@ -111,7 +110,7 @@ public class FileDao {
         String query1 = "SELECT \"NUM_SEG\"\n" +
                 "FROM filamenti\n" +
                 "WHERE (\"IDFIL\" = ? AND \"SATELLITE\" = ?) OR \"NAME\" = ?";
-
+        int result;
         try{
             PreparedStatement ps1;
             ps1 = CONN.prepareStatement(query1);
@@ -125,14 +124,15 @@ public class FileDao {
             num_seg = rs1.getInt(1);
 
             System.out.println("Numero di segmenti calcolato correttamente");
-            return num_seg;
+            result = num_seg;
         }catch (SQLException | NullPointerException | java.lang.IndexOutOfBoundsException  e){
             System.out.println(e.getMessage());
             System.out.println("Numero di segmenti non trovato");
-            return -1;
+            result = -1;
         } finally{
             CONN.close();
         }
+        return result;
     }
 
     // REQ 6 - Ricerca i filamenti in base al contrasto E alla ellitticita'
@@ -147,7 +147,6 @@ public class FileDao {
         int numRic;
         int tot;
         ArrayList<Integer> result = new ArrayList<>(2);
-
         if (lum < 0){
             System.out.println("La luminosita' e' negativa...");
             result.add(0, 0); result.add(1, 0);

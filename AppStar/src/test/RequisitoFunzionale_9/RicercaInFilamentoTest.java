@@ -46,7 +46,7 @@ public class RicercaInFilamentoTest {
         System.out.println("\n-----------VERIFICA RICERCA FILAMENTO PER NUMERO DI SEGMENTI----------\n" +
                 "L'applicazione permette di ricercare tutte le stelle all'interno di un filamento specificato \n" +
                 "ed in particolare di sapere quante stelle contiene quest'ultimo. Sappiamo che il filamento \n" +
-                "45 di Herschel contiene al suo interno un certo numero di stelle. Verifichiamo che tale quantita non" +
+                "0 di Herschel non contiene al suo interno stelle, poiche' non esiste. Verifichiamo che tale quantita" +
                 "sia nulla.");
         ArrayList arrayTipi = cercaInFilamento(null, null, null, null, null,
                 null, null, null, 0, "Herschel", 1);
