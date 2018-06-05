@@ -1,0 +1,2057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="AppStar:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/persistence/FileDao.java" line="694" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI$2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciDatiStrumentiGUI.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI$2.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/InserisciFileDatiSatelliteGUI.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp$1.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/errorPopUp/LoginPopUp.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/control/InserisciDatiStrumentiController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/control/InserisciFileDatiSatelliteController.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/persistence/Connessione.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/persistence/FileDao.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/persistence/UtenteDao.class" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/out/production/AppStar/pics/sfondoPopUp.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/boundary/errorPopUp/LoginPopUp.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/control/InserisciDatiStrumentiController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/control/InserisciFileDatiSatelliteController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/Connessione.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/FileDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/pics/sfondoPopUp.jpg" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/AppStar_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/AppStar_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76/storage_v2/_src_/database/CONTORNI_E_FILAMENTI.CrC6oQ.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/889d0e45-0be2-4a55-9e69-25d1a6576a76/storage_v2/_src_/database/CONTORNI_E_FILAMENTI.CrC6oQ/schema/public.abK9xQ.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/postgresql_9_4_1212.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/AppStar.iml" afterPath="$PROJECT_DIR$/AppStar.iml" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.fxml" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/HomeGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$3.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$4.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$5.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$5.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$6.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$6.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI$7.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.fxml" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/ImportaFileSatelliteGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/LoginGUI.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$1.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$2.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml" afterPath="$PROJECT_DIR$/out/production/AppStar/boundary/RegistraUtenteGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/HomeController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/HomeController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/ImportaFileSatelliteController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/ImportaFileSatelliteController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/LoginController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/LoginController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/control/RegistraUtenteController.class" afterPath="$PROJECT_DIR$/out/production/AppStar/control/RegistraUtenteController.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteAmministratore.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteAmministratore.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteConnesso.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteConnesso.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteRegistrato.class" afterPath="$PROJECT_DIR$/out/production/AppStar/entity/UtenteRegistrato.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/persistance/Connessione.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/AppStar/persistance/UtenteDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/HomeGUI.fxml" afterPath="$PROJECT_DIR$/src/boundary/HomeGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/HomeGUI.java" afterPath="$PROJECT_DIR$/src/boundary/HomeGUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml" afterPath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" afterPath="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/LoginGUI.java" afterPath="$PROJECT_DIR$/src/boundary/LoginGUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml" afterPath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java" afterPath="$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java" />
+      <change beforePath="$PROJECT_DIR$/src/control/HomeController.java" afterPath="$PROJECT_DIR$/src/control/HomeController.java" />
+      <change beforePath="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" afterPath="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
+      <change beforePath="$PROJECT_DIR$/src/control/LoginController.java" afterPath="$PROJECT_DIR$/src/control/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/src/control/RegistraUtenteController.java" afterPath="$PROJECT_DIR$/src/control/RegistraUtenteController.java" />
+      <change beforePath="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" afterPath="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
+      <change beforePath="$PROJECT_DIR$/src/entity/UtenteConnesso.java" afterPath="$PROJECT_DIR$/src/entity/UtenteConnesso.java" />
+      <change beforePath="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" afterPath="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
+      <change beforePath="$PROJECT_DIR$/src/persistance/Connessione.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/persistance/FileDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/persistance/UtenteDao.java" afterPath="" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="CONTORNI_E_FILAMENTI@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="CONTORNI_E_FILAMENTI@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="CONTORNI_E_FILAMENTI@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="CONTORNI_E_FILAMENTI: database" type="6d9b600a:PostgresImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="CONTORNI_E_FILAMENTI@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="CONTORNI_E_FILAMENTI: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="CONTORNI_E_FILAMENTI@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="CONTORNI_E_FILAMENTI: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="RegistraUtenteGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaFilamentoLumGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoLumGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaFilamentoRegioneGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="169" column="1" lean-forward="true" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaFilamentoSegGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="69" column="15" lean-forward="false" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaStelleInFilamentoGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInFilamentoGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="505">
+              <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RicercaStelleInRegioneGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInRegioneGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/HomeGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginGUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/boundary/LoginGUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtenteConnesso.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="92" lean-forward="true" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtenteDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/persistence/UtenteDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+              <folding>
+                <marker date="1527866757359" expanded="true" signature="892:1084" ph="SELECT * FRO... utenti" />
+                <marker date="1527866757359" expanded="true" signature="3326:3369" ph="INSERT INTO utenti... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>isSelected</find>
+      <find>select</find>
+      <find>contorni</find>
+      <find>rb</find>
+      <find>setSelected</find>
+      <find>calcolaCentroide</find>
+      <find>in</find>
+      <find>precede</find>
+      <find>// REQ 11 - Cerca i segmenti di un filamento per aggiornare la choice box</find>
+      <find>cercafilamenti</find>
+      <find>caricam</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/RF_1_e_2_TestSuite.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFuzionale_1_e_2/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.fxml" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/BeforeAfterInserisciDatiStrumentoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/NuovoLoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java" />
+        <option value="$PROJECT_DIR$/nulla" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/package-info.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/RF_4_TestSuite.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/BeforeImportazioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_11/CalcolaDistanzaSegConTest.java" />
+        <option value="$PROJECT_DIR$/src/boundary/successPopUp/FileSatImportPopUp.fxml" />
+        <option value="/PostgreSQL Fragment (FileImportazioneDao.java:13022).sql" />
+        <option value="/PostgreSQL Fragment (FileImportazioneDao.java:12209).sql" />
+        <option value="$PROJECT_DIR$/src/boundary/errorPopUp/FileSatImportPopUp.java" />
+        <option value="$PROJECT_DIR$/src/control/ImportaFileSatelliteController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_4/ImportazioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaNumeroSegmentiTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RicercaPerSegTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_8/RicercaInRegioneTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_10/RicercaInRegioneTest.java" />
+        <option value="$PROJECT_DIR$/src/persistence/TestDao.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/BeforeAfterLoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/RF_1_e_2_TestSuite.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RegistraUtenteTest.java" />
+        <option value="$PROJECT_DIR$/src/test/allRF_TestSuite.java" />
+        <option value="$PROJECT_DIR$/src/persistence/FileDao.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_3/InserimentoDatiStrumentoTest.java" />
+        <option value="$PROJECT_DIR$/src/entity/UtenteAmministratore.java" />
+        <option value="$PROJECT_DIR$/src/persistence/FileImportazioneDao.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RicercaPerLuminositaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_9/RicercaInFilamentoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaStellaSpinaTest.java" />
+        <option value="$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java" />
+        <option value="$PROJECT_DIR$/src/entity/StellaSpina.java" />
+        <option value="$PROJECT_DIR$/src/control/CalcolaDistanzeStellaSpinaController.java" />
+        <option value="$PROJECT_DIR$/src/entity/UtenteRegistrato.java" />
+        <option value="$PROJECT_DIR$/src/control/RicercaStelleInFilamentoController.java" />
+        <option value="$PROJECT_DIR$/src/control/RicercaStelleInRegioneController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoLumGUI.java" />
+        <option value="$PROJECT_DIR$/src/control/RicercaFilamentoLumController.java" />
+        <option value="$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.java" />
+        <option value="$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.java" />
+        <option value="$PROJECT_DIR$/src/entity/UtenteConnesso.java" />
+        <option value="$PROJECT_DIR$/src/persistence/UtenteDao.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>AOP</id>
+          </State>
+          <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
+            <id>ActionScript specificJavaScript</id>
+          </State>
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Accessibility</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Chrome OS</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Internationalization &gt; Bidirectional Text</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Lint</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Performance</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Security</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
+          </State>
+          <State>
+            <id>Android &gt; Lint &gt; Usability &gt; Typography</id>
+          </State>
+          <State>
+            <id>Android Lint for Kotlin</id>
+          </State>
+          <State>
+            <id>AngularJS</id>
+          </State>
+          <State>
+            <id>Annotations verifyingGroovy</id>
+          </State>
+          <State>
+            <id>Ant inspections</id>
+          </State>
+          <State>
+            <id>Application Server Specific Inspections</id>
+          </State>
+          <State>
+            <id>ArquillianJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>BPMN 2.0 configuration errors</id>
+          </State>
+          <State>
+            <id>Batch Applications Issues</id>
+          </State>
+          <State>
+            <id>Bean Validation issues</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJava</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>CFML</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class metricsJava</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Cloning issuesJava</id>
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Code quality toolsCSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesCSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Concurrency annotation issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesGroovy</id>
+          </State>
+          <State>
+            <id>Control flow issuesJava</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>Cucumber Java</id>
+          </State>
+          <State>
+            <id>DOM issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesGroovy</id>
+          </State>
+          <State>
+            <id>Data flow issuesJava</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Declaration redundancyGroovy</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>DeclarationGroovy</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>ECMAScript 6 migration aidsJavaScript</id>
+          </State>
+          <State>
+            <id>Encapsulation issuesJava</id>
+          </State>
+          <State>
+            <id>Error handlingGroovy</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>Faces Model</id>
+          </State>
+          <State>
+            <id>Finalization issuesJava</id>
+          </State>
+          <State>
+            <id>FlexUnit inspections</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>FreeMarker inspections</id>
+          </State>
+          <State>
+            <id>GPathGroovy</id>
+          </State>
+          <State>
+            <id>GSPGrailsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google App Engine</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>GrailsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Guice Inspections</id>
+          </State>
+          <State>
+            <id>HTML</id>
+          </State>
+          <State>
+            <id>Haml</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>ImportsJava</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Initialization issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>Internationalization issuesJava</id>
+          </State>
+          <State>
+            <id>Invalid elementsCSS</id>
+          </State>
+          <State>
+            <id>J2ME SupportJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
+            <id>JBoss Seam issues</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>JSF annotated elements errors</id>
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>JSP Inspections</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 9Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>Java interop issuesKotlin</id>
+          </State>
+          <State>
+            <id>Java language level issuesJava</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaBeans issuesJava</id>
+          </State>
+          <State>
+            <id>JavaFX</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript function metricsJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Kotlin Android</id>
+          </State>
+          <State>
+            <id>Language Injection</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>Logging issuesJava</id>
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>Memory issuesJava</id>
+          </State>
+          <State>
+            <id>Method metricsGroovy</id>
+          </State>
+          <State>
+            <id>Method metricsJava</id>
+          </State>
+          <State>
+            <id>Modularization issuesJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsGroovy</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>Naming conventionsJavaScript</id>
+          </State>
+          <State>
+            <id>Naming conventionsKotlin</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Other problemsKotlin</id>
+          </State>
+          <State>
+            <id>OtherGroovy</id>
+          </State>
+          <State>
+            <id>Packaging issuesJava</id>
+          </State>
+          <State>
+            <id>Pages Navigation Model</id>
+          </State>
+          <State>
+            <id>Pattern Validation</id>
+          </State>
+          <State>
+            <id>Performance issuesJava</id>
+          </State>
+          <State>
+            <id>Play</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
+          </State>
+          <State>
+            <id>Probable bugsGroovy</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsKotlin</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Properties FilesJava</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>Redundant constructsKotlin</id>
+          </State>
+          <State>
+            <id>Reflective access issuesJava</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>Resource management issuesJava</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>Sass/SCSS</id>
+          </State>
+          <State>
+            <id>Security issuesJava</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>SetupSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring AOPSpring</id>
+          </State>
+          <State>
+            <id>Spring BatchSpring</id>
+          </State>
+          <State>
+            <id>Spring BootSpring</id>
+          </State>
+          <State>
+            <id>Spring CloudSpring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring DataSpring</id>
+          </State>
+          <State>
+            <id>Spring IntegrationSpring</id>
+          </State>
+          <State>
+            <id>Spring MVCSpring</id>
+          </State>
+          <State>
+            <id>Spring OSGiSpring</id>
+          </State>
+          <State>
+            <id>Spring SecuritySpring</id>
+          </State>
+          <State>
+            <id>Spring Web FlowSpring</id>
+          </State>
+          <State>
+            <id>Spring Web ServicesSpring</id>
+          </State>
+          <State>
+            <id>Spring WebSocketSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 1Struts</id>
+          </State>
+          <State>
+            <id>Struts 2Struts</id>
+          </State>
+          <State>
+            <id>Style issuesKotlin</id>
+          </State>
+          <State>
+            <id>StyleGroovy</id>
+          </State>
+          <State>
+            <id>Tapestry</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>Threading issuesJava</id>
+          </State>
+          <State>
+            <id>Thymeleaf</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>UI Form Problems</id>
+          </State>
+          <State>
+            <id>Validity issuesGroovy</id>
+          </State>
+          <State>
+            <id>Velocity inspections</id>
+          </State>
+          <State>
+            <id>Verbose or redundant code constructsJava</id>
+          </State>
+          <State>
+            <id>Visibility issuesJava</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>WebSocket issues</id>
+          </State>
+          <State>
+            <id>XML</id>
+          </State>
+          <State>
+            <id>XMLSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+          <State>
+            <id>XSLT</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SpellCheckingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="boundary" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AppStar" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AppStar" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AppStar" type="58d84e3e:PackageViewProjectNode" />
+              <item name="AppStar" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\test\RequisitoFunzionale_12" />
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\test\RequisitoFunzionale_10" />
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\test\RequisitoFunzionale_9" />
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\boundary" />
+      <recent name="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\out\production\AppStar\boundary" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.RequisitoFunzionale_10" />
+      <recent name="test.RequisitoFunzionale_9" />
+      <recent name="boundary.errorPopUp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar\src\pics" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="application.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="AppStar" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTestFallito" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.RequisitoFunzionale_12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_12" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_12.CalcolaDistanzaStellaSpinaTest" />
+      <option name="METHOD_NAME" value="calcolaDistanzaTestFallito" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RicercaInFilamentoTest.ricercaStelleInFilamentoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.RequisitoFunzionale_9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_9" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_9.RicercaInFilamentoTest" />
+      <option name="METHOD_NAME" value="ricercaStelleInFilamentoTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RicercaInFilamentoTest.ricercaStelleInFilamentoTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.RequisitoFunzionale_9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_9" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_9.RicercaInFilamentoTest" />
+      <option name="METHOD_NAME" value="ricercaStelleInFilamentoTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="RicercaPerLuminositaTest.ricercaFil" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="test.RequisitoFunzionale_6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="test.RequisitoFunzionale_6" />
+      <option name="MAIN_CLASS_NAME" value="test.RequisitoFunzionale_6.RicercaPerLuminositaTest" />
+      <option name="METHOD_NAME" value="ricercaFil" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="APPSTAR" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out" />
+      <option name="WORKING_DIRECTORY" value="C:\Università\Progetti universitari\Basi di dati\Pseudo-progetto e info\Codice\AppStar" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="9.0" />
+      <envs />
+      <module name="AppStar" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="JAR Application.APPSTAR" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.RicercaPerLuminositaTest.ricercaFil" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RicercaInFilamentoTest.ricercaStelleInFilamentoTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.RicercaInFilamentoTest.ricercaStelleInFilamentoTest2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTestFallito" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTestFallito" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RicercaInFilamentoTest.ricercaStelleInFilamentoTest2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RicercaInFilamentoTest.ricercaStelleInFilamentoTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RicercaPerLuminositaTest.ricercaFil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_PROPERTIES,SHOW_INTERFACES" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c426b00-031e-4ada-a203-820a245a2349" name="Default" comment="" />
+      <created>1519647130142</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519647130142</updated>
+      <workItem from="1519647138453" duration="29207000" />
+      <workItem from="1519843299853" duration="26022000" />
+      <workItem from="1520264245310" duration="23512000" />
+      <workItem from="1520783623818" duration="1377000" />
+      <workItem from="1520876308644" duration="540000" />
+      <workItem from="1520950505999" duration="8521000" />
+      <workItem from="1521026013696" duration="4203000" />
+      <workItem from="1521121819155" duration="2664000" />
+      <workItem from="1521210752061" duration="3036000" />
+      <workItem from="1521578395888" duration="620000" />
+      <workItem from="1521583724856" duration="1538000" />
+      <workItem from="1521635338281" duration="10598000" />
+      <workItem from="1521725052799" duration="11445000" />
+      <workItem from="1521800194509" duration="14600000" />
+      <workItem from="1521825193617" duration="2000" />
+      <workItem from="1521894426350" duration="773000" />
+      <workItem from="1521989755082" duration="22043000" />
+      <workItem from="1522782314178" duration="1241000" />
+      <workItem from="1523021092080" duration="8434000" />
+      <workItem from="1523399229163" duration="731000" />
+      <workItem from="1523436090543" duration="20299000" />
+      <workItem from="1523482119466" duration="3170000" />
+      <workItem from="1524058659807" duration="62805000" />
+      <workItem from="1525969333197" duration="1797000" />
+      <workItem from="1526228811583" duration="10922000" />
+      <workItem from="1526570828989" duration="8926000" />
+      <workItem from="1526637872824" duration="7283000" />
+      <workItem from="1526738393761" duration="3452000" />
+      <workItem from="1526898787783" duration="12780000" />
+      <workItem from="1526916123414" duration="209000" />
+      <workItem from="1526926299987" duration="881000" />
+      <workItem from="1527013739583" duration="399000" />
+      <workItem from="1527066836014" duration="3441000" />
+      <workItem from="1527092987228" duration="6225000" />
+      <workItem from="1527168967413" duration="17312000" />
+      <workItem from="1527263308625" duration="2196000" />
+      <workItem from="1527508276481" duration="19892000" />
+      <workItem from="1527757526208" duration="15177000" />
+      <workItem from="1527861949381" duration="4251000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTestFallito - 2018.05.31 at 16h 43m 18s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTestFallito" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CalcolaDistanzaStellaSpinaTest_calcolaDistanzaTestFallito - 2018.05.31 at 16h 57m 06s.xml">
+      <configuration name="CalcolaDistanzaStellaSpinaTest.calcolaDistanzaTestFallito" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RF_3_TestSuite - 2018.05.31 at 14h 47m 02s.xml">
+      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RF_3_TestSuite - 2018.05.31 at 15h 25m 09s.xml">
+      <configuration name="RF_3_TestSuite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RicercaInFilamentoTest_ricercaStelleInFilamentoTest - 2018.05.31 at 16h 15m 21s.xml">
+      <configuration name="RicercaInFilamentoTest.ricercaStelleInFilamentoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RicercaInFilamentoTest_ricercaStelleInFilamentoTest - 2018.05.31 at 16h 15m 58s.xml">
+      <configuration name="RicercaInFilamentoTest.ricercaStelleInFilamentoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RicercaInFilamentoTest_ricercaStelleInFilamentoTest2 - 2018.05.31 at 16h 25m 04s.xml">
+      <configuration name="RicercaInFilamentoTest.ricercaStelleInFilamentoTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RicercaPerLuminositaTest_ricercaFil - 2018.05.31 at 15h 53m 13s.xml">
+      <configuration name="RicercaPerLuminositaTest.ricercaFil" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RicercaPerSegTest_ricercaPerSegTest - 2018.05.31 at 15h 52m 39s.xml">
+      <configuration name="RicercaPerSegTest.ricercaPerSegTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RicercaPerSegTest_ricercaPerSegTestFallito - 2018.05.31 at 15h 52m 31s.xml">
+      <configuration name="RicercaPerSegTest.ricercaPerSegTestFallito" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="528110000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32542372" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5711864" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29954615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24357034" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3419062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35254237" sideWeight="0.5030257" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.083207265" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32542372" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5711864" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711864" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881355" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="Commit prova con cose modificate peddavero" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit prova con cose modificate peddavero" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/RequisitoFunzionale_9/RF_9_TestSuite.java</url>
+          <line>8</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="98" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_1_e_2/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="34" column="30" lean-forward="true" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/NuovoLoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="59" lean-forward="false" selection-start-line="25" selection-start-column="52" selection-end-line="25" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/106dc0cd/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.utenti">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/allRF_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="7" selection-start-column="90" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_10/RF_10_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RegistraUtenteTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/106dc0cd/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.strumenti">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/BeforeAfterInserisciDatiStrumentoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/106dc0cd/7ac23262-2e3c-4d5b-9e47-cc3ee2c266a0/CONTORNI_E_FILAMENTI.public.bande">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/FileImportazioneDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1415">
+          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/RF_3_TestSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteAmministratore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_3/InserimentoDatiStrumentoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/ImportazioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_4/BeforeImportazioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaEstensioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaCentroideTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="25" column="70" lean-forward="false" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_5/CalcolaNumeroSegmentiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_7/RicercaPerSegTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_6/RicercaPerLuminositaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_8/RicercaInRegioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_9/RicercaInFilamentoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="39" lean-forward="true" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/FileDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="801" column="0" lean-forward="true" selection-start-line="801" selection-start-column="0" selection-end-line="801" selection-end-column="0" />
+          <folding>
+            <marker date="1527770421620" expanded="true" signature="814:1068" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527770421620" expanded="true" signature="1097:1439" ph="SELECT AVG(p... punti_contorni" />
+            <marker date="1527770421620" expanded="true" signature="2989:3315" ph="SELECT max(\... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="4715:4852" ph="SELECT \&quot;NUM... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="6879:7358" ph="SELECT f.\&quot;I... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="7395:7727" ph="SELECT COUNT... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="7761:7791" ph="SELECT COUNT... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="10298:10470" ph="SELECT * FRO... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="10503:10643" ph="SELECT COUNT... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="13123:13754" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="13241:13657" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527770421620" expanded="true" signature="13789:14291" ph="SELECT *\nFR... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="13903:14192" ph="SELECT DISTI... punti_contorni" />
+            <marker date="1527770421620" expanded="true" signature="16426:16758" ph="SELECT *\nFR... stelle" />
+            <marker date="1527770421620" expanded="true" signature="16513:16719" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527770421620" expanded="true" signature="16600:16718" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="16837:17282" ph="SELECT s.\&quot;T... stelle" />
+            <marker date="1527770421620" expanded="true" signature="16964:17195" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527770421620" expanded="true" signature="17076:17194" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="17380:18466" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527770421620" expanded="true" signature="17441:18420" ph="SELECT \&quot;IDS... punti_contorni" />
+            <marker date="1527770421620" expanded="true" signature="23643:24255" ph="CREATE OR RE... filamenti_in_rettangolo" />
+            <marker date="1527770421620" expanded="true" signature="23717:24230" ph="SELECT DISTI... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="24365:24763" ph="CREATE OR RE... stelle_in_rettangolo" />
+            <marker date="1527770421620" expanded="true" signature="24437:24738" ph="SELECT \&quot;IDS... stelle" />
+            <marker date="1527770421620" expanded="true" signature="24919:26262" ph="CREATE OR RE... stelle_in_rettangolo_e_filamenti" />
+            <marker date="1527770421620" expanded="true" signature="25002:26234" ph="SELECT disti... punti_contorni" />
+            <marker date="1527770421620" expanded="true" signature="25512:25626" ph="SELECT * FRO... filamenti_in_rettangolo" />
+            <marker date="1527770421620" expanded="true" signature="25647:25806" ph="SELECT * FRO... stelle_in_rettangolo" />
+            <marker date="1527770421620" expanded="true" signature="26562:26784" ph="SELECT 'SOLO... stelle_in_rettangolo_e_filamenti" />
+            <marker date="1527770421620" expanded="true" signature="26562:27102" ph="SELECT 'SOLO... " />
+            <marker date="1527770421620" expanded="true" signature="26835:27050" ph="SELECT 'NEL stelle_in_rettangolo" />
+            <marker date="1527770421620" expanded="true" signature="27223:27385" ph="SELECT *\nFR... stelle" />
+            <marker date="1527770421620" expanded="true" signature="27309:27343" ph="SELECT * FRO... stelle_in_rettangolo" />
+            <marker date="1527770421620" expanded="true" signature="30955:31725" ph="SELECT round... punti_segmenti" />
+            <marker date="1527770421620" expanded="true" signature="31332:31404" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="31463:31626" ph="SELECT max(q... punti_segmenti" />
+            <marker date="1527770421620" expanded="true" signature="32688:32910" ph="SELECT s.\&quot;I... segmenti" />
+            <marker date="1527770421620" expanded="true" signature="34538:34545" ph="SELECT *\nFR... stelle" />
+            <marker date="1527770421620" expanded="true" signature="34538:34717" ph="SELECT EXIST... " />
+            <marker date="1527770421620" expanded="true" signature="34538:34784" ph="SELECT EXIST... " />
+            <marker date="1527770421620" expanded="true" signature="34538:34802" ph="SELECT EXIST... " />
+            <marker date="1527770421620" expanded="true" signature="34538:34815" ph="SELECT EXIST... " />
+            <marker date="1527770421620" expanded="true" signature="34552:34716" ph="SELECT * FRO... stelle_in_filamenti_tmp" />
+            <marker date="1527770421620" expanded="true" signature="35043:35235" ph="CREATE OR RE... nome_filamento" />
+            <marker date="1527770421620" expanded="true" signature="35085:35233" ph="SELECT \&quot;NAM... filamenti" />
+            <marker date="1527770421620" expanded="true" signature="35516:36998" ph="SELECT u.\&quot;I... stelle" />
+            <marker date="1527770421620" expanded="true" signature="35924:36179" ph="SELECT stell... stelle_in_filamenti_tmp" />
+            <marker date="1527770421620" expanded="true" signature="36076:36178" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527770421620" expanded="true" signature="36267:36795" ph="SELECT \&quot;GLO... punti_segmenti" />
+            <marker date="1527770421620" expanded="true" signature="36759:36794" ph="SELECT \&quot;NAM... nome_filamento" />
+            <marker date="1527770421620" expanded="true" signature="37096:38179" ph="INSERT INTO stelle_in_filamenti_tmp... " />
+            <marker date="1527770421620" expanded="true" signature="37157:38133" ph="SELECT \&quot;IDS... punti_contorni" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_11/CalcolaDistanzaSegConTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="28" lean-forward="true" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_10/RicercaInRegioneTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/RequisitoFunzionale_12/CalcolaDistanzaStellaSpinaTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/StellaSpina.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/CalcolaDistanzeStellaSpinaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="15" lean-forward="false" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteRegistrato.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="187" column="12" lean-forward="true" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="738" column="23" lean-forward="false" selection-start-line="738" selection-start-column="23" selection-end-line="738" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/RicercaStelleInFilamentoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/RicercaStelleInRegioneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="63" column="0" lean-forward="true" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/control/RicercaFilamentoLumController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="20" column="31" lean-forward="false" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/InserisciFileDatiSatelliteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-534">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/InserisciDatiStrumentiGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/InfoFilamentiGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="40" column="37" lean-forward="true" selection-start-line="40" selection-start-column="37" selection-end-line="40" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/ImportaFileSatelliteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="112" column="8" lean-forward="false" selection-start-line="112" selection-start-column="8" selection-end-line="112" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeStellaSpinaGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/CalcolaDistanzeSegConGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="25" column="64" lean-forward="false" selection-start-line="25" selection-start-column="64" selection-end-line="25" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RegistraUtenteGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoLumGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="143" column="17" lean-forward="true" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoRegioneGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="169" column="1" lean-forward="true" selection-start-line="169" selection-start-column="1" selection-end-line="169" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaFilamentoSegGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="69" column="15" lean-forward="false" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInFilamentoGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="180" column="0" lean-forward="true" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/RicercaStelleInRegioneGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/HomeGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/boundary/LoginGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/persistence/UtenteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+          <folding>
+            <marker date="1527866757359" expanded="true" signature="892:1084" ph="SELECT * FRO... utenti" />
+            <marker date="1527866757359" expanded="true" signature="3326:3369" ph="INSERT INTO utenti... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/UtenteConnesso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="92" lean-forward="true" selection-start-line="42" selection-start-column="92" selection-end-line="42" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>AppStar:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-5.1.45-bin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>9.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AppStar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>postgresql-42.2.2</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.RicercaStelleInRegioneGUI">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="800.0">
+         <image>
+            <Image url="@../pics/universo.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="21.0" text="Ricerca Stelle in una regione" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lonCentroide" layoutX="183.0" layoutY="91.0" prefHeight="25.0" prefWidth="84.0" promptText="Massimo" text="10" />
+      <TextField fx:id="baseText" layoutX="183.0" layoutY="60.0" prefHeight="25.0" prefWidth="84.0" promptText="Minimo" text="10" />
+      <Label fx:id="dimLabel" layoutX="26.0" layoutY="66.0" text="Larghezza Rettangolo" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="90.0" prefHeight="25.0" prefWidth="159.0" text="Longitudine Centroide" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="126.0" prefHeight="219.0" prefWidth="585.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="nomeColumn" prefWidth="120.0" text="NOME" />
+            <TableColumn fx:id="lonColumn" minWidth="0.0" prefWidth="93.0" text="LONGITUDINE" />
+            <TableColumn fx:id="latColumn" prefWidth="109.0" text="LATITUDINE" />
+            <TableColumn fx:id="fluxColumn" prefWidth="98.0" text="FLUSSO" />
+            <TableColumn fx:id="tipoColumn" prefWidth="107.0" text="TIPO" />
+        </columns>
+      </TableView>
+      <Label layoutX="621.0" layoutY="407.0" text="Riempire tutti i campi" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="indietro" layoutX="46.0" layoutY="361.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Indietro">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="requisito" layoutX="480.0" layoutY="89.0" text="Il valore minimo deve essere almeno 3." textFill="#b0650c" visible="false">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="cerca" layoutX="618.0" layoutY="361.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Cerca">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="precedente" disable="true" layoutX="270.0" layoutY="368.0" mnemonicParsing="false" text="&lt;" />
+      <Button fx:id="successivo" layoutX="468.0" layoutY="370.0" mnemonicParsing="false" text="&gt;" />
+      <Label layoutX="312.0" layoutY="372.0" prefHeight="20.0" prefWidth="73.0" text="Pagina" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="paginaText" layoutX="403.0" layoutY="370.0" prefHeight="25.0" prefWidth="44.0" text="1" />
+      <Label layoutX="310.0" layoutY="91.0" prefHeight="25.0" prefWidth="159.0" text="Latitudine Centroide" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="latCentroide" layoutX="457.0" layoutY="91.0" prefHeight="25.0" prefWidth="84.0" promptText="Massimo" text="10" />
+      <TextField fx:id="altezzaText" layoutX="456.0" layoutY="60.0" prefHeight="25.0" prefWidth="84.0" promptText="Minimo" text="10" />
+      <Label fx:id="dimLabel1" layoutX="308.0" layoutY="66.0" text="Altezza Rettangolo" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="605.0" layoutY="35.0" text="Stelle nei filamenti" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="inFilamentiPerc" layoutX="602.0" layoutY="56.0" prefHeight="16.0" prefWidth="174.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="603.0" layoutY="82.0" text="Unbound" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="603.0" layoutY="130.0" text="Protostellar" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="603.0" layoutY="106.0" text="Prestellar" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="protostellarInPerc" layoutX="725.0" layoutY="130.0" prefHeight="16.0" prefWidth="69.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="unboundInPerc" layoutX="725.0" layoutY="83.0" prefHeight="16.0" prefWidth="69.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="prestellarInPerc" layoutX="725.0" layoutY="106.0" prefHeight="16.0" prefWidth="69.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="606.0" layoutY="179.0" text="Stelle fuori i filamenti" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="outFilamentiPerc" layoutX="605.0" layoutY="203.0" prefHeight="16.0" prefWidth="174.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="228.0" text="Unbound" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="276.0" text="Protostellar" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="610.0" layoutY="252.0" text="Prestellar" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="protostellarOutPerc" layoutX="732.0" layoutY="276.0" prefHeight="16.0" prefWidth="62.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="unboundOutPerc" layoutX="732.0" layoutY="229.0" prefHeight="16.0" prefWidth="62.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="prestellarOutPerc" layoutX="732.0" layoutY="252.0" prefHeight="16.0" prefWidth="62.0" text="0 %" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

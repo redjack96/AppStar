@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="boundary.CalcolaDistanzeStellaSpinaGUI">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="800.0">
+         <image>
+            <Image url="@../pics/universo.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="31.0" layoutY="21.0" text="Calcola distanza dalle stelle alla spina dorsale" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idText" layoutX="322.0" layoutY="70.0" prefHeight="25.0" prefWidth="84.0" promptText="Filamento" />
+      <Label layoutX="262.0" layoutY="76.0" text="Idfil" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="70.0" prefHeight="25.0" prefWidth="73.0" text="Satellite" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="31.0" layoutY="118.0" prefHeight="215.0" prefWidth="745.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="67.0" text="ID" />
+            <TableColumn fx:id="nomeColumn" prefWidth="136.0" text="NOME" />
+            <TableColumn fx:id="lonColumn" prefWidth="118.0" text="LONGITUDINE" />
+            <TableColumn fx:id="latColumn" prefWidth="108.0" text="LATITUDINE" />
+            <TableColumn fx:id="fluxColumn" prefWidth="82.0" text="FLUSSO" />
+            <TableColumn fx:id="tipoColumn" prefWidth="109.0" text="TIPO" />
+            <TableColumn fx:id="distanzaColumn" prefWidth="124.0" text="DISTANZA" />
+         </columns>
+      </TableView>
+      <Label layoutX="31.0" layoutY="62.0" prefHeight="39.0" prefWidth="218.0" text="Inserire l'id del filamento e selezionare il satellite" textFill="#b0650c" wrapText="true">
+         <font>
+            <Font name="Copperplate Gothic Light" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="indietro" layoutX="46.0" layoutY="361.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Indietro">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cerca" layoutX="618.0" layoutY="361.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="159.0" text="Cerca">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="choiceBox" layoutX="495.0" layoutY="70.0" prefHeight="25.0" prefWidth="99.0" />
+      <Button fx:id="precedente" layoutX="292.0" layoutY="368.0" mnemonicParsing="false" text="&lt;" />
+      <TextField fx:id="paginaText" layoutX="414.0" layoutY="368.0" prefHeight="25.0" prefWidth="46.0" text="1" />
+      <Button fx:id="successivo" layoutX="482.0" layoutY="369.0" mnemonicParsing="false" text="&gt;" />
+      <Label layoutX="334.0" layoutY="370.0" text="Pagina" textFill="#b0650c">
+         <font>
+            <Font name="Copperplate Gothic Light" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="distRB" layoutX="618.0" layoutY="39.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="159.0" selected="true" text="Ordina per distanza dalla spina dorsale" textFill="#b0650c" wrapText="true">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="radioGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="fluxRB" layoutX="618.0" layoutY="87.0" mnemonicParsing="false" text="Ordina per flusso" textFill="#b0650c" toggleGroup="$radioGroup">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
