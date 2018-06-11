@@ -28,21 +28,21 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
     private ObservableList<String> choiceBoxList = FXCollections.observableArrayList("Herschel", "Spitzer");
     private ObservableList<StellaSpina> listaStelle = null;
     @FXML
-    private TableView tableView;
+    private TableView<StellaSpina> tableView;
     @FXML
-    private TableColumn idColumn;
+    private TableColumn<StellaSpina, Integer> idColumn;
     @FXML
-    private TableColumn nomeColumn;
+    private TableColumn<StellaSpina, String> nomeColumn;
     @FXML
-    private TableColumn lonColumn;
+    private TableColumn<StellaSpina, Float> lonColumn;
     @FXML
-    private TableColumn latColumn;
+    private TableColumn<StellaSpina, Float> latColumn;
     @FXML
-    private TableColumn fluxColumn;
+    private TableColumn<StellaSpina, Float> fluxColumn;
     @FXML
-    private TableColumn tipoColumn;
+    private TableColumn<StellaSpina, String> tipoColumn;
     @FXML
-    private TableColumn distanzaColumn;
+    private TableColumn<StellaSpina, Float> distanzaColumn;
     @FXML
     private RadioButton distRB;
     @FXML
@@ -70,13 +70,14 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
         }
     }
 
+    // la funzione di calcolo delle distanze delle stelle dalla spina dorsale
     private void ricerca(CalcolaDistanzeStellaSpinaController controller, int pagina) throws NumberFormatException{
 
         String ord;
         if (distRB.isSelected()){
-            ord = "distanza";
+            ord = "distanza";  // ordina per distanza
         }else{
-            ord = "flusso";
+            ord = "flusso";  // ordina per flusso
         }
 
         controller.calcolaDistanze(listaStelle, tableView, idColumn, nomeColumn, lonColumn, latColumn, fluxColumn,
@@ -87,7 +88,7 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
         }else {
             precedente.setDisable(false);
         }
-        // evita di far partire la ricerca quando viene cambiato il numero di pagina
+        // evita di far partire 2 volte la ricerca quando viene cambiato il numero di pagina
         bloccaPaginaText = true;
         paginaText.setText(String.valueOf(pagina));
         // toglie il blocco
@@ -103,13 +104,13 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
 
         precedente.setDisable(true);
 
+        // ricerca automatica alla pagina desiderata
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (!bloccaPaginaText) {
-                        System.out.println("Sto cercando dopo un cambio pagina...");
                         ricerca(controller, pagina);
                     }
                 }catch (NumberFormatException nFE){
@@ -129,6 +130,7 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
             }
         });
 
+        // ricerca alla pagina precedente
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -136,7 +138,6 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
                     int pagina = Integer.parseInt(paginaText.getText());
                     if (pagina>1){
                         pagina -= 1;
-                        System.out.println("Sto cercando la pagina precedente...");
                         ricerca(controller, pagina);
                     }
                 }catch (NumberFormatException nFE){
@@ -145,6 +146,7 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
             }
         });
 
+        // ricerca alla pagina successiva
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -152,7 +154,6 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
                 try{
                     int pagina = Integer.parseInt(paginaText.getText());
                     pagina += 1;
-                    System.out.println("Sto cercando la pagina successiva...");
                     ricerca(controller, pagina);
                 }catch (NumberFormatException nFE){
                     System.out.println(nFE.getMessage());
@@ -161,6 +162,7 @@ public class CalcolaDistanzeStellaSpinaGUI  implements Initializable {
             }
         });
 
+        // Torna al menu Home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

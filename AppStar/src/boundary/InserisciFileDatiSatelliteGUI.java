@@ -52,18 +52,18 @@ public class InserisciFileDatiSatelliteGUI implements Initializable {
 
         InserisciFileDatiSatelliteController inserisciFileDatiSatelliteController =
                 new InserisciFileDatiSatelliteController();
-
+        // pulsante di inserimento dei dati dei satelliti
         inserisciButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 if (nomeAgenzia.getLength()==0 || nomeSatellite.getLength()==0 || dataInizio.getValue() == null) {
-                    campiLabel.setVisible(true);
+                    campiLabel.setVisible(true); // evita errori a causa di valori non inseriti
                 }else {
                     campiLabel.setVisible(false);
                     System.out.println(dataInizio.getValue());
                     if (dataFine.getValue() != null){
-                        Period durata = dataInizio.getValue().until(dataFine.getValue()); //durata != null
-                        System.out.println(durata);
+                        Period durata = dataInizio.getValue().until(dataFine.getValue());
+                        //System.out.println(durata);
                         inserisciFileDatiSatelliteController.nuoviDatiSatellite(nomeAgenzia.getText(),
                                 nomeSatellite.getText(), dataInizio.getValue(), durata);
                     }else {
@@ -78,6 +78,7 @@ public class InserisciFileDatiSatelliteGUI implements Initializable {
             }
         });
 
+        // torna al menu home
         indietroButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

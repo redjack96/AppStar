@@ -27,19 +27,19 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
     @FXML
     private ChoiceBox<String> choiceBox;
     @FXML
-    private TableView tableView;
+    private TableView<Stella> tableView;
     @FXML
-    private TableColumn idColumn;
+    private TableColumn<Stella, Integer> idColumn;
     @FXML
-    private TableColumn nomeColumn;
+    private TableColumn<Stella, String> nomeColumn;
     @FXML
-    private TableColumn lonColumn;
+    private TableColumn<Stella, Float> lonColumn;
     @FXML
-    private TableColumn latColumn;
+    private TableColumn<Stella, Float> latColumn;
     @FXML
-    private TableColumn fluxColumn;
+    private TableColumn<Stella, Float> fluxColumn;
     @FXML
-    private TableColumn tipoColumn;
+    private TableColumn<Stella, String> tipoColumn;
     @FXML
     private Label numRic;
     @FXML
@@ -72,7 +72,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
             System.out.println(er.getMessage());
         }
     }
-
+    // funzione di ricerca per i pulsanti precedente, successivo, cerca e per il textfield del numero di pagina
     private void ricerca(RicercaStelleInFilamentoController controller, int pagina) throws NumberFormatException{
         ArrayList<Double> result;
         result = controller.cercaInFilamento(listaStelle, tableView, idColumn, nomeColumn, lonColumn,
@@ -82,6 +82,12 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
         System.out.println("% unbound" + result.get(1));
         System.out.println("% prestellar" + result.get(2));
         System.out.println("% protostellar" + result.get(3));
+        double delta = 100.0 - (result.get(1)+ result.get(2)+result.get(3));
+        if (delta != 0.0){
+            double x = result.get(1);
+            x += delta; // fa in modo che la percentuale totale sia 100% se causa errori di approssimazione non e' 100%
+            result.set(1,x);
+        }
 
         numRic.setText(result.get(0).toString().substring(0, result.get(0).toString().length()-2));
         unbound.setText(String.valueOf(result.get(1)) + " %");
@@ -110,7 +116,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
         choiceBox.setValue("Herschel");
 
         precedente.setDisable(true);
-
+        // ricerca automatica dal textfield del numero di pagina
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -125,7 +131,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
                 }
             }
         }));
-
+        // ricerca a pagina 1
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -136,7 +142,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
                 }
             }
         });
-
+        // ricerca a pagina precedente, se possibile
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -152,7 +158,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
                 }
             }
         });
-
+        // ricerca a pagina successiva
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -168,7 +174,7 @@ public class RicercaStelleInFilamentoGUI implements Initializable {
 
             }
         });
-
+        // torna al menu home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

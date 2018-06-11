@@ -18,7 +18,6 @@ import javafx.stage.Stage;
 
 import java.io.File;
 import java.net.URL;
-import java.nio.file.Path;
 import java.util.ResourceBundle;
 
 public class ImportaFileSatelliteGUI implements Initializable {
@@ -57,10 +56,10 @@ public class ImportaFileSatelliteGUI implements Initializable {
     }
 
     public void initialize(URL location, ResourceBundle resources) {
-
+        // valori di default per la chocie box
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
-        stato.setVisible(false);
+        stato.setVisible(false); //nasconde la label stato
 
         String infoFilamenti = "Il file deve contenere le seguenti colonne separate da virgole:\n" +
                 "IDFIL,NAME,TOTAL_FLUX,MEAN_DENS,MEAN_TEMP,ELLIPTICITY,CONTRAST,SATELLITE,INSTRUMENT\n" +
@@ -70,7 +69,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
         csvInfo.setEditable(false);
 
         ImportaFileSatelliteController importaFileSatelliteController = new ImportaFileSatelliteController();
-
+        // Seleziona il radiobutton dei contorni e cambia le info sui requisiti del file
         contorni.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -80,7 +79,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 csvInfo.setText(infoContorni);
             }
         });
-
+        // Seleziona il radiobutton dei filamenti e cambia le info sui requisiti del file
         filamenti.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -90,7 +89,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 csvInfo.setText(infoFilamenti);
             }
         });
-
+        // Seleziona il radiobutton degli scheletri e cambia le info sui requisiti del file
         scheletri.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -100,7 +99,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 csvInfo.setText(infoScheletri);
             }
         });
-
+        // Seleziona il radiobutton delle stelle e cambia le info sui requisiti del file
         stelle.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -110,7 +109,7 @@ public class ImportaFileSatelliteGUI implements Initializable {
                 csvInfo.setText(infoStelle);
             }
         });
-
+        // mostra la schermata di file choosing e avvia l'importazione
         importaButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) throws NullPointerException{

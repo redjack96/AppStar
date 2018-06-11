@@ -52,6 +52,7 @@ public class InserisciDatiStrumentiGUI implements Initializable {
 
         InserisciDatiStrumentiController inserisciDatiStrumentiController = new InserisciDatiStrumentiController();
 
+        // pulsante di inserimento dei dati nel database
         inserisciButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -66,7 +67,7 @@ public class InserisciDatiStrumentiGUI implements Initializable {
                 }
             }
         });
-
+        // torna al menu home
         indietroButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

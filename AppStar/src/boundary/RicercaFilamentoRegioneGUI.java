@@ -69,7 +69,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
             System.err.println(er.getMessage());
         }
     }
-
+    // funzione di ricerca per i pulsanti precedente, successivo, cerca e per il textfield del numero di pagina
     private void ricerca(RicercaFilamentoRegioneController ricercaFilamentoRegioneController, int pagina) throws NumberFormatException{
         long start, elapsed;
         float result;
@@ -106,6 +106,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
 
         RicercaFilamentoRegioneController ricercaFilamentoRegioneController = new RicercaFilamentoRegioneController();
 
+        // ricerca automatica dal textfield del numero di pagina
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -119,7 +120,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
                 }
             }
         }));
-
+        // tasto di ricerca a pagina 1
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -130,7 +131,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
                 }
             }
         });
-
+        // tasto di ricerca a pagina precedente se possibile
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -145,7 +146,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
                 }
             }
         });
-
+        // tasto di ricerca a pagina successiva
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -159,6 +160,7 @@ public class RicercaFilamentoRegioneGUI implements Initializable {
             }
         });
 
+        // torna al menu home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

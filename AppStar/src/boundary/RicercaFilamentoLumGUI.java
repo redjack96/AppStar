@@ -74,6 +74,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
         }
     }
 
+    // funzione di ricerca per i pulsanti precedente, successivo, cerca e per il textfield del numero di pagina
     private void ricerca(RicercaFilamentoLumController controller, int pagina) throws NumberFormatException{
         ArrayList<Integer> result;
         float minEllipticity = Float.parseFloat(range1.getText());
@@ -83,13 +84,12 @@ public class RicercaFilamentoLumGUI implements Initializable {
                 lum < 0.0){
             System.out.println("Errore: hai inserito ellitticita' non valide o luminosita' negativa.");
         }else {
-            //System.out.println("Sto cercando...");
             result = controller.cercaFilamenti(listaFilamenti, tableView, idColumn, nomeColumn,
                     numSegColumn, satColumn, conColumn, elliptColumn, lum,
                     minEllipticity, maxEllipticity, pagina);
             numRic.setText(String.valueOf(result.get(0)));
             tot.setText( " / " + String.valueOf(result.get(1)));
-            // evita di far partire la ricerca quando viene cambiato il numero di pagina
+            // evita di far partire la ricerca 2 volte quando viene cambiato il numero di pagina
             bloccaPaginaText = true;
             paginaText.setText(String.valueOf(pagina));
             // toglie il blocco
@@ -110,6 +110,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
         slider.setBlockIncrement(0.01);
         precedente.setDisable(true);
 
+        // slider della percentuale (il suo utilizzo e' opzionale)
         slider.valueProperty().addListener(new ChangeListener<Number>() {
             @Override
             public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
@@ -118,6 +119,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
             }
         });
 
+        // ricerca automatica dal textfield del numero di pagina
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -133,6 +135,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
             }
         }));
 
+        // tasto di ricerca a pagina 1
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -145,6 +148,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
             }
         });
 
+        // ricerca alla pagina precedente, se possibile
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -160,6 +164,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
             }
         });
 
+        // ricerca alla pagina successiva
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -174,6 +179,7 @@ public class RicercaFilamentoLumGUI implements Initializable {
             }
         });
 
+        // torna al menu home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

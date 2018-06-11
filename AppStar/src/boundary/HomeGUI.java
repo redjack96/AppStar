@@ -65,8 +65,8 @@ public class HomeGUI implements Initializable {
     }
 
     public void initialize(URL location, ResourceBundle resources){
-        infoFilamento.setSelected(true);
-        //RadioButton selezionato di default.
+
+        infoFilamento.setSelected(true); //RadioButton selezionato di default.
         HomeController homeController = new HomeController();
 
         nomeCognomeLabel.setText(homeController.getUtente().getNome() + " " + homeController.getUtente().getCognome());
@@ -84,6 +84,7 @@ public class HomeGUI implements Initializable {
             adminLabel.setText("U");
         }
 
+        // cambia la schermata in base al radio button selezionato
         avantiButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -138,6 +139,7 @@ public class HomeGUI implements Initializable {
             }
         });
 
+        // distrugge l'istanza del singleton e disconnette l'utente
         logoutButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

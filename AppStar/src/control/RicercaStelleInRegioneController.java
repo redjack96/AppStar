@@ -20,9 +20,9 @@ public class RicercaStelleInRegioneController {
         ricercaStelleInRegioneGUI.istanziaRicercaStelleInRegioneGUIFXML(e);
     }
 
-    public ArrayList<String> cercaStelleRegione(ObservableList<Stella> stella, TableView tableView, TableColumn id,
-                                                TableColumn nameStar, TableColumn glon, TableColumn glat,
-                                                TableColumn flux, TableColumn type, TextField hField, TextField bField,
+    public ArrayList<String> cercaStelleRegione(ObservableList<Stella> stella, TableView<Stella> tableView, TableColumn<Stella, Integer> id,
+                                                TableColumn<Stella, String> nameStar, TableColumn<Stella, Float> glon, TableColumn<Stella, Float> glat,
+                                                TableColumn<Stella, Float> flux, TableColumn<Stella, String> type, TextField hField, TextField bField,
                                                 TextField lonField, TextField latField, int pagina){
 
         ArrayList<Integer> arrayList;
@@ -46,21 +46,55 @@ public class RicercaStelleInRegioneController {
                 pagina);
 
 
-        double unboundIn = arrayList.get(0); double prestellarIn = arrayList.get(1); double protostellarIn = arrayList.get(2);
-        double unboundOut = arrayList.get(3); double prestellarOut = arrayList.get(4); double protostellarOut = arrayList.get(5);
+        double unboundIn = arrayList.get(0);
+        double prestellarIn = arrayList.get(1);
+        double protostellarIn = arrayList.get(2);
+        double unboundOut = arrayList.get(3);
+        double prestellarOut = arrayList.get(4);
+        double protostellarOut = arrayList.get(5);
         double totaleIn = unboundIn + prestellarIn + protostellarIn;
         double totaleOut = unboundOut + prestellarOut + protostellarOut;
         double totale = totaleIn + totaleOut;
 
         //Arrotondo le percentuali con 2 cifre decimali
-        String totaleInPerc = String.valueOf(round(10000.0*totaleIn/totale)/100.0);
-        String totaleOutPerc = String.valueOf(round(10000.0*totaleOut/totale)/100.0);
-        String unboundInPerc = String.valueOf(round(10000.0*unboundIn/totaleIn)/100.0);
-        String prestellarInPerc = String.valueOf(round(10000.0*prestellarIn/totaleIn)/100.0);
-        String protostellarInPerc = String.valueOf(round(10000.0*protostellarIn/totaleIn)/100.0);
-        String unboundOutPerc = String.valueOf(round(10000.0*unboundOut/totaleOut)/100.0);
-        String prestellarOutPerc = String.valueOf(round(10000.0*prestellarOut/totaleOut)/100.0);
-        String protostellarOutPerc = String.valueOf(round(10000.0*protostellarOut/totaleOut)/100.0);
+        double uInP = round(10000.0*unboundIn/totaleIn)/100.0;
+        double preInP = round(10000.0*prestellarIn/totaleIn)/100.0;
+        double proInP = round(10000.0*protostellarIn/totaleIn)/100.0;
+        double uOutP = round(10000.0*unboundOut/totaleOut)/100.0;
+        double preOutP = round(10000.0*prestellarOut/totaleOut)/100.0;
+        double proOutP = round(10000.0*protostellarOut/totaleOut)/100.0;
+        double totInP = round(10000.0*totaleIn/totale)/100.0;
+        double totOutP = round(10000.0*totaleOut/totale)/100.0;
+
+        // risolvo gli errori di arrotondamento
+        if (totaleIn !=0) {
+            double delta1 = 100.0 - (uInP + preInP + proInP);
+            if (delta1 != 0) {
+                uInP += delta1;
+            }
+        }
+
+        if (totaleOut !=0) {
+            double delta2 = 100.0 - (uOutP + preOutP + proOutP);
+            if (delta2 != 0) {
+                uOutP += delta2;
+            }
+        }
+        if (totale !=0) {
+            double delta3 = 100.0 - (totInP + totOutP);
+            if (delta3 != 0){
+                totInP += delta3;
+            }
+        }
+
+        String totaleInPerc = String.valueOf(totInP);
+        String totaleOutPerc = String.valueOf(totOutP);
+        String unboundInPerc = String.valueOf(uInP);
+        String prestellarInPerc = String.valueOf(preInP);
+        String protostellarInPerc = String.valueOf(proInP);
+        String unboundOutPerc = String.valueOf(uOutP);
+        String prestellarOutPerc = String.valueOf(preOutP);
+        String protostellarOutPerc = String.valueOf(proOutP);
 
         stringArrayList.add(0, totaleInPerc);
         stringArrayList.add(1, totaleOutPerc);

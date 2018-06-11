@@ -60,7 +60,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
             System.err.println(er.getMessage());
         }
     }
-
+    // funzione di ricerca per i pulsanti precedente, successivo, cerca e per il textfield del numero di pagina
     private void ricerca(RicercaFilamentoSegController controller, int pagina) throws NumberFormatException{
         int result;
         int minSeg = Integer.parseInt(range1.getText());
@@ -91,7 +91,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
         RicercaFilamentoSegController ricercaFilamentoSegController = new RicercaFilamentoSegController();
 
         precedente.setDisable(true);
-
+        // ricerca automatica dal textfield del numero di pagina
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -106,7 +106,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
                 }
             }
         }));
-
+        // ricerca a pagina 1
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -119,7 +119,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
                 }
             }
         });
-
+        // ricerca a pagina precedente, se possibile
         precedente.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -135,7 +135,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
                 }
             }
         });
-
+        // ricerca a pagina successiva
         successivo.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -152,6 +152,7 @@ public class RicercaFilamentoSegGUI implements Initializable {
             }
         });
 
+        // torna al menu home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

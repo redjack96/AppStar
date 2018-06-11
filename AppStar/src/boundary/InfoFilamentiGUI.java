@@ -67,7 +67,7 @@ public class InfoFilamentiGUI implements Initializable {
         numSegFilamento.setEditable(false);
 
         InfoFilamentiController infoFilamentiController = new InfoFilamentiController();
-
+        // pulsante del calcolo del centroide
         opCentroide.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -92,11 +92,11 @@ public class InfoFilamentiGUI implements Initializable {
                 } else filamento = "?";
 
                 centroide = infoFilamentiController.calcolaCentroide(nomeFil.getText(), idfil, choiceBox.getValue());
-                lonCentroide.setText(centroide.get(0) + "\nFilamento = " + filamento);
-                latCentroide.setText(centroide.get(1) + "\nFilamento = " + filamento);
+                lonCentroide.setText(centroide.get(0) + "\nFilamento: " + filamento);
+                latCentroide.setText(centroide.get(1) + "\nFilamento: " + filamento);
             }
         });
-
+        // pulsante del calcolo dell'estensione
         opEstensione.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -125,6 +125,7 @@ public class InfoFilamentiGUI implements Initializable {
                 estFilamento.setText(result);
             }});
 
+        // pulsante del calcolo del numero dei segmenti
         opNumSeg.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -132,7 +133,7 @@ public class InfoFilamentiGUI implements Initializable {
                 String filamento;
                 int idfil;
                 String id = idFil.getText();
-                if (id.equals("")) {
+                if (id.equals("")) { // in caso di stringa vuota evita l'errore
                     idfil = 0;
                 } else{
                     try {
@@ -158,6 +159,7 @@ public class InfoFilamentiGUI implements Initializable {
                 }
             }});
 
+        // torna al menu Home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

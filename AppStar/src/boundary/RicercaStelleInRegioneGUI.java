@@ -83,7 +83,7 @@ public class RicercaStelleInRegioneGUI implements Initializable {
             System.err.println(er.getMessage());
         }
     }
-
+    // funzione di ricerca per i pulsanti precedente, successivo, cerca e per il textfield del numero di pagina
     private void ricerca(RicercaStelleInRegioneController controller, int pagina) throws NumberFormatException{
         long start, elapsed;
         float result;
@@ -101,6 +101,7 @@ public class RicercaStelleInRegioneGUI implements Initializable {
         unboundOutPerc.setText(percentuali.get(5) + " %");
         prestellarOutPerc.setText(percentuali.get(6) + " %");
         protostellarOutPerc.setText(percentuali.get(7) + " %");
+
         if (pagina == 1){
             precedente.setDisable(true);
         }else {
@@ -115,6 +116,7 @@ public class RicercaStelleInRegioneGUI implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
         RicercaStelleInRegioneController controller = new RicercaStelleInRegioneController();
+        // ricerca automatica dal textfield del numero di pagina
         paginaText.textProperty().addListener((new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {

@@ -40,6 +40,7 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
     @FXML
     private Button cerca;
 
+    // carica l'interfaccia grafica
     public void istanziaCalcolaDistanzeSegConGUIFXML(Event e){
 
         try{
@@ -57,7 +58,7 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
         choiceBox.setItems(choiceBoxList);
         choiceBox.setValue("Herschel");
 
-
+        // quando si cambia l'idfil, verranno automaticamente inseriti nella choicebox tutti i segmenti del filamento
         idFilText.textProperty().addListener((new ChangeListener<String>(){
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -77,7 +78,7 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
             }
         }));
 
-        // quando scegli un altro satellite
+        // quando scegli un altro satellite, verranno automaticamente inseriti nella choicebox tutti i segmenti del filamento
         choiceBox.valueProperty().addListener((new ChangeListener<String>(){
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
@@ -97,6 +98,7 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
             }
         }));
 
+        // calcola le distanze dei vertici del segmento dal contorno
         cerca.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -111,6 +113,7 @@ public class CalcolaDistanzeSegConGUI implements Initializable {
             }
         });
 
+        // torna al menu home
         indietro.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

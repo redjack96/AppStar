@@ -55,6 +55,7 @@ public class LoginGUI implements Initializable {
 
         LoginController loginController = new LoginController();
 
+        // controlla le credenziali inserite
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -64,6 +65,7 @@ public class LoginGUI implements Initializable {
             }}
         });
 
+        // termina l'applicazione
         chiudiButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
